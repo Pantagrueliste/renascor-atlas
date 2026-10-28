@@ -1,0 +1,2 @@
+# NER v2.1 (RenNER) XL run with the chosen lowercase variant (same format as ner3_train_v2_runs.tsv); TV_DIR=~/renascor-atlas-data/ner/train_v21
+v21_xlmrxl_lc12n|MIX_SFULL_LC12N|facebook/xlm-roberta-xl|2e-5|45|a100|--head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 60|

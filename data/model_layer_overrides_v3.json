@@ -1,0 +1,307 @@
+{
+ "note": "Relecture v3 (23 oct. 2026) : 13 des 74 points principaux qui n'existent que par les nouveaux jeux étaient faux (3 contextes lus par point). Les ancres visent la forme la plus fréquente du jeu v3 ; ces entrées ne valent que pour la couche v3. Relecture des 63 points à relire (28 oct. 2026) : Neutra devient la ville de Nitra, Ruhr est retiré (dysenterie et Roer mêlées) ; Blackheath sort du point Blackwall (forms_move). Les ids ml2 ne sont pas des clés : seule l'ancre compte.",
+ "counts": {
+  "move": 3,
+  "merge": 6,
+  "unplace": 6,
+  "forms_move": 1
+ },
+ "entries": [
+  {
+   "id_v2": "ml2:115",
+   "name_v2": "Rhenum",
+   "n_v2": 596,
+   "anchor": [
+    "v3",
+    "la",
+    "rhenum",
+    ""
+   ],
+   "action": "move",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Textes latins (Cesar, correspondances) : le Rhin, fleuve. Le point néerlandais (Rhenen) est un homonyme.",
+   "lat": 50.4,
+   "lon": 7.6,
+   "kind": "n",
+   "radius_km": 250,
+   "label": "Rhine"
+  },
+  {
+   "id_v2": "ml2:747",
+   "name_v2": "Duͤringen",
+   "n_v2": 47,
+   "anchor": [
+    "v3",
+    "de",
+    "duͤringen",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "« Land zu Düringen », Eisenach, Meissen : la Thuringe. Le point de Westerwald est faux.",
+   "into_anchor": [
+    "v1",
+    "en",
+    "thuringia",
+    ""
+   ],
+   "into_id_v2": "ml2:172",
+   "into_name_v2": "Thuringia"
+  },
+  {
+   "id_v2": "ml2:884",
+   "name_v2": "Edenburg",
+   "n_v2": 36,
+   "anchor": [
+    "v3",
+    "de",
+    "edenburg",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "« Parlament zu Edenburg », Schotten : Édimbourg. Le point de Bade est faux.",
+   "into_anchor": [
+    "v1",
+    "en",
+    "edinburgh",
+    ""
+   ],
+   "into_id_v2": "ml2:89",
+   "into_name_v2": "Edinburgh"
+  },
+  {
+   "id_v2": "ml2:1141",
+   "name_v2": "Groͤningen",
+   "n_v2": 22,
+   "anchor": [
+    "v3",
+    "de",
+    "groͤningen",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Provinces-Unies, universités de Groningue et de Franeker : Groningue (Pays-Bas), pas Gröningen en Saxe-Anhalt.",
+   "into_anchor": [
+    "v1",
+    "en",
+    "groningen",
+    ""
+   ],
+   "into_id_v2": "ml2:394",
+   "into_name_v2": "Groningen"
+  },
+  {
+   "id_v2": "ml2:1434",
+   "name_v2": "Rüssel",
+   "n_v2": 15,
+   "anchor": [
+    "v3",
+    "de",
+    "rüssel",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "« Tractaten zu Rüssel » entre l'Espagne et la France, 1680 : Bruxelles (graphie Rüssel). Le point de Basse-Saxe est faux.",
+   "into_anchor": [
+    "v1",
+    "en",
+    "brussels",
+    ""
+   ],
+   "into_id_v2": "ml2:40",
+   "into_name_v2": "Brussels"
+  },
+  {
+   "id_v2": "ml2:1547",
+   "name_v2": "Bemont",
+   "n_v2": 13,
+   "anchor": [
+    "v3",
+    "de",
+    "bemont",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "« im Monferrat vnd Bemont » : le Piémont. Le point des Vosges est faux.",
+   "into_anchor": [
+    "v1",
+    "en",
+    "piedmont",
+    ""
+   ],
+   "into_id_v2": "ml2:338",
+   "into_name_v2": "Piedmont"
+  },
+  {
+   "id_v2": "ml2:1489",
+   "name_v2": "Gelle",
+   "n_v2": 14,
+   "anchor": [
+    "v3",
+    "fr",
+    "gelle",
+    ""
+   ],
+   "action": "merge",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Traduction française de Plutarque, Agrigente et « Gellias » : Gela (Sicile). Le point de l'Aveyron est faux.",
+   "into_anchor": [
+    "v1",
+    "it",
+    "gela",
+    ""
+   ],
+   "into_id_v2": "ml2:1376",
+   "into_name_v2": "Gela"
+  },
+  {
+   "id_v2": "ml2:1319",
+   "name_v2": "Gomera",
+   "n_v2": 17,
+   "anchor": [
+    "v3",
+    "de",
+    "gomera",
+    ""
+   ],
+   "action": "move",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Îles Canaries (Teneriffa, Gomera, Palma, Ferro) : La Gomera. Le point lombard est faux.",
+   "lat": 28.1,
+   "lon": -17.11,
+   "kind": "a",
+   "radius_km": 25,
+   "label": "La Gomera"
+  },
+  {
+   "id_v2": "ml2:695",
+   "name_v2": "Ramstein",
+   "n_v2": 53,
+   "anchor": [
+    "v3",
+    "de",
+    "ramstein",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Comptes de Bâle : Ramstein (Bretzwil, Bâle-Campagne). Le point palatin est faux, le point exact n'est pas vérifié."
+  },
+  {
+   "id_v2": "ml2:837",
+   "name_v2": "Landsberg",
+   "n_v2": 39,
+   "anchor": [
+    "v3",
+    "de",
+    "landsberg",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Guerre de Trente Ans, Poméranie : Landsberg an der Warthe ou am Lech selon le contexte. Le point de Saxe-Anhalt est faux ; sans point."
+  },
+  {
+   "id_v2": "ml2:1315",
+   "name_v2": "Augustana",
+   "n_v2": 17,
+   "anchor": [
+    "v3",
+    "la",
+    "augustana",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "« Confessio Augustana », « ecclesia Augustana » : adjectif d'Augsbourg, pas un lieu. Le point du Piémont est faux."
+  },
+  {
+   "id_v2": "ml2:1435",
+   "name_v2": "Rickenbach",
+   "n_v2": 15,
+   "anchor": [
+    "v3",
+    "de",
+    "rickenbach",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Comptes de Bâle : Rickenbach (Bâle-Campagne), près de Liestal. Le point zurichois est faux ; sans point."
+  },
+  {
+   "id_v2": "ml2:1730",
+   "name_v2": "Bencken",
+   "n_v2": 11,
+   "anchor": [
+    "v3",
+    "de",
+    "bencken",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "relecture v3 2026-10-23",
+   "reason_fr": "Comptes de Bâle : Benken (Bâle-Campagne) près de Münchenstein. Le point zurichois est faux ; sans point."
+  },
+  {
+   "id_v2": "ml2:1717",
+   "name_v2": "Neutra",
+   "n_v2": 11,
+   "anchor": [
+    "v3",
+    "de",
+    "neutra",
+    ""
+   ],
+   "action": "move",
+   "audit": "relecture v3 2026-10-28",
+   "reason_fr": "Neutra, Lovenz, Türcken (1663-64) : la ville de Nitra (Slovaquie, Q26397), pas la rivière Nitra. Le point reste à part : le second regroupement le fondait dans un point « Nitria » de 5 mentions, resté sur l'ancien emplacement, à 30 km.",
+   "lat": 48.314722,
+   "lon": 18.0875,
+   "kind": "c",
+   "radius_km": 25,
+   "label": "Nitra",
+   "no_merge": true
+  },
+  {
+   "id_v2": "ml2:1133",
+   "name_v2": "Ruhr",
+   "n_v2": 22,
+   "anchor": [
+    "v3",
+    "de",
+    "ruhr",
+    ""
+   ],
+   "action": "unplace",
+   "audit": "contre-relecture v3 2026-10-28",
+   "reason_fr": "9 des 22 mentions sont la dysenterie (« die Ruhr », Hohberg, Zwinger, Walter, Franciscus 1684) ; les 13 autres visent surtout la Roer/Rur (Jülich, Linnich, 1673). Mélange impossible à séparer par forme : sans point."
+  },
+  {
+   "id_v2": "ml2:945",
+   "name_v2": "Blackwall",
+   "n_v2": 19,
+   "anchor": [
+    "v1",
+    "en",
+    "blackheath",
+    ""
+   ],
+   "action": "forms_move",
+   "audit": "doublons v29 2026-10-28",
+   "reason_fr": "La forme « Blackheath » (5 mentions, 4 documents) était rangée dans le point Blackwall (Londres), à 5,1 km : le géocodeur la place à Blackheath (GeoNames, 51,4647 ; 0,0079) mais le rayon de regroupement de 5 km l'avait avalée. Elle devient un point à elle.",
+   "forms": [
+    "Blackheath"
+   ],
+   "lat": 51.4647,
+   "lon": 0.0079,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Blackheath"
+  }
+ ]
+}

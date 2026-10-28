@@ -1,0 +1,5 @@
+# NER v2.1 (RenNER) lowercase-augmentation runs, mDeBERTa first (same format as ner3_train_v2_runs.tsv); run with TV_DIR=~/renascor-atlas-data/ner/train_v21
+v21_mdeberta_lc12|MIX_SFULL_LC12|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_lc25|MIX_SFULL_LC25|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_lc12n|MIX_SFULL_LC12N|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_ctrl|MIX_SFULL_V21|microsoft/mdeberta-v3-base|3e-5|25|any||

@@ -1,0 +1,86 @@
+[
+ {
+  "lang": "la",
+  "text": "Postquam Cosmas Medices Florentiae rediit, Venetias legatum misit ad Senatum, et flumen Padum memorat.",
+  "places": [
+   "Florentiae",
+   "Venetias",
+   "Padum"
+  ],
+  "persons": [
+   "Cosmas Medices"
+  ]
+ },
+ {
+  "lang": "la",
+  "text": "Ioannes Kepler in urbe Lincii Tabulas Rudolphinas edidit, ad Pragam missas.",
+  "places": [
+   "Lincii",
+   "Pragam"
+  ],
+  "persons": [
+   "Ioannes Kepler"
+  ]
+ },
+ {
+  "lang": "it",
+  "text": "Messer Andrea Doria partì da Genova per Napoli, et il re di Francia stava in Lione.",
+  "places": [
+   "Genova",
+   "Napoli",
+   "Lione"
+  ],
+  "persons": [
+   "Andrea Doria"
+  ],
+  "note": "'re di Francia' is a metonymy for the sovereign: not marked"
+ },
+ {
+  "lang": "it",
+  "text": "Fra Girolamo Savonarola predicò nel duomo di Firenze contra Alessandro VI.",
+  "places": [
+   "Firenze"
+  ],
+  "persons": [
+   "Girolamo Savonarola",
+   "Alessandro VI"
+  ]
+ },
+ {
+  "lang": "es",
+  "text": "El capitan Hernan Cortes salio de la Habana para Mexico, y don Diego Velazquez quedo en Cuba.",
+  "places": [
+   "Habana",
+   "Mexico",
+   "Cuba"
+  ],
+  "persons": [
+   "Hernan Cortes",
+   "Diego Velazquez"
+  ]
+ },
+ {
+  "lang": "es",
+  "text": "Fray Luis de Leon enseño en Salamanca, y Felipe II mando que se imprimiesse en Madrid.",
+  "places": [
+   "Salamanca",
+   "Madrid"
+  ],
+  "persons": [
+   "Luis de Leon",
+   "Felipe II"
+  ]
+ },
+ {
+  "lang": "es",
+  "text": "Dixo el doctor Villalobos que la Corte estaua en Valladolid, y que Sevilla era grande.",
+  "places": [
+   "Valladolid",
+   "Sevilla"
+  ],
+  "persons": [
+   "Villalobos"
+  ],
+  "note": "'la Corte' is not a place name"
+ }
+]

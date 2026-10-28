@@ -1,0 +1,5 @@
+# NER v2 (RenNER) training grid, read by scripts/ner3_train_task.sh. One line per run, in claim order:
+# name|mix variable (scripts/ner_mixes.sh)|model|lr|minimum minutes left to start it|GPU (a100 = needs an 80 GB A100; any)|extra arguments of ratlas.ner.train|extra arguments on a smaller GPU (L40S 48 GB; empty = the same)
+# The memory settings do not change the computation (encoders_prep.md §2): a run may resume on another GPU type with the other settings.
+v2_xlmrxl_Sbal|MIX_SBAL|facebook/xlm-roberta-xl|2e-5|45|a100|--head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 60|
+v2_xlmrxl_Sfull|MIX_SFULL|facebook/xlm-roberta-xl|2e-5|45|a100|--head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 60|

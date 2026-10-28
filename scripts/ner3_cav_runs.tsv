@@ -1,0 +1,3 @@
+# Cavriana transfer test: name|mix variable (ner3_cav_mixes.sh)|model|lr. Same recipe as v2_mdeberta_Sfull and r3_mdeberta_HM.
+cav_mdeberta_Sfull|MIX_SFULL_NOCAV|microsoft/mdeberta-v3-base|3e-5
+cav_mdeberta_HM|MIX_HM_NOCAV|microsoft/mdeberta-v3-base|3e-5

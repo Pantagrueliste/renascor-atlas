@@ -1,0 +1,2698 @@
+{
+ "note": "Passe 2 (23 oct. 2026) : verdicts du balayage des 351 points de la couche modèle v2. Chaque entrée vise un point de la sortie v2 du 22 oct. par son 'anchor' = [run, langue, clé, variante] de sa forme la plus fréquente (les ids ml2 changent d'une exécution à l'autre). Actions : drop (pas un lieu), unplace (incertain), move (nouvelles coordonnées, genre, rayon), merge (dans le point 'into_anchor'), relabel, clean (retire des formes). Appliqué par scripts/ner2_layer_fix.py. Ajouts du contrôle du 23 oct. (7 entrées, ids_v2 de la sortie du 23 oct.). Audit des homonymes (23 oct., soir) : 62 entrées 'audit' (60 verdicts lus dans le contexte, 2 par la règle des noms antiques) (Béthulie au Bangladesh, villes de Nouvelle-Angleterre fusionnées avec leurs homonymes anglais, mots communs espagnols placés au Mexique...). Nouvelle action split : les mentions des collections 'collections' quittent le point et restent sans point.",
+ "counts": {
+  "drop": 27,
+  "unplace": 36,
+  "move": 56,
+  "merge": 16,
+  "relabel": 14,
+  "clean": 5,
+  "split": 17
+ },
+ "entries": [
+  {
+   "id_v2": "ml2:645",
+   "name_v2": "Gaula",
+   "n_v2": 39,
+   "anchor": [
+    "es",
+    "es",
+    "gaula",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Royaume fictif d'Amadis de Gaula."
+  },
+  {
+   "id_v2": "ml2:817",
+   "name_v2": "Occidente",
+   "n_v2": 25,
+   "anchor": [
+    "es",
+    "es",
+    "occidente",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Nom commun (l'occident)."
+  },
+  {
+   "id_v2": "ml2:1092",
+   "name_v2": "Rojas",
+   "n_v2": 15,
+   "anchor": [
+    "es",
+    "es",
+    "rojas",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Patronyme."
+  },
+  {
+   "id_v2": "ml2:1021",
+   "name_v2": "Ayala",
+   "n_v2": 17,
+   "anchor": [
+    "es",
+    "es",
+    "ayala",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Surtout un patronyme."
+  },
+  {
+   "id_v2": "ml2:628",
+   "name_v2": "Haro",
+   "n_v2": 40,
+   "anchor": [
+    "es",
+    "es",
+    "haro",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Patronyme et lignage."
+  },
+  {
+   "id_v2": "ml2:629",
+   "name_v2": "Libra",
+   "n_v2": 40,
+   "anchor": [
+    "es",
+    "es",
+    "libra",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Signe du zodiaque et poids."
+  },
+  {
+   "id_v2": "ml2:1303",
+   "name_v2": "Gomara",
+   "n_v2": 11,
+   "anchor": [
+    "es",
+    "es",
+    "gomara",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Surtout le chroniqueur López de Gómara."
+  },
+  {
+   "id_v2": "ml2:1337",
+   "name_v2": "Biblis",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "de",
+    "biblis",
+    ""
+   ],
+   "action": "drop",
+   "reason_fr": "Ville fictive du roman d'Anton Ulrich."
+  },
+  {
+   "id_v2": "ml2:885",
+   "name_v2": "Galacia",
+   "n_v2": 22,
+   "anchor": [
+    "es",
+    "es",
+    "galacia",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Galacia: ville fictive, Galatie ou Galice."
+  },
+  {
+   "id_v2": "ml2:640",
+   "name_v2": "Cales",
+   "n_v2": 40,
+   "anchor": [
+    "v1",
+    "en",
+    "cales",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Cales: Calais, Cadix ou Cales antique."
+  },
+  {
+   "id_v2": "ml2:404",
+   "name_v2": "Romania",
+   "n_v2": 86,
+   "anchor": [
+    "v1",
+    "en",
+    "romania",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Romania: Romagne, Romanie byzantine ou pays fictif."
+  },
+  {
+   "id_v2": "ml2:729",
+   "name_v2": "Gothland",
+   "n_v2": 32,
+   "anchor": [
+    "v1",
+    "en",
+    "gothland",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Gothland: Gothie ou île de Gotland."
+  },
+  {
+   "id_v2": "ml2:732",
+   "name_v2": "Truxillo",
+   "n_v2": 31,
+   "anchor": [
+    "es",
+    "es",
+    "truxillo",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Truxillo: plusieurs Trujillo."
+  },
+  {
+   "id_v2": "ml2:827",
+   "name_v2": "Carrion",
+   "n_v2": 25,
+   "anchor": [
+    "es",
+    "es",
+    "carrion",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Carrion: fleuve ou pueblo des Indes."
+  },
+  {
+   "id_v2": "ml2:857",
+   "name_v2": "Succoth",
+   "n_v2": 24,
+   "anchor": [
+    "v1",
+    "en",
+    "succoth",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Succoth: site biblique non certain."
+  },
+  {
+   "id_v2": "ml2:863",
+   "name_v2": "Cobham",
+   "n_v2": 24,
+   "anchor": [
+    "v1",
+    "en",
+    "cobham",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Cobham: Surrey ou Kent."
+  },
+  {
+   "id_v2": "ml2:971",
+   "name_v2": "Cefala",
+   "n_v2": 19,
+   "anchor": [
+    "v1",
+    "it",
+    "cefala",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Cefala: Sofala ou toponyme sicilien."
+  },
+  {
+   "id_v2": "ml2:1003",
+   "name_v2": "Charleton",
+   "n_v2": 18,
+   "anchor": [
+    "v1",
+    "en",
+    "charleton",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Charleton: plusieurs Charlton."
+  },
+  {
+   "id_v2": "ml2:1152",
+   "name_v2": "Charlemont",
+   "n_v2": 14,
+   "anchor": [
+    "v1",
+    "en",
+    "charlemont",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Charlemont: Ulster ou Givet."
+  },
+  {
+   "id_v2": "ml2:1178",
+   "name_v2": "Trevi",
+   "n_v2": 14,
+   "anchor": [
+    "v1",
+    "it",
+    "trevi",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Trevi / Trebbia mêlés."
+  },
+  {
+   "id_v2": "ml2:1207",
+   "name_v2": "Langham",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "langham",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Langham: plusieurs."
+  },
+  {
+   "id_v2": "ml2:1208",
+   "name_v2": "Downham",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "downham",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Downham: plusieurs."
+  },
+  {
+   "id_v2": "ml2:1214",
+   "name_v2": "Bray",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "bray",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Bray: France ou Berkshire."
+  },
+  {
+   "id_v2": "ml2:1220",
+   "name_v2": "Stretham",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "stretham",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Stretham / Streatham mêlés."
+  },
+  {
+   "id_v2": "ml2:1238",
+   "name_v2": "North Petherton",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "north petherton",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "North Petherton, North Curry, North Newton mêlés."
+  },
+  {
+   "id_v2": "ml2:1256",
+   "name_v2": "Berkley",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "berkley",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Berkley: Berkeley probable, non sûr."
+  },
+  {
+   "id_v2": "ml2:1327",
+   "name_v2": "Dordon",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "en",
+    "dordon",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Dordon: rivière ou ville de roman."
+  },
+  {
+   "id_v2": "ml2:769",
+   "name_v2": "Mancha",
+   "n_v2": 28,
+   "anchor": [
+    "es",
+    "es",
+    "mancha",
+    ""
+   ],
+   "action": "move",
+   "lat": 39,
+   "lon": -3,
+   "kind": "a",
+   "radius_km": 100,
+   "remove_forms": [
+    "Manica"
+   ]
+  },
+  {
+   "id_v2": "ml2:797",
+   "name_v2": "Mechoacan",
+   "n_v2": 26,
+   "anchor": [
+    "es",
+    "es",
+    "mechoacan",
+    ""
+   ],
+   "action": "move",
+   "lat": 19.2,
+   "lon": -101.9,
+   "kind": "a",
+   "radius_km": 130
+  },
+  {
+   "id_v2": "ml2:631",
+   "name_v2": "Tevere",
+   "n_v2": 40,
+   "anchor": [
+    "v1",
+    "it",
+    "tevere",
+    ""
+   ],
+   "action": "move",
+   "lat": 42.2,
+   "lon": 12.35,
+   "kind": "n",
+   "radius_km": 90
+  },
+  {
+   "id_v2": "ml2:333",
+   "name_v2": "Marocco",
+   "n_v2": 122,
+   "anchor": [
+    "v1",
+    "en",
+    "marocco",
+    ""
+   ],
+   "action": "move",
+   "lat": 32,
+   "lon": -6,
+   "kind": "a",
+   "radius_km": 350
+  },
+  {
+   "id_v2": "ml2:29",
+   "name_v2": "Flanders",
+   "n_v2": 1580,
+   "anchor": [
+    "v1",
+    "en",
+    "flanders",
+    ""
+   ],
+   "action": "move",
+   "lat": 51,
+   "lon": 3.7,
+   "kind": "a",
+   "radius_km": 80,
+   "label": "Flanders"
+  },
+  {
+   "id_v2": "ml2:108",
+   "name_v2": "Cilicia",
+   "n_v2": 476,
+   "anchor": [
+    "v1",
+    "en",
+    "cilicia",
+    ""
+   ],
+   "action": "move",
+   "lat": 37,
+   "lon": 35,
+   "kind": "a",
+   "radius_km": 120
+  },
+  {
+   "id_v2": "ml2:231",
+   "name_v2": "Iaponia",
+   "n_v2": 186,
+   "anchor": [
+    "v1",
+    "en",
+    "iaponia",
+    ""
+   ],
+   "action": "move",
+   "lat": 36,
+   "lon": 138,
+   "kind": "a",
+   "radius_km": 600,
+   "label": "Japan"
+  },
+  {
+   "id_v2": "ml2:278",
+   "name_v2": "Basan",
+   "n_v2": 149,
+   "anchor": [
+    "v1",
+    "de",
+    "basan",
+    ""
+   ],
+   "action": "move",
+   "lat": 32.85,
+   "lon": 36,
+   "kind": "a",
+   "radius_km": 60,
+   "label": "Bashan"
+  },
+  {
+   "id_v2": "ml2:285",
+   "name_v2": "Piedmont",
+   "n_v2": 144,
+   "anchor": [
+    "v1",
+    "en",
+    "piedmont",
+    ""
+   ],
+   "action": "move",
+   "lat": 45,
+   "lon": 7.9,
+   "kind": "a",
+   "radius_km": 100
+  },
+  {
+   "id_v2": "ml2:317",
+   "name_v2": "Hartford",
+   "n_v2": 131,
+   "anchor": [
+    "v1",
+    "en",
+    "hartford",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.796,
+   "lon": -0.078,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Hertford",
+   "forms_into": {
+    "forms": [
+     "Hartford-shire",
+     "Hartford shire"
+    ],
+    "into_anchor": [
+     "v1",
+     "en",
+     "hartfordshire",
+     ""
+    ],
+    "into_id_v2": "ml2:303"
+   }
+  },
+  {
+   "id_v2": "ml2:423",
+   "name_v2": "Artois",
+   "n_v2": 81,
+   "anchor": [
+    "v1",
+    "en",
+    "artois",
+    ""
+   ],
+   "action": "move",
+   "lat": 50.45,
+   "lon": 2.5,
+   "kind": "a",
+   "radius_km": 50
+  },
+  {
+   "id_v2": "ml2:433",
+   "name_v2": "Garonne",
+   "n_v2": 79,
+   "anchor": [
+    "v1",
+    "fr",
+    "garonne",
+    ""
+   ],
+   "action": "move",
+   "lat": 44.4,
+   "lon": 0.4,
+   "kind": "n",
+   "radius_km": 150
+  },
+  {
+   "id_v2": "ml2:534",
+   "name_v2": "Cuba",
+   "n_v2": 57,
+   "anchor": [
+    "v1",
+    "en",
+    "cuba",
+    ""
+   ],
+   "action": "move",
+   "lat": 21.8,
+   "lon": -79,
+   "kind": "a",
+   "radius_km": 450
+  },
+  {
+   "id_v2": "ml2:554",
+   "name_v2": "Rhone",
+   "n_v2": 53,
+   "anchor": [
+    "v1",
+    "en",
+    "rhone",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.2,
+   "lon": 4.8,
+   "kind": "n",
+   "radius_km": 150
+  },
+  {
+   "id_v2": "ml2:556",
+   "name_v2": "Rumford",
+   "n_v2": 52,
+   "anchor": [
+    "v1",
+    "en",
+    "rumford",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.5756,
+   "lon": 0.1832,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:585",
+   "name_v2": "Ticino",
+   "n_v2": 46,
+   "anchor": [
+    "v1",
+    "it",
+    "ticino",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.6,
+   "lon": 8.85,
+   "kind": "n",
+   "radius_km": 70
+  },
+  {
+   "id_v2": "ml2:603",
+   "name_v2": "Toscane",
+   "n_v2": 43,
+   "anchor": [
+    "v1",
+    "fr",
+    "toscane",
+    ""
+   ],
+   "action": "move",
+   "lat": 43.35,
+   "lon": 11.1,
+   "kind": "a",
+   "radius_km": 100
+  },
+  {
+   "id_v2": "ml2:606",
+   "name_v2": "Agrigento",
+   "n_v2": 42,
+   "anchor": [
+    "v1",
+    "it",
+    "agrigento",
+    ""
+   ],
+   "action": "move",
+   "lat": 37.311,
+   "lon": 13.577,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:622",
+   "name_v2": "Candie",
+   "n_v2": 41,
+   "anchor": [
+    "v1",
+    "en",
+    "candie",
+    ""
+   ],
+   "action": "move",
+   "lat": 35.24,
+   "lon": 24.81,
+   "kind": "a",
+   "radius_km": 130,
+   "label": "Crete"
+  },
+  {
+   "id_v2": "ml2:663",
+   "name_v2": "Vistula",
+   "n_v2": 37,
+   "anchor": [
+    "v1",
+    "la",
+    "vistula",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.8,
+   "lon": 20.9,
+   "kind": "n",
+   "radius_km": 280,
+   "label": "Vistula"
+  },
+  {
+   "id_v2": "ml2:668",
+   "name_v2": "Bierne",
+   "n_v2": 37,
+   "anchor": [
+    "v1",
+    "en",
+    "bierne",
+    ""
+   ],
+   "action": "move",
+   "lat": 43.3,
+   "lon": -0.6,
+   "kind": "a",
+   "radius_km": 50,
+   "label": "Béarn"
+  },
+  {
+   "id_v2": "ml2:734",
+   "name_v2": "Warham",
+   "n_v2": 31,
+   "anchor": [
+    "v1",
+    "en",
+    "warham",
+    ""
+   ],
+   "action": "move",
+   "lat": 50.686,
+   "lon": -2.11,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Wareham"
+  },
+  {
+   "id_v2": "ml2:741",
+   "name_v2": "Santarén",
+   "n_v2": 30,
+   "anchor": [
+    "es",
+    "es",
+    "santarén",
+    ""
+   ],
+   "action": "move",
+   "lat": 39.2362,
+   "lon": -8.6859,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Santarém"
+  },
+  {
+   "id_v2": "ml2:745",
+   "name_v2": "Melano",
+   "n_v2": 30,
+   "anchor": [
+    "v1",
+    "it",
+    "melano",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.4642,
+   "lon": 9.19,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Milan"
+  },
+  {
+   "id_v2": "ml2:834",
+   "name_v2": "Nubia",
+   "n_v2": 25,
+   "anchor": [
+    "v1",
+    "it",
+    "nubia",
+    ""
+   ],
+   "action": "move",
+   "lat": 21,
+   "lon": 31,
+   "kind": "a",
+   "radius_km": 450
+  },
+  {
+   "id_v2": "ml2:835",
+   "name_v2": "Radnor",
+   "n_v2": 25,
+   "anchor": [
+    "v1",
+    "en",
+    "radnor",
+    ""
+   ],
+   "action": "move",
+   "lat": 52.3,
+   "lon": -3.2,
+   "kind": "a",
+   "radius_km": 30,
+   "label": "Radnorshire"
+  },
+  {
+   "id_v2": "ml2:904",
+   "name_v2": "Lusatia",
+   "n_v2": 22,
+   "anchor": [
+    "v1",
+    "en",
+    "lusatia",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.4,
+   "lon": 14.6,
+   "kind": "a",
+   "radius_km": 70
+  },
+  {
+   "id_v2": "ml2:937",
+   "name_v2": "Lusitaniam",
+   "n_v2": 20,
+   "anchor": [
+    "v1",
+    "la",
+    "lusitaniam",
+    ""
+   ],
+   "action": "move",
+   "lat": 39.6,
+   "lon": -8,
+   "kind": "a",
+   "radius_km": 150,
+   "label": "Lusitania (Portugal)"
+  },
+  {
+   "id_v2": "ml2:939",
+   "name_v2": "Mestrina",
+   "n_v2": 20,
+   "anchor": [
+    "v1",
+    "it",
+    "mestrina",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.4906,
+   "lon": 12.238,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Mestre"
+  },
+  {
+   "id_v2": "ml2:952",
+   "name_v2": "Manzanares",
+   "n_v2": 19,
+   "anchor": [
+    "es",
+    "es",
+    "manzanares",
+    ""
+   ],
+   "action": "move",
+   "lat": 40.42,
+   "lon": -3.72,
+   "kind": "n",
+   "radius_km": 15
+  },
+  {
+   "id_v2": "ml2:967",
+   "name_v2": "Burntwood",
+   "n_v2": 19,
+   "anchor": [
+    "v1",
+    "en",
+    "burntwood",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.6214,
+   "lon": 0.3055,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Brentwood"
+  },
+  {
+   "id_v2": "ml2:976",
+   "name_v2": "Lenton",
+   "n_v2": 19,
+   "anchor": [
+    "v1",
+    "en",
+    "lenton",
+    ""
+   ],
+   "action": "move",
+   "lat": 52.94,
+   "lon": -1.18,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:977",
+   "name_v2": "Maremma",
+   "n_v2": 19,
+   "anchor": [
+    "v1",
+    "it",
+    "maremma",
+    ""
+   ],
+   "action": "move",
+   "lat": 42.75,
+   "lon": 11.1,
+   "kind": "a",
+   "radius_km": 70
+  },
+  {
+   "id_v2": "ml2:1015",
+   "name_v2": "Valdarno",
+   "n_v2": 18,
+   "anchor": [
+    "v1",
+    "it",
+    "valdarno",
+    ""
+   ],
+   "action": "move",
+   "lat": 43.65,
+   "lon": 11.4,
+   "kind": "a",
+   "radius_km": 35
+  },
+  {
+   "id_v2": "ml2:1025",
+   "name_v2": "Limousin",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "en",
+    "limousin",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.688,
+   "lon": 1.6205,
+   "kind": "a",
+   "radius_km": 70
+  },
+  {
+   "id_v2": "ml2:1050",
+   "name_v2": "Lonà",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "it",
+    "lonà",
+    ""
+   ],
+   "action": "move",
+   "lat": 45.4614,
+   "lon": 10.4829,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Lonato"
+  },
+  {
+   "id_v2": "ml2:1129",
+   "name_v2": "Mozambicum",
+   "n_v2": 15,
+   "anchor": [
+    "v1",
+    "en",
+    "mozambicum",
+    ""
+   ],
+   "action": "move",
+   "lat": -15.0333,
+   "lon": 40.7333,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Mozambique Island"
+  },
+  {
+   "id_v2": "ml2:1144",
+   "name_v2": "Rossia",
+   "n_v2": 15,
+   "anchor": [
+    "v1",
+    "it",
+    "rossia",
+    ""
+   ],
+   "action": "move",
+   "lat": 55,
+   "lon": 37,
+   "kind": "a",
+   "radius_km": 700,
+   "label": "Russia"
+  },
+  {
+   "id_v2": "ml2:1192",
+   "name_v2": "Ronda",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "ronda",
+    ""
+   ],
+   "action": "move",
+   "lat": 36.7424,
+   "lon": -5.1672,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:1205",
+   "name_v2": "Anwick",
+   "n_v2": 13,
+   "anchor": [
+    "v1",
+    "en",
+    "anwick",
+    ""
+   ],
+   "action": "move",
+   "lat": 55.4128,
+   "lon": -1.7068,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Alnwick"
+  },
+  {
+   "id_v2": "ml2:1260",
+   "name_v2": "Little Compton",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "little compton",
+    ""
+   ],
+   "action": "move",
+   "lat": 41.5101,
+   "lon": -71.1645,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:1277",
+   "name_v2": "Tregony",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "tregony",
+    ""
+   ],
+   "action": "move",
+   "lat": 50.26101,
+   "lon": -4.93161,
+   "kind": "c",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:1317",
+   "name_v2": "Mugello",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "it",
+    "mugello",
+    ""
+   ],
+   "action": "move",
+   "lat": 43.97,
+   "lon": 11.38,
+   "kind": "a",
+   "radius_km": 15
+  },
+  {
+   "id_v2": "ml2:1325",
+   "name_v2": "Glaston",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "en",
+    "glaston",
+    ""
+   ],
+   "action": "move",
+   "lat": 51.148,
+   "lon": -2.714,
+   "kind": "c",
+   "radius_km": null,
+   "label": "Glastonbury"
+  },
+  {
+   "id_v2": "ml2:1371",
+   "name_v2": "Mesia",
+   "n_v2": 11,
+   "anchor": [
+    "es",
+    "es",
+    "mesia",
+    ""
+   ],
+   "action": "move",
+   "lat": 43.8,
+   "lon": 23,
+   "kind": "a",
+   "radius_km": 250,
+   "label": "Moesia"
+  },
+  {
+   "id_v2": "ml2:215",
+   "name_v2": "Aragon",
+   "n_v2": 205,
+   "anchor": [
+    "v1",
+    "en",
+    "aragon",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "es",
+    "es",
+    "aragon",
+    ""
+   ],
+   "into_id_v2": "ml2:43",
+   "into_name_v2": "Aragon"
+  },
+  {
+   "id_v2": "ml2:163",
+   "name_v2": "India",
+   "n_v2": 307,
+   "anchor": [
+    "v1",
+    "la",
+    "india",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "india",
+    ""
+   ],
+   "into_id_v2": "ml2:129",
+   "into_name_v2": "India",
+   "exclude_forms": [
+    "Yndias"
+   ]
+  },
+  {
+   "id_v2": "ml2:558",
+   "name_v2": "Swede",
+   "n_v2": 52,
+   "anchor": [
+    "v1",
+    "it",
+    "svezia",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "sweden",
+    ""
+   ],
+   "into_id_v2": "ml2:94",
+   "into_name_v2": "Sweden"
+  },
+  {
+   "id_v2": "ml2:258",
+   "name_v2": "Argel",
+   "n_v2": 168,
+   "anchor": [
+    "es",
+    "es",
+    "argel",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "algiers",
+    ""
+   ],
+   "into_id_v2": "ml2:527",
+   "into_name_v2": "Algier"
+  },
+  {
+   "id_v2": "ml2:654",
+   "name_v2": "Leodium",
+   "n_v2": 39,
+   "anchor": [
+    "v1",
+    "la",
+    "leodium",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "liege",
+    ""
+   ],
+   "into_id_v2": "ml2:345",
+   "into_name_v2": "Liège"
+  },
+  {
+   "id_v2": "ml2:1027",
+   "name_v2": "Dornic",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "en",
+    "dornic",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "tournay",
+    ""
+   ],
+   "into_id_v2": "ml2:481",
+   "into_name_v2": "Tournay"
+  },
+  {
+   "id_v2": "ml2:917",
+   "name_v2": "Rhodum",
+   "n_v2": 21,
+   "anchor": [
+    "v1",
+    "la",
+    "rhodum",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "rodes",
+    ""
+   ],
+   "into_id_v2": "ml2:499",
+   "into_name_v2": "Rodes"
+  },
+  {
+   "id_v2": "ml2:1000",
+   "name_v2": "Perpiñán",
+   "n_v2": 18,
+   "anchor": [
+    "es",
+    "es",
+    "perpiñán",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "perpignan",
+    ""
+   ],
+   "into_id_v2": "ml2:369",
+   "into_name_v2": "Perpignan"
+  },
+  {
+   "id_v2": "ml2:921",
+   "name_v2": "Malines",
+   "n_v2": 21,
+   "anchor": [
+    "v1",
+    "en",
+    "malines",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "mechlin",
+    ""
+   ],
+   "into_id_v2": "ml2:528",
+   "into_name_v2": "Mechlin"
+  },
+  {
+   "id_v2": "ml2:583",
+   "name_v2": "Lucernam",
+   "n_v2": 47,
+   "anchor": [
+    "v1",
+    "la",
+    "lucernam",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "lucerne",
+    ""
+   ],
+   "into_id_v2": "ml2:450",
+   "into_name_v2": "Lucerne"
+  },
+  {
+   "id_v2": "ml2:54",
+   "name_v2": "Flandres",
+   "n_v2": 904,
+   "anchor": [
+    "v1",
+    "it",
+    "fiandra",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "flanders",
+    ""
+   ],
+   "into_id_v2": "ml2:29",
+   "into_name_v2": "Flanders"
+  },
+  {
+   "id_v2": "ml2:336",
+   "name_v2": "Britannie",
+   "n_v2": 121,
+   "anchor": [
+    "v1",
+    "la",
+    "britanniam",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "britain",
+    ""
+   ],
+   "into_id_v2": "ml2:168",
+   "into_name_v2": "Britain"
+  },
+  {
+   "id_v2": "ml2:528",
+   "name_v2": "Mechlin",
+   "n_v2": 59,
+   "anchor": [
+    "v1",
+    "en",
+    "mechlin",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Mechelen",
+   "kind": "c"
+  },
+  {
+   "id_v2": "ml2:798",
+   "name_v2": "Carnarvon",
+   "n_v2": 26,
+   "anchor": [
+    "v1",
+    "en",
+    "carnarvon",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Caernarfon"
+  },
+  {
+   "id_v2": "ml2:944",
+   "name_v2": "Ragusa",
+   "n_v2": 20,
+   "anchor": [
+    "v1",
+    "en",
+    "ragusa",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Dubrovnik (Ragusa)"
+  },
+  {
+   "id_v2": "ml2:1137",
+   "name_v2": "Offenburgk",
+   "n_v2": 15,
+   "anchor": [
+    "v1",
+    "de",
+    "offenburg",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Offenburg"
+  },
+  {
+   "id_v2": "ml2:1173",
+   "name_v2": "Tanais",
+   "n_v2": 14,
+   "anchor": [
+    "v1",
+    "en",
+    "tanais",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Tanais (Don)"
+  },
+  {
+   "id_v2": "ml2:1185",
+   "name_v2": "Venesuela",
+   "n_v2": 14,
+   "anchor": [
+    "es",
+    "es",
+    "veneçuela",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Venezuela"
+  },
+  {
+   "id_v2": "ml2:1248",
+   "name_v2": "Wigtoun",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "wigtoun",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Wigtown"
+  },
+  {
+   "id_v2": "ml2:1263",
+   "name_v2": "Monfalcon",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "it",
+    "monfalcon",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Monfalcone"
+  },
+  {
+   "id_v2": "ml2:1311",
+   "name_v2": "Massachusets",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "en",
+    "massachusets",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Massachusetts"
+  },
+  {
+   "id_v2": "ml2:1320",
+   "name_v2": "Milford-Haven",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "en",
+    "milford-haven",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Milford Haven"
+  },
+  {
+   "id_v2": "ml2:133",
+   "name_v2": "Alpes",
+   "n_v2": 387,
+   "anchor": [
+    "v1",
+    "en",
+    "alpes",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Alps"
+  },
+  {
+   "id_v2": "ml2:303",
+   "name_v2": "Hartfordshire",
+   "n_v2": 136,
+   "anchor": [
+    "v1",
+    "en",
+    "hartfordshire",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Hertfordshire"
+  },
+  {
+   "id_v2": "ml2:1006",
+   "name_v2": "Dorchestre",
+   "n_v2": 18,
+   "anchor": [
+    "v1",
+    "en",
+    "dorchestre",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Dorchester on Thames"
+  },
+  {
+   "id_v2": "ml2:483",
+   "name_v2": "Leeds",
+   "n_v2": 67,
+   "anchor": [
+    "v1",
+    "en",
+    "leeds",
+    ""
+   ],
+   "action": "clean",
+   "remove_forms": [
+    "Lints"
+   ]
+  },
+  {
+   "id_v2": "ml2:1035",
+   "name_v2": "Thanet",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "en",
+    "thanet",
+    ""
+   ],
+   "action": "clean",
+   "remove_forms": [
+    "Saint Peters"
+   ]
+  },
+  {
+   "id_v2": "ml2:1368",
+   "name_v2": "Lyme Regis",
+   "n_v2": 11,
+   "anchor": [
+    "v1",
+    "en",
+    "lyme regis",
+    ""
+   ],
+   "action": "clean",
+   "remove_forms": [
+    "Lym"
+   ]
+  },
+  {
+   "id_v2": "ml2:608",
+   "name_v2": "Forlì",
+   "n_v2": 42,
+   "anchor": [
+    "v1",
+    "it",
+    "forlì",
+    ""
+   ],
+   "action": "clean",
+   "remove_forms": [
+    "Forlimpopoli"
+   ]
+  },
+  {
+   "id_v2": "ml2:851",
+   "name_v2": "Selkirk",
+   "n_v2": 24,
+   "anchor": [
+    "v1",
+    "en",
+    "selkirk",
+    ""
+   ],
+   "action": "clean",
+   "remove_forms": [
+    "Salcraig"
+   ]
+  },
+  {
+   "id_v2": "ml2:419",
+   "name_v2": "Hierosolymam",
+   "n_v2": 81,
+   "anchor": [
+    "v1",
+    "la",
+    "hierosolymam",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "ierusalem",
+    ""
+   ],
+   "into_id_v2": "ml2:10",
+   "into_name_v2": "Jerusalem",
+   "reason_fr": "Hierosolymam est Jérusalem en latin (contrôle du 23 oct.)."
+  },
+  {
+   "id_v2": "ml2:407",
+   "name_v2": "Rodes",
+   "n_v2": 84,
+   "anchor": [
+    "v1",
+    "en",
+    "rodes",
+    ""
+   ],
+   "action": "relabel",
+   "label": "Rhodes",
+   "kind": "c",
+   "reason_fr": "Le globe est en anglais : Rhodes."
+  },
+  {
+   "id_v2": "ml2:486",
+   "name_v2": "Litchfield",
+   "n_v2": 64,
+   "anchor": [
+    "v1",
+    "en",
+    "litchfield",
+    ""
+   ],
+   "action": "move",
+   "lat": 52.6819,
+   "lon": -1.8265,
+   "kind": "c",
+   "label": "Lichfield",
+   "reason_fr": "Deux contextes sur deux : Lichfield (Staffordshire), pas le hameau du Hampshire (contrôle du 23 oct.).",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:1019",
+   "name_v2": "Chilton",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "en",
+    "chilton",
+    ""
+   ],
+   "action": "unplace",
+   "reason_fr": "Homonyme : les deux contextes lus sont Chilton Foliat sur la route de Bath, pas Chilton (Buckinghamshire)."
+  },
+  {
+   "id_v2": "ml2:673",
+   "name_v2": "Japan",
+   "n_v2": 36,
+   "anchor": [
+    "v1",
+    "en",
+    "japan",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "iaponia",
+    ""
+   ],
+   "into_id_v2": "ml2:229",
+   "into_name_v2": "Japan",
+   "reason_fr": "Doublon de Japon (aire à 212 km)."
+  },
+  {
+   "id_v2": "ml2:1452",
+   "name_v2": "Epirus",
+   "n_v2": 9,
+   "anchor": [
+    "v1",
+    "la",
+    "epirus",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "epirus",
+    ""
+   ],
+   "into_id_v2": "ml2:297",
+   "into_name_v2": "Epirus",
+   "reason_fr": "Doublon d'Épire (aire à 56 km)."
+  },
+  {
+   "id_v2": "ml2:8901",
+   "name_v2": "Cor Sica",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "la",
+    "cor sica",
+    ""
+   ],
+   "action": "merge",
+   "into_anchor": [
+    "v1",
+    "en",
+    "corsica",
+    ""
+   ],
+   "into_id_v2": "ml2:138",
+   "into_name_v2": "Corsica",
+   "reason_fr": "Forme coupée de Corsica."
+  },
+  {
+   "id_v2": "ml2:813",
+   "name_v2": "Bethulia",
+   "n_v2": 25,
+   "anchor": [
+    "v1",
+    "en",
+    "bethulia",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Béthulie du livre de Judith, site non identifié avec certitude. Le point du Bangladesh vient d'une propagation de nom absurde (registre Bullinger l2382). Laisser sans point."
+  },
+  {
+   "id_v2": "ml2:1197",
+   "name_v2": "Groton",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "groton",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 42.61,
+   "lon": -71.57,
+   "kind": "c",
+   "reason_fr": "Les 11 mentions viennent de lois du Massachusetts (Evans) et d'un texte sur la sorcellerie de Groton (MA, 1671). Le point anglais est faux.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:696",
+   "name_v2": "Dedham",
+   "n_v2": 33,
+   "anchor": [
+    "v1",
+    "en",
+    "dedham",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Dedham (Essex) dans EEBO, Dedham (MA) dans Evans. À scinder par collection ; en attendant, sans point. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:609",
+   "name_v2": "Enfield",
+   "n_v2": 41,
+   "anchor": [
+    "v1",
+    "en",
+    "enfield",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Enfield (Middlesex) dans EEBO, homonyme de Nouvelle-Angleterre dans Evans. À scinder ; en attendant, sans point. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:517",
+   "name_v2": "Chelmsford",
+   "n_v2": 59,
+   "anchor": [
+    "v1",
+    "en",
+    "chelmsford",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Chelmsford (Essex) et Chelmsford (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:476",
+   "name_v2": "Newbury",
+   "n_v2": 67,
+   "anchor": [
+    "v1",
+    "en",
+    "newbury",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Newbury (Berkshire) et Newbury (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1105",
+   "name_v2": "Wrentham",
+   "n_v2": 15,
+   "anchor": [
+    "v1",
+    "en",
+    "wrentham",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Mixte : Evans = Wrentham (MA) ; EEBO = Wrentham (Suffolk). À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:606",
+   "name_v2": "Andover",
+   "n_v2": 41,
+   "anchor": [
+    "v1",
+    "en",
+    "andover",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Andover (Hampshire) et Andover (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:588",
+   "name_v2": "Falmouth",
+   "n_v2": 43,
+   "anchor": [
+    "v1",
+    "en",
+    "falmouth",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Falmouth (Cornouailles) et Falmouth de Nouvelle-Angleterre dans Evans. À scinder. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:478",
+   "name_v2": "Sudbury",
+   "n_v2": 66,
+   "anchor": [
+    "v1",
+    "en",
+    "sudbury",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Sudbury (Suffolk) et Sudbury (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:547",
+   "name_v2": "Tiverton",
+   "n_v2": 52,
+   "anchor": [
+    "v1",
+    "en",
+    "tiverton",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Tiverton (Devon) et Tiverton (Rhode Island) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1196",
+   "name_v2": "Boxford",
+   "n_v2": 12,
+   "anchor": [
+    "v1",
+    "en",
+    "boxford",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Mixte : 8 mentions Evans = Boxford (MA) ; les autres = Boxford anglais. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1442",
+   "name_v2": "Haverhill",
+   "n_v2": 9,
+   "anchor": [
+    "v1",
+    "en",
+    "haverhill",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 42.78,
+   "lon": -71.08,
+   "kind": "c",
+   "reason_fr": "8 mentions sur 9 dans les lois du Massachusetts, la 9e dans un texte sur la migration en Nouvelle-Angleterre : Haverhill (MA).",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:581",
+   "name_v2": "Marlborough",
+   "n_v2": 44,
+   "anchor": [
+    "v1",
+    "en",
+    "marlborough",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Marlborough (Wiltshire) et Marlborough (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1063",
+   "name_v2": "Hingham",
+   "n_v2": 15,
+   "anchor": [
+    "v1",
+    "en",
+    "hingham",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Hingham (Norfolk) et Hingham (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1000",
+   "name_v2": "Woburn",
+   "n_v2": 17,
+   "anchor": [
+    "v1",
+    "en",
+    "woburn",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Point mixte : Woburn (Bedfordshire) et Woburn (MA) dans Evans. À scinder par collection. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:2028",
+   "name_v2": "Alpujarras",
+   "n_v2": 5,
+   "anchor": [
+    "es",
+    "es",
+    "alpujarras",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 36.95,
+   "lon": -3.3,
+   "kind": "a",
+   "radius_km": 40,
+   "reason_fr": "Textes espagnols de 1603-1615 : les Alpujarras de Grenade. Le point du Chiapas vient de GeoNames."
+  },
+  {
+   "id_v2": "ml2:2042",
+   "name_v2": "Soles",
+   "n_v2": 5,
+   "anchor": [
+    "es",
+    "es",
+    "soles",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom commun espagnol (soles, 'soleils', 'suelos')."
+  },
+  {
+   "id_v2": "ml2:2408",
+   "name_v2": "Rivers",
+   "n_v2": 4,
+   "anchor": [
+    "v1",
+    "la",
+    "rivers",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Convocation au Parlement de 1685 : Rivers = pair du royaume (comte Rivers), pas le Nigeria."
+  },
+  {
+   "id_v2": "ml2:2120",
+   "name_v2": "Lanchester",
+   "n_v2": 5,
+   "anchor": [
+    "v1",
+    "en",
+    "lanchester",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "4 mentions dans les lois du Massachusetts (sans doute Lancaster MA) ; 1 dans les pasteurs expulsés (Lanchester, Durham). À scinder et vérifier. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:1538",
+   "name_v2": "Wooburn",
+   "n_v2": 8,
+   "anchor": [
+    "v1",
+    "en",
+    "wooburn",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Variante de Woburn/Wooburn : mixte entre Wooburn (Buckinghamshire) et Woburn (MA) dans Evans 1696. À scinder. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:3414",
+   "name_v2": "Sambia",
+   "n_v2": 3,
+   "anchor": [
+    "v1",
+    "en",
+    "sambia",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 54.95,
+   "lon": 20.1,
+   "kind": "a",
+   "radius_km": 40,
+   "reason_fr": "Textes du XVIe s. : Sambia est la presqu'île de Samland, en Prusse. La Zambie est anachronique."
+  },
+  {
+   "id_v2": "ml2:2108",
+   "name_v2": "Tisbury",
+   "n_v2": 5,
+   "anchor": [
+    "v1",
+    "en",
+    "tisbury",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Forme partagée entre le Tisbury anglais et celui du Massachusetts. Un seul point est faux pour une partie des mentions. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:4582",
+   "name_v2": "Horeb",
+   "n_v2": 2,
+   "anchor": [
+    "v1",
+    "en",
+    "horeb",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 28.54,
+   "lon": 33.97,
+   "kind": "n",
+   "reason_fr": "Textes bibliques anglais : le mont Horeb (Sinaï). Pas le hameau gallois.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:3662",
+   "name_v2": "Ofir",
+   "n_v2": 2,
+   "anchor": [
+    "es",
+    "es",
+    "ofir",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Ophir biblique, lieu non localisé. Le hameau portugais est faux."
+  },
+  {
+   "id_v2": "ml2:4712",
+   "name_v2": "Delo",
+   "n_v2": 2,
+   "anchor": [
+    "v1",
+    "it",
+    "delo",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Probablement Délos dans des poèmes italiens, mais incertain. Dello (Brescia) est peu crédible."
+  },
+  {
+   "id_v2": "ml2:5163",
+   "name_v2": "Anian",
+   "n_v2": 2,
+   "anchor": [
+    "v1",
+    "en",
+    "anian",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Détroit d'Anian, géographie imaginaire du passage du Nord-Ouest. L'Alaska est un choix moderne."
+  },
+  {
+   "id_v2": "ml2:3767",
+   "name_v2": "New South Wales",
+   "n_v2": 2,
+   "anchor": [
+    "v1",
+    "en",
+    "new south wales",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Avant 1700, côte sud-ouest de la baie d'Hudson (Thomas James). L'Australie est anachronique."
+  },
+  {
+   "id_v2": "ml2:3614",
+   "name_v2": "Monterrei",
+   "n_v2": 2,
+   "anchor": [
+    "es",
+    "es",
+    "monterrei",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Comte de Monterrei (Galice) ou de Monterrey (Mexique) dans le théâtre espagnol. Non tranché."
+  },
+  {
+   "id_v2": "ml2:3672",
+   "name_v2": "Hor",
+   "n_v2": 2,
+   "anchor": [
+    "es",
+    "es",
+    "hor",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Forme isolée et brève. Les Açores (Horta) sont infondées."
+  },
+  {
+   "id_v2": "ml2:4927",
+   "name_v2": "Oyest",
+   "n_v2": 2,
+   "anchor": [
+    "v1",
+    "de",
+    "oyest",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Cri de justice (oyez), pas un lieu."
+  },
+  {
+   "id_v2": "ml2:3629",
+   "name_v2": "Tepeticpac",
+   "n_v2": 2,
+   "anchor": [
+    "es",
+    "es",
+    "tepeticpac",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 19.32,
+   "lon": -98.24,
+   "kind": "n",
+   "reason_fr": "Colline de Tlaxcala, pas Veracruz.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:3633",
+   "name_v2": "Tenayùca",
+   "n_v2": 2,
+   "anchor": [
+    "es",
+    "es",
+    "tenayùca",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 19.53,
+   "lon": -99.17,
+   "kind": "c",
+   "reason_fr": "Tenayuca, près de Mexico, pas Aguascalientes.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:3298",
+   "name_v2": "Chilmark",
+   "n_v2": 3,
+   "anchor": [
+    "v1",
+    "en",
+    "chilmark",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "split",
+   "collections": [
+    "EvansTCP_American"
+   ],
+   "reason_fr": "Forme partagée entre le Chilmark anglais et celui du Massachusetts selon les corpus. Les mentions d'Evans perdent le point (homonyme de Nouvelle-Angleterre, ville exacte incertaine) ; les autres le gardent."
+  },
+  {
+   "id_v2": "ml2:5967",
+   "name_v2": "Siloh",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "siloh",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Siloh dans la Genèse (49:10, 1540) est probablement le terme messianique. Le Pays de Galles est faux."
+  },
+  {
+   "id_v2": "ml2:7826",
+   "name_v2": "Bettania",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "it",
+    "bettania",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 31.77,
+   "lon": 35.26,
+   "kind": "c",
+   "reason_fr": "Viaggio in Terrasanta, 1550 : Béthanie près de Jérusalem. Le point slovène est un homonyme.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:8094",
+   "name_v2": "Giordano",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "it",
+    "giordano",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Landino, 1470 : Jourdain ou patronyme. Le Piémont est faux."
+  },
+  {
+   "id_v2": "ml2:8221",
+   "name_v2": "Menfi",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "it",
+    "menfi",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 29.85,
+   "lon": 31.25,
+   "kind": "c",
+   "reason_fr": "L'Eternità, 1565 : exonyme italien de Memphis. Pas Menfi en Sicile.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:6059",
+   "name_v2": "North Cape",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "north cape",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "move",
+   "lat": 71.17,
+   "lon": 25.78,
+   "kind": "n",
+   "reason_fr": "Texte anglais de 1680 sur le Groenland : le Cap Nord, pas le Northern Cape sud-africain. Confiance moyenne.",
+   "radius_km": null
+  },
+  {
+   "id_v2": "ml2:8106",
+   "name_v2": "Colombo",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "colombo",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom de Christophe Colomb dans Evans American. Pas Colombo (Sri Lanka)."
+  },
+  {
+   "id_v2": "ml2:5528",
+   "name_v2": "Gasca",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "gasca",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Patronyme de Pedro de la Gasca."
+  },
+  {
+   "id_v2": "ml2:5348",
+   "name_v2": "Bethis",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "bethis",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Texte espagnol de 1491 : bethis = Bétis (Guadalquivir), pas Hidalgo."
+  },
+  {
+   "id_v2": "ml2:5333",
+   "name_v2": "Morería",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "morería",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom commun : quartier des Maures. Pas Morelia."
+  },
+  {
+   "id_v2": "ml2:5399",
+   "name_v2": "Puerta del Mar",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "puerta del mar",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom générique de porte."
+  },
+  {
+   "id_v2": "ml2:5278",
+   "name_v2": "Campo de Flores",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "campo de flores",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Syntagme générique."
+  },
+  {
+   "id_v2": "ml2:5247",
+   "name_v2": "Jardines",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "jardines",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom commun (jardins)."
+  },
+  {
+   "id_v2": "ml2:5242",
+   "name_v2": "Zape",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "zape",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Interjection espagnole."
+  },
+  {
+   "id_v2": "ml2:5395",
+   "name_v2": "Yesca",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "yesca",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Nom commun (amadou)."
+  },
+  {
+   "id_v2": "ml2:5518",
+   "name_v2": "Vegil",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "vegil",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Forme isolée, pas un lieu."
+  },
+  {
+   "id_v2": "ml2:5376",
+   "name_v2": "Cam",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "cam",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Abréviation."
+  },
+  {
+   "id_v2": "ml2:5429",
+   "name_v2": "Tetis",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "tetis",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Thétis, figure mythologique."
+  },
+  {
+   "id_v2": "ml2:5370",
+   "name_v2": "Vinasco",
+   "n_v2": 1,
+   "anchor": [
+    "es",
+    "es",
+    "vinasco",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Patronyme."
+  },
+  {
+   "id_v2": "ml2:7461",
+   "name_v2": "Garren",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "garren",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Une occurrence dans une clé de cartes (1655). Gauteng est anachronique."
+  },
+  {
+   "id_v2": "ml2:7949",
+   "name_v2": "Cenia",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "it",
+    "cenia",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Relatione di Spagna, 1610 : le Kenya est anachronique. Lieu espagnol possible, non identifié."
+  },
+  {
+   "id_v2": "ml2:8959",
+   "name_v2": "Akita",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "akita",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Une seule occurrence anglaise (1663), non vérifiée. Dans le doute, on retire."
+  },
+  {
+   "id_v2": "ml2:9266",
+   "name_v2": "Maun",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "la",
+    "maun",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Occurrence latine isolée ; Maun (Botswana) est anachronique."
+  },
+  {
+   "id_v2": "ml2:9283",
+   "name_v2": "Metae",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "la",
+    "metae",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Latin metae : bornes du cirque."
+  },
+  {
+   "id_v2": "ml2:8912",
+   "name_v2": "Dominica",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "la",
+    "dominica",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "unplace",
+   "reason_fr": "Geographiae, 1661 : latin dominica (dimanche) probable, l'île reste possible."
+  },
+  {
+   "id_v2": "ml2:6614",
+   "name_v2": "Liberie",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "liberie",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Mot « liberté » ; le Liberia n'existe pas."
+  },
+  {
+   "id_v2": "ml2:8894",
+   "name_v2": "Argentino",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "en",
+    "argentino",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23",
+   "action": "drop",
+   "reason_fr": "Adjectif, anachronique."
+  },
+  {
+   "id_v2": "ml2:1314",
+   "name_v2": "Mauritanię",
+   "n_v2": 11,
+   "anchor": [
+    "es",
+    "es",
+    "mauretania",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23 (règle)",
+   "action": "unplace",
+   "reason_fr": "Règle des noms antiques : Maurétanie antique (Maghreb occidental), pas la Mauritanie moderne ; aire floue, sans point."
+  },
+  {
+   "id_v2": "ml2:9087",
+   "name_v2": "Hesperides",
+   "n_v2": 1,
+   "anchor": [
+    "v1",
+    "la",
+    "hesperides",
+    ""
+   ],
+   "audit": "homonymes 2026-10-23 (règle)",
+   "action": "unplace",
+   "reason_fr": "Règle des noms antiques : jardin mythique des Hespérides ; le point de Benghazi vient de GeoNames par le nom."
+  }
+ ]
+}

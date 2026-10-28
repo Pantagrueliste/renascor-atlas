@@ -1,0 +1,14 @@
+# Five-way kind (c a n b u) of the point of an edition place, corrected by hand (check of v2.2, 2026-10-19). Applied by `ratlas reconcile build2` (reconcile_v2.apply_kind_overrides).
+# Most of these are also covered by a rule (qualifier kind, exonym table, name kind); the rows keep them right if a rule is changed.
+coll_slug	entity_key	kind	note
+ckcc_epistolarium	surf:hocht	c	Hocht (Limburg) is a village; the TGN-only candidate was typed as a first-order region
+ckcc_epistolarium	ckcc_epistolarium:veluwe.nld	a	the Veluwe is a region
+ckcc_epistolarium	surf:veluwe	a	the Veluwe is a region (the GeoNames hamlet of the name was a homonym)
+tagebuecher_christian_ii_anhalt	tagebuecher_christian_ii_anhalt:veluwe_quartier	a	the Veluwe (Quartier) is a region
+tagebuecher_christian_ii_anhalt	tagebuecher_christian_ii_anhalt:lingen_grafschaft	a	Grafschaft Lingen is a county (territory), not the town of Lingen
+old_bailey	surf:green street	b	a street
+hearth_tax	surf:green street	b	a street
+map_of_early_modern_london	map_of_early_modern_london:STMA119	b	the parish church of St. Martin Ludgate
+map_of_early_modern_london	map_of_early_modern_london:STMA19	b	the parish church of St. Martin Ludgate
+sandrart	sandrart:place-1080	n	v2.4 (check of v2.3): Samothrace is an island, not a city
+tagebuecher_christian_ii_anhalt	tagebuecher_christian_ii_anhalt:jettenbach_schloss	b	v2.4 (check of v2.3): Jettenbach, Schloss is a castle, not a village

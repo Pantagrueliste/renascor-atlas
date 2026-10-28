@@ -1,0 +1,295 @@
+a	a_name	a_kind	a_qid	a_mentions	b	b_name	b_kind	b_qid	b_mentions	distance_km	code	reason	evidence	note
+e:0	Zurich	c	Q72	23227	e:9726	Wipkingen	c	Q678030	1	2.5	distinct_ids_site	two settlements/buildings with different identifiers	wd_oneway,wd_shared	
+e:0	Zurich	c	Q72	23227	e:9740	Grossmünster	b	Q684948	1	0.5	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:10049	Nassau	c		1	e:769	Duchy of Nassau	c	Q836680	64	0.2	read_and_kept	town of Nassau and the Duchy of Nassau: a town and a polity	form,wd_alias	
+e:10099	Guastalla	c		1	e:9797	Duchy of Guastalla	a	Q706596	1	1.1	area_vs_site	administrative unit and its seat	form,wd_alias	
+e:1033	Komárom	c	Q625154	43	e:1131	Komárno	c	Q210796	38	2.6	distinct_ids_site	two settlements/buildings with different identifiers	fuzzy,wd_alias	
+e:1033	Komárom	c	Q625154	43	e:5278	Brigetio	b	Q383902	3	5.4	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:1033	Komárom	c	Q625154	43	e:9049	Szőny	c	Q2410547	1	3.5	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:1036	Dowgate	c		43	e:2567	Dowgate Street	b		11	0.1	kind_differs	settlement versus building/other	form	
+e:1044	Southampton	c	Q79848	43	e:1406	Hampshire	a		28	13.8	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:10452	Warmond	c		1	e:8695	Teylingen	c	Q1368003	1	2.1	read_and_kept	Warmond is a village in the municipality of Teylingen, not the municipality	wd_alias	
+e:10534	Egmond-Binnen	c		1	e:207	Egmond	c	Q486490	335	2.4	read_and_kept	Egmond-Binnen, Egmond aan Zee and Egmond aan den Hoef are three villages	wd_alias	
+e:1057	Windisch	c	Q69208	42	e:1188	Fahr in Windisch	c		36	0.2	read_and_kept	Windisch and Fahr in Windisch (the Fahr ferry/hamlet)	form	
+e:10597	Pannonia Inferior	a		1	e:741	Pannonia	a	Q170062	66	183.9	read_and_kept	Pannonia Inferior is a sub-province of Pannonia	wd_alias	
+e:10703	Vibo Valentia	c		1	e:8790	Province of Vibo Valentia	a	Q16315	1	0.1	area_vs_site	administrative unit and its seat	wd_oneway	
+e:10711	Benaco	c		1	e:2668	Lake Garda	n	Q6414	10	28.1	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:1074	Gatersleben	c	Q686432	41	e:1308	Neugattersleben	c	Q689536	31	28.5	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:1096	Zurzach District	a	Q659309	40	e:6646	Bad Zurzach	c	Q64186	2	3.0	wd_shared_only	label shared only through other-language labels; different identifiers	wd_shared	
+e:1117	Newington	c		39	e:1345	Parish of St. Mary (Newington)	b		30	0.7	kind_differs	settlement versus building/other	form	
+e:11703	Gilling East	c		1	e:13623	Gilling	c		1	0.0	read_and_kept	Gilling East and Gilling West are two villages of North Yorkshire	coincident	
+e:11898	Broome	c		1	e:8070	Brome	c		2	25.5	read_and_kept	Broome and Brome: spelled differently and 25 km apart; two English villages	fold	
+e:1196	Adriatic Sea	n	Q13924	35	e:2234	Gulf of Venice	n	Q194205	13	336.6	read_and_kept	Adriatic Sea and Gulf of Venice: the gulf is part of the sea	wd_alias	
+e:1197	Gloucester	c	Q170497	35	e:8006	Gloucestershire	a		2	11.5	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:1204	Weingarten	c	Q572427	35	e:6503	Weingarten Abbey	b	Q334353	2	0.3	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:1227	Phoenicia	a	Q41642	34	e:2789	Canaan	a	Q163329	9	153.0	read_and_kept	Phoenicia and Canaan: different regions	wd_alias	
+e:1265	Bear Garden 4/Hope Playhouse	b		33	e:2906	Bear Garden	c		9	0.1	kind_differs	settlement versus building/other	form	
+e:13	Low Countries / Netherlands	a		4502	e:259	Holland	a	Q102911	266	33.9	read_and_kept	Holland and the 'Low Countries / Netherlands' point: different referents	form	
+e:1303	Hameln	c	Q32051531	31	e:14238	Hamel	n		1	1.6	area_vs_site	region/country/natural feature versus settlement or building	fuzzy	
+e:13066	Briston	c		1	e:7281	Brinton	c		2	3.6	read_and_kept	Briston and Brinton are two Norfolk villages	fuzzy	
+e:13219	Hatfield House	b		1	e:7569	Hatfield	c		2	1.1	kind_differs	settlement versus building/other	form	
+e:13226	St. Anthony’s Churchyard	c		1	e:3747	St. Dionis Backchurch	c		6	0.3	read_and_kept	two different London parishes/churches 0.3 km apart	coincident	
+e:13238	Cripplegate Conduit	c		1	e:411	Cripplegate	c		142	0.1	read_and_kept	Cripplegate Conduit is a structure at Cripplegate, not the gate	coincident	
+e:13250	Blackheath	c		1	e:2176	blackwalle	c		14	5.1	read_and_kept	Blackheath and Blackwall are two places 5 km apart (see the Savoy / Blackwall note)	form	
+e:13253	Isleworth	c		1	e:2861	London Borough of Hounslow	c	Q214162	9	1.6	read_and_kept	Isleworth is a settlement inside the London Borough of Hounslow, not the borough	wd_alias	
+e:1329	Sorbonne	b	Q214654	30	e:9128	University of Paris	b	Q2845896	1	0.1	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:13394	España, Islas Baleares, Mallorca	c		1	e:3635	Mallorca	n	Q8828	6	9.7	area_vs_site	region/country/natural feature versus settlement or building	clean,form	
+e:13456	Bermondsey	c		1	e:4195	Bermondsey Manor	c		5	0.1	read_and_kept	Bermondsey and Bermondsey Manor	coincident,form	
+e:13456	Bermondsey	c		1	e:729	Bermondsey Abbey	b		69	1.0	kind_differs	settlement versus building/other	form	
+e:13582	Richmond Palace	b		1	e:2397	Richmond	c		12	2.7	kind_differs	settlement versus building/other	form	
+e:13607	Greenwich Palace	b		1	e:2101	Greenwich	c	Q179385	15	0.3	kind_differs	settlement versus building/other	form	
+e:13742	Burg	b		1	e:2500	Burg	c	Q525632	11	0.7	generic_name	generic descriptor, not a place name	fold,wd_oneway	
+e:1378	Free State of Sachsen-Altenburg	a	Q1454726	28	e:427	Altenburg	c	Q15976	134	0.4	area_vs_site	administrative unit and its seat	form	
+e:13822	Veveyse	a		1	e:2755	Vevey	c		10	11.1	area_vs_site	region/country/natural feature versus settlement or building	latin	
+e:14	Vienna	c	Q1741	4314	e:4592	Wien	n	Q702289	4	25.3	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway,wd_shared	
+e:14049	Rickenbach bei Wil	c		1	e:2582	Rickenbach	c		11	22.2	read_and_kept	Rickenbach bei Wil and Rickenbach: two Swiss municipalities named Rickenbach, 22 km apart	form	
+e:14164	Ölsnitz	n		1	e:3024	Oelsnitz	c	Q32204983	8	22.2	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:1417	Jerusalem District	a	Q192232	27	e:225	Jerusalem	c	Q1218	306	22.3	area_vs_site	administrative unit and its seat	form,wd_oneway,wd_shared	
+e:14335	Collonges	c		1	e:9361	Collonges-sous-Salève	c	Q34796059	4	19.2	read_and_kept	Collonges and Collonges-sous-Salève: different communes 19 km apart	form	
+e:14390	Buch	c		1	e:9674	Wiesendangen	c	Q64853	1	21.7	read_and_kept	Buch and Wiesendangen: different villages	wd_alias	
+e:14498	Garda	c		1	e:2668	Lake Garda	n	Q6414	10	7.8	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway	
+e:1450	Colditz	c	Q10762	26	e:6683	Colditz Castle	b	Q679115	2	1.7	distinct_ids_site	two settlements/buildings with different identifiers	wd_oneway,wd_shared	
+e:14617	Montegaldella	c		1	e:4530	Montegalda	c	Q46168	4	3.2	read_and_kept	Montegaldella and Montegalda are two comuni of the province of Vicenza	fuzzy	
+e:14657	Vaihingen	c		1	e:3605	Vaihingen an der Enz	c	Q61928	6	24.6	read_and_kept	Vaihingen (a Stuttgart district) and Vaihingen an der Enz are different places 25 km apart	form,wd_oneway	
+e:14753	Evessen	c		1	e:1907	Hessen	c	Q896361	17	18.8	read_and_kept	Evessen (Lower Saxony) is not Hessen	form	
+e:1493	IJssel	n	Q217818	25	e:4380	Oude IJssel	n	Q181067	4	62.8	read_and_kept	IJssel and Oude IJssel: two distinct watercourses	wd_oneway,wd_shared	
+e:1500	Suhr	c	Q65195	25	e:5117	Suhre	n	Q16945	3	0.6	area_vs_site	region/country/natural feature versus settlement or building	fold,wd_mutual,wd_shared	
+e:1530	Palestine	a	Q219060	24	e:9585	Gehenna	b	Q558093	1	17.2	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:1551	Staffordshire	a		24	e:2739	Stafford	c		10	5.2	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:1565	Palestine	a	Q23792	23	e:2789	Canaan	a	Q163329	9	128.2	read_and_kept	Palestine and Canaan: different historical names and extents	wd_alias	
+e:1565	Palestine	a	Q23792	23	e:9585	Gehenna	b	Q558093	1	17.8	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:1588	Stilli	c		23	e:1616	Villigen	c	Q65193	22	1.3	read_and_kept	Stilli and Villigen are two neighbouring villages	wd_alias	
+e:1588	Stilli	c		23	e:2560	Fahr in Stilli	c		11	0.3	read_and_kept	Stilli and Fahr in Stilli (ferry hamlet)	form	
+e:1610	Namur	c	Q51389725	22	e:668	Namen, polder van	c		76	0.9	read_and_kept	'Namen, polder van' is a polder (Zeeland) whose name is Namen; its point lies at Namur: flagged for the owner, not merged	form	
+e:1636	Nänikon	c		22	e:392	Uster	c	Q64032	147	3.2	read_and_kept	Nänikon is a village of Uster, kept as its own place	wd_alias	
+e:1650	Duchy of Parma and Piacenza	a	Q165040	21	e:318	Parma	c	Q2683	202	0.0	area_vs_site	administrative unit and its seat	form,wd_alias	
+e:1693	Aarburg	c	Q65129854	21	e:4581	Aarburg Castle	b	Q673786	4	0.1	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:1745	Zweibrücken	c		20	e:3068	Palatinate-Zweibrücken	a	Q701983	8	0.4	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway	
+e:1751	Canton of St. Gallen	a	Q12746	19	e:37	St. Gallen	c	Q25607	1859	21.5	area_vs_site	administrative unit and its seat	wd_oneway,wd_shared	
+e:1774	Wohlenschwil	c	Q65161	19	e:3136	Büblikon	c		8	0.8	read_and_kept	Wohlenschwil and Büblikon are two villages	wd_alias	
+e:18	Poland	a	Q36	3869	e:2981	Polish–Lithuanian Commonwealth	a	Q172107	8	226.4	read_and_kept	Poland and the Polish-Lithuanian Commonwealth: two polities	wd_alias	
+e:1809	Judaea	a		19	e:9473	Kingdom of Judah	a	Q48685	1	1.0	read_and_kept	Judaea (Roman/Hellenistic region) and the Kingdom of Judah are different entities	wd_alias	
+e:1818	Ems	n	Q1648	18	e:9314	Ems	n	Q32750803	1	283.9	read_and_kept	Ems river and Ems (Q32750803): two watercourses 284 km apart	fold,wd_mutual,wd_shared	
+e:1820	Lusitania	a	Q188650	18	e:42	Portugal	a	Q45	1600	170.6	read_and_kept	Lusitania (Roman province) and Portugal: different extent; the owner may decide	wd_alias	
+e:1838	Batavia	a	Q850526	18	e:88	Netherlands	a	Q55	778	44.5	read_and_kept	Batavia (Roman/humanist name) and the Netherlands: different extent	wd_alias	
+e:188	Tower of London	b		367	e:586	Tower Hill	b		90	0.2	read_and_kept	Tower of London and Tower Hill	form	
+e:1894	Historic centre	c	Q49280504	17	e:4465	Historic centre	c	Q30027458	4	24.2	generic_name	generic descriptor, not a place name	fold,wd_mutual,wd_shared	
+e:1898	Prättigau/Davos District	a	Q659272	17	e:517	Davos	c		107	6.9	area_vs_site	administrative unit and its seat	wd_alias	
+e:1899	Laufen-Uhwiesen	c	Q66336	17	e:9017	Uhwiesen	c	Q22699445	1	0.1	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:1903	Wetterau	a	Q702755	17	e:6732	Wetteraukreis	a	Q7910	2	9.3	read_and_kept	Wetterau (region) and Wetteraukreis (district)	wd_oneway,wd_shared	
+e:1906	Sasanian Empire	a	Q83891	17	e:227	Persia	a		301	72.6	read_and_kept	Persia (the country in the period) and the Sasanian Empire (the ancient empire)	wd_alias	
+e:192	Province of Brabant	a	Q848831	361	e:625	Duchy of Brabant	a	Q159856	83	23.5	wd_shared_only	label shared only through other-language labels; different identifiers	wd_shared	
+e:1941	Guyenne	a	Q849324	18	e:771	Aquitaine	a	Q1179	63	79.2	wd_shared_only	label shared only through other-language labels; different identifiers	wd_shared	
+e:1942	Treviso	c		17	e:8789	Province of Treviso	a	Q16292	1	0.6	area_vs_site	administrative unit and its seat	wd_oneway	
+e:1947	Ticino	n	Q14366	16	e:4344	Canton of Ticino	a	Q12724	4	131.8	read_and_kept	Ticino (river) and the Canton of Ticino	wd_oneway,wd_shared	
+e:2021	Crüchern	c		16	e:9766	Wohlsdorf	c	Q696454	1	1.0	read_and_kept	Crüchern and Wohlsdorf: different villages	wd_alias	
+e:2024	Mytilene	c	Q42295059	16	e:3860	Lesbos	n	Q128087	5	26.2	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:2070	Ludgate Hill	c		15	e:346	Ludgate	b		176	0.0	kind_differs	settlement versus building/other	form	
+e:211	Weimar	c	Q32067990	331	e:773	Duchy of Saxe-Weimar	a	Q315667	63	1.2	area_vs_site	administrative unit and its seat	form	
+e:2157	Huis Honselaarsdijk	b	Q3412116	14	e:945	Honselersdijk	c	Q2012788	48	0.2	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:2209	Vincennes	c	Q193819	14	e:2636	Bois de Vincennes	b	Q271639	10	1.7	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:2270	Elfingen	c	Q66291	13	e:2417	Effingen	c		12	2.1	read_and_kept	Elfingen and Effingen are neighbouring Swiss municipalities	fuzzy	
+e:2274	Lugano	c	Q7024	13	e:8720	Lake Lugano	n	Q14418	1	3.1	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway,wd_shared	
+e:2327	Jüterbog	c	Q486541	13	e:4251	Kloster Zinna	c		5	3.5	read_and_kept	Jüterbog and Kloster Zinna: two places 3.5 km apart	wd_alias	
+e:2344	Province of L'Aquila	a	Q16189	12	e:8412	L'Aquila	c		2	8.1	area_vs_site	administrative unit and its seat	form,wd_oneway	
+e:2376	Salem	c	Q49289031	12	e:6663	Salem Abbey	b	Q652382	2	1.7	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:2389	Hradčany	c	Q744598	12	e:3232	Prague Castle	b	Q193369	7	0.2	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:2484	Wissembourg	c	Q22636	11	e:9925	Weissenburg Abbey	b	Q896405	1	0.3	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:2493	Maulbronn	c	Q32125974	11	e:5106	Maulbronn Monastery	b	Q157886	3	1.2	distinct_ids_site	two settlements/buildings with different identifiers	form,wd_alias	
+e:2501	Ribnitz-Damgarten	c	Q571959	11	e:8534	Damgarten	c		2	0.9	read_and_kept	Damgarten and Ribnitz were separate towns in the period	form,wd_alias	
+e:2533	langly	c		11	e:5734	Langley	c		3	26.3	read_and_kept	langly and Langley: different places 26 km apart	form	
+e:2563	Parish of All Hallows the Less	c		11	e:4863	Parish of All Hallows the Great	c		4	0.1	read_and_kept	All Hallows the Less and All Hallows the Great are two different London parishes	coincident,fuzzy	
+e:259	Holland	a	Q102911	266	e:54	Dutch Republic	a	Q170072	1301	31.4	read_and_kept	Holland (province), Dutch Republic (polity): overlapping referents, kept apart	form	
+e:259	Holland	a	Q102911	266	e:88	Netherlands	a	Q55	778	60.5	read_and_kept	Holland (province) and the Netherlands (country): overlapping referents, kept apart	wd_alias,wd_shared	
+e:2613	Ischia	n	Q189387	10	e:4782	Italia, Isquia	c		4	0.0	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:2643	Lambach Abbey	b	Q315889	10	e:2941	Lambach	c	Q686750	9	0.3	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:2662	Cana	c	Q431382	10	e:2789	Canaan	a	Q163329	9	2.5	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway,wd_shared	
+e:2672	Wetzikon	c	Q68305	10	e:5903	Robank	c		3	1.6	read_and_kept	Wetzikon and Robank: different villages	wd_alias	
+e:268	Westminster	c	Q189960	255	e:503	Westminster Abbey	b		110	0.3	kind_differs	settlement versus building/other	form	
+e:268	Westminster	c	Q189960	255	e:567	Westminster Hall	b		94	0.6	kind_differs	settlement versus building/other	form	
+e:268	Westminster	c	Q189960	255	e:688	Westminster Palace	b		73	0.6	kind_differs	settlement versus building/other	form	
+e:2681	Lordship of Schellenberg	a	Q831779	10	e:9189	Schellenberg	n	Q31332437	1	190.7	read_and_kept	Lordship of Schellenberg and Schellenberg (QID of another Schellenberg)	form,wd_alias	
+e:271	Parish of St. Dunstan (Stepney)	b		252	e:2730	Stepney	c		10	1.7	kind_differs	settlement versus building/other	form	
+e:2746	Villarsel	c		10	e:2934	Villarzel	c		9	8.3	read_and_kept	Villarsel and Villarzel: two villages 8 km apart	form	
+e:2749	Werrikon	c		10	e:392	Uster	c	Q64032	147	2.0	read_and_kept	Werrikon is a village of Uster	wd_alias	
+e:2838	Leipzig District	a	Q6308	9	e:36	Leipzig	c	Q2079	1924	26.3	area_vs_site	administrative unit and its seat	form,wd_oneway,wd_shared	
+e:2906	Bear Garden	c		9	e:896	Bear Garden 3	b		52	0.1	kind_differs	settlement versus building/other	form	
+e:2984	Rába	n	Q182138	8	e:5082	Rab	n	Q13277	3	292.1	read_and_kept	Rába (river) and Rab (island/town)	wd_oneway,wd_shared	
+e:3028	Asperg	c	Q32374320	8	e:5395	Hohenasperg	b	Q835404	3	0.6	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:3209	Tanais	c	Q1153416	7	e:6109	Don	n	Q1229	2	22.0	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway,wd_shared	
+e:337	Lenzburg	c	Q69433	185	e:3611	Lenzburg District	a	Q659293	6	1.1	area_vs_site	administrative unit and its seat	wd_oneway,wd_shared	
+e:338	lillingstone	c		185	e:424	lillingstone lovell	c		135	0.8	read_and_kept	Lillingstone Dayrell and Lillingstone Lovell are two parishes	form	
+e:339	Moravia	a	Q43266	184	e:8830	Morava	n	Q179251	1	148.2	read_and_kept	Moravia (region) and the Morava (river)	latin,wd_oneway,wd_shared	
+e:3401	Stein	b		7	e:3444	Stein AG	c		7	27.7	kind_differs	settlement versus building/other	form	
+e:3404	Philip Lane	b		7	e:4189	Philpot Lane	b		5	0.9	read_and_kept	Philip Lane and Philpot Lane: two London streets	form	
+e:3421	Portugal, Évora, Portalegre	c		7	e:6291	Portalegre	a	Q225189	2	14.3	area_vs_site	region/country/natural feature versus settlement or building	clean	
+e:3430	Curtain Playhouse	b		7	e:4191	The Curtain	c		5	0.0	kind_differs	settlement versus building/other	form	
+e:3488	Alpine Rhine	n	Q13142473	6	e:71	Rhine	n	Q584	1021	59.8	wd_shared_only	label shared only through other-language labels; different identifiers	wd_shared	
+e:3549	Limburg	a	Q315663	6	e:5030	Limburg	a	Q1095	4	149.6	read_and_kept	Limburg (duchy, Belgian-German borderland) and Limburg (Dutch province): two homonymous regions 150 km apart	fold,wd_mutual,wd_shared	
+e:3773	Theatre Playhouse	b		6	e:4860	The Theatre	c		4	0.0	kind_differs	settlement versus building/other	form	
+e:3852	State of Lippe	a	Q107380	5	e:5102	Lippe	n	Q153945	3	159.6	read_and_kept	State of Lippe (polity) and the Lippe river	wd_oneway,wd_shared	
+e:3865	Angoulême	c	Q134346	5	e:9564	Angoumois	a	Q542638	1	0.6	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:3873	Lake Como	n	Q15523	5	e:950	Como	c		49	25.7	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:392	Uster	c	Q64032	147	e:5924	Riedikon	c		3	1.9	read_and_kept	Riedikon is a village of Uster	wd_alias	
+e:392	Uster	c	Q64032	147	e:5926	Freudwil	c		3	3.2	read_and_kept	Freudwil is a village of Uster	wd_alias	
+e:4155	Albano	c		5	e:6759	Lake Albano	n	Q849448	2	0.1	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway	
+e:422	Appenzell	c	Q209270	135	e:5072	Canton of Appenzell Ausserrhoden	a	Q12079	3	10.1	area_vs_site	administrative unit and its seat	form	
+e:4270	Rheinfels Castle	b	Q567643	5	ml2:1430	Rheinfelß	c		15	0.0	kind_differs	settlement versus building/other	wd_oneway	
+e:4336	Möriken	c	Q121434847	4	e:6662	Möriken-Wildegg	c	Q65227	2	0.1	distinct_ids_site	two settlements/buildings with different identifiers	coincident,wd_alias	
+e:4370	Inntal	n	Q1664249	4	e:460	Engadin	n	Q22883	124	116.0	read_and_kept	Inntal and Engadin: two valleys of the same river, different places	wd_alias	
+e:4380	Oude IJssel	n	Q181067	4	e:5568	Yssel	a		3	111.0	read_and_kept	Yssel is the old spelling of the IJssel, not of the Oude IJssel (a separate watercourse)	wd_oneway	
+e:4430	Hemishofen	c	Q22615433	4	e:6821	Emmishofen	c		3	25.0	read_and_kept	Hemishofen and Emmishofen: two different villages 25 km apart	form	
+e:445	Navarre	a	Q4018	127	e:6559	Basque Country	a	Q47588	2	24.4	read_and_kept	Navarre and the Basque Country: different regions	wd_alias	
+e:4497	Ochsenhausen	c	Q32204054	4	e:9591	Ochsenhausen Abbey	b	Q561312	1	0.8	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:4548	Hirsau Abbey	b	Q532415	4	e:8497	Hirsau	c	Q446669	2	0.6	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:458	Guildhall	c		125	e:5782	Guildhall Library	c		3	0.0	read_and_kept	Guildhall and Guildhall Library	coincident	
+e:466	London Bridge	b		123	e:7	London	c	Q84	6293	2.8	kind_differs	settlement versus building/other	form	
+e:4686	Heath	c		4	e:5543	the Heath	c		3	23.0	generic_name	generic descriptor, not a place name	fold	
+e:4746	Luftkurort Arendsee	n	Q31883153	4	e:8450	Arendsee	n		2	41.3	read_and_kept	Arendsee (town) and Arendsee (lake?) 41 km apart: not the same point	form	
+e:5076	Garmisch-Partenkirchen	c	Q127043	3	e:8304	Partenkirchen	c		2	2.0	read_and_kept	Garmisch and Partenkirchen were two separate towns until 1935	wd_alias	
+e:5209	Historic centre	c	Q30023195	3	e:995	Historic centre	c	Q30023134	45	23.3	generic_name	generic descriptor, not a place name	fold,wd_mutual,wd_shared	
+e:5225	Jura	n	Q31641448	3	e:8672	Canton of Jura	a	Q12755	1	26.2	read_and_kept	Jura (mountains) and the Canton of Jura	wd_oneway,wd_shared	
+e:5334	Fulda	n	Q6434	3	e:991	Fulda	c	Q122166335	45	20.8	area_vs_site	region/country/natural feature versus settlement or building	fold,form,wd_mutual,wd_shared	
+e:5337	Tägerig	c	Q65190	3	e:7840	Büschikon	c		2	1.6	read_and_kept	Tägerig and Büschikon are two villages	wd_alias	
+e:5342	Reno	n	Q658594	3	e:71	Rhine	n	Q584	1021	360.4	read_and_kept	Reno (Italian river) and the Rhine	wd_oneway,wd_shared	
+e:5365	Nutha	c	Q690013	3	e:9915	Nuthe	n	Q884667	1	9.2	area_vs_site	region/country/natural feature versus settlement or building	wd_alias	
+e:537	Styria	a	Q41358	102	e:9124	Upper Styria	a	Q278042	1	14.9	read_and_kept	Styria and Upper Styria (a sub-region)	wd_alias	
+e:54	Dutch Republic	a	Q170072	1301	e:88	Netherlands	a	Q55	778	89.2	read_and_kept	Dutch Republic (polity) and the Netherlands (country)		
+e:5409	Augustusburg Hunting Lodge	b	Q929837	3	e:6711	Augustusburg	c	Q71090	2	0.1	distinct_ids_site	two settlements/buildings with different identifiers	form,wd_alias	
+e:5428	Umbrien	a		3	ml2:1703	Gubbio	c		11	0.4	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:5730	Brougham	c		3	e:7428	Brough	c		2	29.6	read_and_kept	Brougham and Brough: two villages 30 km apart	latin	
+e:6019	Attikon	c		3	e:9674	Wiesendangen	c	Q64853	1	1.6	read_and_kept	Attikon and Wiesendangen: different villages	wd_alias	
+e:6144	Lake Neuchâtel	n	Q14375	2	e:78	Neuchâtel	c	Q69345	930	11.7	area_vs_site	region/country/natural feature versus settlement or building	wd_oneway,wd_shared	
+e:6292	Trüllikon	c	Q22529764	2	e:8216	Truttikon	c		2	2.9	read_and_kept	Trüllikon and Truttikon are neighbouring Swiss municipalities	fuzzy	
+e:6332	Traunsee	n	Q250907	2	e:9697	Traun	n	Q664341	1	26.4	read_and_kept	Traunsee (lake) and Traun (river)	fuzzy	
+e:6687	Wolfen	c	Q685939	2	e:887	Wulfen	c	Q688580	52	29.8	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:6769	Brennersee	n	Q874025	2	e:8489	Brennero	c		2	2.0	area_vs_site	region/country/natural feature versus settlement or building	fuzzy	
+e:6789	Pinasca	c	Q9571	2	e:8850	Pinasca-Dubbione	c	Q18444107	1	0.0	distinct_ids_site	two settlements/buildings with different identifiers	coincident	
+e:8099	Leicestershire	a		2	ml2:157	Leicester	c		465	2.1	area_vs_site	region/country/natural feature versus settlement or building	form	
+e:8255	Buchs / Buchs (Dorf)	c		2	e:9668	Buchs	c	Q64512	1	28.3	read_and_kept	Buchs/Buchs (Dorf) and Buchs: 28 km apart	form	
+e:848	Wettingen	c	Q22601617	55	e:9700	former Cistercian monastery Wettingen	b	Q665389	1	1.7	distinct_ids_site	two settlements/buildings with different identifiers	form	
+e:850	Vatican City	a	Q237	55	e:8774	Holy See	a	Q159583	1	0.1	read_and_kept	Vatican City (state) and the Holy See (sovereign entity): different referents at the same spot	wd_alias	
+e:8666	Baar	n	Q126132	1	e:9798	Duchy of Bar	a	Q706679	1	263.8	read_and_kept	Baar and the Duchy of Bar: homonym-like names	wd_alias	
+e:8758	Staretschwil	c	Q15621671	1	e:9666	Oberrohrdorf	c	Q64496	1	0.6	distinct_ids_site	two settlements/buildings with different identifiers	wd_alias	
+e:927	Eisenach	c	Q31987608	49	e:9769	Duchy of Saxe-Eisenach	a	Q696651	1	0.7	area_vs_site	administrative unit and its seat	form	
+e:10281	East Perry in Huntington sheere	a		1	e:5458	Eastone in Huntington sheere	c		3	4.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10288	Stannyon in Northāpton sheere	c		1	e:6939	Newton in Northāpton sheere	c		2	4.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10863	Westdean	c		1	e:11420	Eastdean	c		1	4.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10881	West Harting	c		1	e:11415	East Harting	c		1	2.7	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10895	West Wittering	c		1	e:12356	East Wittering	c		1	2.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10927	East Beckham	c		1	e:11941	West Beckham	c		1	2.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10958	Baddiley	c		1	e:11880	Faddiley	c		1	4.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10977	Sutton upon Derwent	c		1	e:11653	Newton upon Derwent	c		1	3.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:10979	Batherton	c		1	e:12755	Hatherton	c		1	2.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11158	South Pickenham	c		1	e:12315	North Pickenham	c		1	2.6	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11198	East Raynham	c		1	e:11835	West Raynham	c		1	1.6	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11243	West Somerton	c		1	e:12234	East Somerton	c		1	1.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11702	West Bradenham	c		1	e:12435	East Bradenham	c		1	1.1	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11732	West Ayton	c		1	e:8023	East Ayton	c		2	1.2	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11763	West Rounton	c		1	e:12469	East Rounton	c		1	1.1	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11776	Brindley	c		1	e:13131	Ridley	c		1	4.1	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:11919	East Cottingwith	c		1	e:7409	West Cottingwith	c		2	3.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12006	West Rudham	c		1	e:13043	East Rudham	c		1	1.2	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12168	West Harling	c		1	e:12924	East Harling	c		1	2.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12311	West Heslerton	c		1	e:12641	East Heslerton	c		1	1.8	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12408	West Ashling	c		1	e:12626	East Ashling	c		1	1.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12438	Stretton-on-Dunsmore	c		1	e:12987	Ryton on Dunsmore	c		1	2.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12457	East Lexham	c		1	e:12992	West Lexham	c		1	1.7	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12480	North Otterington	c		1	e:13653	South Otterington	c		1	2.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12496	Westergate	c		1	e:12874	Eastergate	c		1	0.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12524	West Mersea	c		1	e:7477	East Mersea	c		2	4.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12621	Brompton-on-Swale	c		1	e:13699	Bolton on Swale	c		1	3.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12631	West Barsham	c		1	e:12744	East Barsham	c		1	1.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12670	West Ardsley	c		1	e:12929	East Ardsley	c		1	2.1	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12886	South Hanningfield	c		1	e:7236	West Hanningfield	c		2	2.2	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12886	South Hanningfield	c		1	e:7458	East Hanningfield	c		2	4.7	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:12943	West Horndon	c		1	e:7397	East Horndon	c		2	1.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:13470	Bagot's Bromley	c		1	e:5860	Abbots Bromley	c		3	1.8	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:14019	Egelshofen	c		1	e:8791	Hugelshofen	c	Q1634135	1	3.5	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:14195	Langgöns	c		1	e:8725	Lang-Göns	c	Q1453404	1	0.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:14629	Andersleben	c		1	e:2506	Hadmersleben	c	Q673201	11	2.8	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:1727	Kaystone in Huntingtonsheere	c		20	e:1843	Bythorne in Huntington sheere	c		18	1.5	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:1936	Yorkshire East Riding	a		17	e:781	Yorkshire North Riding	a		63	71.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:1936	Yorkshire East Riding	a		17	e:7993	Yorkshire West Riding	a		2	77.2	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:1973	Biendorf	c	Q687949	16	e:4558	Wiendorf	c	Q599805	4	4.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:2522	Ellington in Huntington sheere	c		11	e:5458	Eastone in Huntington sheere	c		3	2.1	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:2529	Layton in Huntington sheere	c		11	e:5458	Eastone in Huntington sheere	c		3	4.7	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:258	Landgraviate of Hesse-Kassel	a		270	e:546	Landgraviate of Hesse	a	Q695322	100	1.5	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:3213	Canton of Obwalden	a	Q12573	7	e:3214	Canton of Nidwalden	a	Q12592	7	29.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:324	Canton of Thurgau	a	Q12713	198	e:911	Canton of Aargau	a	Q11972	50	70.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:3349	Rockbye in Leycester sheere	c		7	e:6873	Grouby in Leycester shere	c		2	1.5	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:3485	Canton of Vaud	a	Q12771	6	e:8672	Canton of Jura	a	Q12755	1	93.0	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:5525	west ham	c		3	e:7251	East Ham	c		2	2.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:5643	Osbaldeston	c		3	e:7246	Balderstone	c		2	1.8	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:5937	Läufelfingen	c		3	e:8206	Häfelfingen	c		2	2.3	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:6362	Niedersimmental District	a	Q278989	2	e:9702	Obersimmental District	a	Q666196	1	22.4	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:689	Westcheap	c		73	e:725	Eastcheap	c		69	0.6	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:7236	West Hanningfield	c		2	e:7458	East Hanningfield	c		2	3.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:7556	East Rainton	c		2	e:7631	West Rainton	c		2	1.6	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:781	Yorkshire North Riding	a		63	e:7993	Yorkshire West Riding	a		2	59.9	different_names	similar spelling but a different word or qualifier (East/West, Upper/Lower, a different second word); not a spelling variant	fuzzy	
+e:1	France	a	Q142	17323	e:2538	france	b		11	87.4	homonym_far	same folded name, 87 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5	England	a	Q21	7645	e:5839	England	c		3	224.8	homonym_far	same folded name, 225 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:76	Baden	c	Q63939	942	e:972	Baden	c	Q21879715	46	595.4	homonym_far	same folded name, 595 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:108	Bedford	c		638	e:5750	Bedford	c		3	203.7	homonym_far	same folded name, 204 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:150	Valtellina	n	Q685105	472	e:4730	Valtellina	c		4	77.0	homonym_far	same folded name, 77 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:155	Harderwijk	c	Q13188385	452	e:4317	Harderwijk	c		5	60.5	homonym_far	same folded name, 60 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:193	Asia	a	Q48	360	e:3905	Asia	a	Q210718	5	5454.4	homonym_far	same folded name, 5454 km apart (limit 400 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:233	Groningen	c	Q749	297	e:514	Gröningen	c	Q32514251	107	344.9	homonym_far	same folded name, 345 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:264	Russiae	c		261	e:1742	Russy	c		20	5955.1	homonym_far	same folded name, 5955 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:266	Schöningen	c	Q32731298	258	e:6070	Schoningen	c		3	105.5	homonym_far	same folded name, 106 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:381	Kempten	c	Q130542858	151	e:4257	Kempten	u		5	121.4	homonym_far	same folded name, 121 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:427	Altenburg	c	Q15976	134	e:670	Altenburg	c		76	104.2	homonym_far	same folded name, 104 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:427	Altenburg	c	Q15976	134	e:2092	Altenburg	c		15	448.2	homonym_far	same folded name, 448 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:670	Altenburg	c		76	e:2092	Altenburg	c		15	507.4	homonym_far	same folded name, 507 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:458	Guildhall	c		125	e:2928	guildhall	b		11	114.0	homonym_far	same folded name, 114 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:609	Harlington	c		86	e:5794	Harlington	c		3	53.2	homonym_far	same folded name, 53 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:640	Chalgrave	c		80	e:1915	Chalgrave	c		17	47.8	homonym_far	same folded name, 48 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:772	Brest	c	Q140147	63	e:1680	Brest	c	Q12193	21	2029.8	homonym_far	same folded name, 2030 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:887	Wulfen	c	Q688580	52	e:5201	Wulfen	c	Q2594846	3	338.3	homonym_far	same folded name, 338 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:960	Corbie	c	Q71469	47	e:3342	Corbye	c		7	363.7	homonym_far	same folded name, 364 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:980	Rhodes	n	Q43048	46	e:1875	Rhodes	c	Q188731	20	40.6	homonym_far	same folded name, 41 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:995	Historic centre	c	Q30023134	45	e:1894	Historic centre	c	Q49280504	17	33.2	homonym_far	same folded name, 33 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:995	Historic centre	c	Q30023134	45	e:4465	Historic centre	c	Q30027458	4	38.0	homonym_far	same folded name, 38 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1894	Historic centre	c	Q49280504	17	e:5209	Historic centre	c	Q30023195	3	55.4	homonym_far	same folded name, 55 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4465	Historic centre	c	Q30027458	4	e:5209	Historic centre	c	Q30023195	3	60.7	homonym_far	same folded name, 61 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1106	Thebes	c	Q5760	40	e:3837	Thebes	c	Q101583	6	1656.2	homonym_far	same folded name, 1656 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1193	Cham	c		36	e:3011	Cham	c	Q31930806	8	384.8	homonym_far	same folded name, 385 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1235	Brampton	c		34	e:4818	Brampton	c		4	295.8	homonym_far	same folded name, 296 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1546	Syon	c		24	e:1640	Sion	c	Q68136	22	861.7	homonym_far	same folded name, 862 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1566	Košice	c	Q25409	23	e:2349	Košice	c	Q1785863	12	478.5	homonym_far	same folded name, 479 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1607	Woerden	c	Q33518339	22	e:3716	Werden	c		6	165.3	homonym_far	same folded name, 165 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1615	Veltheim	c	Q65142	22	e:3541	Veltheim	c	Q282014	6	43.5	homonym_far	same folded name, 44 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1652	Cölln	c	Q269622	21	e:5690	Colne	c		3	1045.9	homonym_far	same folded name, 1046 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1716	Friedberg	c	Q516485	20	e:3191	Friedberg	c	Q507194	8	272.9	homonym_far	same folded name, 273 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1730	Ringsteede	c		20	e:3542	Ringsted	c	Q283658	6	876.8	homonym_far	same folded name, 877 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1778	Ostrov	c	Q987487	19	e:4438	Ostrov	c	Q2350555	4	223.4	homonym_far	same folded name, 223 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:1971	Soest	c	Q6149	16	e:3572	Soest	c	Q33490428	6	204.6	homonym_far	same folded name, 205 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2152	Pegau	c	Q32219808	14	e:4972	Peggau	c		4	495.1	homonym_far	same folded name, 495 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2334	Bergen	c	Q31910477	13	e:3938	Bergen	c	Q26793	5	888.4	homonym_far	same folded name, 888 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2397	Richmond	c		12	e:5887	Richmond	c		3	343.4	homonym_far	same folded name, 343 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2517	Kent	c		11	e:4924	Kent	c		4	45.2	homonym_far	same folded name, 45 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2690	Great Easton	c		10	e:5747	Great Easton	c		3	101.3	homonym_far	same folded name, 101 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2741	Sussex	a		10	e:4655	Sussex	c		4	30.6	homonym_far	same folded name, 31 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2850	Scythia	a	Q845909	9	e:2955	Scythia	a		9	1762.1	homonym_far	same folded name, 1762 km apart (limit 400 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2930	Newport	c	Q985594	9	e:5680	Newport	c		3	177.0	homonym_far	same folded name, 177 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:2957	Lübberstedt	c		9	e:5980	Lübberstedt	c		3	87.8	homonym_far	same folded name, 88 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3005	Nitra	c	Q26397	8	e:3984	Nitra	n	Q369773	5	40.0	homonym_far	same folded name, 40 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3022	Mittenwald	c	Q32138364	8	e:5322	Mittenwalde	c	Q574811	3	560.6	homonym_far	same folded name, 561 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3148	Gomera	c		8	ml2:1314	La Gomera	a		17	3003.2	homonym_far	same folded name, 3003 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3267	Rottenburg	c	Q32266987	7	e:4575	Rothenburg	c	Q665483	4	405.9	homonym_far	same folded name, 406 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3268	Mühlberg	c	Q32663340	7	e:6073	Mühlberg	c		3	448.5	homonym_far	same folded name, 449 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3401	Stein	b		7	e:4980	Stein	c	Q522045	4	294.3	homonym_far	same folded name, 294 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:3619	Friedeburg	c	Q696980	6	e:4479	Friedeburg	c	Q32018196	4	333.2	homonym_far	same folded name, 333 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4151	Zelle	c		5	e:4759	Zelle	c		4	560.2	homonym_far	same folded name, 560 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4785	Hilton	c		4	e:5729	Hilton	c		3	43.5	homonym_far	same folded name, 43 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4785	Hilton	c		4	e:5886	Hilton	c		3	31.6	homonym_far	same folded name, 32 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5729	Hilton	c		3	e:5886	Hilton	c		3	73.6	homonym_far	same folded name, 74 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4925	St. Mary, church of	b		4	e:5844	St. Mary, church of	b		4	30.9	homonym_far	same folded name, 31 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:4925	St. Mary, church of	b		4	e:5874	St. Mary, church of	b		3	61.8	homonym_far	same folded name, 62 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5844	St. Mary, church of	b		4	e:5874	St. Mary, church of	b		3	38.4	homonym_far	same folded name, 38 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5077	Eberstadt	c	Q1279785	3	e:5992	Eberstadt	c		3	64.5	homonym_far	same folded name, 65 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5242	Homberg	c	Q32060208	3	e:5443	Homberg	c		3	131.7	homonym_far	same folded name, 132 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:5647	Bolton	c		3	ml2:690	Bolton	c		53	113.7	homonym_far	same folded name, 114 km apart (limit 30 km): kept apart as possible homonyms; if the smaller point is a mislocated variant it is a duplicate beyond the limit, to be read	fold	note: only pairs with 3 mentions or more on each side are listed
+e:508	Nice	c	Q33959	108	e:2457	İznik	c		12	1881.7	reference_homonym	Nice (France) and İznik: the Latin Nicaea of Bithynia is İznik; a text saying Nicaea is not Nice		
+e:35	Frankfurt	c	Q1794	2033	e:384	Frankfurt (Oder)	c	Q4024	150	477.9	reference_homonym	Frankfurt am Main and Frankfurt (Oder): the two Frankfurts		
+e:313	Troy	c	Q22647	253	e:798	Troyes	c	Q5489	19	1987.1	reference_homonym	Troy and Troyes: the English 'Troye' is Troy, not Troyes		

@@ -1,0 +1,37 @@
+# Corrections of confirmed typos in a source register (verification of 2026-10-16). Applied by `ratlas reconcile build`.
+# coordinates from the GeoNames dump (same feature, CC BY 4.0); the register value is in the note.
+coll_slug	entity_key	lat	lon	note
+ckcc_epistolarium	ckcc_epistolarium:speyer.deu	49.3208	8.4311	CKCC register has 9.319 8.431 (the 4 of 49 is lost); GeoNames Speyer
+ckcc_epistolarium	ckcc_epistolarium:trier.deu	49.7556	6.6394	CKCC register has 48.747 6.634 (112 km south of Trier); GeoNames Trier
+ckcc_epistolarium	ckcc_epistolarium:ouderkerk-amstel.nld	52.2950	4.9075	CKCC register has 2.297 4.912 (the 5 of 52 is lost); GeoNames Ouderkerk aan de Amstel
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Saint_Denis	48.9356	2.3539	register (TGN 7612121) has 51.866667 11.583333 (Saxony-Anhalt); Saint-Denis near Paris
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Roppenheim	48.8417	8.0531	register (TGN 7615753) has 51.866667 11.583333 (copy of Saint Denis); GeoNames Roppenheim
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Habern	49.756667	15.478889	register has lat and lon swapped (15.478889 49.756667); Habry, CZ
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Kaiserebersdorf	48.148571	16.46153	register has lat and lon swapped; Kaiserebersdorf, Vienna
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Kalladorf	48.64292	16.08355	register has lat and lon swapped; Kalladorf, AT
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Herrlitz	49.230833	15.730548	register has lat and lon swapped; Heraltice, CZ
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Pirnitz	49.308333	15.676111	register has lat and lon swapped; Brtnice, CZ
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Kamenitz_Kamenice	49.901517	14.582427	register has lat and lon swapped; Kamenice, CZ
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Kallendorf_Chvalovice	48.786577	16.082349	register has lat and lon swapped; Chvalovice, CZ
+selbstzeugnisse_hab_diarium	selbstzeugnisse_hab_diarium:Mailand	45.4643	9.1895	register has 47.85 10.016667 (the same pair as Velletri, Bamberg, San Donnino); Milan
+bdpn	bdpn:place:L010	38.7223	-9.1393	manual review MR1330: Placed at the country point of Portugal (39.69N -8.13E, 5 km point) by name propagation of Portugal; Lisbon is at 38.7
+bdpn	bdpn:place:V008	48.2082	16.3738	manual review MR1344: Placed at the country point of Austria (48.0N 14.0E) by name propagation; Vienna is at 48.21N 16.37E, 180 km away.
+fruchtbringende_briefe	fruchtbringende_briefe:bernburg	51.7945	11.7388	audit-v2 sample: register has 51.0167 7.5833 (301 km from every Bernburg; a place in North Rhine-Westphalia); Anhalt-Bernburg is Bernburg (Saale), GeoNames
+bullinger	bullinger:l2063	46.1439	6.0817	audit-v2 sample: register has 49.656 3.301 (Picardy, 490 km away); the castles of Ternier are at Saint-Julien-en-Genevois near Geneva
+ckcc_epistolarium	ckcc_epistolarium:egmond.nld	52.6167	4.65	audit-v2 sample: register has 51.653 5.94 (Boxmeer, 195 km from every Egmond); the 258 Descartes letters of 1643-1649 are sent from Egmond-Binnen near Alkmaar (GeoNames)
+tagebuecher_christian_ii_anhalt	tagebuecher_christian_ii_anhalt:rohrbach	49.3800	8.6890	v2.2: the Elector rides to Rohrbach near Heidelberg (sample check of v2.1); GeoNames 2845694 Rohrbach, section of Heidelberg (the register id 2845711 is the Kraichgau namesake)
+bullinger	bullinger:l983	45.3578	9.3236	v2.2: "Schlacht von Marignano" (1515) is Melegnano (GeoNames 3173631); the register point was the Emilian hamlet 8981663, 107 km off (manual review MR1098)
+bullinger	bullinger:l1577	48.6436	9.6130	v2.2: "Boll bei Heiningen" (Göppingen), GeoNames 2946696; the register point was another Boll (MR1117)
+bullinger	bullinger:l1881	-	-	v2.2: "Gärnitz oder Gävernitz bei Meißen": no GeoNames feature; the register point (near Leipzig, from the wrong id 2922518) is dropped (MR1119)
+bullinger	bullinger:l2140	48.6200	10.1473	v2.2: Anhausen an der Brenz (Brenztalklöster), GeoNames 2956047; the register point was another Anhausen (MR1121)
+bullinger	bullinger:l3098	51.4150	9.6505	v2.2: "Hofrichter zu Münden" = Hann. Münden, GeoNames 2867613; the register point was another Münden (MR1127)
+bullinger	bullinger:l3119	-	-	v2.2: the Duchess of Longueville is a title, not the Norman hamlet 2997652: the register point is dropped (MR1128)
+bullinger	bullinger:l3355	-	-	v2.2: "zuͦ Neuburg in Saxen sol ein fürstentag werden" is not the Frisian hamlet 2866073: the register point is dropped (MR1131)
+tagebuecher_christian_ii_anhalt	tagebuecher_christian_ii_anhalt:alpen_herrschaft	51.5833	6.5167	v2.2: the lordship of Alpen (Herrschaft Alpen, county of Moers) is the town on the Lower Rhine (GeoNames 2958188), not the Alps
+religionsfrieden_quellenedition	religionsfrieden_quellenedition:e000001_religionsvergleich_kleve_mark_ravensberg_juelich_berg_1672_73#brueggen	51.2405	6.1838	v2.2: Brüggen on the Lower Rhine next to Wassenberg and Sittard, GeoNames 2943336 (MR1157); the register id 2943337 is another place
+religionsfrieden_quellenedition	religionsfrieden_quellenedition:e000001_religionsvergleich_kleve_mark_ravensberg_juelich_berg_1672_73#muelheim_am_rhein	50.9700	7.0100	v2.2: Cologne-Mülheim (MR1155), not the Eifel feature 2867842; the point is Mülheim's quarter of Cologne
+bullinger	bullinger:l219	50.9120	7.5298	v2.3 (check of v2.2, error 8): Homberg of the letter is the Homburg of Sayn-Wittgenstein near Nuembrecht, not the point 50.64 8.11 the register carried (50 km off); GeoNames 2899448 Homburg (PPL, Nuembrecht)
+ckcc_epistolarium	surf:fryburg	47.9959	7.8522	v2.3 (check of v2.2, error 2): the 1644 text is about Enghien and Mercy before Freiburg im Breisgau, not the Swiss canton of Fribourg; GeoNames 2925177 Freiburg im Breisgau
+map_of_early_modern_london	map_of_early_modern_london:THOR4	51.4995	-0.1273	v2.4 (check of v2.3): Thorney of the MoEML text is the island of Westminster (Thorney Island: the abbey and the palace), not a village near Colnbrook 20 km west; point of Westminster Abbey (Wikidata Q5921: 51.4994 N, 0.1273 W)
+map_of_early_modern_london	map_of_early_modern_london:STPA105	51.5131	-0.0917	v2.4 (check of v2.3): St. Pancras Soper Lane is the City parish on Pancras Lane (point of the MoEML register entry STPA1, St. Pancras Lane), not Camden's St Pancras 3 km away
+casebooks	surf:heath	51.9452	-0.6570	v2.4 (check of v2.3): Heath of the Casebooks is the directory entry Heath and Reach, Leighton Buzzard, Bedfordshire (PLACE412, the directory's own point, geocoding rated low: about 2 km), not an Essex hamlet 90 km away

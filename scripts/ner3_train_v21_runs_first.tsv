@@ -1,0 +1,6 @@
+# NER v2.1 first job: XL lc12 (A100, speculative start; cancelled if the mDeBERTa runs say lc12 does not help) + the four mDeBERTa runs (L40S)
+v21_xlmrxl_lc12|MIX_SFULL_LC12|facebook/xlm-roberta-xl|2e-5|45|a100|--head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 60|
+v21_mdeberta_lc12|MIX_SFULL_LC12|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_lc25|MIX_SFULL_LC25|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_lc12n|MIX_SFULL_LC12N|microsoft/mdeberta-v3-base|3e-5|25|any||
+v21_mdeberta_ctrl|MIX_SFULL_V21|microsoft/mdeberta-v3-base|3e-5|25|any||

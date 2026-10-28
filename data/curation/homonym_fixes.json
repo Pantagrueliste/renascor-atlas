@@ -1,0 +1,2523 @@
+{
+ "note": "Audit des homonymes (23 oct. 2026). Lieux d'édition placés sur un homonyme : Sodom (Virginie-Occidentale) pour Sodome, Emmaus (Pennsylvanie), Troja (Prague) pour Troie, un QID de l'édition qui vise le mauvais lieu (Vésuve au Svalbard), ou notre géocodage par nom (Ladon dans le Loiret). Chaque entrée a été lue dans son contexte (origin : verdict = signalée par les détecteurs, rule_checked = touchée par une règle de garde, check = trouvée par le contrôle des valeurs aberrantes). Lu par ratlas.curation (reconcile build2, puis la page du globe). Les points du calque modèle sont corrigés dans data/model_layer_overrides.json.",
+ "actions": {
+  "move": "le lieu prend le point donné (lat, lon, kind ; qid = l'élément du bon lieu, pour rejoindre son point). Lecture stricte : seulement si un identifiant de l'édition elle-même confirme ce point (même QID, ou point d'autorité à 30 km, 150 km pour une aire) ; sinon le lieu passe en lecture augmentée (source 'curated').",
+  "unplace": "lieu réel mais incertain : plus de point, plus d'identifiant (les ids donnés menaient au mauvais lieu).",
+  "not_a_place": "pas un lieu (nom commun, personne, adjectif) : plus de point ni d'identifiant.",
+  "keep": "lu et juste : les règles de garde ne le retirent pas."
+ },
+ "counts": {
+  "move": 75,
+  "unplace": 39,
+  "keep": 35,
+  "not_a_place": 11
+ },
+ "entries": [
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:saale_river",
+   "name": "Saale, Fluss",
+   "action": "move",
+   "lat": 51.9667,
+   "lon": 11.8833,
+   "kind": "n",
+   "was": {
+    "source": "wikidata",
+    "lat": 51.9649,
+    "lon": 9.6604,
+    "ids": [
+     "wikidata:Q2208988",
+     "geonames:2842699"
+    ]
+   },
+   "reason_fr": "Les contextes (Sahle près de Barby, Bernbourg, armées impériales) désignent la Saale de l'Elbe. L'id éditeur (Q2208988) mène à la Saale de la Leine. Point proposé : confluent avec l'Elbe.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1151",
+   "name": "Tunis",
+   "action": "move",
+   "lat": 36.8065,
+   "lon": 10.1815,
+   "kind": "c",
+   "qid": "Q3572",
+   "was": {
+    "source": "register",
+    "lat": 33.8439,
+    "lon": 9.4001
+   },
+   "reason_fr": "Contextes : expédition de Charles Quint contre Barberousse en 1535, ville de Tunis. Le registre donne un point au centre du pays.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2219",
+   "name": "Troja",
+   "action": "move",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "kind": "c",
+   "qid": "Q22647",
+   "was": {
+    "source": "register",
+    "lat": 50.1191,
+    "lon": 14.4223
+   },
+   "reason_fr": "Contextes : guerre de Troie, Troyens, Laocoon, cheval de Troie. Le registre place Troja (Prague). Troie = Hisarlik.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Bremen",
+   "name": "Bremen",
+   "action": "move",
+   "lat": 53.0758,
+   "lon": 8.8072,
+   "kind": "c",
+   "qid": "Q24879",
+   "was": {
+    "source": "register",
+    "lat": 48.0333,
+    "lon": 9.3667,
+    "ids": [
+     "tgn:7201366"
+    ]
+   },
+   "reason_fr": "L'itinéraire cite Verden, Langwedel, Bremen, Delmenhorst : c'est Brême. Le point du registre est en Souabe.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:sint-gillis-waas.bel",
+   "name": "Sint-Gillis-Waas",
+   "action": "move",
+   "lat": 51.2167,
+   "lon": 4.1333,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 50.825,
+    "lon": 4.345
+   },
+   "reason_fr": "Lettres datées du camp (castris ad S.t Aegid, Au camp de Saint Gilles) en 1646 : camp de l'armée des Provinces-Unies dans le Waasland. Le point actuel est Saint-Gilles (Bruxelles).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "koenigsfelden",
+   "entity_key": "koenigsfelden:loc011595",
+   "name": "Bergheim",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 47.2724,
+    "lon": 8.6826,
+    "ids": [
+     "wikidata:Q318168"
+    ]
+   },
+   "reason_fr": "Biens du couvent avec Ellewilr, Morswilre, Ungersheim (diocèse de Bâle, Haute-Alsace) : le point zurichois du registre est faux. Bergheim alsacien (Q318168) plausible mais non prouvé. Sans point.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ssrq_swisslaw",
+   "entity_key": "ssrq_swisslaw:loc013070",
+   "name": "Saudi",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 25.0,
+    "lon": 45.0
+   },
+   "reason_fr": "Procès de 1741 : 'Zollet du Saudi', toponyme local francophone, pas l'Arabie saoudite. Lieu exact inconnu.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "fruchtbringende_briefe",
+   "entity_key": "fruchtbringende_briefe:halle",
+   "name": "Halle",
+   "action": "move",
+   "lat": 51.4825,
+   "lon": 11.97,
+   "kind": "c",
+   "qid": "Q2814",
+   "was": {
+    "source": "register",
+    "lat": 51.9833,
+    "lon": 9.5667,
+    "ids": [
+     "wikidata:Q649782",
+     "tgn:1039443"
+    ]
+   },
+   "reason_fr": "Contextes : Halle/Saale, résidence de l'administrateur Christian-Guillaume, imprimeur à Halle. L'id éditeur (Q649782) vise Halle (Westphalie).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2202",
+   "name": "Sodom",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 37.9165,
+    "lon": -81.8332
+   },
+   "reason_fr": "Sodome biblique (Gn 19) et allégorique (cour impériale, Venise foudroyée). Le registre Bullinger donne Sodom (Virginie-Occidentale). Aucun lieu historique sûr : sans point.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1814",
+   "name": "Tyros",
+   "action": "move",
+   "lat": 33.2667,
+   "lon": 35.2,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 37.2407,
+    "lon": 22.8435,
+    "ids": [
+     "wikidata:Q3563614",
+     "geonames:252847"
+    ]
+   },
+   "reason_fr": "Contextes : Tyr du Liban, Ez 26-28, sépulture à Tyr. Le registre donne Tyros d'Arcadie (id éditeur Q3563614 erroné).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1399",
+   "name": "Caesarea",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 49.2215,
+    "lon": -2.1358
+   },
+   "reason_fr": "Référents mélangés : Césarée de Cappadoce, de Maurétanie, et 'Caesarea maiestas' (adjectif). Jersey est faux. Sans point.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l247",
+   "name": "Kempten",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 47.332,
+    "lon": 8.8047
+   },
+   "reason_fr": "Le contexte cite la Herrschaft Kempten (Kt. Zürich) des Blarer. Le registre est juste. Seule la forme 'Campidonę' (1549) peut viser Kempten (Allgäu) : à surveiller.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Giessen",
+   "name": "Gießen",
+   "action": "move",
+   "lat": 50.5841,
+   "lon": 8.6784,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 47.6333,
+    "lon": 9.6,
+    "ids": [
+     "tgn:7183940"
+    ]
+   },
+   "reason_fr": "Itinéraire : Giessen entre Friedberg et Marburg. C'est Gießen (Hesse), pas le lac de Constance.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-911",
+   "name": "Ladon",
+   "action": "move",
+   "lat": 37.65,
+   "lon": 21.95,
+   "kind": "n",
+   "was": {
+    "source": "name_geonames",
+    "lat": 48.0026,
+    "lon": 2.5372
+   },
+   "reason_fr": "Contextes : fleuve Ladon d'Arcadie, Syrinx. Le géocodage par nom donne le Loiret.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:trent",
+   "name": "Trent",
+   "action": "keep",
+   "was": {
+    "source": "geonames",
+    "lat": 54.2045,
+    "lon": 10.367
+   },
+   "reason_fr": "Itinéraire de février 1623 : Kiel, Trentin/Trent, Ahrensbök, Lübeck. C'est bien Trent au Holstein.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-278",
+   "name": "Castell zu Athen",
+   "action": "move",
+   "lat": 37.9715,
+   "lon": 23.7257,
+   "kind": "b",
+   "was": {
+    "source": "name_propagation",
+    "lat": 49.7411,
+    "lon": 10.3511
+   },
+   "reason_fr": "Contextes : Parthenon, Propylées, Castell zu Athen = Acropole. Castell (Franconie) vient d'une propagation de nom.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l3125",
+   "name": "Ortenburg",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 46.8,
+    "lon": 13.45,
+    "ids": [
+     "wikidata:Q872476",
+     "geonames:2769412"
+    ]
+   },
+   "reason_fr": "Deux référents : Ortenburg en Carinthie (1534) et Ortenburg bavarois (1564). Aucun ne porte les 4 mentions : sans point.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:charleville.fra",
+   "name": "Charleville",
+   "action": "move",
+   "lat": 49.7733,
+   "lon": 4.7203,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 48.814,
+    "lon": 3.666
+   },
+   "reason_fr": "Lettres de 1642 et 1644 datées 'De Charleville' d'un correspondant de Grotius : Charleville des Ardennes, non le hameau de la Marne. Confiance moyenne.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:wertheim.aut",
+   "name": "Wertheim",
+   "action": "move",
+   "lat": 49.759,
+   "lon": 9.509,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 47.932,
+    "lon": 13.254
+   },
+   "reason_fr": "Lettre 'A Werthaim, 17/27 janvier 1643' à Grotius : Wertheim am Main. Pas de Wertheim en Haute-Autriche. Confiance moyenne.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-1142",
+   "name": "Oldenburg",
+   "action": "unplace",
+   "was": {
+    "source": "geonames",
+    "lat": 54.295,
+    "lon": 10.8904,
+    "ids": [
+     "geonames:2857451",
+     "tgn:7004438"
+    ]
+   },
+   "reason_fr": "Le GeoNames éditeur pointe Oldenburg in Holstein. Sandrart vise plutôt Oldenbourg (Basse-Saxe) ou le comté. Incertain : sans point.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2391",
+   "name": "Reichstag",
+   "action": "not_a_place",
+   "was": {
+    "source": "register",
+    "lat": 52.4676,
+    "lon": 13.528
+   },
+   "reason_fr": "Une diète, pas un lieu. Le registre l'a placé au bâtiment de Berlin. Les contextes disent « Reichstag in Worms ».",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-1198",
+   "name": "Bethulia",
+   "action": "unplace",
+   "was": {
+    "source": "name_propagation",
+    "lat": 23.754,
+    "lon": 89.6304
+   },
+   "reason_fr": "Béthulie du livre de Judith, lieu non localisé. Le point du Bangladesh vient d'une propagation de nom vers le registre Bullinger.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "abacus",
+   "entity_key": "abacus:tabo",
+   "name": "Tabor",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 48.1589,
+    "lon": 16.1093
+   },
+   "reason_fr": "Contexte religieux baroque : plutôt le mont Thabor, mais Tabor de Bohême est possible. Le point de Basse-Autriche est faux. Non tranché.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-276",
+   "name": "Calecuth",
+   "action": "move",
+   "lat": 11.25,
+   "lon": 75.78,
+   "kind": "c",
+   "was": {
+    "source": "wikidata",
+    "lat": 22.5675,
+    "lon": 88.37,
+    "ids": [
+     "wikidata:Q1348",
+     "geonames:1275004"
+    ]
+   },
+   "reason_fr": "Calecuth est Calicut (Kozhikode), pas Calcutta. Les rois de Calecuth sont ceux du Malabar.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "koenigsfelden",
+   "entity_key": "koenigsfelden:loc006590",
+   "name": "Esslingen",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 47.2833,
+    "lon": 8.7104,
+    "ids": [
+     "wikidata:Q3786"
+    ]
+   },
+   "reason_fr": "Le registre dit Esslingen ZH, l'identifiant Wikidata dit Esslingen am Neckar. Les deux sont plausibles. Non tranché.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:marienburg.deu",
+   "name": "Marienburg",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 50.651,
+    "lon": 13.165
+   },
+   "reason_fr": "Le registre donne Marienberg (Erzgebirge). Marienburg désigne d'ordinaire Malbork, mais d'autres sont possibles. Sans point faute de preuve.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:breme",
+   "name": "Breme",
+   "action": "move",
+   "lat": 53.0758,
+   "lon": 8.8072,
+   "kind": "c",
+   "qid": "Q24879",
+   "was": {
+    "source": "wikidata",
+    "lat": 45.1276,
+    "lon": 8.6256,
+    "ids": [
+     "wikidata:Q30023115",
+     "geonames:3181573"
+    ]
+   },
+   "reason_fr": "Journal allemand : Breme, Brema, Bremio sont Brême. Breme en Lombardie (Q30023115) est un homonyme.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:neuenburg",
+   "name": "Neuenburg",
+   "action": "unplace",
+   "was": {
+    "source": "geonames",
+    "lat": 53.3873,
+    "lon": 7.9533,
+    "ids": [
+     "geonames:2865809"
+    ]
+   },
+   "reason_fr": "Plusieurs Neuenburg possibles (Neuchâtel, Neuenburg am Rhein, Nyborg). Le hameau de Basse-Saxe est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:bar",
+   "name": "Bar",
+   "action": "unplace",
+   "was": {
+    "source": "wikidata",
+    "lat": 49.0781,
+    "lon": 27.6831,
+    "ids": [
+     "wikidata:Q737925",
+     "geonames:712861"
+    ]
+   },
+   "reason_fr": "Bar en Ukraine (Q737925) est très improbable pour un voyage en France. Bar-le-Duc est probable mais non établi.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "betamasaheft_geez",
+   "entity_key": "betamasaheft_geez:LOC6222",
+   "name": "Wäräb",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 8.0,
+    "lon": 28.85
+   },
+   "reason_fr": "Toponyme éthiopien. Le Warrap du Soudan du Sud vient d'un géocodage par nom.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2382",
+   "name": "Bethulia",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 23.754,
+    "lon": 89.6304
+   },
+   "reason_fr": "Béthulie de Judith. Le registre Bullinger donne le Bangladesh (homonyme moderne). Source du défaut propagé au calque modèle et à Sandrart.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2152",
+   "name": "Owen",
+   "action": "move",
+   "lat": 48.597,
+   "lon": 9.443,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 38.5303,
+    "lon": -84.8193
+   },
+   "reason_fr": "Le contexte dit Burg Teck au-dessus d'Owen (Kr. Esslingen). Le registre donne le Kentucky.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "kaiserin_eleonora_magdalena",
+   "entity_key": "kaiserin_eleonora_magdalena:emt_place_id__272",
+   "name": "Save, Fluss",
+   "action": "move",
+   "lat": 44.82,
+   "lon": 20.45,
+   "kind": "n",
+   "was": {
+    "source": "register",
+    "lat": -20.9073,
+    "lon": 35.0673,
+    "ids": [
+     "wikidata:Q293988",
+     "geonames:1027190"
+    ]
+   },
+   "reason_fr": "Fleuve Save (Saw) près de Gradisca, en 1688. Pas le Save du Mozambique (Q293988). Point : confluence de Belgrade.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "croala",
+   "entity_key": "surf:graeciam",
+   "name": "Graeciam",
+   "action": "move",
+   "lat": 39.0,
+   "lon": 22.5,
+   "kind": "a",
+   "qid": "Q41",
+   "was": {
+    "source": "name_latin",
+    "lat": 47.0708,
+    "lon": 15.4386
+   },
+   "reason_fr": "Graecia, accusatif latin : la Grèce. Lu à tort comme Graz.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:mauritanie",
+   "name": "Mauritanie",
+   "action": "move",
+   "was": {
+    "source": "name_geonames",
+    "lat": 20.25,
+    "lon": -10.5
+   },
+   "reason_fr": "Maurétanie antique (Maghreb occidental), pas la Mauritanie moderne. Aire floue, on ne place pas. Révisé le 23 oct. (signalement du propriétaire) : un point d'aire unique pour la Maurétanie, centre de la région (33,0 ; -4,5), QID Q309272.",
+   "origin": "verdict",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "freem_bvh",
+   "entity_key": "surf:mauritanie",
+   "name": "Mauritanie",
+   "action": "move",
+   "was": {
+    "source": "name_geonames",
+    "lat": 20.25,
+    "lon": -10.5
+   },
+   "reason_fr": "Maurétanie antique (Maghreb occidental), pas la Mauritanie moderne. Aire floue, on ne place pas. Révisé le 23 oct. (signalement du propriétaire) : un point d'aire unique pour la Maurétanie, centre de la région (33,0 ; -4,5), QID Q309272.",
+   "origin": "verdict",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "casebooks",
+   "entity_key": "casebooks:PLACE2234",
+   "name": "the north",
+   "action": "not_a_place",
+   "was": {
+    "source": "casebooks_directory",
+    "lat": 51.7341,
+    "lon": -1.2637
+   },
+   "reason_fr": "Déictique (« of the north »). Les coordonnées d'Oxford viennent d'un annuaire erroné.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ssrq_swisslaw",
+   "entity_key": "ssrq_swisslaw:loc011994",
+   "name": "Villeta",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": -25.5333,
+    "lon": -57.4667
+   },
+   "reason_fr": "Villete en 1464, diocèse de Lausanne : pas le Paraguay. Villette VD probable mais non tranché.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "hainhofer_reisen",
+   "entity_key": "hainhofer_reisen:sankt_thomas",
+   "name": "Saint Thomas",
+   "action": "unplace",
+   "was": {
+    "source": "wikidata",
+    "lat": 18.3333,
+    "lon": -64.9167,
+    "ids": [
+     "wikidata:Q463937"
+    ]
+   },
+   "reason_fr": "« Insula Sancti Thomae » : plutôt São Tomé, mais non tranché. Les Îles Vierges sont peu plausibles.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "qhod_sema",
+   "entity_key": "qhod_sema:mpr14125",
+   "name": "Deylem",
+   "action": "move",
+   "lat": 37.1,
+   "lon": 50.0,
+   "kind": "a",
+   "was": {
+    "source": "register",
+    "lat": 42.0,
+    "lon": 50.0
+   },
+   "reason_fr": "Daylam, région du nord de l'Iran (firman de 1568). 42N 50E tombe en mer Caspienne. Point régional approximatif.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:luda",
+   "name": "LUDA",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 38.9122,
+    "lon": 121.6022
+   },
+   "reason_fr": "Titre de poème latin (« Luda ad Ambram »). L'alias chinois de Dalian est un faux ami.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1307",
+   "name": "Mengen",
+   "action": "move",
+   "lat": 48.0495,
+   "lon": 9.3301,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 40.9395,
+    "lon": 32.0757
+   },
+   "reason_fr": "Dans l'aire de Bullinger, il s'agit de Mengen en Wurtemberg. Le registre donne un homonyme turc (Bolu).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l614",
+   "name": "Augusta",
+   "action": "move",
+   "lat": 48.3715,
+   "lon": 10.8985,
+   "kind": "c",
+   "qid": "Q2749",
+   "was": {
+    "source": "register",
+    "lat": 37.2407,
+    "lon": 15.2212,
+    "ids": [
+     "wikidata:Q30022428",
+     "geonames:2525646"
+    ]
+   },
+   "reason_fr": "Augusta, Augustam chez Bullinger : Augsbourg, pas Augusta en Sicile (Q30022428).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1259",
+   "name": "Oléron",
+   "action": "move",
+   "lat": 45.925,
+   "lon": -1.28,
+   "kind": "n",
+   "was": {
+    "source": "register",
+    "lat": 48.825,
+    "lon": 1.9388
+   },
+   "reason_fr": "L'île d'Oléron, pas un homonyme des Yvelines.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1546",
+   "name": "Maurienne",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 47.2753,
+    "lon": -1.4431
+   },
+   "reason_fr": "La Maurienne est en Savoie, vallée étendue. Le point près de Nantes est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "qhod_sema",
+   "entity_key": "qhod_sema:mpr14094",
+   "name": "İnecik",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 40.93,
+    "lon": 27.28
+   },
+   "reason_fr": "İnecik de Tekirdağ (Thrace) est un lieu réel. L'écart vient de l'identifiant Wikidata, pas du registre.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Salerno",
+   "name": "Salerno",
+   "action": "move",
+   "lat": 40.683,
+   "lon": 14.7637,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 39.3667,
+    "lon": 16.4,
+    "ids": [
+     "tgn:7042598"
+    ]
+   },
+   "reason_fr": "Le point en Calabre est hors de la ville. Salerne est en Campanie.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Schoenberg_im_Stubaital",
+   "name": "Schönberg im Stubaital",
+   "action": "move",
+   "lat": 47.1833,
+   "lon": 11.4167,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 48.7333,
+    "lon": 9.3333,
+    "ids": [
+     "tgn:1026056"
+    ]
+   },
+   "reason_fr": "Contexte : Schönberg, Steinach, Matrei au Tyrol. Le registre a copié les coordonnées d'Oberesslingen. TGN 1026056 confirme le Tyrol.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Capo_Passeto",
+   "name": "Capo Passeto",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 37.7167,
+    "lon": 15.1833,
+    "ids": [
+     "tgn:7044029"
+    ]
+   },
+   "reason_fr": "Coordonnées de Giarre recopiées. Le cap visé est sans doute Capo Passero, mais la forme est incertaine.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:ancone",
+   "name": "Ancône",
+   "action": "move",
+   "lat": 43.55,
+   "lon": 13.52,
+   "kind": "c",
+   "qid": "Q3415",
+   "was": {
+    "source": "geonames",
+    "lat": 44.5811,
+    "lon": 4.7271,
+    "ids": [
+     "geonames:3037770"
+    ]
+   },
+   "reason_fr": "L'id GeoNames de l'éditeur pointe vers Ancône (Drôme). Le journal parle d'Ancona, port des Marches.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "rubens_online",
+   "entity_key": "rubens_online:cassel",
+   "name": "Cassel",
+   "action": "unplace",
+   "was": {
+    "source": "wikidata",
+    "lat": 50.8,
+    "lon": 2.4872,
+    "ids": [
+     "wikidata:Q11160",
+     "tgn:1032436"
+    ]
+   },
+   "reason_fr": "Q11160 est Cassel (Nord). Kassel (Hesse) est plausible, mais rien ne le prouve.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:santiago.cpv",
+   "name": "Santiago",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 15.085,
+    "lon": -23.62
+   },
+   "reason_fr": "« Op de ree van St. Jago, op t Hof van Zeelandt, 1645 » : rade de Santiago au Cap-Vert. Correct.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "betamasaheft_geez",
+   "entity_key": "betamasaheft_geez:LOC6221",
+   "name": "Warab",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 8.0,
+    "lon": 28.85
+   },
+   "reason_fr": "Lieu éthiopien dans la Chronique de Susenyos. Le point (Warrap, Soudan du Sud) est trouvé par nom seul.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2417",
+   "name": "Emmaus",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 40.5395,
+    "lon": -75.4969
+   },
+   "reason_fr": "Emmaüs de Luc 24 placé à Emmaus (Pennsylvanie). Localisation antique disputée.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2203",
+   "name": "Theben",
+   "action": "move",
+   "lat": 38.325,
+   "lon": 23.319,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 48.1744,
+    "lon": 16.9842,
+    "ids": [
+     "wikidata:Q661046",
+     "geonames:3077172"
+    ]
+   },
+   "reason_fr": "Penthée, roi de Thèbes : Thèbes de Béotie, pas Devín. Le QID/GeoNames du registre est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2354",
+   "name": "Ninives",
+   "action": "move",
+   "lat": 36.36,
+   "lon": 43.15,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 57.3485,
+    "lon": 22.7891
+   },
+   "reason_fr": "« Comme dans le cas de Ninive » (Jonas). Ninive d'Assyrie, pas un village de Lettonie.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1679",
+   "name": "Eleutheropolis",
+   "action": "move",
+   "lat": 31.61,
+   "lon": 34.89,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 0.4052,
+    "lon": 9.4386
+   },
+   "reason_fr": "Épiphane né près d'Eleutheropolis en Palestine (Beit Guvrin). Le registre la met au Gabon.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l988",
+   "name": "Pyrrha",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 49.8508,
+    "lon": -73.6057
+   },
+   "reason_fr": "Rivière de Pyrrha chez Pline. Le point du Québec est absurde, le bon lieu est incertain.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1549",
+   "name": "Aktion",
+   "action": "move",
+   "lat": 38.95,
+   "lon": 20.76,
+   "kind": "n",
+   "was": {
+    "source": "register",
+    "lat": 51.3138,
+    "lon": 12.3875
+   },
+   "reason_fr": "« Actiaco littore » : Actium en Grèce, pas Leipzig.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l1025",
+   "name": "Lateranensi",
+   "action": "not_a_place",
+   "was": {
+    "source": "register",
+    "lat": 45.6974,
+    "lon": 9.6764
+   },
+   "reason_fr": "Adjectif dans « in concilio Lateranensi » (concile). Pas un lieu à cartographier.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2019",
+   "name": "Piceno",
+   "action": "move",
+   "lat": 43.1,
+   "lon": 13.4,
+   "kind": "a",
+   "was": {
+    "source": "register",
+    "lat": 51.0059,
+    "lon": 5.4979
+   },
+   "reason_fr": "Turcs ravageant le Piceno : région des Marches, pas la Belgique.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2168",
+   "name": "Milton",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 30.6324,
+    "lon": -87.0397
+   },
+   "reason_fr": "L'éditeur écrit « Milton in Kent oder London ». Incertain, et la Floride est fausse.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2005",
+   "name": "Alcalá",
+   "action": "move",
+   "lat": 40.482,
+   "lon": -3.364,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 4.6749,
+    "lon": -75.7817
+   },
+   "reason_fr": "Pedro de Soto né à Alcalá (de Henares), Espagne. Le registre la met en Colombie.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "grand_tour:vesuv",
+   "name": "Vesuv",
+   "action": "move",
+   "lat": 40.82,
+   "lon": 14.43,
+   "kind": "n",
+   "qid": "Q524",
+   "was": {
+    "source": "wikidata",
+    "lat": 78.073,
+    "lon": 14.8057,
+    "ids": [
+     "wikidata:Q16897587",
+     "geonames:2727909"
+    ]
+   },
+   "reason_fr": "Cendres du Vésuve près de Naples. Le QID de l'édition (Q16897587) désigne un lieu du Svalbard.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_nantes_frz_articles_particulieres#vassy",
+   "name": "Vassy",
+   "action": "move",
+   "lat": 48.4986,
+   "lon": 4.9444,
+   "kind": "c",
+   "qid": "Q728872",
+   "was": {
+    "source": "wikidata",
+    "lat": -12.2333,
+    "lon": 44.35,
+    "ids": [
+     "wikidata:Q7916933",
+     "geonames:921660"
+    ]
+   },
+   "reason_fr": "Liste Châlons, Vassy, Vitry-le-François : Wassy (Haute-Marne). Le QID (Q7916933) donne les Comores.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "kaiserin_eleonora_magdalena",
+   "entity_key": "kaiserin_eleonora_magdalena:emt_place_id__699",
+   "name": "València",
+   "action": "move",
+   "lat": 39.47,
+   "lon": -0.376,
+   "kind": "c",
+   "qid": "Q8818",
+   "was": {
+    "source": "register",
+    "lat": 10.1615,
+    "lon": -68.0004,
+    "ids": [
+     "wikidata:Q54880",
+     "geonames:3625549"
+    ]
+   },
+   "reason_fr": "« Valenza und Saragoza » en 1706 : Valence d'Espagne, pas le Venezuela (Q54880).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:banda",
+   "name": "Banda",
+   "action": "move",
+   "lat": -4.52,
+   "lon": 129.9,
+   "kind": "n",
+   "was": {
+    "source": "wikidata",
+    "lat": 25.4833,
+    "lon": 80.3333,
+    "ids": [
+     "wikidata:Q2575623",
+     "geonames:1277397"
+    ]
+   },
+   "reason_fr": "« In Oost-Indien, unweit von Banda » : îles Banda (Moluques), pas l'Uttar Pradesh (Q2575623).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:rio_de_la_plata_river",
+   "name": "Río de la Plata, Fluss",
+   "action": "move",
+   "lat": -35.0,
+   "lon": -57.0,
+   "kind": "n",
+   "was": {
+    "source": "wikidata",
+    "lat": 18.4758,
+    "lon": -66.2553,
+    "ids": [
+     "wikidata:Q7335384",
+     "geonames:4567951"
+    ]
+   },
+   "reason_fr": "Estuaire du Río de la Plata. Le QID (Q7335384) donne Porto Rico.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "camena_poemata",
+   "entity_key": "surf:atlantis",
+   "name": "Atlantis",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_geonames",
+    "lat": -33.5667,
+    "lon": 18.4834
+   },
+   "reason_fr": "Poèmes latins (Atlantide, Atlanticus, Atlantiades) : lieu mythique ou épithète. Atlantis (Le Cap) est un faux positif du géocodage par nom.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:sichem",
+   "name": "Sichem",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 51.0019,
+    "lon": 4.9832
+   },
+   "reason_fr": "Deux référents sous une clé : Zichem (ckcc, correct) et Sichem biblique (epistemon_bvh). La mention biblique perd le point belge.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "surf:joppe",
+   "name": "Joppe",
+   "action": "move",
+   "lat": 32.05,
+   "lon": 34.75,
+   "kind": "c",
+   "qid": "Q180294",
+   "was": {
+    "source": "name_geonames",
+    "lat": 52.2075,
+    "lon": 6.2319
+   },
+   "reason_fr": "« zu Joppe ... biß Jerusalem » : Jaffa, pas Joppe en Gueldre.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "surf:mauritio",
+   "name": "Mauritio",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_propagation",
+    "lat": -20.3,
+    "lon": 57.5833
+   },
+   "reason_fr": "Nonce nommé Mauritio : une personne. La propagation de nom l'a placé à l'île Maurice.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:bav",
+   "name": "BAV.",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_geonames",
+    "lat": 40.6516,
+    "lon": 109.8439
+   },
+   "reason_fr": "Abréviation de Bavière dans « UTR. BAV. DUX ». Le point de Baotou est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:athos",
+   "name": "Athos",
+   "action": "move",
+   "lat": 40.16,
+   "lon": 24.33,
+   "kind": "n",
+   "was": {
+    "source": "name_geonames",
+    "lat": 43.4141,
+    "lon": -0.9738
+   },
+   "reason_fr": "Le mont Athos, pas Athos-Aspis dans les Pyrénées-Atlantiques.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:sabae",
+   "name": "Sabae",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 35.9465,
+    "lon": 136.185
+   },
+   "reason_fr": "Sabéens en latin (peuple/pays). La ville japonaise est un homonyme.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:drusus",
+   "name": "Drusus",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_geonames",
+    "lat": 38.321,
+    "lon": 16.3219
+   },
+   "reason_fr": "Personnage romain. Drusù (Calabre) est un homonyme approximatif.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "epistemon_bvh:loc_meros",
+   "name": "Meros",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 48.21,
+    "lon": -3.7505
+   },
+   "reason_fr": "Mont Meros de la légende de Dionysos (Inde). Le point breton est faux ; la position précise est mythique.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:belgam",
+   "name": "Belgam",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 15.8521,
+    "lon": 74.5045
+   },
+   "reason_fr": "Accusatif latin de Belgae (Belgique/Belges). Belgaum (Inde) est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "surf:ebora",
+   "name": "Ebora",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 55.9521,
+    "lon": -3.1965
+   },
+   "reason_fr": "Évora ou York selon la source ; Édimbourg est faux. Référent incertain.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "surf:ebora",
+   "name": "Ebora",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 55.9521,
+    "lon": -3.1965
+   },
+   "reason_fr": "Évora ou York selon la source ; Édimbourg est faux. Référent incertain.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "dasypodius_dictionarium_latinogermanicum",
+   "entity_key": "dasypodius_dictionarium_latinogermanicum:oroba",
+   "name": "Oroba",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 7.9904,
+    "lon": -6.6254
+   },
+   "reason_fr": "« Ein statt Assyrie ». Le point ivoirien (Woroba) est faux ; la ville antique est incertaine.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "dasypodius_dictionarium_latinogermanicum",
+   "entity_key": "dasypodius_dictionarium_latinogermanicum:vulcano",
+   "name": "Hiera",
+   "action": "move",
+   "lat": 38.4,
+   "lon": 14.96,
+   "kind": "n",
+   "was": {
+    "source": "name_latin",
+    "lat": 50.7751,
+    "lon": 10.8959
+   },
+   "reason_fr": "« Ein Insel zwüschen Sicilien vnd Lipari » : Vulcano. Pas la Gera de Thuringe.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "dasypodius_dictionarium_latinogermanicum",
+   "entity_key": "dasypodius_dictionarium_latinogermanicum:luceria",
+   "name": "Luceria",
+   "action": "move",
+   "lat": 41.46,
+   "lon": 15.34,
+   "kind": "c",
+   "qid": "Q51933",
+   "was": {
+    "source": "wikidata",
+    "lat": 44.609,
+    "lon": 10.4118,
+    "ids": [
+     "wikidata:Q3265119"
+    ]
+   },
+   "reason_fr": "« Ein stat in Apulien » : Lucera (Pouilles). Le QID (Q3265119) donne Luzzara en Émilie.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:palatium",
+   "name": "Palatium",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_latin",
+    "lat": 47.1384,
+    "lon": -1.3361
+   },
+   "reason_fr": "Nom commun latin (palais). Le Pallet est un faux appariement.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "germanc",
+   "entity_key": "germanc:NEWS_P1_OOD_1679_nuernberg1#ASHr",
+   "name": "Palatium",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_geonames",
+    "lat": 45.4593,
+    "lon": 7.9789
+   },
+   "reason_fr": "« in sein Palatium » : palais du roi, nom commun.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "surf:peronam",
+   "name": "Peronam",
+   "action": "move",
+   "lat": 49.93,
+   "lon": 2.93,
+   "kind": "c",
+   "was": {
+    "source": "name_latin",
+    "lat": 58.3844,
+    "lon": 24.4989
+   },
+   "reason_fr": "Accusatif latin de Péronne, en 1536 (guerre franco-impériale). Pas Pärnu.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "lettres_calvin",
+   "entity_key": "surf:ville",
+   "name": "ville",
+   "action": "not_a_place",
+   "was": {
+    "source": "wikidata",
+    "lat": 46.2,
+    "lon": 6.15,
+    "ids": [
+     "wikidata:Q71"
+    ]
+   },
+   "reason_fr": "Nom commun. Il ne faut pas le placer à Genève.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ssrq_swisslaw",
+   "entity_key": "ssrq_swisslaw:loc011051",
+   "name": "Gumma",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 36.5075,
+    "lon": 138.9823
+   },
+   "reason_fr": "« in der Gumma hinder Rechthalten » (1646) : lieu-dit fribourgeois. Gunma (Japon) est faux. Position exacte inconnue.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "postscriptum",
+   "entity_key": "postscriptum:América, Guatemala, San Salvador",
+   "name": "América, Guatemala, San Salvador",
+   "action": "move",
+   "lat": 13.69,
+   "lon": -89.19,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": -24.1993,
+    "lon": -65.3075
+   },
+   "reason_fr": "Registre : Guatemala, San Salvador (1679). San Salvador d'Amérique centrale, pas Jujuy.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "postscriptum",
+   "entity_key": "postscriptum:África, Congo, Pinda",
+   "name": "África, Congo, Pinda",
+   "action": "move",
+   "lat": -6.13,
+   "lon": 12.37,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": -5.8333,
+    "lon": 18.9667
+   },
+   "reason_fr": "Pinda = Mpinda, port à l'embouchure du Congo (1549). Les coordonnées du registre sont 600 km trop à l'est.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:portugiesisch-indien",
+   "name": "Portugiesisch-Indien (Estado da Índia)",
+   "action": "move",
+   "lat": 15.5,
+   "lon": 73.9,
+   "kind": "a",
+   "was": {
+    "source": "wikidata",
+    "lat": 2.1889,
+    "lon": 102.3844,
+    "ids": [
+     "wikidata:Q323904"
+    ]
+   },
+   "reason_fr": "« Portughesische Indianische Flotte » (1650) : État de l'Inde, capitale Goa. Malacca est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "germanc",
+   "entity_key": "germanc:NEWS_P3_WMD_1784_mannheim#NYC",
+   "name": "Neu-York",
+   "action": "move",
+   "lat": 40.71,
+   "lon": -74.01,
+   "kind": "c",
+   "qid": "Q60",
+   "was": {
+    "source": "name_geonames",
+    "lat": 47.2594,
+    "lon": 8.8723
+   },
+   "reason_fr": "Gazette de 1784 : évacuation de New York par les Britanniques. La Suisse est un homonyme.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:erythraeas",
+   "name": "Erythraeas",
+   "action": "unplace",
+   "was": {
+    "source": "name_geonames",
+    "lat": 15.0,
+    "lon": 39.0
+   },
+   "reason_fr": "« Erythraeas per undas » : adjectif poétique (mer Rouge). Pas l'Érythrée.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:bam",
+   "name": "Bam",
+   "action": "unplace",
+   "was": {
+    "source": "wikidata",
+    "lat": 29.1061,
+    "lon": 58.3569,
+    "ids": [
+     "wikidata:Q106636",
+     "geonames:141736"
+    ]
+   },
+   "reason_fr": "1651 : grande ville « Bam » sur le Tigre (rumeur). Bam du Kerman est faux. Ville réelle incertaine.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l3790",
+   "name": "Pula",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 43.5089,
+    "lon": 16.4392
+   },
+   "reason_fr": "1551 : l'armada turque en « Puie ». Le registre donne Split (faux). Pula d'Istrie ou Pouilles : incertain.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l3653",
+   "name": "Feldkirch",
+   "action": "move",
+   "lat": 47.2371,
+   "lon": 9.5971,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 47.9357,
+    "lon": 7.6477,
+    "ids": [
+     "wikidata:Q15217545",
+     "geonames:2927353"
+    ]
+   },
+   "reason_fr": "« Feldkirch (im Rheintal) », 1546 : Vorarlberg. Le registre pointe un homonyme du Bade (Q15217545).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "koenigsfelden",
+   "entity_key": "koenigsfelden:loc001250",
+   "name": "Kirchberg",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 47.7967,
+    "lon": 6.9519,
+    "ids": [
+     "wikidata:Q66463"
+    ]
+   },
+   "reason_fr": "« iudicio de Kilberg », 1322 : tribunal local habsbourgeois. Le Haut-Rhin comme Kirchberg BE sont douteux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "koenigsfelden",
+   "entity_key": "koenigsfelden:loc013049",
+   "name": "Burghalde",
+   "action": "move",
+   "lat": 47.4733,
+   "lon": 8.3069,
+   "kind": "b",
+   "was": {
+    "source": "register",
+    "lat": 50.0833,
+    "lon": 14.4667
+   },
+   "reason_fr": "« ze Baden an der Burghalden », 1366 : rue de Baden (Argovie). Prague est faux. Point au centre de Baden.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:duffel.bel",
+   "name": "Duffel",
+   "action": "move",
+   "lat": 51.0956,
+   "lon": 4.509,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 51.796,
+    "lon": 4.701
+   },
+   "reason_fr": "1636 : camp entre Anvers, Lierre et Malines. C'est Duffel (Belgique), pas Dubbeldam.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "letradas",
+   "entity_key": "letradas:Arenas de San Pedro|Ávila|España|36.82,-4.04",
+   "name": "Arenas de San Pedro",
+   "action": "move",
+   "lat": 40.2,
+   "lon": -5.09,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 36.8154,
+    "lon": -4.0442
+   },
+   "reason_fr": "Le nom et la province (Ávila) sont explicites. Les coordonnées du registre sont celles d'Arenas (Málaga).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Muenchen",
+   "name": "München",
+   "action": "move",
+   "lat": 48.1374,
+   "lon": 11.5755,
+   "kind": "c",
+   "qid": "Q1726",
+   "was": {
+    "source": "register",
+    "lat": 49.55,
+    "lon": 11.5833,
+    "ids": [
+     "tgn:7134067"
+    ]
+   },
+   "reason_fr": "1598 : « München stadt, Hertzoge von Bayern hofhalten ». Latitude du registre fausse de 1,4 degré.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Peiting",
+   "name": "Peiting",
+   "action": "move",
+   "lat": 47.7955,
+   "lon": 10.9295,
+   "kind": "c",
+   "was": {
+    "source": "register",
+    "lat": 43.8,
+    "lon": 10.9167,
+    "ids": [
+     "tgn:1040712"
+    ]
+   },
+   "reason_fr": "1600 : « Beůtingen gedorf » entre Rottenbuch et Schongau : Peiting (Bavière). Latitude toscane fausse.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:San_Donnino",
+   "name": "San Donnino",
+   "action": "unplace",
+   "was": {
+    "source": "register",
+    "lat": 47.85,
+    "lon": 10.0167,
+    "ids": [
+     "tgn:5002928"
+    ]
+   },
+   "reason_fr": "Itinéraire toscan (Pietola, Poggio, Pistoia), forme « S. Domenico ». Le point bavarois n'a aucun rapport. Bon lieu incertain.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "grand_tour:trent",
+   "name": "Trent",
+   "action": "move",
+   "lat": 52.9,
+   "lon": 6.6,
+   "kind": "a",
+   "qid": "Q772",
+   "was": {
+    "source": "wikidata",
+    "lat": 54.5211,
+    "lon": 13.2561,
+    "ids": [
+     "wikidata:Q33507436",
+     "geonames:2821319"
+    ]
+   },
+   "reason_fr": "La forme du texte est « drente » (voyage de 1652) : la Drenthe, aux Pays-Bas. Ni Trent sur Rügen (Q33507436), ni Trente.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:cassel",
+   "name": "Cassel",
+   "action": "keep",
+   "was": {
+    "source": "geonames",
+    "lat": 50.8011,
+    "lon": 2.4853
+   },
+   "reason_fr": "« Bergcaßel » (Mont-Cassel), prise par Lamboy, 1645 : contexte flamand plausible, l'éditeur donne Cassel (Nord). Laissé tel quel.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_nantes_frz#nismes",
+   "name": "Nismes",
+   "action": "move",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "kind": "c",
+   "qid": "Q42807",
+   "was": {
+    "source": "wikidata",
+    "lat": 50.0747,
+    "lon": 4.5483,
+    "ids": [
+     "wikidata:Q650676",
+     "geonames:2790111"
+    ]
+   },
+   "reason_fr": "Édit de Nantes : villes du Languedoc (Béziers, Montpellier, Nismes). C'est Nîmes, pas Nismes en Belgique (Q650676).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_nantes_frz_articles_particulieres#nismes",
+   "name": "Nismes",
+   "action": "move",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "kind": "c",
+   "qid": "Q42807",
+   "was": {
+    "source": "wikidata",
+    "lat": 50.0747,
+    "lon": 4.5483,
+    "ids": [
+     "wikidata:Q650676",
+     "geonames:2790111"
+    ]
+   },
+   "reason_fr": "Même cas : Nismes de l'édit de Nantes est Nîmes, pas la commune belge Q650676.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_beaulieu_frz#serres",
+   "name": "Serres (Hautes-Alpes)",
+   "action": "move",
+   "lat": 44.4286,
+   "lon": 5.7139,
+   "kind": "c",
+   "was": {
+    "source": "wikidata",
+    "lat": 42.9467,
+    "lon": 2.3247,
+    "ids": [
+     "wikidata:Q1019240",
+     "geonames:2974831"
+    ]
+   },
+   "reason_fr": "« Nyons & Serres, ville & chasteau, en Dauphiné » : Serres (Hautes-Alpes). Q1019240 porte les coordonnées de Serres (Aude).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_poitiers#serres",
+   "name": "Serres (Hautes-Alpes)",
+   "action": "move",
+   "lat": 44.4286,
+   "lon": 5.7139,
+   "kind": "c",
+   "was": {
+    "source": "wikidata",
+    "lat": 42.9467,
+    "lon": 2.3247,
+    "ids": [
+     "wikidata:Q1019240",
+     "geonames:2974831"
+    ]
+   },
+   "reason_fr": "« en Daulphiné Nyons & Serre, ville & chasteau » : Serres des Hautes-Alpes, pas celui de l'Aude.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "hainhofer_reisen",
+   "entity_key": "hainhofer_reisen:oldenburg",
+   "name": "Oldenburg",
+   "action": "move",
+   "lat": 53.138,
+   "lon": 8.216,
+   "kind": "a",
+   "qid": "Q170390",
+   "was": {
+    "source": "geonames",
+    "lat": 54.295,
+    "lon": 10.8904,
+    "ids": [
+     "wikidata:Q170390",
+     "geonames:2857451",
+     "tgn:7004438"
+    ]
+   },
+   "reason_fr": "« Grauen zu Oldenburg vnd Delmenhorst » (comté). L'éditeur donne Q170390 (comté d'Oldenbourg). Le point GeoNames d'Oldenburg in Holstein est faux.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "rubens_online",
+   "entity_key": "rubens_online:bergen",
+   "name": "Bergen",
+   "action": "unplace",
+   "was": {
+    "source": "tgn",
+    "lat": 52.6667,
+    "lon": 4.7,
+    "ids": [
+     "tgn:7007058"
+    ]
+   },
+   "reason_fr": "Mention unique (lettre de 1583), sans contexte, à côté de Steenbergen. Bergen-op-Zoom probable mais non prouvé. Le point TGN de Hollande-Septentrionale n'est pas étayé.",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:troye",
+   "name": "Troye",
+   "action": "move",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "kind": "c",
+   "qid": "Q22647",
+   "was": {
+    "source": "name_propagation",
+    "lat": 48.3007,
+    "lon": 4.0852
+   },
+   "reason_fr": "Rabelais, Marot, Ronsard (1529-1563) : le cheval, le siège et l'incendie de Troie. Le point de Troyes (Champagne) vient d'une propagation de nom.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "corpus17_french",
+   "entity_key": "surf:troye",
+   "name": "Troye",
+   "action": "move",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "kind": "c",
+   "qid": "Q22647",
+   "was": {
+    "source": "name_propagation",
+    "lat": 48.3007,
+    "lon": 4.0852
+   },
+   "reason_fr": "Racine, Iphigénie (1687) : « Cours à Troye », Hector, Achille. Troie, pas Troyes.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "elan_crenum",
+   "entity_key": "surf:troye",
+   "name": "Troye",
+   "action": "move",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "kind": "c",
+   "qid": "Q22647",
+   "was": {
+    "source": "name_propagation",
+    "lat": 48.3007,
+    "lon": 4.0852
+   },
+   "reason_fr": "Guillaume Cretin (1515) : siège de Troie, Pâris, Énée. Troie, pas Troyes.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "elan_crenum",
+   "entity_key": "elan_crenum:troie",
+   "name": "Troye",
+   "action": "move",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "kind": "c",
+   "qid": "Q22647",
+   "was": {
+    "source": "name_propagation",
+    "lat": 48.3007,
+    "lon": 4.0852
+   },
+   "reason_fr": "Cretin (1515) : « Hector de Troye ». Troie, pas Troyes.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "surf:troye",
+   "name": "Troye",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 48.3007,
+    "lon": 4.0852
+   },
+   "reason_fr": "« a Troye en Champagne » (1673) et l'armée de Weimar (1636) : Troyes. Le point est juste.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "rubens_online",
+   "entity_key": "rubens_online:nazareth_antwerpen",
+   "name": "Nazareth",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 50.9597,
+    "lon": 3.596
+   },
+   "reason_fr": "Identifiant Wikidata de l'édition (Q21766031), Nazareth en Flandre : un homonyme réel, pas la ville de Galilée.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "camena_poemata",
+   "entity_key": "surf:caesarea",
+   "name": "Caesarea",
+   "action": "move",
+   "lat": 38.7225,
+   "lon": 35.4875,
+   "kind": "c",
+   "was": {
+    "source": "name_latin",
+    "lat": 49.2215,
+    "lon": -2.1358
+   },
+   "reason_fr": "« Caesarea, Cappadocum Urbs est, ad Melan fluvium sita, Maza » : Césarée de Cappadoce (Kayseri), pas Jersey.",
+   "origin": "rule_checked"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "surf:mauritanie",
+   "name": "Mauritanię",
+   "action": "move",
+   "was": {
+    "source": "name_geonames",
+    "lat": 20.25,
+    "lon": -10.5
+   },
+   "reason_fr": "Lettres de 1549 : « Gsariffo, Mauritanię duce » (le chérif saadien). Maurétanie au sens large (Maroc) ; aire floue et la Mauritanie moderne est fausse : sans point. Révisé le 23 oct. (signalement du propriétaire) : un point d'aire unique pour la Maurétanie, centre de la région (33,0 ; -4,5), QID Q309272.",
+   "origin": "rule_checked",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "betamasaheft_geez",
+   "entity_key": "betamasaheft_geez:LOC6944",
+   "name": "Budā",
+   "action": "unplace",
+   "was": {
+    "source": "name_propagation",
+    "lat": 47.5,
+    "lon": 19.0333
+   },
+   "reason_fr": "Chronique de Susenyos (1602-1616) : « ምድረ፡ ቡዳ » (le pays de Buda), entre le Godjam et le Dambiya, en Éthiopie. Le point de Buda (Hongrie) vient d'une propagation de nom ; le lieu éthiopien n'est pas localisé : sans point.",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:nismes",
+   "name": "Nismes",
+   "action": "move",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "kind": "c",
+   "qid": "Q42807",
+   "was": {
+    "source": "name_propagation",
+    "lat": 50.0747,
+    "lon": 4.5483
+   },
+   "reason_fr": "Des Périers, Nouvelles (1561) : « un greffier à Nismes ». Nîmes ; le point belge venait d'une propagation du mauvais QID de l'édit de Nantes.",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "surf:caesaream",
+   "name": "Caesaream",
+   "action": "not_a_place",
+   "was": {
+    "source": "name_latin",
+    "lat": 49.2215,
+    "lon": -2.1358
+   },
+   "reason_fr": "« Caesaream maiestatem » (1565) : la majesté impériale, un adjectif. Le point de Jersey venait de bullinger:l1399.",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "cidtc",
+   "entity_key": "cidtc:pl1276",
+   "name": "Peronam",
+   "action": "move",
+   "lat": 49.93,
+   "lon": 2.93,
+   "kind": "c",
+   "was": {
+    "source": "name_latin",
+    "lat": 58.3844,
+    "lon": 24.4989
+   },
+   "reason_fr": "Même lettre de 1536 que surf:peronam de Bullinger (guerre franco-impériale) : Péronne, pas Pärnu. Signalé par le détecteur A (« bullinger et cidtc »).",
+   "origin": "verdict"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-783",
+   "name": "Palatium, Mariae-Mons",
+   "action": "move",
+   "lat": 50.4669,
+   "lon": 4.2386,
+   "kind": "b",
+   "was": {
+    "source": "name_geonames",
+    "lat": 45.4593,
+    "lon": 7.9789
+   },
+   "reason_fr": "Sandrart (1675) : « bey der Stadt Mons gelegen, ein vortreflich Königlich Palatium, Mariae-Mons genant » : le château de Mariemont près de Mons, pas Palazzo Canavese.",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l985",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 31.7959,
+    "lon": 35.212
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2846 km from the edition's centre; a same-name place 460 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2548",
+   "name": "Alexandria",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 31.2011,
+    "lon": 29.912
+   },
+   "reason_fr": "Lieu lointain réel (Alexandria), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2566 km from the edition's centre; a same-name place 316 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2131",
+   "name": "Babylon",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 32.5447,
+    "lon": 44.4318
+   },
+   "reason_fr": "Lieu lointain réel (Babylon), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (3426 km from the edition's centre; a same-name place 349 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "surf:alexandria",
+   "name": "Alexandria",
+   "action": "keep",
+   "was": {
+    "source": "name_latin",
+    "lat": 31.1975,
+    "lon": 29.8925
+   },
+   "reason_fr": "Lieu lointain réel (Alexandria), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2565 km from the edition's centre; a same-name place 316 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2201",
+   "name": "Patmos",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 37.332,
+    "lon": 26.548
+   },
+   "reason_fr": "Lieu lointain réel (Patmos), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (1851 km from the edition's centre; a same-name place 515 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "surf:macao",
+   "name": "Macao",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 22.19,
+    "lon": 113.5381
+   },
+   "reason_fr": "Lieu lointain réel (Macao), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (9288 km from the edition's centre; a same-name place 1647 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "ckcc_epistolarium",
+   "entity_key": "ckcc_epistolarium:beiroet.lbn",
+   "name": "Beirut",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 33.889,
+    "lon": 35.495
+   },
+   "reason_fr": "Lieu lointain réel (Beirut), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (3088 km from the edition's centre; a same-name place 848 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "controversia_confessio",
+   "entity_key": "surf:jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2919 km from the edition's centre; a same-name place 910 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:peking",
+   "name": "Peking",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 39.904,
+    "lon": 116.4075
+   },
+   "reason_fr": "Lieu lointain réel (Peking), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (7907 km from the edition's centre; a same-name place 378 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "dta_1600",
+   "entity_key": "surf:jerusalem",
+   "name": "Jeruſalem",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jeruſalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2814 km from the edition's centre; a same-name place 921 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:java",
+   "name": "Java",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": -7.3117,
+    "lon": 109.4183
+   },
+   "reason_fr": "Lieu lointain réel (Java), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (11841 km from the edition's centre; a same-name place 3235 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "ferdinand_i",
+   "entity_key": "ferdinand_i:gn361058",
+   "name": "Alexandrie",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 31.1975,
+    "lon": 29.8925
+   },
+   "reason_fr": "Lieu lointain réel (Alexandrie), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2546 km from the edition's centre; a same-name place 269 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "fruchtbringende_briefe",
+   "entity_key": "fruchtbringende_briefe:suràt",
+   "name": "Suràt",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 21.1667,
+    "lon": 72.8333
+   },
+   "reason_fr": "Lieu lointain réel (Suràt), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (6245 km from the edition's centre; a same-name place 785 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "fruchtbringende_briefe",
+   "entity_key": "fruchtbringende_briefe:jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 31.7667,
+    "lon": 35.2333
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2914 km from the edition's centre; a same-name place 837 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "germanc",
+   "entity_key": "germanc:NEWS_P3_OMD_1784_gotha#C",
+   "name": "Cuba",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 22.0,
+    "lon": -79.0
+   },
+   "reason_fr": "Lieu lointain réel (Cuba), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (8052 km from the edition's centre; a same-name place 1006 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "surf:jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2887 km from the edition's centre; a same-name place 772 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "grand_tour",
+   "entity_key": "surf:jordan",
+   "name": "Jordan",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": 31.763,
+    "lon": 35.557
+   },
+   "reason_fr": "Lieu lointain réel (Jordan), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2906 km from the edition's centre; a same-name place 92 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "hainhofer_reisen",
+   "entity_key": "hainhofer_reisen:java",
+   "name": "Java",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": -7.3117,
+    "lon": 109.4183
+   },
+   "reason_fr": "Lieu lointain réel (Java), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (11216 km from the edition's centre; a same-name place 2620 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "leibniz_reihe_viii",
+   "entity_key": "leibniz_reihe_viii:place:java",
+   "name": "Java",
+   "action": "keep",
+   "was": {
+    "source": "name_propagation",
+    "lat": -7.3117,
+    "lon": 109.4183
+   },
+   "reason_fr": "Lieu lointain réel (Java), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (11419 km from the edition's centre; a same-name place 2821 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "lettres_calvin",
+   "entity_key": "surf:jerusalem",
+   "name": "Jérusalem",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jérusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (3017 km from the edition's centre; a same-name place 421 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_beaulieu_frz#jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2983 km from the edition's centre; a same-name place 551 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "religionsfrieden_quellenedition",
+   "entity_key": "religionsfrieden_quellenedition:e000001_edikt_von_poitiers#jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 31.7767,
+    "lon": 35.2342
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2983 km from the edition's centre; a same-name place 551 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-1014",
+   "name": "Ganges",
+   "action": "keep",
+   "was": {
+    "source": "tgn",
+    "lat": 23.366,
+    "lon": 90.533
+   },
+   "reason_fr": "Lieu lointain réel (Ganges), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (7307 km from the edition's centre; a same-name place 701 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "selbstzeugnisse_hab_diarium",
+   "entity_key": "selbstzeugnisse_hab_diarium:Jerusalem",
+   "name": "Jerusalem",
+   "action": "keep",
+   "was": {
+    "source": "register",
+    "lat": 31.7667,
+    "lon": 35.2333
+   },
+   "reason_fr": "Lieu lointain réel (Jerusalem), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (2878 km from the edition's centre; a same-name place 795 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "sozinianische_briefwechsel",
+   "entity_key": "sozinianische_briefwechsel:ed_wjh_x5s_1mb",
+   "name": "Java",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": -7.3117,
+    "lon": 109.4183
+   },
+   "reason_fr": "Lieu lointain réel (Java), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (11036 km from the edition's centre; a same-name place 2455 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:babylon",
+   "name": "Babylon",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 32.5229,
+    "lon": 44.4241
+   },
+   "reason_fr": "Lieu lointain réel (Babylon), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (3364 km from the edition's centre; a same-name place 171 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:rio_de_janeiro",
+   "name": "Rio de Janeiro",
+   "action": "keep",
+   "was": {
+    "source": "geonames",
+    "lat": -22.9064,
+    "lon": -43.1822
+   },
+   "reason_fr": "Lieu lointain réel (Rio de Janeiro), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (9758 km from the edition's centre; a same-name place 4668 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "tagebuecher_christian_ii_anhalt",
+   "entity_key": "tagebuecher_christian_ii_anhalt:patna",
+   "name": "Patna",
+   "action": "keep",
+   "was": {
+    "source": "wikidata",
+    "lat": 25.61,
+    "lon": 85.1414
+   },
+   "reason_fr": "Lieu lointain réel (Patna), cohérent avec l'édition (Terre sainte, Orient, Indes, Amériques) : valeur aberrante du contrôle par édition, pas un homonyme (6720 km from the edition's centre; a same-name place 1182 km from it).",
+   "origin": "check"
+  },
+  {
+   "coll_slug": "sandrart",
+   "entity_key": "sandrart:place-621",
+   "name": "Mauritanien",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "tgn",
+    "lat": 36.6059,
+    "lon": 2.1918
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "bullinger",
+   "entity_key": "bullinger:l2923",
+   "name": "Mauretanien",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "none",
+    "lat": null,
+    "lon": null
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:mauritania",
+   "name": "Mauritania",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "none",
+    "lat": null,
+    "lon": null
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "corpus_corporum",
+   "entity_key": "surf:mauritaniae",
+   "name": "Mauritaniae",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "none",
+    "lat": null,
+    "lon": null
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "epistemon_bvh",
+   "entity_key": "surf:mauritania",
+   "name": "Mauritania",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "none",
+    "lat": null,
+    "lon": null
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "gongora_soledades",
+   "entity_key": "gongora_soledades:mau120",
+   "name": "Mauritania",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "none",
+    "lat": null,
+    "lon": null
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "sozinianische_briefwechsel",
+   "entity_key": "sozinianische_briefwechsel:ed_rl1_kf5_bnb",
+   "name": "Mauretanien",
+   "action": "move",
+   "lat": 33.0,
+   "lon": -4.5,
+   "kind": "a",
+   "qid": "Q309272",
+   "was": {
+    "source": "wikidata",
+    "lat": 32.06,
+    "lon": -6.5918
+   },
+   "reason_fr": "Mauretania / Mauritanie : à la Renaissance, la Maurétanie antique (Maroc et ouest de l'Algérie, au bord de la Méditerranée et de l'Atlantique), pas la Mauritanie moderne (nom donné en 1903). Un seul point d'aire pour tous : centre de la région antique, QID Q309272. Le point TGN de Sandrart marquait Caesarea (Cherchell), sa capitale.",
+   "origin": "owner_report",
+   "label": "Mauretania"
+  },
+  {
+   "coll_slug": "casebooks",
+   "entity_key": "casebooks:PLACE263",
+   "name": "the Savoy",
+   "action": "move",
+   "lat": 51.5104,
+   "lon": -0.1205,
+   "kind": "c",
+   "qid": null,
+   "was": {
+    "source": "name_exonym",
+    "lat": 45.6,
+    "lon": 6.4,
+    "ids": []
+   },
+   "reason_fr": "« at the Savoy » dans une liste de patients londoniens (Casebooks) : l'hôpital et le palais du Savoy, sur le Strand. La table des exonymes l'avait envoyé au duché de Savoie. Les 24 contextes anglais « Savoy » de la couche modèle ont été relus : tous visent le duché.",
+   "origin": "verdict"
+  }
+ ]
+}

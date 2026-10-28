@@ -1,0 +1,1463 @@
+source	key	label	type	n_mentions	n_places	status	note
+wd	Q1549591	big city	city	67982	1246	reviewed	
+wd	Q6256	country	country	61329	949	reviewed	
+wd	Q3624078	sovereign state	country	53853	843	reviewed	
+wd	Q1187811	college town	town	47743	398	reviewed	
+wd	Q70208	municipality of Switzerland	settlement	39507	299	reviewed	
+wd	Q54935504	city of Switzerland	city	38166	136	reviewed	
+wd	Q14770218	cantonal capital of Switzerland	city	37155	99	reviewed	
+wd	Q51929311	largest city	city	32611	250	reviewed	
+wd	Q42744322	urban municipality in Germany	settlement	32350	1039	reviewed	
+wd	Q51576574	Mediterranean country	country	29296	387	reviewed	
+wd	Q515	city	city	23776	1101	reviewed	
+wd	Q7270	republic	republic	21531	187	reviewed	
+wd	Q20181813	colonial power	-	20593	190	reviewed	a role of states, not a sort of place
+wd	Q134626	district capital	city	19654	450	reviewed	
+wd	Q63791824	country bordering the Baltic Sea	country	15512	179	reviewed	
+wd	Q200250	metropolis	city	14059	180	reviewed	
+wd	Q3957	town	town	11991	299	reviewed	
+wd	Q15303838	municipality seat	settlement	11641	740	reviewed	seat of a municipality: a settlement of unknown size
+wd	Q179164	unitary state	country	11594	184	reviewed	
+wd	Q486972	human settlement	settlement	10804	860	reviewed	
+wd	Q902814	border city	city	10742	185	reviewed	
+wd	Q619610	social state	country	10119	157	reviewed	
+wd	Q707813	Hanseatic city	city	9938	330	reviewed	
+wd	Q253019	Ortsteil	city_quarter	9427	666	reviewed	
+wd	Q253030	major regional center	city	9149	228	reviewed	major regional centre (Augsburg, Leipzig, Dresden)
+wd	Q13539802	place with town rights and privileges	town	8998	282	reviewed	place with town rights
+wd	Q108178728	national capital	city	8599	170	reviewed	
+wd	Q6266	nation	country	8596	111	reviewed	
+wd	Q3336843	constituent country of the United Kingdom	country	8594	109	reviewed	
+wd	Q484170	commune of France	settlement	8425	757	reviewed	
+wd	Q3024240	historical country	country	8401	311	reviewed	
+wd	Q257391	federal capital	city	7883	61	reviewed	
+wd	Q57318	free imperial city	city	7570	100	reviewed	
+wd	Q1250464	realm	country	7472	125	reviewed	
+wd	Q518261	cultural area	region	7397	76	reviewed	
+wd	Q133442	city-state	city	7136	104	reviewed	
+wd	Q747074	comune of Italy	settlement	6844	394	reviewed	
+wd	Q2264924	port city	city	6840	165	reviewed	
+wd	Q1221156	federated state of Germany	province	6819	105	reviewed	
+wd	Q1200957	tourist destination	-	6708	155	reviewed	tourist destination
+wd	Q179671	nation state	country	6648	79	reviewed	
+wd	Q1547289	Lutherstadt	city	6528	92	reviewed	
+wd	Q127693126	successor state	country	6192	156	reviewed	
+wd	Q41614	constitutional monarchy	country	5649	44	reviewed	
+wd	Q4209223	Rechtsstaat	country	5634	115	reviewed	Rechtsstaat: carried by states only
+wd	Q2221906	geographic location	-	5609	116	reviewed	geographic location
+wd	Q26830017	state in the Holy Roman Empire	country	5579	225	reviewed	
+wd	Q1620908	historical region	region	5292	345	reviewed	
+wd	Q85631896	urban district of Bavaria	city	5087	105	reviewed	
+wd	Q7275	state	country	4804	90	reviewed	
+wd	Q1852859	cadastral populated place in the Netherlands	settlement	4730	249	reviewed	
+wd	Q1066984	financial center	-	4655	78	reviewed	financial centre
+wd	Q56061	administrative territorial entity	area	4624	56	reviewed	
+wd	Q123480	landlocked country	country	4468	120	reviewed	
+wd	Q208511	global city	city	4076	71	reviewed	
+wd	Q956214	chef-lieu	settlement	3992	208	reviewed	chef-lieu: administrative seat
+wd	Q667509	municipality of Austria	settlement	3911	91	reviewed	
+wd	Q871419	district of Austria	district	3846	58	reviewed	
+wd	Q262882	statutory city of Austria	city	3844	57	reviewed	
+wd	Q537250	federal city	city	3748	15	reviewed	
+wd	Q261543	federal state of Austria	province	3520	56	reviewed	
+wd	Q19953632	former administrative territorial entity	area	3451	43	reviewed	
+wd	Q4022	river	river	3425	390	reviewed	
+wd	Q171441	enclave	-	3392	29	reviewed	enclave: carried by Vienna, no sort
+wd	Q15974307	Unitary municipality in Germany	settlement	3235	29	reviewed	
+wd	Q82794	region	region	3113	260	reviewed	
+wd	Q471822	megalopolis	city	3071	48	reviewed	
+wd	Q2039348	municipality of the Netherlands	settlement	2843	122	reviewed	
+wd	Q3685476	abolished municipality in Italy	settlement	2791	23	reviewed	
+wd	Q85636199	urban district of Hamburg	city	2724	14	reviewed	urban district of Hamburg: Hamburg itself
+wd	Q43702	federation	country	2696	23	reviewed	
+wd	Q48349	empire	empire	2502	35	reviewed	
+wd	Q23058	canton of Switzerland	canton	2394	73	reviewed	
+wd	Q61708099	urban district in Saxony	city	2251	24	reviewed	
+wd	Q134445478	cultural capital	city	2246	38	reviewed	
+wd	Q4115680	Italian city-state	city	2242	51	reviewed	
+wd	Q1180262	residenz	city	2223	61	reviewed	Residenz: the prince's seat (Heidelberg, Kassel)
+wd	Q107390	federated state	province	2155	33	reviewed	
+wd	Q925381	city with powiat rights in Poland	city	2042	90	reviewed	
+wd	Q14784328	state capital in Germany	city	1940	60	reviewed	
+wd	Q3502482	cultural region	region	1931	144	reviewed	
+wd	Q5153359	municipality of the Czech Republic	settlement	1919	197	reviewed	
+wd	Q2327515	City district in Baden-Württemberg	city	1874	54	reviewed	Stadtkreis of Baden-Wurttemberg: an independent city
+wd	Q15978299	municipality with town privileges in the Czech Republic	settlement	1850	173	reviewed	
+wd	Q1422929	primate city	city	1845	40	reviewed	
+wd	Q11418818	commercial capital city	city	1801	30	reviewed	
+wd	Q22923920	territorial collectivity of France with special status	province	1742	27	reviewed	
+wd	Q2240381	fashion capital	city	1740	25	reviewed	
+wd	Q7841907	municipality with authorized municipal office	settlement	1726	153	reviewed	
+wd	Q1375749	European City	city	1673	34	reviewed	
+wd	Q61980648	urban district of Hesse	city	1653	30	reviewed	
+wd	Q7819319	Czech municipality with expanded powers	settlement	1642	133	reviewed	
+wd	Q19730508	former municipality	settlement	1558	52	reviewed	
+wd	Q170156	confederation	country	1513	9	reviewed	
+wd	Q8452914	district town	town	1491	93	reviewed	
+wd	Q66724388	autonomous country within the Kingdom of Denmark	country	1414	25	reviewed	
+wd	Q13218276	free city	city	1391	19	reviewed	
+wd	Q745456	business cluster	-	1391	19	reviewed	business cluster
+wd	Q262166	municipality in Germany	settlement	1383	21	reviewed	
+wd	Q12759805	sultanate	kingdom	1310	7	reviewed	
+wd	Q1009249	national waterways in Germany	river	1227	19	reviewed	
+wd	Q1392581	cycling city	city	1220	51	reviewed	
+wd	Q140892892	country sometimes considered transcontinental	country	1152	49	reviewed	
+wd	Q61708053	independent city of Saxony-Anhalt	city	1145	17	reviewed	
+wd	Q581830	carfree city	city	1054	19	reviewed	
+wd	Q493522	municipality of Belgium	settlement	1040	63	reviewed	
+wd	Q573344	main stem	river	998	60	reviewed	main stem
+wd	Q2202509	Roman city	city	994	50	reviewed	
+wd	Q12031379	capital of region	city	989	42	reviewed	
+wd	Q85635630	urban district of North Rhine-Westphalia	city	946	51	reviewed	
+wd	Q685309	former municipality of Switzerland	settlement	936	71	reviewed	
+wd	Q85632032	urban district of Rhineland-Palatinate	city	924	50	reviewed	
+wd	Q23442	island	island	914	174	reviewed	
+wd	Q1267889	waterway	river	864	17	reviewed	
+wd	Q192611	electoral unit	-	842	24	reviewed	electoral unit
+wd	Q38911	region of the Czech Republic	region	836	22	reviewed	
+wd	Q548611	district of the Czech Republic	district	836	22	reviewed	
+wd	Q76007695	administrative district of Czech municipality with expanded powers	district	836	22	reviewed	
+wd	Q76009696	administrative district of Czech municipality with authorized municipal office	district	836	22	reviewed	
+wd	Q1048835	political territorial entity	area	832	11	reviewed	
+wd	Q7930989	city or town	city	773	49	reviewed	
+wd	Q1901835	seat of government	settlement	766	27	reviewed	seat of government
+wd	Q15273785	Belgian municipality with the title of city	settlement	754	45	reviewed	
+wd	Q15304003	country of the Kingdom of the Netherlands	country	753	12	reviewed	
+wd	Q112099	island country	country	739	54	reviewed	
+wd	Q154547	duchy	duchy	734	59	reviewed	
+wd	Q67123843	town divided by border	town	725	32	reviewed	
+wd	Q11183787	Ortschaft	settlement	714	58	reviewed	
+wd	Q448801	Greater district town	town	685	92	reviewed	
+wd	Q836915	free state	republic	685	16	reviewed	free state
+wd	Q353344	countship	county	673	80	reviewed	
+wd	Q39816	valley	valley	666	29	reviewed	
+wd	Q208500	principality	principality	665	38	reviewed	
+wd	Q532	village	village	656	171	reviewed	
+wd	Q596321	ward	city_quarter	654	14	reviewed	
+wd	Q19816359	doubled population centers	-	614	21	reviewed	doubled population centres
+wd	Q36784	region of France	region	597	48	reviewed	
+wd	Q681026	crown land of Austria	province	577	24	reviewed	
+wd	Q27554677	former capital	city	570	22	reviewed	
+wd	Q677678	fortified town	town	568	30	reviewed	
+wd	Q26879769	state in the Confederation of the Rhine	country	556	16	reviewed	
+wd	Q1357964	county town	town	535	32	reviewed	
+wd	Q13218690	town in Hungary	town	534	89	reviewed	
+wd	Q22927616	commune of France with specific status	settlement	531	15	reviewed	
+wd	Q225467	compact city	city	525	7	reviewed	
+wd	Q15661340	ancient city	city	503	137	reviewed	
+wd	Q1307779	integrated municipality	settlement	501	13	reviewed	
+wd	Q463742	Hochstift	bishopric	500	67	reviewed	
+wd	Q114401982	independent city in Berlin	city	499	12	reviewed	
+wd	Q7897276	unparished area	settlement	497	25	reviewed	unparished area (England)
+wd	Q106517174	Option municipality	settlement	470	35	reviewed	
+wd	Q129268952	former national capital	city	470	19	reviewed	
+wd	Q16110	region of Italy	region	460	53	reviewed	region of Italy
+wd	Q174844	megacity	city	447	33	reviewed	
+wd	Q85635638	urban district of Bremen	city	440	7	reviewed	
+wd	Q148837	polis	city	435	114	reviewed	
+wd	Q134390	province of the Netherlands	province	414	29	reviewed	
+wd	Q121289819	municipality capital	city	411	75	reviewed	
+wd	Q2616791	urban municipality of Poland	settlement	402	93	reviewed	
+wd	Q6784672	municipality of Slovakia	settlement	399	73	reviewed	
+wd	Q10860585	Czech lands	region	395	34	reviewed	Czech lands
+wd	Q133997300	Einheitsgemeinde of Lower Saxony	settlement	389	65	reviewed	Einheitsgemeinde
+wd	Q839954	archaeological site	site	376	120	reviewed	
+wd	Q1984641		-	366	13	reviewed	label missing in wd_class_labels.tsv (carried by Worms)
+wd	Q1418640	local government in Germany	-	365	9	reviewed	local government
+wd	Q2716259	metropolitan municipality in Turkey	settlement	365	20	reviewed	
+wd	Q751876	château	castle	362	60	reviewed	chateau
+wd	Q46831	mountain range	mountain	360	51	reviewed	
+wd	Q116457956	municipality without town privileges in Germany	settlement	329	146	reviewed	
+wd	Q331644	khanate	kingdom	325	2	reviewed	
+wd	Q61856863	urban district in Schleswig-Holstein	city	321	14	reviewed	
+wd	Q23413	castle	castle	319	76	reviewed	
+wd	Q116621859	Greater district town in Baden-Württemberg	town	308	84	reviewed	
+wd	Q1323642	transcontinental country	country	293	37	reviewed	
+wd	Q209495	historical province of France	province	291	54	reviewed	
+wd	Q15105893	town in Croatia	town	289	52	reviewed	
+wd	Q4946461	spa town	town	287	47	reviewed	
+wd	Q681277	city with county rights	city	287	42	reviewed	
+wd	Q4366834	transboundary river	river	279	34	reviewed	
+wd	Q44613	monastery	monastery	278	73	reviewed	
+wd	Q5107	continent	continent	267	28	reviewed	
+wd	Q1048163	traditional geographic divisions of Greece	region	263	11	reviewed	traditional geographic divisions of Greece
+wd	Q2742167	religious community	monastery	263	63	reviewed	religious community (abbeys)
+wd	Q54050	hill	mountain	262	29	reviewed	
+wd	Q1306755	administrative centre	settlement	255	17	reviewed	administrative centre
+wd	Q460338	imperial circle of the Holy Roman Empire	province	254	7	reviewed	
+wd	Q3558970	village of Poland	village	245	59	reviewed	
+wd	Q54935786	medium-sized district town	town	245	28	reviewed	
+wd	Q123705	neighborhood	city_quarter	238	65	reviewed	
+wd	Q20856058	landgraviate	landgraviate	235	16	reviewed	
+wd	Q2418896	part of the world	continent	234	23	reviewed	part of the world (Asia, Europe)
+wd	Q1115575	civil parish	parish	200	29	reviewed	
+wd	Q257978	statutory city in the Czech Republic	city	200	33	reviewed	
+wd	Q1366274	Prince-Archbishopric	bishopric	197	15	reviewed	
+wd	Q587089	city with municipal rights	city	197	23	reviewed	
+wd	Q5500203	free city	city	192	6	reviewed	
+wd	Q17376095	cadastral municipality of Austria	settlement	187	22	reviewed	
+wd	Q572995	natural region of France	region	187	26	reviewed	
+wd	Q11514315	historical period	-	186	4	reviewed	historical period
+wd	Q15253706	city	city	181	6	reviewed	
+wd	Q8502	mountain	mountain	181	66	reviewed	
+wd	Q85635929	urban district of Lower Saxony	city	180	20	reviewed	
+wd	Q33506	museum	building	178	34	reviewed	
+wd	Q26879763	Napoleonic client state	country	176	11	reviewed	
+wd	Q61793478	district independent city of Brandenburg	city	168	12	reviewed	
+wd	Q15239622	disputed territory	-	165	20	reviewed	disputed territory
+wd	Q562061	market municipality	market_town	165	27	reviewed	
+wd	Q20521456	electoral principate	electorate	163	11	reviewed	
+wd	Q37901	strait	sea	162	16	reviewed	
+wd	Q3055118	single entity of population	settlement	161	37	reviewed	single entity of population (Italy)
+wd	Q188063	fiefdom	lordship	160	17	reviewed	
+wd	Q165	sea	sea	157	17	reviewed	
+wd	Q110390579	city of United Kingdom	city	156	6	reviewed	
+wd	Q2785216	municipality section	settlement	156	27	reviewed	municipality section
+wd	Q859563	secular state	country	156	16	reviewed	
+wd	Q278976	borough of Hamburg	settlement	155	8	reviewed	
+wd	Q702492	urban area	settlement	154	24	reviewed	urban area
+wd	Q1621034	historical territory	area	153	11	reviewed	historical territory
+wd	Q133997481		-	151	18	reviewed	label missing in wd_class_labels.tsv (Hitzacker, Flecken)
+wd	Q12949943	regions of Occitania	region	148	30	reviewed	
+wd	Q18511725	market town	market_town	148	16	reviewed	
+wd	Q3110808	province of Ethiopia	province	145	2	reviewed	
+wd	Q166620	drainage basin	natural	144	9	reviewed	drainage basin
+wd	Q1708422	settlement site	site	140	13	reviewed	settlement site
+wd	Q3257686	locality	settlement	140	25	reviewed	
+wd	Q5107861	medieval commune	settlement	138	10	reviewed	
+wd	Q5119	capital city	city	131	19	reviewed	
+wd	Q1493533	parish village	village	127	39	reviewed	
+wd	Q5084	hamlet	hamlet	126	6	reviewed	
+wd	Q769603	non-metropolitan county	shire	126	8	reviewed	
+wd	Q11939023	populated place nucleus	settlement	124	22	reviewed	populated place nucleus
+wd	Q1371288	vassal state	country	122	14	reviewed	
+wd	Q3505887	city council	-	121	10	reviewed	city council
+wd	Q1135201	corpus separatum	area	120	9	reviewed	corpus separatum
+wd	Q116291627	holy city of Abrahamic religion	city	120	9	reviewed	
+wd	Q65064889	Bronze Age settlement	settlement	120	9	reviewed	
+wd	Q3678424	city with special status	city	119	23	reviewed	
+wd	Q61747322	urban district of Thuringia	city	119	18	reviewed	
+wd	Q150093	voivodeship of Poland	province	118	13	reviewed	
+wd	Q12350930	Kneippkurort	town	116	15	reviewed	Kneippkurort (spa town)
+wd	Q165116	grand duchy	duchy	115	14	reviewed	
+wd	Q106389302	city/town in Russia	town	113	9	reviewed	
+wd	Q15284	municipality	settlement	113	26	reviewed	
+wd	Q2991489	County palatine	county	113	17	reviewed	
+wd	Q10551526	confessional state	country	109	6	reviewed	
+wd	Q182547	Roman province	province	109	27	reviewed	
+wd	Q34763	peninsula	cape	109	34	reviewed	
+wd	Q17715832	castle ruin	site	106	14	reviewed	
+wd	Q113136497	state of the German Confederation 1815–1848 & 1850–1866	country	104	19	reviewed	
+wd	Q12813115	urban area in Sweden	settlement	102	30	reviewed	urban area in Sweden (tatort)
+wd	Q107230986	historic state of Italy	country	101	6	reviewed	
+wd	Q1451876	Frauenstift	monastery	100	3	reviewed	Frauenstift
+wd	Q6882870	designated spa town	town	100	20	reviewed	
+wd	Q896881	average city	city	100	7	reviewed	
+wd	Q5283531	district of Prussia	district	99	5	reviewed	
+wd	Q317557	parish church	church	96	7	reviewed	
+wd	Q1074523	planned community	settlement	93	4	reviewed	
+wd	Q28171280	ancient civilization	-	93	19	reviewed	ancient civilization
+wd	Q2983893	quarter	city_quarter	93	26	reviewed	
+wd	Q12134916	centre of oblast	settlement	92	5	reviewed	centre of oblast
+wd	Q15069452	Natura 2000 site	-	92	25	reviewed	protected area
+wd	Q1973404	adjacent sea	sea	92	11	reviewed	
+wd	Q56580425	city of oblast significance	city	92	5	reviewed	
+wd	Q13416557	Royal city in Polish-Lithuanian Commonwealth	city	91	27	reviewed	
+wd	Q2267870	independent community	settlement	89	19	reviewed	
+wd	Q699405	dwelling	building	89	6	reviewed	
+wd	Q1175522	County city (council system)	city	87	17	reviewed	
+wd	Q27104997	civil parish with city status	parish	87	4	reviewed	
+wd	Q1134686	frazione	settlement	85	40	reviewed	
+wd	Q3297051	chartered community	settlement	84	3	reviewed	
+wd	Q12131624	city in Ukraine	city	82	21	reviewed	
+wd	Q180673	ceremonial county of England	shire	81	6	reviewed	
+wd	Q22865	independent city of Germany	city	81	9	reviewed	
+wd	Q188800	personal union	-	80	1	reviewed	personal union
+wd	Q124936	major basilica	church	79	3	reviewed	
+wd	Q15089	province of Italy	province	79	8	reviewed	
+wd	Q2713379	papal basilica	church	79	3	reviewed	
+wd	Q820254	mining community	settlement	78	32	reviewed	
+wd	Q33146843	municipality of Catalonia	settlement	77	7	reviewed	
+wd	Q4592997	Christianism	-	77	3	reviewed	Christianism
+wd	Q1710033	autonomous region with special statute	province	76	12	reviewed	
+wd	Q691981	Duchies of Silesia	duchy	75	20	reviewed	
+wd	Q1780389	special municipality association of Germany	-	72	13	reviewed	municipality association
+wd	Q1548525	large independent city of Lower Saxony	city	71	15	reviewed	
+wd	Q183342	federal city of Russia	city	70	7	reviewed	
+wd	Q3822604	roman mausoleum	site	70	4	reviewed	Roman mausoleum
+wd	Q43263	federal subject of Russia	province	70	7	reviewed	
+wd	Q4442912	capital of Russia	city	70	7	reviewed	
+wd	Q204894	marginal sea	sea	69	5	reviewed	
+wd	Q20871353	cadastral area in the Czech Republic	settlement	69	7	reviewed	cadastral area (Czech Republic)
+wd	Q21272231	county council area	-	69	5	reviewed	county council area
+wd	Q2578218	inland sea	sea	69	5	reviewed	
+wd	Q61089180	municipal part of the Czech Republic	settlement	69	7	reviewed	municipal part (Czech Republic)
+wd	Q640364	municipality of Romania	settlement	69	21	reviewed	
+wd	Q1401585	medium regional center	city	68	24	reviewed	medium regional centre
+wd	Q595968	hilltop castle	castle	68	2	reviewed	
+wd	Q85635301	urban district of Mecklenburg-Vorpommern	city	68	7	reviewed	
+wd	Q130261443	Catalan historical locality	settlement	67	12	reviewed	
+wd	Q1548518	large district town	town	67	15	reviewed	
+wd	Q160742	abbey	monastery	67	32	reviewed	
+wd	Q2319498	architectural landmark	building	67	6	reviewed	architectural landmark
+wd	Q1136601	unitary authority area	district	66	7	reviewed	unitary authority area (England)
+wd	Q21869758	delegated commune	settlement	66	21	reviewed	
+wd	Q33837	archipelago	island	64	11	reviewed	
+wd	Q618123	geographical feature	-	63	14	reviewed	geographical feature: any sort
+wd	Q15487029	patriarchal basilica	church	62	3	reviewed	
+wd	Q162875	mausoleum	site	60	3	reviewed	mausoleum
+wd	Q1782540	railway town	town	60	8	reviewed	
+wd	Q92107	quadrangular castle	castle	60	3	reviewed	
+wd	Q124830411	Museum of the Italian Ministry of Culture	building	59	8	reviewed	
+wd	Q2138558	regiopolis	city	58	5	reviewed	
+wd	Q34843301	county seat in Romania	city	58	17	reviewed	county seat in Romania
+wd	Q3867560	Italian national museum	building	58	7	reviewed	
+wd	Q14811181	area not part of a municipality of Switzerland	area	57	11	reviewed	area not part of a municipality (Switzerland)
+wd	Q16846820	Imperial city	city	56	2	reviewed	
+wd	Q2519150	displaced city	city	56	2	reviewed	
+wd	Q5123999	city of regional significance of Ukraine	city	56	18	reviewed	
+wd	Q866196	episcopal see	bishopric	56	6	reviewed	
+wd	Q164142	protectorate	country	55	5	reviewed	
+wd	Q16970	church building	church	55	33	reviewed	
+wd	Q129676344	large city	city	54	8	reviewed	
+wd	Q192287	administrative divisions of Russia	district	53	4	reviewed	
+wd	Q3032116	list of districts of the canton of Aargau	-	53	4	reviewed	list article
+wd	Q120560	minor basilica	church	52	11	reviewed	
+wd	Q15647906	city of Portugal	city	52	6	reviewed	
+wd	Q676050	old town	city_quarter	52	7	reviewed	
+wd	Q202435	lieutenancy area of Scotland	shire	51	5	reviewed	lieutenancy area of Scotland
+wd	Q23397	lake	lake	51	28	reviewed	
+wd	Q100341898	market municipality of Germany	market_town	49	21	reviewed	
+wd	Q2074737	municipality of Spain	settlement	49	20	reviewed	
+wd	Q57831	fortress	fort	49	16	reviewed	
+wd	Q16560	palace	palace	48	13	reviewed	
+wd	Q93342462	Ancient Greek archaeological site	site	48	13	reviewed	
+wd	Q22698	park	site	47	5	reviewed	
+wd	Q10711424	state with limited recognition	country	46	11	reviewed	
+wd	Q107425	landscape	region	46	15	reviewed	
+wd	Q174782	square	square	46	11	reviewed	
+wd	Q1151405	client state	country	45	3	reviewed	
+wd	Q11726979	hypertrophic lake	lake	45	4	reviewed	
+wd	Q15921247	constituent locality	settlement	45	13	reviewed	
+wd	Q3267675	holomictic lake	lake	45	4	reviewed	
+wd	Q3293106	mesotrophic lake	lake	45	4	reviewed	
+wd	Q3488975	eutrophic lake	lake	45	4	reviewed	
+wd	Q10742	autonomous community of Spain	province	44	14	reviewed	
+wd	Q133444874	roman ruins	site	44	2	reviewed	
+wd	Q112132522	historical civil building museum	building	43	1	reviewed	
+wd	Q112132548	archaeological artifact museum	building	43	1	reviewed	
+wd	Q483110	stadium	building	43	1	reviewed	
+wd	Q674541	low mountain range	mountain	43	18	reviewed	
+wd	Q7362268	Roman amphitheatre	site	43	1	reviewed	Roman amphitheatre
+wd	Q104630835	Scottish county of city	county	42	2	reviewed	
+wd	Q1414991	area	area	40	14	reviewed	area
+wd	Q3215290	artificial lake	lake	40	2	reviewed	
+wd	Q223832	dominion of the British Empire	country	39	12	reviewed	
+wd	Q79324274	city of raion subordinance	city	39	11	reviewed	
+wd	Q1852119	district of Graz	district	38	5	reviewed	
+wd	Q79323854	city of oblast subordinance	city	38	10	reviewed	
+wd	Q109329953	state city of Latvia	city	37	9	reviewed	
+wd	Q1499065	spiritual territory	bishopric	37	3	reviewed	spiritual territory
+wd	Q338112	recreation area	site	37	2	reviewed	recreation area
+wd	Q17276572	constituency of the canton of St. Gallen	district	35	2	reviewed	constituency of a canton
+wd	Q2590631	municipality of Hungary	settlement	35	18	reviewed	
+wd	Q17431399	national museum	building	34	7	reviewed	
+wd	Q1970725	natural region	region	34	7	reviewed	
+wd	Q22674925	former settlement	settlement	34	15	reviewed	
+wd	Q2651004	Palazzo	palace	34	3	reviewed	
+wd	Q811979	built structure	built	34	9	reviewed	built structure
+wd	Q11396118	divided territory	area	33	6	reviewed	divided territory
+wd	Q11732217	Flecken	market_town	33	8	reviewed	
+wd	Q19691007	institutional complex	building	33	4	reviewed	institutional complex
+wd	Q56242215	Catholic cathedral	church	33	9	reviewed	
+wd	Q169358	stratovolcano	mountain	32	10	reviewed	
+wd	Q19860854	destroyed building or structure	building	32	10	reviewed	
+wd	Q34876	province	province	32	9	reviewed	
+wd	Q7396640	sacerdotal state	country	32	3	reviewed	
+wd	Q92755865	religious museum	building	32	10	reviewed	
+wd	Q98116669	religious complex	monastery	32	3	reviewed	religious complex
+wd	Q143912	triumphal arch	site	31	2	reviewed	triumphal arch
+wd	Q15127838	city under state jurisdiction in Latvia	city	31	7	reviewed	
+wd	Q102202066	Samian Ware Discovery Site	site	30	3	reviewed	discovery site
+wd	Q1244442	school building	building	30	4	reviewed	
+wd	Q125941113	gold river	river	30	8	reviewed	
+wd	Q38723	higher education institution	building	30	4	reviewed	higher education institution
+wd	Q39594	bay	bay	30	8	reviewed	
+wd	Q133156	colony	country	29	3	reviewed	
+wd	Q15848826	city palace	palace	29	3	reviewed	
+wd	Q16155707	městys	market_town	29	8	reviewed	
+wd	Q27492289	marquisate	margraviate	29	3	reviewed	marquisate
+wd	Q609042	shtetl	settlement	29	1	reviewed	shtetl
+wd	Q19832712	historical administrative division	district	28	3	reviewed	
+wd	Q24699794	museum building	building	28	4	reviewed	
+wd	Q2755753	area of London	city_quarter	28	6	reviewed	area of London
+wd	Q29430681	triad	-	28	1	reviewed	triad
+wd	Q2977	cathedral	church	27	11	reviewed	
+wd	Q34842776	municipality seat of Romania	settlement	27	8	reviewed	municipality seat of Romania
+wd	Q55833	supercontinent	continent	27	3	reviewed	supercontinent
+wd	Q655593	emporium	settlement	27	7	reviewed	emporium (trading post)
+wd	Q163725	Magdeburg rights	-	26	2	reviewed	Magdeburg rights
+wd	Q543654	Rathaus	building	26	6	reviewed	Rathaus
+wd	Q133056	mountain pass	pass	25	8	reviewed	
+wd	Q15830667	quarter of Hamburg	city_quarter	25	5	reviewed	
+wd	Q183366	territory	area	25	12	reviewed	territory
+wd	Q372363	geotope	natural	25	3	reviewed	geotope
+wd	Q57058	municipality of Croatia	settlement	25	4	reviewed	
+wd	Q7695	march	margraviate	25	9	reviewed	
+wd	Q990488	Luftkurort	town	25	9	reviewed	Luftkurort (spa town)
+wd	Q108822533	border river	river	24	8	reviewed	
+wd	Q1129474	cultural landscape	region	24	4	reviewed	
+wd	Q159675	tributary	river	24	3	reviewed	
+wd	Q2085381	publishing house	building	24	3	reviewed	
+wd	Q35034452	locality of Berlin	settlement	24	7	reviewed	
+wd	Q690840	district of Ethiopia	district	24	7	reviewed	
+wd	Q118365	dictatorship of the proletariat	-	23	5	reviewed	political concept
+wd	Q1468524	city center	city_quarter	23	2	reviewed	
+wd	Q1520223	constitutional republic	republic	23	5	reviewed	
+wd	Q15344922	oblast seat	city	23	9	reviewed	oblast seat
+wd	Q185145	great power	-	23	5	reviewed	great power
+wd	Q465613	people's republic	republic	23	5	reviewed	
+wd	Q842112	socialist state	country	23	5	reviewed	
+wd	Q849866	communist state	country	23	5	reviewed	
+wd	Q89487741	city in Bulgaria	city	23	9	reviewed	
+wd	Q185113	cape	cape	22	17	reviewed	
+wd	Q1595408	climatic health resort	town	21	8	reviewed	
+wd	Q160091	plain	valley	21	13	reviewed	
+wd	Q2668072	collection	-	21	1	reviewed	collection
+wd	Q53536964	royal palace	palace	21	7	reviewed	
+wd	Q811165	architectural heritage monument	site	21	7	reviewed	
+wd	Q9259	World Heritage Site	-	21	4	reviewed	World Heritage Site
+wd	Q97660032	City of oblast significance	city	21	4	reviewed	
+wd	Q107539372	decipoint	-	20	4	reviewed	decipoint
+wd	Q112132542	palazzo museum	building	20	4	reviewed	
+wd	Q12099220	mountain river	river	20	3	reviewed	
+wd	Q15710038	hill castle	castle	20	3	reviewed	
+wd	Q2560047	administrative county	shire	20	1	reviewed	
+wd	Q378636	village with a church	village	20	13	reviewed	
+wd	Q4421	forest	forest	20	9	reviewed	
+wd	Q4835091	territory	area	20	2	reviewed	territory
+wd	Q83116	province of Belgium	province	20	8	reviewed	
+wd	Q84582639	former voivodeship of the Crown of the Kingdom of Poland	province	20	4	reviewed	
+wd	Q107566885			19	5	auto	
+wd	Q124830213	museum of a public entity	building	19	3	auto	
+wd	Q1492823	ecclesiastical district	district	19	2	auto	
+wd	Q16127605	populated place in Syria	settlement	19	8	auto	
+wd	Q2264955	coastal spa		19	4	auto	
+wd	Q41067667	municipality of Tunisia	settlement	19	7	auto	
+wd	Q4989906	monument	site	19	5	auto	
+wd	Q11271835	state capital	city	18	9	auto	
+wd	Q116291578	holy city of Christianity	city	18	4	auto	
+wd	Q12357920	third-level administrative division	district	18	3	auto	
+wd	Q1815926	effective rural municipality	settlement	18	10	auto	
+wd	Q18466176	small city	city	18	3	auto	
+wd	Q2740635	Stadtbezirk		18	9	auto	
+wd	Q3317612	historic grouping		18	3	auto	
+wd	Q57053	county of Croatia	county	18	4	auto	
+wd	Q6936404	municipality of the State of Palestine	settlement	18	4	auto	
+wd	Q816829	periodization		18	4	auto	
+wd	Q817056	benedictine abbey	monastery	18	9	auto	
+wd	Q105390172	Roman Catholic metropolitan archdiocese	bishopric	17	7	auto	
+wd	Q2577883	occupied territory	area	17	4	auto	
+wd	Q3091916	districts of Graubünden	district	17	1	auto	
+wd	Q3455524	administrative region	region	17	5	auto	
+wd	Q34842263	township seat		17	4	auto	
+wd	Q477396	circus		17	1	auto	
+wd	Q5284036	divided region	region	17	4	auto	
+wd	Q79007	street	street	17	10	auto	
+wd	Q83311	Persian Empire	empire	17	3	auto	
+wd	Q91315817	Cistercian monastery	monastery	17	5	auto	
+wd	Q96196009	former or current state		17	4	auto	
+wd	Q158454	biosphere reserve		16	10	auto	
+wd	Q3337001	nationality for sports		16	4	auto	
+wd	Q4100864	urban-type settlement in Ukraine	settlement	16	3	auto	
+wd	Q46169	national park	site	16	10	auto	
+wd	Q617347	stem duchy	duchy	16	2	auto	
+wd	Q96019931	Cistercian nunnery	monastery	16	2	auto	
+wd	Q106071744	former town	town	15	1	auto	
+wd	Q11881845	city	city	15	10	auto	
+wd	Q138845716	human settlement in Poland with a bilingual name in Kashubian	settlement	15	3	auto	
+wd	Q1785071	fort	fort	15	6	auto	
+wd	Q2597772	district of Antwerp	district	15	3	auto	
+wd	Q3920906	ethnic territory	area	15	2	auto	
+wd	Q684740	real property		15	1	auto	
+wd	Q7189710	physiographic province	province	15	1	auto	
+wd	Q878223	highland	natural	15	1	auto	
+wd	Q1175512	county town	town	14	5	auto	
+wd	Q12131640	city of district significance	city	14	3	auto	
+wd	Q135746936			14	2	auto	
+wd	Q149621	district	district	14	4	auto	
+wd	Q19644586	statistical neighborhood of Zürich	city_quarter	14	7	auto	
+wd	Q7375052	royal city	city	14	2	auto	
+wd	Q12518	tower	building	13	6	auto	
+wd	Q1432253	small regional center		13	6	auto	
+wd	Q1499928	Gemarkung		13	15	auto	
+wd	Q189445	bicameral legislature		13	1	auto	
+wd	Q22746	urban park	site	13	4	auto	
+wd	Q61856889	rural district of Schleswig-Holstein	district	13	5	auto	
+wd	Q64340309	City district of Winterthur	city_quarter	13	2	auto	
+wd	Q740445	mountain ridge	mountain	13	4	auto	
+wd	Q9430	ocean	sea	13	2	auto	
+wd	Q1088391	rump state	country	12	10	auto	
+wd	Q1147395	district of Turkey	district	12	3	auto	
+wd	Q1402592	island group	island	12	7	auto	
+wd	Q1739536	inner city	city	12	8	auto	
+wd	Q211302	glacial lake	lake	12	5	auto	
+wd	Q447523	Samtgemeinde		12	5	auto	
+wd	Q4944632	border area	area	12	3	auto	
+wd	Q5154320	cross-border region	region	12	3	auto	
+wd	Q79416466	neighborhood of Frankfurt	city_quarter	12	8	auto	
+wd	Q104117291	region of Spain	region	11	8	auto	
+wd	Q1187580	non-metropolitan district	district	11	2	auto	
+wd	Q1208802	direct-administered municipality	settlement	11	3	auto	
+wd	Q12404340	biblical place		11	4	auto	
+wd	Q131689823			11	6	auto	
+wd	Q1484611	buurtschap		11	5	auto	
+wd	Q1497375	architectural ensemble		11	8	auto	
+wd	Q22721	Regierungsbezirk		11	3	auto	
+wd	Q2989398	commune of Algeria	settlement	11	3	auto	
+wd	Q37853	Baroque		11	1	auto	
+wd	Q852231	county	county	11	10	auto	
+wd	Q1269749	very small city	city	10	3	auto	
+wd	Q194029	Roman road	street	10	1	auto	
+wd	Q196068	lordship	lordship	10	7	auto	
+wd	Q207299	administrative region of Greece	region	10	4	auto	
+wd	Q245260	conurbation	settlement	10	2	auto	
+wd	Q2736168	historical nationality		10	7	auto	
+wd	Q29556224	city in Cyprus	city	10	4	auto	
+wd	Q464235	regional district in Bavaria	district	10	2	auto	
+wd	Q755017	tell		10	7	auto	
+wd	Q756780	Roman colony	country	10	5	auto	
+wd	Q88205	castrum		10	4	auto	
+wd	Q1021711	seaside resort	town	9	5	auto	
+wd	Q109607	ruins	site	9	8	auto	
+wd	Q12284	canal	river	9	6	auto	
+wd	Q14752696	ancient Roman structure		9	3	auto	
+wd	Q1526889	location with peat baths		9	5	auto	
+wd	Q1540416	boundary point		9	1	auto	
+wd	Q161243	dependent territory	area	9	5	auto	
+wd	Q1754946	rural district	district	9	1	auto	
+wd	Q1802801	rural municipality of Austria	settlement	9	6	auto	
+wd	Q200547	county of Sweden	county	9	3	auto	
+wd	Q2087181	historic house museum	building	9	5	auto	
+wd	Q22909549	unitary parliamentary republic	republic	9	1	auto	
+wd	Q2919801	municipality of Luxembourg	settlement	9	4	auto	
+wd	Q3146899	Diocese of the Catholic Church	bishopric	9	7	auto	
+wd	Q537127	road bridge	bridge	9	3	auto	
+wd	Q61708063	rural district of Saxony	district	9	1	auto	
+wd	Q8432	civilization		9	4	auto	
+wd	Q112132527	historical park museum	building	8	1	auto	
+wd	Q131748586	sacred river	river	8	2	auto	
+wd	Q1330974	active volcano	mountain	8	5	auto	
+wd	Q140933676			8	1	auto	
+wd	Q1497364	building complex		8	7	auto	
+wd	Q15060255	council area	area	8	2	auto	
+wd	Q16148626	dominion of Sweden	country	8	1	auto	
+wd	Q1615742	province of China	province	8	3	auto	
+wd	Q2065736	cultural property		8	6	auto	
+wd	Q207694	art museum	building	8	4	auto	
+wd	Q24354	theatre building	building	8	4	auto	
+wd	Q28538792			8	4	auto	
+wd	Q3397526	stone bridge	bridge	8	4	auto	
+wd	Q3504085	rural municipality of Poland	settlement	8	5	auto	
+wd	Q3575964	zone of Rome		8	2	auto	
+wd	Q3777387	former district of the canton of Bern	district	8	3	auto	
+wd	Q55488	railway station		8	7	auto	
+wd	Q55876909	Catholic parish church	church	8	3	auto	
+wd	Q570116	tourist attraction		8	3	auto	
+wd	Q6984463	New Testament place associated with Jesus		8	1	auto	
+wd	Q10270157	new town (UK)	town	7	1	auto	
+wd	Q1068842	footbridge		7	3	auto	
+wd	Q1205140	barrier island	island	7	1	auto	
+wd	Q1351282	crown colony	country	7	2	auto	
+wd	Q1424449	hunting lodge		7	2	auto	
+wd	Q1516079	cultural heritage ensemble		7	3	auto	
+wd	Q1907114	metropolitan area	area	7	1	auto	
+wd	Q191992	headland	cape	7	6	auto	
+wd	Q1973901	economic region	region	7	1	auto	
+wd	Q202199	inland island	island	7	2	auto	
+wd	Q252916	administrative quarter of Paris	city_quarter	7	1	auto	
+wd	Q3032131	district of the canton of Solothurn	district	7	3	auto	
+wd	Q3491915	urban-rural municipality of Poland	settlement	7	2	auto	
+wd	Q3950	villa	building	7	1	auto	
+wd	Q45776	fjord	bay	7	4	auto	
+wd	Q4845841	settlement in Croatia	settlement	7	7	auto	
+wd	Q6489113	large burgh		7	2	auto	
+wd	Q744099	hillfort		7	1	auto	
+wd	Q1066538	national central city	city	6	1	auto	
+wd	Q10864048	first-level administrative division	district	6	2	auto	
+wd	Q111177881	main peak	mountain	6	2	auto	
+wd	Q12059057	one-thousander		6	2	auto	
+wd	Q1223230	Roman bridge	bridge	6	2	auto	
+wd	Q137640468	provincial capital	city	6	3	auto	
+wd	Q14276458	deck arch bridge	bridge	6	2	auto	
+wd	Q1437459	non-geologically related mountain range	mountain	6	5	auto	
+wd	Q15642541	human-geographic territorial entity	area	6	3	auto	
+wd	Q158438	arch bridge	bridge	6	4	auto	
+wd	Q16966	domus		6	2	auto	
+wd	Q185086	Crown Dependencies		6	2	auto	
+wd	Q20203507	viceroyalty of the Spanish Empire	province	6	2	auto	
+wd	Q23828039	village/town/city in Lebanon	city	6	5	auto	
+wd	Q2487670	region of Lithuania	region	6	4	auto	
+wd	Q250811	sub-province-level division	district	6	3	auto	
+wd	Q2561694	City-kingdom of Cyprus	kingdom	6	3	auto	
+wd	Q27780831	defunct Roman Catholic diocese	bishopric	6	3	auto	
+wd	Q3393392	highest point		6	2	auto	
+wd	Q339834	regional power		6	5	auto	
+wd	Q35657	U.S. state	country	6	2	auto	
+wd	Q369730	pedestrian zone		6	1	auto	
+wd	Q417175	kingdom	kingdom	6	6	auto	
+wd	Q55599109	border crossing		6	2	auto	
+wd	Q57208171	section of watercourse		6	2	auto	
+wd	Q666943	associated commune	settlement	6	1	auto	
+wd	Q748149	prefecture-level city of China	city	6	3	auto	
+wd	Q83057	region of Belgium	region	6	4	auto	
+wd	Q895526	governing body		6	4	auto	
+wd	Q1161185	volcanic island	island	5	2	auto	
+wd	Q13217644	municipality of Portugal	settlement	5	3	auto	
+wd	Q1350181	shire of Scotland	shire	5	1	auto	
+wd	Q1404207	rock castle	castle	5	4	auto	
+wd	Q14921981	administrative territorial entity of Belarus	area	5	1	auto	
+wd	Q162602	river island	island	5	2	auto	
+wd	Q1977835	autonomous republic	republic	5	2	auto	
+wd	Q210272	cultural heritage		5	4	auto	
+wd	Q21850178	sanctuary		5	1	auto	
+wd	Q27996466	Bahnhof (station)		5	1	auto	
+wd	Q355304	watercourse	river	5	3	auto	
+wd	Q3705882	estuarine lagoon	bay	5	1	auto	
+wd	Q3924474	former province of Italy	province	5	4	auto	
+wd	Q44301618	Eastern Orthodox patriarchate		5	3	auto	
+wd	Q47521	stream	river	5	5	auto	
+wd	Q4996207	bailiwick	bailiwick	5	1	auto	
+wd	Q55677	Keilbahnhof		5	1	auto	
+wd	Q6083725	Scottish islands area	area	5	1	auto	
+wd	Q670772	outwash plain	valley	5	2	auto	
+wd	Q67376938	historic county of the United Kingdom	county	5	1	auto	
+wd	Q7309443	registration county	county	5	1	auto	
+wd	Q84823091	region of Ukraine	region	5	2	auto	
+wd	Q921061	book town	town	5	2	auto	
+wd	Q9381142	hill chain		5	3	auto	
+wd	Q97312698	city district in Hannover, Germany	city_quarter	5	4	auto	
+wd	Q105254117	Ortschaft	settlement	4	3	auto	
+wd	Q115154402	independent museum	building	4	2	auto	
+wd	Q115740682	municipio		4	3	auto	
+wd	Q1234255	regional unit of Greece		4	4	auto	
+wd	Q12357832	second-level administrative division	district	4	4	auto	
+wd	Q1245089	promontory	cape	4	2	auto	
+wd	Q125866553	Ancient Egyptian archaeological site	site	4	4	auto	
+wd	Q15042037	statistical territorial entity	area	4	3	auto	
+wd	Q15630895	district of the German Democratic Republic	district	4	2	auto	
+wd	Q15632166	city part of Cologne		4	1	auto	
+wd	Q1639354	Simultaneum		4	4	auto	
+wd	Q16884952	country house	building	4	2	auto	
+wd	Q16917	hospital	building	4	3	auto	
+wd	Q1808877	deelgemeente		4	1	auto	
+wd	Q193560	districts of Israel	district	4	1	auto	
+wd	Q1959314	protected area of Russia	area	4	2	auto	
+wd	Q1973416	type locality	settlement	4	1	auto	
+wd	Q202216	overseas department and region of France	province	4	3	auto	
+wd	Q203300	municipality of Liechtenstein	settlement	4	2	auto	
+wd	Q20541692	settlement in Galicia	settlement	4	2	auto	
+wd	Q219875	zone of Ethiopia		4	2	auto	
+wd	Q24305436	abbey-principality	principality	4	2	auto	
+wd	Q25392016	international shrine		4	1	auto	
+wd	Q2556234	wine producing locality	settlement	4	4	auto	
+wd	Q2665272	Ecclesiastical circumscription immediately subject to the Holy See		4	3	auto	
+wd	Q26934845	integral overseas territory	area	4	3	auto	
+wd	Q2779745	urban district of the Netherlands	city	4	1	auto	
+wd	Q29025902	volcanic landform		4	1	auto	
+wd	Q2989457	urban-type settlement	settlement	4	2	auto	
+wd	Q3329412	archaeological museum	building	4	3	auto	
+wd	Q3491088	mesoregion		4	3	auto	
+wd	Q3947	house	building	4	3	auto	
+wd	Q39614	cemetery	site	4	2	auto	
+wd	Q3965305	alpine subsection		4	3	auto	
+wd	Q40357	prison	building	4	3	auto	
+wd	Q40364446	historic city	city	4	1	auto	
+wd	Q406957	NUTS 1 statistical territorial entity	area	4	3	auto	
+wd	Q4286337	city district	city_quarter	4	2	auto	
+wd	Q483453	fountain	site	4	2	auto	
+wd	Q62825	maritime republics	republic	4	1	auto	
+wd	Q659103	commune of Romania	settlement	4	1	auto	
+wd	Q685204	gate tower	building	4	2	auto	
+wd	Q788176	autonomous administrative territorial entity	area	4	1	auto	
+wd	Q82117	city gate	gate	4	2	auto	
+wd	Q83620	thoroughfare		4	2	auto	
+wd	Q913035	roadstead		4	1	auto	
+wd	Q97662266	museum of modern art	building	4	1	auto	
+wd	Q1006876	borough in the United Kingdom	settlement	3	2	auto	
+wd	Q1015644	deserted castle site		3	1	auto	
+wd	Q105074756	municipal corporation of West Bengal		3	1	auto	
+wd	Q1139493	inselberg		3	1	auto	
+wd	Q116291701	holy city of Islam	city	3	1	auto	
+wd	Q11691318	Kulturdenkmal		3	1	auto	
+wd	Q11815167	archipelagic state	country	3	2	auto	
+wd	Q1210950	channel	sea	3	1	auto	
+wd	Q1291195	location of discovery		3	1	auto	
+wd	Q129676371	rural settlement	settlement	3	2	auto	
+wd	Q131986827	Residence of the British Royal Family		3	1	auto	
+wd	Q13455645	administrative city in the Republic of Ireland	city	3	1	auto	
+wd	Q14829592	Haufendorf		3	1	auto	
+wd	Q1483333	Fürstenschule		3	1	auto	
+wd	Q1507115	Imperial Estate	building	3	3	auto	
+wd	Q1542966	gymnasium		3	1	auto	
+wd	Q15584664	city under municipality jurisdiction in Latvia	city	3	3	auto	
+wd	Q15823129	Carthusian monastery	monastery	3	3	auto	
+wd	Q15893266	former entity		3	3	auto	
+wd	Q16085106	local administrative entity		3	2	auto	
+wd	Q1617500	hieron		3	2	auto	
+wd	Q170321	wetland	marsh	3	2	auto	
+wd	Q17051044	mahalle		3	2	auto	
+wd	Q17320423	Daerah Khusus		3	1	auto	
+wd	Q1852178	locality of Düsseldorf	settlement	3	3	auto	
+wd	Q188509	suburb	city_quarter	3	3	auto	
+wd	Q1936090	Parlements		3	1	auto	
+wd	Q1938208	legal institution		3	1	auto	
+wd	Q19757	Roman theatre	building	3	1	auto	
+wd	Q202686	Commonwealth realm	country	3	3	auto	
+wd	Q204324	volcanic crater lake	lake	3	3	auto	
+wd	Q20616831	submerged settlement	settlement	3	3	auto	
+wd	Q210999	psychiatric hospital	building	3	2	auto	
+wd	Q213468	municipium		3	4	auto	
+wd	Q2140699	wine-producing region	region	3	2	auto	
+wd	Q21457810	Scottish district	district	3	1	auto	
+wd	Q21503295	district with city status	district	3	2	auto	
+wd	Q217123	oracle		3	2	auto	
+wd	Q233324	seminary		3	4	auto	
+wd	Q2434238	heritage		3	3	auto	
+wd	Q245016	military base		3	1	auto	
+wd	Q269770	boarding school	building	3	1	auto	
+wd	Q2772772	military museum	building	3	3	auto	
+wd	Q2923911	empoldered inlet	bay	3	1	auto	
+wd	Q294414	public office		3	1	auto	
+wd	Q3247173	type site		3	1	auto	
+wd	Q3363945	archaeological park	site	3	3	auto	
+wd	Q3403564	ecclesiastical principality	principality	3	1	auto	
+wd	Q34038	waterfall	natural	3	1	auto	
+wd	Q34986717	city of Malaysia	city	3	2	auto	
+wd	Q405155	trade route		3	1	auto	
+wd	Q46395	British Overseas Territories	area	3	2	auto	
+wd	Q478847	Amt	bailiwick	3	2	auto	
+wd	Q502899	outlier		3	2	auto	
+wd	Q5098	province of Indonesia	province	3	1	auto	
+wd	Q55118208	internment Camp for Romani people		3	2	auto	
+wd	Q56292881	Amt	bailiwick	3	1	auto	
+wd	Q56580032	city of republic significance	city	3	2	auto	
+wd	Q614316	private museum	building	3	2	auto	
+wd	Q62049	county seat		3	2	auto	
+wd	Q692170	half-canton	canton	3	3	auto	
+wd	Q692581	holy city	city	3	1	auto	
+wd	Q69391739	Greek colony	country	3	2	auto	
+wd	Q7328910	art collection		3	1	auto	
+wd	Q7543008	small burgh		3	2	auto	
+wd	Q7830079	town of district significance in Russia	town	3	1	auto	
+wd	Q879050	manor house	building	3	2	auto	
+wd	Q9019918	endorheic lake	lake	3	2	auto	
+wd	Q946033	polje		3	2	auto	
+wd	Q100503226	town of the United Kingdom	town	2	1	auto	
+wd	Q10480682	agricultural structure		2	1	auto	
+wd	Q108935461	Czech research institution		2	1	auto	
+wd	Q110544132	free flight site		2	2	auto	
+wd	Q1107656	garden	site	2	1	auto	
+wd	Q1137272	county borough	settlement	2	1	auto	
+wd	Q11396960	production company		2	1	auto	
+wd	Q114768	granary		2	1	auto	
+wd	Q1151616	stateless nation	country	2	2	auto	
+wd	Q1162817	geographical small region of Hungary	region	2	2	auto	
+wd	Q11727006			2	2	auto	
+wd	Q1195705	rocca		2	2	auto	
+wd	Q120964921	organized archaeological site	site	2	2	auto	
+wd	Q12232785	depopulated Palestinian village	village	2	2	auto	
+wd	Q125366925	village in Egypt	village	2	2	auto	
+wd	Q13417114	noble family		2	3	auto	
+wd	Q1344695	province of Iran	province	2	1	auto	
+wd	Q1393765	factory		2	2	auto	
+wd	Q1437299	creek	river	2	1	auto	
+wd	Q14524493	terrain		2	1	auto	
+wd	Q1509716	collegiate church	church	2	2	auto	
+wd	Q15310171	seaport		2	1	auto	
+wd	Q1544071	narrows		2	2	auto	
+wd	Q15911738	hydroelectric power station		2	2	auto	
+wd	Q1594896	Heilig-Geist-Spital		2	1	auto	
+wd	Q16124843	municipality of Libya	settlement	2	2	auto	
+wd	Q163301	Ortsbezirk of Germany		2	3	auto	
+wd	Q1640361	climbing area	area	2	1	auto	
+wd	Q188025	salt lake	lake	2	1	auto	
+wd	Q188604	county of Hungary	county	2	1	auto	
+wd	Q190967	Crusader states	country	2	2	auto	
+wd	Q193556	provinces of Sweden	province	2	2	auto	
+wd	Q202595	prefecture of Greece	district	2	2	auto	
+wd	Q207326	summit	mountain	2	2	auto	
+wd	Q21167233	Commons gallery		2	1	auto	
+wd	Q211690	London borough	settlement	2	2	auto	
+wd	Q2168991	Rotte		2	1	auto	
+wd	Q2235075	centre city	city	2	1	auto	
+wd	Q2276925	municipality of Galicia	settlement	2	2	auto	
+wd	Q2438381	trekvaart		2	1	auto	
+wd	Q24529780	point		2	1	auto	
+wd	Q253270	borough of Munich	settlement	2	2	auto	
+wd	Q26907166	temporal entity		2	1	auto	
+wd	Q282	wine		2	2	auto	
+wd	Q28538876	district of Alsace-Lorraine	district	2	1	auto	
+wd	Q29946056	highly urbanized city	city	2	2	auto	
+wd	Q3032141	district of Portugal	district	2	1	auto	
+wd	Q3148864	imada		2	2	auto	
+wd	Q3270079	hogback		2	2	auto	
+wd	Q333542	overseas province of Portugal	province	2	2	auto	
+wd	Q334383	abbey church	church	2	2	auto	
+wd	Q3395377	ancient monument	site	2	2	auto	
+wd	Q3397551	built-on bridge		2	2	auto	
+wd	Q350895	abandoned village	village	2	2	auto	
+wd	Q3558938	villa veneta		2	1	auto	
+wd	Q368716	Ukrainian historical regions	region	2	1	auto	
+wd	Q37800986	Serbian city	city	2	1	auto	
+wd	Q3895814	rocky wall		2	1	auto	
+wd	Q3918	university	building	2	1	auto	
+wd	Q43229	organization		2	1	auto	
+wd	Q491713	sound		2	1	auto	
+wd	Q5144960	microregion		2	1	auto	
+wd	Q518343	municipal borough	settlement	2	1	auto	
+wd	Q52103661	former island	island	2	2	auto	
+wd	Q56557504	city of Iran	city	2	2	auto	
+wd	Q582706	Israeli settlement	settlement	2	1	auto	
+wd	Q615810	water castle	castle	2	1	auto	
+wd	Q61980413	rural district of Hesse	district	2	1	auto	
+wd	Q6341928	rift lake	lake	2	2	auto	
+wd	Q64578911	former hospital	building	2	1	auto	
+wd	Q64953083	car-free place		2	2	auto	
+wd	Q672490	deme		2	1	auto	
+wd	Q702842	municipal arrondissement of France	district	2	1	auto	
+wd	Q708751	imperial abbey	bishopric	2	2	auto	
+wd	Q737681	municipalities with language facilities	settlement	2	2	auto	
+wd	Q756102	open-air museum	building	2	2	auto	
+wd	Q79423884	quarter in Leipzig, Germany	city_quarter	2	2	auto	
+wd	Q860861	sculpture		2	1	auto	
+wd	Q86681780	district of The Hague	district	2	1	auto	
+wd	Q875538	public university	building	2	1	auto	
+wd	Q900119	United Nations list of non-self-governing territories		2	1	auto	
+wd	Q93352	coast	natural	2	2	auto	
+wd	Q96211395	heritage site in Sweden		2	1	auto	
+wd	Q97824060	benedictine nunnery	monastery	2	2	auto	
+wd	Q105072138	Catholic archdiocese	bishopric	1	1	auto	
+wd	Q105419665	Roman Catholic archdiocese not metropolitan		1	1	auto	
+wd	Q10594991	nature area	area	1	1	auto	
+wd	Q1061151	massif	mountain	1	1	auto	
+wd	Q106259	polder		1	1	auto	
+wd	Q1063239	polity		1	1	auto	
+wd	Q1081138	historic site	site	1	1	auto	
+wd	Q11042	culture		1	2	auto	
+wd	Q1138414	isolated settlement	settlement	1	1	auto	
+wd	Q1147274	Apostolic see	bishopric	1	1	auto	
+wd	Q1149783	In commendam		1	1	auto	
+wd	Q116052725	national geopolitical entity		1	1	auto	
+wd	Q116651321	Real Sitio		1	1	auto	
+wd	Q116798230	celtiberian town	town	1	1	auto	
+wd	Q123754112	municipality of the Valencian Community	settlement	1	1	auto	
+wd	Q124714	spring	natural	1	1	auto	
+wd	Q1250323	arched bridge	bridge	1	1	auto	
+wd	Q125470455	customs territory of China	area	1	1	auto	
+wd	Q1254933	astronomical observatory		1	1	auto	
+wd	Q12774	French formal garden	site	1	1	auto	
+wd	Q1284092	Bailiwick	bailiwick	1	1	auto	
+wd	Q1292119	style		1	2	auto	
+wd	Q131734	brewery	building	1	1	auto	
+wd	Q13218676	Roman aqueduct		1	1	auto	
+wd	Q132775089	renaissance bridge	bridge	1	1	auto	
+wd	Q1329623	cultural center		1	1	auto	
+wd	Q1339195	station building	building	1	1	auto	
+wd	Q1345055	horde		1	1	auto	
+wd	Q13455560	Ceremonial cities of the Republic of Ireland	city	1	1	auto	
+wd	Q13455770	town council in the Republic of Ireland		1	1	auto	
+wd	Q136696193	Kneippheilbad		1	1	auto	
+wd	Q137186904	transcontinental region	region	1	1	auto	
+wd	Q14455864	administrative community of Saxony	settlement	1	1	auto	
+wd	Q14839548	minor locality in Sweden	settlement	1	1	auto	
+wd	Q14946335	Historic Garden (Spain)	site	1	1	auto	
+wd	Q1496106	Main Abby		1	1	auto	
+wd	Q15079751	borough of Amsterdam	settlement	1	1	auto	
+wd	Q151710			1	1	auto	
+wd	Q15243209	historic district	district	1	1	auto	
+wd	Q156362	winery		1	1	auto	
+wd	Q15649510	satrapy of the Sasanian Empire		1	1	auto	
+wd	Q15649572	satrapy of the Seleucid Empire		1	1	auto	
+wd	Q163687	basilica	church	1	1	auto	
+wd	Q1669338	Ortslage		1	1	auto	
+wd	Q16858213	town in Romania	town	1	1	auto	
+wd	Q17130641	syssel		1	1	auto	
+wd	Q1714375	game reserve		1	1	auto	
+wd	Q17166803	city municipality of Lithuania	settlement	1	1	auto	
+wd	Q1802963	mansion	building	1	1	auto	
+wd	Q18247357	group of structures or buildings		1	1	auto	
+wd	Q1825472	covered bridge	bridge	1	1	auto	
+wd	Q184358	reef	natural	1	1	auto	
+wd	Q18674739	event venue		1	1	auto	
+wd	Q1896989	subject of international law		1	1	auto	
+wd	Q1969448	term		1	1	auto	
+wd	Q19698023	voivodeship of the Grand Duchy of Lithuania	province	1	1	auto	
+wd	Q19850234	hill group		1	1	auto	
+wd	Q200141	necropolis		1	1	auto	
+wd	Q200464	Portuguese Empire	empire	1	1	auto	
+wd	Q20105287	counties of the Balearic Islands	county	1	1	auto	
+wd	Q20136634	Wikipedia overview article		1	1	auto	
+wd	Q20192141	dependent territory	area	1	1	auto	
+wd	Q20528428	federative entity of Mexico		1	1	auto	
+wd	Q207524	islet	island	1	1	auto	
+wd	Q2084233	pfleggericht		1	1	auto	
+wd	Q210516	list of cities in Serbia		1	1	auto	
+wd	Q2116450	manor estate	building	1	1	auto	
+wd	Q21507948	former village	village	1	1	auto	
+wd	Q21752084	Roman archaeological site	site	1	1	auto	
+wd	Q2232001	show cave	site	1	1	auto	
+wd	Q22808403	underground station		1	1	auto	
+wd	Q2312233	spur castle	castle	1	1	auto	
+wd	Q2460358	municipality of Turkey	settlement	1	1	auto	
+wd	Q247073	powiat	district	1	1	auto	
+wd	Q2495771	nomadic empire	empire	1	1	auto	
+wd	Q254978	burgh		1	1	auto	
+wd	Q261023	district of Vienna	district	1	1	auto	
+wd	Q264661	obstacle		1	1	auto	
+wd	Q2706302	municipality of Bosnia and Herzegovina	settlement	1	1	auto	
+wd	Q28822032	cadastral municipality of Serbia	settlement	1	1	auto	
+wd	Q2912558	hypersaline lake	lake	1	1	auto	
+wd	Q29553	sanctuary		1	1	auto	
+wd	Q2989468	Communes d'arrondissement of Senegal	district	1	1	auto	
+wd	Q3073652	coastal river	river	1	1	auto	
+wd	Q3089228	natural border		1	1	auto	
+wd	Q312461	terra nullius		1	1	auto	
+wd	Q3154693	city council		1	1	auto	
+wd	Q317548	resort town	town	1	1	auto	
+wd	Q3238337	mythical location		1	1	auto	
+wd	Q328584	municipality of Slovenia	settlement	1	1	auto	
+wd	Q3327862	urban commune of Morocco	settlement	1	1	auto	
+wd	Q34841063	seat of the local council		1	1	auto	
+wd	Q3485795	seat		1	1	auto	
+wd	Q3551775	university in France	building	1	1	auto	
+wd	Q358	heritage site		1	1	auto	
+wd	Q365216	Ordensburg		1	1	auto	
+wd	Q373074	suffragan diocese	bishopric	1	1	auto	
+wd	Q3757179	parçan of Occitania		1	1	auto	
+wd	Q3914	school	building	1	1	auto	
+wd	Q392160	failed state	country	1	1	auto	
+wd	Q3950801	satrapy of the Achaemenid Empire		1	1	auto	
+wd	Q399445	amt	bailiwick	1	1	auto	
+wd	Q43483	water well	site	1	1	auto	
+wd	Q44782	port		1	1	auto	
+wd	Q46112269	rail mountain pass	pass	1	1	auto	
+wd	Q473972	protected area	area	1	1	auto	
+wd	Q47486890	former lake	lake	1	1	auto	
+wd	Q4752944	ancient borough	settlement	1	1	auto	
+wd	Q48794661	zona arqueológica		1	1	auto	
+wd	Q5003624	memorial	site	1	1	auto	
+wd	Q505213	sawmill		1	1	auto	
+wd	Q5464261	fold and thrust belt		1	1	auto	
+wd	Q553036	natural region of Germany	region	1	1	auto	
+wd	Q557206	Catholic university	building	1	1	auto	
+wd	Q56242063	Protestant church building	church	1	1	auto	
+wd	Q56242275	Lutheran church	church	1	1	auto	
+wd	Q631305	rock formation		1	1	auto	
+wd	Q6465	department of France	province	1	1	auto	
+wd	Q668130	provosty		1	1	auto	
+wd	Q717478	administrative territorial entity of the United Kingdom	area	1	1	auto	
+wd	Q7247618	prodigy house	building	1	1	auto	
+wd	Q75520	plateau	valley	1	1	auto	
+wd	Q755707	municipality of Norway	settlement	1	1	auto	
+wd	Q779415	special administrative region of China	region	1	1	auto	
+wd	Q797765	inclined tower	building	1	1	auto	
+wd	Q8072	volcano	mountain	1	1	auto	
+wd	Q820477	mine		1	1	auto	
+wd	Q82799	name		1	1	auto	
+wd	Q846659	Jewish cemetery	site	1	1	auto	
+wd	Q8514	desert	natural	1	1	auto	
+wd	Q85332736	district of Lower Saxony	district	1	1	auto	
+wd	Q85493040	district of Rhineland-Palatinate	district	1	1	auto	
+wd	Q875157	resort	town	1	1	auto	
+wd	Q88598	gord		1	1	auto	
+wd	Q907116	Monument (Spain)	site	1	1	auto	
+wd	Q91733160	urban settlement in Belarus	settlement	1	1	auto	
+wd	Q928830	metro station		1	1	auto	
+wd	Q1089515	conquest dynasty		0	1	auto	
+wd	Q1128397	convent	monastery	0	1	auto	
+wd	Q1211122	deciduous forest	forest	0	1	auto	
+wd	Q134416438	neighbourhood in Karlovac	city_quarter	0	1	auto	
+wd	Q1434544	commandry		0	1	auto	
+wd	Q19833170	town of Portugal	town	0	1	auto	
+wd	Q216285	chapter		0	1	auto	
+wd	Q39364723	hospital building	building	0	1	auto	
+wd	Q50068795	historical Chinese state	country	0	1	auto	
+wd	Q505681	linear settlement	settlement	0	1	auto	
+wd	Q594128	correctional facility		0	1	auto	
+wd	Q7075	library	building	0	1	auto	
+wd	Q81917	fortified tower	building	0	1	auto	
+gn	PPLA		city	58771	1375	reviewed	
+gn	PPL		settlement	47351	8646	reviewed	
+gn	PPLA3		settlement	42720	2838	reviewed	
+gn	PPLC		city	22474	563	reviewed	
+gn	PPLA2		city	19710	1669	reviewed	
+gn	PCLI		country	18077	464	reviewed	
+gn	ADM1		province	12350	581	reviewed	
+gn	PPLA4		settlement	3011	525	reviewed	
+gn	STM		river	2860	259	reviewed	
+gn	PPLX		city_quarter	2521	438	reviewed	
+gn	ADM3		settlement	2247	521	reviewed	
+gn	RGN		region	1764	138	reviewed	
+gn	ADM2		district	1128	297	reviewed	
+gn	ADM4		settlement	1125	445	reviewed	
+gn	ADM1H		province	1108	102	reviewed	
+gn	ISL		island	813	134	reviewed	
+gn	FRM		building	585	18	reviewed	
+gn	PPLG		city	560	6	reviewed	
+gn	VAL		valley	444	23	reviewed	
+gn	CSTL		castle	387	82	reviewed	
+gn	RGNH		region	290	14	reviewed	
+gn	SEA		sea	285	19	reviewed	
+gn	HLL		mountain	254	35	reviewed	
+gn	MTS		mountain	240	34	reviewed	
+gn	ADM4H		district	189	8	reviewed	
+gn	CH		church	182	36	reviewed	
+gn	PPLL		hamlet	145	93	reviewed	
+gn	MSTY		monastery	129	29	reviewed	
+gn	HSTS		site	125	24	reviewed	
+gn	CONT		continent	117	10	reviewed	
+gn	ADMD		district	108	24	reviewed	
+gn	LK		lake	106	39	reviewed	
+gn	RUIN		site	99	25	reviewed	
+gn	ADM3H		district	89	14	reviewed	
+gn	STRT		sea	82	9	reviewed	
+gn	MT		mountain	76	41	reviewed	
+gn	PAL		palace	66	18	reviewed	
+gn	SD		sea	63	2	reviewed	
+gn	ANS		site	53	15	reviewed	
+gn	AREA		region	52	23	reviewed	
+gn	HSE		building	47	18	reviewed	
+gn	FT		fort	44	13	reviewed	
+gn	AMTH		site	43	1	reviewed	
+gn	PRK		site	42	8	reviewed	
+gn	MNMT		site	38	6	reviewed	
+gn	ADM2H		district	33	7	reviewed	
+gn	ARCH		site	31	2	reviewed	
+gn	SQR		square	31	7	reviewed	
+gn	BLDG		building	29	8	reviewed	
+gn	RSTN		building	27	12	reviewed	
+gn	UNIV		building	24	1	reviewed	
+gn	PASS		pass	21	11	reviewed	
+gn	BAY		bay	19	7	auto	
+gn	CNL		river	19	7	auto	
+gn	PPLH		settlement	19	10	auto	
+gn	HLLS		mountain	17	6	auto	
+gn	GULF		bay	16	3	auto	
+gn	BUSTP			15	7	auto	
+gn	PCLS		country	15	7	auto	
+gn	VLC		mountain	15	4	auto	
+gn	PEN		cape	14	10	auto	
+gn	RDGE		mountain	13	4	auto	
+gn	STMD		river	13	3	auto	
+gn	INLT		bay	12	6	auto	
+gn	ISLS		island	12	7	auto	
+gn	OCN		sea	12	1	auto	
+gn	PK		mountain	12	6	auto	
+gn	ADM5		settlement	11	9	auto	
+gn	LGN		bay	10	2	auto	
+gn	TMB		site	10	1	auto	
+gn	ADMF		area	7	1	auto	
+gn	BDG		bridge	7	3	auto	
+gn	CAPE		cape	7	6	auto	
+gn	PPLF		village	7	4	auto	
+gn	CHNM		sea	6	4	auto	
+gn	PCL		country	6	4	auto	
+gn	CTRR			5	1	auto	
+gn	PLN		valley	5	3	auto	
+gn	STMX		river	5	2	auto	
+gn	CHN		sea	4	2	auto	
+gn	EST		building	4	4	auto	
+gn	FRST		forest	4	4	auto	
+gn	RDST		bay	4	1	auto	
+gn	STMC		river	4	1	auto	
+gn	AIRF		building	3	1	auto	
+gn	FLLS		river	3	1	auto	
+gn	FLTT			3	1	auto	
+gn	HBR		bay	3	3	auto	
+gn	PCLD		country	3	4	auto	
+gn	PPLQ		site	3	6	auto	
+gn	PRSH		parish	3	2	auto	
+gn	PT		cape	3	2	auto	
+gn	CLF		mountain	2	1	auto	
+gn	CRKT		river	2	1	auto	
+gn	CST			2	3	auto	
+gn	FJD		bay	2	1	auto	
+gn	GATE		gate	2	1	auto	
+gn	MUS		building	2	1	auto	
+gn	TOWR		building	2	2	auto	
+gn	ADMDH		district	1	1	auto	
+gn	CNLA		river	1	1	auto	
+gn	CNLN		river	1	1	auto	
+gn	GRAZ			1	1	auto	
+gn	HUT		building	1	1	auto	
+gn	MRSH		marsh	1	1	auto	
+gn	OBS		building	1	1	auto	
+gn	PENX		cape	1	1	auto	
+gn	PLDR		settlement	1	1	auto	
+gn	PPLCH		settlement	1	1	auto	
+gn	PRT		settlement	1	1	auto	
+gn	RD		street	1	1	auto	
+gn	RK		natural	1	1	auto	
+gn	SPIT		cape	1	1	auto	
+gn	SPNG		natural	1	1	auto	
+gn	UPLD		natural	1	3	auto	
+gn	WAD			1	1	auto	
+gn	CMTY		site	0	1	auto	
+gn	CVNT			0	1	auto	
+gn	HTL		inn	0	4	auto	
+gn	LCTY		site	0	1	auto	
+gn	PPLW		site	0	1	auto	
+gn	RESN		street	0	1	auto	
+gn	SCH		building	0	1	auto	
+gn	STMSB		river	0	1	auto	
+gn	STNF		built	0	1	auto	
+gn	STNM		building	0	1	auto	
+tgn	inhabited place	inhabited place	settlement	12112	2106	reviewed	
+tgn	nation	nation	country	1711	105	reviewed	
+tgn	general region	general region	region	474	74	reviewed	
+tgn	historical region	historical region	region	361	54	reviewed	
+tgn	former nation state empire	former nation/state/empire	country	324	18	reviewed	
+tgn	deserted settlement	deserted settlement	settlement	282	55	reviewed	
+tgn	island	island	island	267	53	reviewed	
+tgn	region administrative division	region (administrative division)	region	225	38	reviewed	
+tgn	river	river	river	210	29	reviewed	
+tgn	hill	hill	mountain	201	8	reviewed	
+tgn	country	country	country	135	9	reviewed	
+tgn	continent	continent	continent	115	11	reviewed	
+tgn	state	state	province	100	23	reviewed	
+tgn	neighborhood	neighborhood	city_quarter	89	37	reviewed	
+tgn	province	province	province	66	26	reviewed	
+tgn	third level subdivision	third level subdivision	district	66	15	reviewed	
+tgn	mountain	mountain	mountain	59	10	reviewed	
+tgn	religious center	religious center	settlement	58	1	reviewed	
+tgn	regional division	regional division	region	51	5	reviewed	
+tgn	former administrative division	former administrative division	region	49	5	reviewed	
+tgn	sea	sea	sea	31	11	reviewed	
+tgn	subcontinent	subcontinent	continent	24	2	reviewed	
+tgn	national district	national district	district	20	8	reviewed	
+tgn	castle	castle	castle	14	3	auto	
+tgn	volcano	volcano	mountain	13	2	auto	
+tgn	lake	lake	lake	12	12	auto	
+tgn	former group of nations states cities	former group of nations/states/cities	region	11	1	auto	
+tgn	mountain range	mountain range	mountain	11	2	auto	
+tgn	road	road	street	10	1	auto	
+tgn	cape	cape	cape	9	6	auto	
+tgn	island group	island group	island	9	2	auto	
+tgn	ancient region	ancient region	region	7	2	auto	
+tgn	stream	stream	river	7	3	auto	
+tgn	mountain system	mountain system	mountain	5	3	auto	
+tgn	mountains	mountains	mountain	5	4	auto	
+tgn	ancient site	ancient site	site	4	3	auto	
+tgn	autonomous city	autonomous city	city	4	1	auto	
+tgn	creek	creek	river	4	1	auto	
+tgn	ortsteil	Ortsteil	city_quarter	4	2	auto	
+tgn	farm	farm	building	3	3	auto	
+tgn	forest	forest	forest	3	3	auto	
+tgn	fourth level subdivision	fourth level subdivision	district	3	2	auto	
+tgn	gorge	gorge	valley	3	1	auto	
+tgn	ruins	ruins	site	3	3	auto	
+tgn	abbey	abbey	monastery	2	2	auto	
+tgn	administrative division	administrative division	district	2	2	auto	
+tgn	autonomous community	autonomous community	province	2	2	auto	
+tgn	borough	borough	city_quarter	2	2	auto	
+tgn	canton	canton	canton	2	3	auto	
+tgn	county	county	county	2	1	auto	
+tgn	palace	palace	palace	2	1	auto	
+tgn	plain	plain	valley	2	2	auto	
+tgn	point	point	cape	2	1	auto	
+tgn	suburb	suburb	city_quarter	2	2	auto	
+tgn	area	area	region	1	1	auto	
+tgn	cave	cave	natural	1	1	auto	
+tgn	dependent state	dependent state	country	1	1	auto	
+tgn	desert	desert	natural	1	1	auto	
+tgn	fief	fief	lordship	1	1	auto	
+tgn	fort	fort	fort	1	1	auto	
+tgn	inlet	inlet	bay	1	1	auto	
+tgn	locality	locality	settlement	1	1	auto	
+tgn	ocean	ocean	sea	1	1	auto	
+tgn	pass	pass	pass	1	1	auto	
+tgn	rione	rione	city_quarter	1	1	auto	
+tgn	special city	special city	city	1	1	auto	
+tgn	anchorage	anchorage	bay	0	1	auto	
+tgn	peninsula	peninsula	cape	0	1	auto	
+orbis	city		city	1078	150	reviewed	
+orbis	province		province	52	2	reviewed	
+orbis	country_or_region		region	30	6	reviewed	
+orbis	region		region	29	3	reviewed	
+orbis	canton		canton	1	1	auto	
+orbis	county		county	1	1	auto	
+orbis	island		island	1	1	auto	
+orbis	river		river	1	1	auto	
+orbis	village		village	1	1	auto	
+register	place	place	-	180551	6853	reviewed	"the register says only ""place"""
+register	country	country	country	30465	134	reviewed	
+register	region	region	region	12811	167	reviewed	
+register	place_pa_settlement	place_pa_settlement	settlement	1447	540	reviewed	
+register	from_header_forms	from_header_forms	-	1407	66	reviewed	harvest label
+register	editor_slug	editor_slug	-	1102	69	reviewed	harvest label
+register	gemeinde	gemeinde	settlement	780	168	reviewed	
+register	city	city	city	704	264	reviewed	
+register	stadt	stadt	town	328	58	reviewed	
+register	from_text_forms	from_text_forms	-	327	103	reviewed	harvest label
+register	place_county	place_county	shire	277	38	reviewed	
+register	place_f_residence	place_f_residence	building	203	75	reviewed	
+register	place_f_playhouse	place_f_playhouse	building	126	13	reviewed	
+register	coun	coun	country	117	28	reviewed	
+register	burg	burg	castle	101	20	reviewed	
+register	place_f_church	place_f_church	church	86	58	reviewed	
+register	gemeinde, gemeindeteil	gemeinde, gemeindeteil	settlement	83	11	reviewed	
+register	place_f_school	place_f_school	building	81	13	reviewed	
+register	place_f_street	place_f_street	street	76	18	reviewed	
+register	place_f_arena	place_f_arena	building	67	8	reviewed	
+register	herrschaft, kastlanei	herrschaft, kastlanei	lordship	57	1	reviewed	
+register	fluss	fluss	river	54	7	reviewed	
+register	standoff_slug	standoff_slug	-	54	11	reviewed	harvest label
+register	fährstelle	fährstelle	site	49	4	reviewed	
+register	printed_register	printed_register	-	47	9	reviewed	harvest label
+register	flurname	flurname	site	44	45	reviewed	
+register	gemeindeteil	gemeindeteil	settlement	42	13	reviewed	
+register	eidgenössischer ort, kanton	eidgenössischer ort, kanton	canton	40	7	reviewed	
+register	klarissenkloster	klarissenkloster	monastery	38	1	reviewed	
+register	dist	dist	district	32	24	reviewed	
+register	place_f_townhall	place_f_townhall	building	28	8	reviewed	
+register	dorf	dorf	village	25	20	reviewed	
+register	gerichtsherrschaft	gerichtsherrschaft	lordship	24	1	reviewed	
+register	place_f_religioushouse	place_f_religioushouse	monastery	24	17	reviewed	
+register	document_origin	document_origin	-	20	42	reviewed	harvest label
+register	place_f_openarea	place_f_openarea	site	20	12	reviewed	
+register	vill	vill	village	20	18	reviewed	
+register	place_f_guildhall	place_f_guildhall	building	19	8	auto	
+register	place_pa_liberty	place_pa_liberty	district	19	3	auto	
+register	place_pa_manor	place_pa_manor	lordship	19	8	auto	
+register	landvogtei, herrschaft	landvogtei, herrschaft	bailiwick	17	1	auto	
+register	gemeindeteil, gemeinde	gemeindeteil, gemeinde	settlement	15	1	auto	
+register	herrschaft, amt, gemeine herrschaft, grafschaft	herrschaft, amt, gemeine herrschaft, grafschaft	lordship	15	1	auto	
+register	mühle	mühle	building	14	6	auto	
+register	place_country	place_country	country	14	5	auto	
+register	place_f_victuallinghouse	place_f_victuallinghouse	inn	14	11	auto	
+register	eidgenössischer ort	eidgenössischer ort	canton	13	3	auto	
+register	hof	hof	building	12	2	auto	
+register	rive	rive	river	11	7	auto	
+register	moun	moun	mountain	10	7	auto	
+register	place_f_gate	place_f_gate	gate	10	6	auto	
+register	place_populatedarea	place_populatedarea	settlement	10	5	auto	
+register	herrschaft	herrschaft	lordship	9	3	auto	
+register	siedlung	siedlung	settlement	9	4	auto	
+register	landvogtei	landvogtei	bailiwick	7	2	auto	
+register	dorfteil	dorfteil	settlement	6	3	auto	
+register	place_f_hospital	place_f_hospital	building	6	4	auto	
+register	bach	bach	river	5	4	auto	
+register	kirchspiel	kirchspiel	parish	5	1	auto	
+register	verwaltungsgebäude	verwaltungsgebäude	building	5	1	auto	
+register	acker	acker	site	4	3	auto	
+register	benediktinerkloster	benediktinerkloster	monastery	4	4	auto	
+register	cont	cont	continent	4	3	auto	
+register	franziskanerkloster	franziskanerkloster	monastery	4	1	auto	
+register	gemeinde, stadt	gemeinde, stadt	settlement	4	1	auto	
+register	gemeine herrschaft	gemeine herrschaft	bailiwick	4	1	auto	
+register	place_duchy	place_duchy	duchy	4	1	auto	
+register	place_ea_diocese	place_ea_diocese	bishopric	4	7	auto	
+register	bistum	bistum	bishopric	3	2	auto	
+register	gemeinde, gemeindeteil, vogtei, herrschaft	gemeinde, gemeindeteil, vogtei, herrschaft	settlement	3	1	auto	
+register	kirche	kirche	church	3	3	auto	
+register	meierhof	meierhof	building	3	1	auto	
+register	place_f_placeofpunishment	place_f_placeofpunishment	building	3	2	auto	
+register	wies-, weideland	wies-, weideland	site	3	1	auto	
+register	continent	continent	continent	2	2	auto	
+register	graben	graben	natural	2	1	auto	
+register	hügel	hügel	mountain	2	1	auto	
+register	place_pa_ward	place_pa_ward	city_quarter	2	2	auto	
+register	weiler	weiler	hamlet	2	1	auto	
+register	chorherrenstift	chorherrenstift	monastery	1	3	auto	
+register	place_ea_archdeaconry	place_ea_archdeaconry	bishopric	1	1	auto	
+register	place_f_bridge	place_f_bridge	bridge	1	1	auto	
+register	place_f_innofcourt	place_f_innofcourt	building	1	1	auto	
+register	place_f_other	place_f_other	built	1	1	auto	
+register	place_f_storage	place_f_storage	building	1	1	auto	
+register	sett	sett	settlement	1	2	auto	
+register	wald	wald	forest	1	2	auto	
+register	berg	berg	mountain	0	1	auto	
+register	bruderhaus	bruderhaus	monastery	0	1	auto	
+register	countr	countr	country	0	1	auto	
+register	dekanat	dekanat	district	0	1	auto	
+register	document_sent_from	document_sent_from		0	1	auto	
+register	dominikanerinnenkloster	dominikanerinnenkloster	monastery	0	1	auto	
+register	fronhof	fronhof	building	0	1	auto	
+register	haus	haus	building	0	1	auto	
+register	herzogtum	herzogtum	duchy	0	1	auto	
+register	herzogtum, erzherzogtum	herzogtum, erzherzogtum	duchy	0	1	auto	
+register	historische region	historische region	region	0	2	auto	
+register	johanniterkommende	johanniterkommende	monastery	0	3	auto	
+register	kanonissenstift	kanonissenstift	monastery	0	1	auto	
+register	landgericht	landgericht	district	0	1	auto	
+register	landgrafschaft, gemeine herrschaft, landgericht, landvogtei, kanton	landgrafschaft, gemeine herrschaft, landgericht, landvogtei, kanton	landgraviate	0	1	auto	
+register	stadt, gemeinde	stadt, gemeinde	town	0	1	auto	
+register	stadtteil	stadtteil	city_quarter	0	2	auto	
+register	zisterzienserinnenkloster	zisterzienserinnenkloster	monastery	0	1	auto	
+register	zisterzienserkloster	zisterzienserkloster	monastery	0	2	auto	
+qualifier	konigreich	Frankreich, Königreich	kingdom	11382	111	reviewed	
+qualifier	herzogtum	Holstein, Herzogtum	duchy	2868	173	reviewed	
+qualifier	furstentum	Piombino, Fürstentum	principality	2336	46	reviewed	
+qualifier	fluss	Trave, Fluss	river	2128	162	reviewed	
+qualifier	stadt	Wien, Stadt	settlement	1345	25	reviewed	
+qualifier	kurfurstentum	Bayern, Kurfürstentum	electorate	1195	36	reviewed	
+qualifier	amt	Pfreimd, Amt (Landgrafschaft Leuchtenberg)	bailiwick	1046	48	reviewed	
+qualifier	grafschaft	Ostfriesland, Grafschaft	county	994	117	reviewed	
+qualifier	republik	Bern, Stadt und Republik	republic	780	10	reviewed	
+qualifier	commonwealth	England, Commonwealth von	republic	546	2	reviewed	
+qualifier	insel	Bornholm, Insel	island	507	73	reviewed	
+qualifier	provinz	Languedoc, Provinz	province	501	20	reviewed	
+qualifier	hochstift	Halberstadt, Hochstift	bishopric	451	59	reviewed	
+qualifier	landgrafschaft	Leuchtenberg, Landgrafschaft	landgraviate	442	29	reviewed	
+qualifier	markgrafschaft	Baden, Markgrafschaft	margraviate	421	33	reviewed	
+qualifier	hetmanat	Saporoger Sitsch, Hetmanat	principality	365	1	reviewed	
+qualifier	schloss	Surpierre, Schloss (früher auch: Schloss Überstein)	castle	341	67	reviewed	
+qualifier	erzstift	Mainz, Erzstift	bishopric	326	15	reviewed	
+qualifier	khanat	Krim, Khanat	kingdom	325	2	reviewed	
+qualifier	bergstadt	"Bernburg, Bergstadt (""Vorm Berge"")"	town	258	1	reviewed	
+qualifier	stift	Regensburg, Stift Niedermünster	bishopric	239	18	reviewed	
+qualifier	eidgenossenschaft	Wallis, Zugewandter Ort der Eidgenossenschaft	republic	187	4	reviewed	
+qualifier	erzherzogtum	Österreich, Erzherzogtum	duchy	182	18	reviewed	
+qualifier	bistum	Augsburg, Bistum	bishopric	135	29	reviewed	
+qualifier	festung	Ehrenbreitstein, Festung	fort	132	33	reviewed	
+qualifier	burg	Neu-Falkenstein, Burg	castle	88	35	reviewed	
+qualifier	kloster	Regensburg, Kloster Prüll	monastery	83	40	reviewed	
+qualifier	herrschaft	Sternberg, Herrschaft	lordship	73	48	reviewed	
+qualifier	region	Provence, Region	region	66	34	reviewed	
+qualifier	grossfurstentum	Litauen, Großfürstentum	duchy	61	4	reviewed	
+qualifier	talstadt	Bernburg, Talstadt	town	54	1	reviewed	
+qualifier	kanton	Uri, Kanton	canton	53	13	reviewed	
+qualifier	grossherzogtum	Toskana, Großherzogtum	duchy	45	3	reviewed	
+qualifier	furstbistum	Münster, Fürstbistum	bishopric	34	2	reviewed	
+qualifier	gebirge	Jura, Gebirge	mountain	29	8	reviewed	
+qualifier	woiwodschaft	Kiew, Woiwodschaft	province	28	15	reviewed	
+qualifier	stadtstaat	Zürich, Stadtstaat	city	27	4	reviewed	
+qualifier	berg	Grand Crêt d’Eau, Berg	mountain	24	13	reviewed	
+qualifier	reichsabtei	Fulda, Reichsabtei	bishopric	24	24	reviewed	
+qualifier	freigrafschaft	Burgund, Freigrafschaft (Franche-Comté)	county	23	1	reviewed	
+qualifier	kaiserreich	China, Kaiserreich (Quingdynastie)	empire	16	4	auto	
+qualifier	landvogtei	Thurgau, Landvogtei	bailiwick	15	10	auto	
+qualifier	pass	Oberer Hauenstein, Pass	pass	12	4	auto	
+qualifier	erzbistum	Gran, Erzbistum	bishopric	11	8	auto	
+qualifier	freiherrschaft	Waldburg, Freiherrschaft	lordship	10	7	auto	
+qualifier	halbinsel	Butjadingen, Halbinsel	cape	10	4	auto	
+qualifier	honour	Tutbury, honour of	lordship	10	5	auto	
+qualifier	vizekonigreich	Neuspanien (Nueva España), Vizekönigreich	kingdom	10	2	auto	
+qualifier	landschaft	Livland, historische Landschaft	region	9	4	auto	
+qualifier	stadtteil	Gemünd, heute Stadtteil von Schleiden	city_quarter	9	8	auto	
+qualifier	diocese	Lichfield and Coventry, diocese of	bishopric	4	6	auto	
+qualifier	duchy	Lancaster, duchy of	duchy	4	1	auto	
+qualifier	kreis	Wangerin, Kreis Regenwalde	district	2	2	auto	
+qualifier	reino	España, Reino de Castilla	kingdom	2	1	auto	
+qualifier	vogtei	Meilen, Vogtei	bailiwick	2	1	auto	
+qualifier	fursterzbistum	Salzburg, Fürsterzbistum	bishopric	1	1	auto	
+qualifier	pfalzgrafschaft	Rhein, Pfalzgrafschaft bei	county	1	1	auto	
+qualifier	sultanat	Bengalen, Sultanat	kingdom	1	1	auto	
+qualifier	kirche	Wolfenbüttel, Kirche St. Johannis	church	0	1	auto	
+name	street	Adwick le Street	street	1109	90	reviewed	
+name	lane	abchurch Lane	street	556	56	reviewed	
+name	thames	River Thames [Fluss]	river	525	3	reviewed	
+name	parish	hollingdon of Soulbery parish	parish	507	315	reviewed	
+name	parish of st	Northāpton of St Giles his parish	church	489	117	reviewed	
+name	cathedral	St. Paul’s Cathedral	church	369	5	reviewed	
+name	hospital	Savoy Hospital	building	200	10	reviewed	
+name	rhin	Rhin	river	199	3	reviewed	
+name	abbey	Woburn Abbey	monastery	192	11	reviewed	
+name	inn	Bell Inn (Holborn)	inn	174	44	reviewed	
+name	bad	Bad Abbach	town	161	65	reviewed	
+name	bridge	Eamont Bridge	bridge	161	14	reviewed	
+name	rhein	Rhein [Fluss]	river	158	5	reviewed	
+name	guildhall	Guildhall	building	157	9	reviewed	
+name	berg	Berg am Irchel	mountain	152	4	reviewed	
+name	castle	Stourton Castle (Staffordshire)	castle	142	33	reviewed	
+name	playhouse	Blackfriars Playhouse	building	126	13	reviewed	
+name	river	[village on the Vistula river between Warsaw and Elbing (Elbląg)]	river	118	2	reviewed	
+name	church	the french church	church	111	63	reviewed	
+name	palace	Whitehall Palace	palace	107	16	reviewed	
+name	kloster	Kloster St. Katharina	monastery	93	62	reviewed	
+name	kirche	Kirche St. Laurenzen	church	84	14	reviewed	
+name	tiber	Tiber [Fluss]	river	79	2	reviewed	
+name	donau	Donau [Fluss]	river	75	4	reviewed	
+name	burg	Eglisau [Burg]	castle	67	22	reviewed	
+name	market	Market streete	square	62	10	reviewed	
+name	wharf	broken wharf	site	62	10	reviewed	
+name	college	Ancien Collège de Montaigu	building	61	8	reviewed	
+name	monte	Monte Rosa	mountain	58	13	reviewed	
+name	fluss	Ill [Fluss]	river	55	37	reviewed	
+name	schloss	Schloss Liebegg	castle	53	29	reviewed	
+name	maas	Maas	river	52	4	reviewed	
+name	grafschaft	Grafschaft Schwarzburg	county	46	14	reviewed	
+name	alley	Swan alley	street	44	16	reviewed	
+name	gate	Hāpton gate	gate	44	16	reviewed	
+name	spital	St. Mary Spital	building	44	2	reviewed	
+name	herzogtum	Geldern (Herzogtum)	duchy	41	17	reviewed	
+name	priory	St. Mary Overies Priory Close	monastery	41	16	reviewed	
+name	palast	Farnesischen Palast	palace	38	7	reviewed	
+name	chapel	Chapel Haddlesey	church	31	12	reviewed	
+name	chateau	Château-Gaillard	castle	31	9	reviewed	
+name	gebirge	Gotthard [Gebirge]	mountain	31	4	reviewed	
+name	rhone	Rhône [Fluss]	river	27	6	reviewed	
+name	halbinsel	Iberische Halbinsel	cape	22	1	reviewed	
+name	county	Bovendon in the county of Hartford	county	20	9	reviewed	
+name	furstentum	Fürstentum Condé	principality	19	5	auto	
+name	shire	wotton in Northtō shire	shire	19	10	auto	
+name	isle	March in the Isle of Ealy	island	18	5	auto	
+name	danubius	Danubius	river	17	4	auto	
+name	platz	Platz Colonna	square	17	3	auto	
+name	castello	Cita di Castello	castle	16	7	auto	
+name	ile	Île de Ré	island	15	5	auto	
+name	insel	Gristow (Insel)	island	14	6	auto	
+name	oder	Oder	river	14	3	auto	
+name	provinz	Makedonien (Römische Provinz)	province	14	8	auto	
+name	elbe	Elbe [Fluss]	river	12	3	auto	
+name	strasse	Kölln an der Spree, Breite Straße	street	12	3	auto	
+name	seine	Seine	river	11	1	auto	
+name	tagus	Tagus	river	11	3	auto	
+name	tavern	Mitre Tavern	inn	11	2	auto	
+name	fort	Fort l'Écluse	fort	9	6	auto	
+name	herrschaft	Herrschaft Sax	lordship	9	4	auto	
+name	amt	Lenzburg Amt	bailiwick	8	3	auto	
+name	weichsel	Weichsel	river	8	3	auto	
+name	island	Java, Island	island	7	5	auto	
+name	abtei	Mègemont, Abtei	monastery	5	7	auto	
+name	isola	Isola Rizza	island	5	3	auto	
+name	mount	Mount Neesinge	mountain	5	3	auto	
+name	sequana	Sequana	river	5	2	auto	
+name	bistum	Konstanz Bistum	bishopric	4	3	auto	
+name	brucke	Brücke	bridge	4	2	auto	
+name	festung	Aarburg Festung	fort	4	2	auto	
+name	kanton	Aargau (Kanton Aargau)	canton	4	4	auto	
+name	lac	lac Leman	lake	4	3	auto	
+name	markgrafschaft	Markgrafschaft Baden	margraviate	4	2	auto	
+name	mosel	Mosel [Fluss]	river	4	1	auto	
+name	rio	Rio de Janeiro	river	4	2	auto	
+name	vistula	Vistula	river	4	2	auto	
+name	albis	Albis	river	3	1	auto	
+name	main	Main [Fluss]	river	3	3	auto	
+name	mons	mons Palatinus	mountain	3	2	auto	
+name	mosa	Mosa	river	3	3	auto	
+name	gasse	Wilßdorffer Gaße	street	2	1	auto	
+name	kurfurstentum	Sachsen (Kurfürstentum)	electorate	2	1	auto	
+name	landgrafschaft	Landgrafschaft Hessen-Darmstadt	landgraviate	2	2	auto	
+name	loire	Loire	river	2	1	auto	
+name	castillo	[Castillo de] Alba	castle	1	1	auto	
+name	danube	Danube	river	1	1	auto	
+name	duchy	Grand Duchy of Moscow	duchy	1	1	auto	
+name	isla	Isla de Margarita	island	1	2	auto	
+name	lago	Lago Albano	lake	1	1	auto	
+name	liger	Liger	river	1	1	auto	
+name	prison	Marshalsea Prison	building	1	1	auto	
+name	rhenus	Rhenus	river	1	1	auto	
+name	meuse	Meuse	river	0	1	auto	
+name	rathaus	Braunschweig, Altstadt-Rathaus	building	0	1	auto	
+casebooks	village		village	17737	140	reviewed	
+casebooks	town		town	4745	12	reviewed	
+casebooks	parish		parish	2174	130	reviewed	
+casebooks	township		settlement	169	2	reviewed	
+casebooks	hamlet		hamlet	78	6	reviewed	
+casebooks	manor		lordship	28	2	reviewed	
+casebooks	estate		building	11	3	auto	
+casebooks	liberty		district	10	1	auto	
+casebooks	unidentified			7	2	auto	
+casebooks	district		district	5	2	auto	

@@ -1,0 +1,9 @@
+# RenNER seed runs (graines 2 et 3), read by scripts/ner3_seeds_train_task.sh. Same format as ner3_train_v2_runs.tsv plus a last column: seed.
+# Same recipes as the seed-1 runs: v21_mdeberta_lc25 (MIX_SFULL_LC25, v2.1 recipe as is), v2_mdeberta_Sfull (MIX_SFULL), r3_mdeberta_HM (v1: MIX_HM).
+# The lc25 runs come first (claimed by the A100 tasks, which do not wait).
+v21_mdeberta_lc25_s2|MIX_SFULL_LC25|microsoft/mdeberta-v3-base|3e-5|170|any|||2
+v21_mdeberta_lc25_s3|MIX_SFULL_LC25|microsoft/mdeberta-v3-base|3e-5|170|any|||3
+v2_mdeberta_Sfull_s2|MIX_SFULL|microsoft/mdeberta-v3-base|3e-5|150|any|||2
+v2_mdeberta_Sfull_s3|MIX_SFULL|microsoft/mdeberta-v3-base|3e-5|150|any|||3
+r3_mdeberta_HM_s2|MIX_HM|microsoft/mdeberta-v3-base|3e-5|120|any|||2
+r3_mdeberta_HM_s3|MIX_HM|microsoft/mdeberta-v3-base|3e-5|120|any|||3

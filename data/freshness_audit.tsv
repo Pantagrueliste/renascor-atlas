@@ -1,0 +1,79 @@
+slug	changed_since_harvest	harvest_date	harvest_basis	source	local_ref
+abacus	yes	2026-06-08	mtime of queue3/abacus.zip	https://github.com/Austrian-Baroque-Corpus/abc-data	zip of github main; upstream commit then = 1ebdd75 (2026-03-16, derived)
+bdpn	no	2026-06-11	git clone (reflog)	https://github.com/ficino2021/bdpn	clone HEAD f2e1e3d (2025-05-29)
+betamasaheft_geez	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/BetaMasaheft/Works	6 works pinned at BetaMasaheft/Works@ff9d498
+biblioteca_italiana	unknown	2026-05-30/2026-06-13	file mtimes bibit_tei	http://www.bibliotecaitaliana.it/catalogo?collezioni=bibit	
+bullinger	yes	2026-05-31	harvest.log / dir mtime	https://github.com/stazh/bullinger-korpus-tei	letters 1..N.xml (13,114) downloaded from the stazh repo; no commit recorded; upstream state then = c27bb44 (2025-07-25, derived)
+camena_cera	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/nevenjovanovic/camena-neolatinlit	pinned camena-neolatinlit@771bb7f
+camena_historicapolitica	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/nevenjovanovic/camena-neolatinlit	pinned camena-neolatinlit@771bb7f
+camena_poemata	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/nevenjovanovic/camena-neolatinlit	pinned camena-neolatinlit@771bb7f
+camena_thesaurus	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/nevenjovanovic/camena-neolatinlit	pinned camena-neolatinlit@771bb7f
+casebooks	no	2026-06-08	mtime of eng_dh/casebooks.zip	https://github.com/CasebooksProject/casebooks-data	zip of main; upstream commit 9d42295 (2024-04-12) is the same as today
+cavriana	yes	2026-06-11	git clone (reflog 05:27)	https://github.com/Pantagrueliste/CavrianaCorr	clone HEAD 531ed09 (2026-03-31); placeNames.xml with wrong TGN ids
+celt	unknown	2026-06-07	file mtimes	https://celt.ucc.ie/publishd.html	
+cidtc	no	2026-06-07	file mtimes	https://editions.al.uw.edu.pl/exist/rest/db/apps/dantiscus-data/data/letters/	
+ckcc_epistolarium	no	2026-10-15	SOURCES.tsv fetched_at	https://doi.org/10.17026/DANS-XFD-N8Y5	DANS dataset v3.0 files
+controversia_confessio	unknown	2026-10-15	SOURCES.tsv fetched_at	https://exist.ulb.tu-darmstadt.de/2/r/edoc/collection/pa000002.json	8 volumes pa000002 listing
+corpus17_french	no	2026-06-11	git clone (reflog)	https://github.com/e-ditiones/CORPUS17	clone HEAD b1aea8d (2021-02-26)
+corpus_corporum	unknown	2026-06-13	file mtimes	https://mlat.uzh.ch/browser	
+cosuiza	unknown	2026-10-13	report.json mtime	https://grafila.unil.ch/cosuiza/index.php?action=files	
+croala	no	2026-05-26	git clone (reflog)	https://github.com/nevenjovanovic/croatiae-auctores-latini-textus	clone HEAD 729f0ee (2026-04-11)
+dasypodius_dictionarium_latinogermanicum	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000008/mets.xml	
+devonshire_ms	no	2026-10-13	report.json mtime	https://github.com/etcluvic/devonshire-ms	github tarball
+dibilit_german	no	2026-06-11	git clone (reflog)	https://github.com/deutschestextarchiv/DiBiLit-Korpus	clone HEAD 3e140ec (2025-03-03)
+dipko_schwarzenhorn_1649	unknown	2026-10-13	report.json mtime	https://gams.uni-graz.at/o:dipko.rb/TEI_SOURCE	
+disco_sonnets	no	2026-06-09	mtime of queue5/disco.zip	https://github.com/pruizf/disco	zip of main; upstream commit b626fef (2026-04-25)
+dracor_eng	yes	2026-05-31/2026-06-13	dracor_eng_stdout.log / file mtimes	https://github.com/dracor-org/engdracor	753 TEI fetched by API from the DraCor instance (engdracor@12fae03 of 2026-02-20, derived)
+dracor_ita	no	2026-10-16	FETCH_LOG.tsv	https://github.com/dracor-org/itadracor	TEI by API; ItaDraCor@2347dab (2026-10-02)
+dta_1600	unknown	2026-06-10	mtime of dtae/dta_1600-1699.zip	https://www.deutschestextarchiv.de/download	DTAE release dta_komplett 2026-02-10
+elan_crenum	unknown	2026-06-10	file mtimes	https://gricad-gitlab.univ-grenoble-alpes.fr/elan/crenum	
+elan_fnvr	no	2026-06-10	file mtimes	https://doi.org/10.57745/SSC5XT	DOI 10.57745/SSC5XT
+elan_polygrenaille	unknown	2026-06-10	file mtimes	https://gricad-gitlab.univ-grenoble-alpes.fr/elan/polygrenaille	
+emmo_folger	unknown	2026-06-08	mtime of eng_dh/emmo.zip	https://emmo.folger.edu/browse/	
+epistemon_bvh	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/lb42/tei-fr	pinned lb42/tei-fr@17ca71d
+ethica_complementoria	no	2026-06-09	mtime of queue5/ethica.zip	https://github.com/arockenberger/EthicaComplementoria	zip of master; upstream c55c667 (2019-09-05)
+ferdinand_i	unknown	2026-10-16	file mtimes (oct-binary)	https://ferdinand-korrespondenz.acdh.oeaw.ac.at/letters.html	
+freem_bvh	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/FreEM-corpora/FreEMmax_OA	pinned FreEMmax_OA@a8a2535
+freem_other	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/FreEM-corpora/FreEMmax_OA	pinned FreEMmax_OA@a8a2535
+fruchtbringende_briefe	no	2026-10-16	file mtimes (oct-binary)	http://diglib.hab.de/edoc/ed000213/mets.xml	mets.xml + briefe/
+germanc	unknown	2026-06-08	mtime of de_dh/germanc.zip	https://llds.ling-phil.ox.ac.uk/llds/xmlui/handle/20.500.14106/2544	
+gongora_epistolario	no	2026-06-10	git clone (reflog)	https://github.com/gongoradigital/gongoraobra	clone HEAD 3beadee (2022-04-04)
+gongora_soledades	no	2026-10-15	SOURCES.tsv fetched_at	https://github.com/arojascastro/soledades	pinned arojascastro/soledades@c4f01e9
+grand_tour	no	2026-10-13	report.json mtime	https://doi.org/10.5281/zenodo.23055357	Zenodo record 23055358
+guicciardini_si	no	2026-10-16	file mtime (oct-binary)	https://guicciardini-storia-italia.huma-num.fr/files/SI_Ms_30_3juillet2019H.xml	
+h15corpus	unknown	2026-10-13	report.json mtime	https://historia15.us.es/H15corpus/xmlfiles/	
+hainhofer_reisen	no	2026-10-13	report.json mtime	https://doi.org/10.11588/DATA/DVU14P	heiDATA
+hainhofer_stammbuch	unknown	2026-10-16	file mtime (oct-binary)	https://stammbuch.hab.de/informationen-zur-edition/downloads	stammbuch-18.xml
+hearth_tax	unknown	2026-10-13	report.json mtime	https://gams.uni-graz.at/context:htx	61 TEI_SOURCE
+kaiserin_eleonora_magdalena	yes	2026-10-13	mtime of emt-working-data.tar.gz (00:37 BST)	https://github.com/emt-project/emt-working-data	
+karlstadt_kritische_gesamtausgabe	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000216/mets.xml	
+koenigsfelden	no	2026-10-13	report.json mtime	https://doi.org/10.5281/zenodo.10950031	Zenodo 10950031
+leibniz_reihe_viii	no	2026-10-16	file mtimes (oct-binary)	https://github.com/telota/LeibnizVIII-LaTeX_TEI	
+letradas	unknown	2026-10-13	report.json mtime	https://corpora.uah.es/letradas/	
+lettres_calvin	no	2026-10-13	mtime of lettres-calvin-main.tar.gz	https://github.com/pippaJeanne/lettres-calvin	github main tarball
+luene_nonnenbriefe	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000248/mets.xml	
+magdeburger_zenturien_methode_hab	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000086/mets.xml	
+map_of_early_modern_london	unknown	2026-10-13	report.json mtime	https://mapoflondon.uvic.ca/xml/	
+obvil_critique	no	2026-06-10	git clone (reflog)	https://github.com/OBVIL/critique	clone HEAD 887de00 (2025-01-08)
+old_bailey	unknown	2026-06-08	mtime of eng_dh/oldbailey.zip	https://www.dhi.ac.uk/data/oldbailey	XML files dated 2015-2017 inside the archive
+paesi_novamente	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000145/tei-transcript-pnr.xml	
+pceec2	yes	2026-06-08	mtime of eng_dh/pceec2.zip	https://github.com/beatrice57/pceec2	zip of main; upstream d1412ee (2026-03-01, derived)
+polemicagongorina_obvil	no	2026-06-10	git clone (reflog)	https://github.com/gongoradigital/polemos	clone HEAD 429c811 (2025-05-27)
+poliziano_sappho	no	2026-10-16	file mtime (oct-binary)	https://github.com/AndreaLaVeglia/Postille_Poliziano_Sappho_EVT	AnnotationesPolitianiInSappho.xml
+postscriptum	unknown	2026-05-30/2026-06-08	dir mtimes	http://teitok.clul.ul.pt/postscriptum/index.php?action=downloads	files dated 2019-05-04 inside the archive
+qhod_sema	no	2026-06-10	git clone (reflog)	https://github.com/QHOD/qhod-edition-data	clone HEAD 7d5320f (2024-12-13)
+reed	no	2026-06-08	mtime of eng_dh/reed.zip	https://github.com/REEDProject/Collections	zip of Collections-master; upstream 73e4c39 (2025-07-25)
+regensburger_wappen_portraetbuecher	unknown	2026-10-13	report.json mtime	https://gams.uni-graz.at/o:rpb-06-text/TEI_SOURCE	
+rejestr_poznan	no	2026-10-13	report.json mtime	https://doi.org/10.5281/zenodo.13840882	Zenodo 15098833 (2025-03-28)
+religionsfrieden_quellenedition	unknown	2026-10-13	report.json mtime	https://tueditions.ulb.tu-darmstadt.de/g/pa000001-0022	
+rubens_online	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000083/mets.xml	
+rup	yes	2026-06-08	mtime of eng_dh/rup.zip	https://github.com/jedmondes/Rare-or-Unique-Poems-from-manuscripts-1500-1660-FOLGER	zip comment = commit 714d6b3 (2026-05-28); 23 TEI poems
+sandrart	unknown	2026-06-10	mtime of dtae/dta_1600-1699.zip	https://ta.sandrart.net/de/info/technik/tei-download/	DTAE release 2026-02-10
+selbstzeugnisse_hab_diarium	unknown	2026-10-13	report.json mtime	http://selbstzeugnisse.hab.de/edition/diarium/download	
+selbstzeugnisse_hab_sz2	unknown	2026-10-13	report.json mtime	http://selbstzeugnisse.hab.de/edition/diarium/download	
+sozinianische_briefwechsel	no	2026-10-15	SOURCES.tsv fetched_at	https://gitlab.rlp.net/adwmainz/digicademy/sbw/csv-data-dump	
+ssrq_swisslaw	no	2026-06-08	mtime of de_dh/ssrq.zip	https://github.com/SSRQ-SDS-FDS/editio-data	zip; upstream editio-data c6f409c (2024-03-26)
+st_galler_missiven	no	2026-10-13	report.json mtime	https://missiven.stadtarchiv.ch/api/collection?per-page=1000	808 documents in the listing
+suriano	no	2026-06-11	git clone (reflog)	https://github.com/HuygensING/suriano	clone HEAD 0f4d2ff (2025-10-23)
+tagebuecher_christian_ii_anhalt	no	2026-10-13	report.json mtime	http://diglib.hab.de/edoc/ed000228/mets.xml	
+urfehdebuecher_basel_x	unknown	2026-10-13	report.json mtime	https://gams.uni-graz.at/o:ufbas.1563/TEI_SOURCE	

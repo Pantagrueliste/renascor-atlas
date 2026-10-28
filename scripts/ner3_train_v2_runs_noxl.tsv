@@ -1,0 +1,11 @@
+# NER v2 (RenNER) training grid, read by scripts/ner3_train_task.sh. One line per run, in claim order:
+# name|mix variable (scripts/ner_mixes.sh)|model|lr|minimum minutes left to start it|GPU (a100 = needs an 80 GB A100; any)|extra arguments of ratlas.ner.train|extra arguments on a smaller GPU (L40S 48 GB; empty = the same)
+# The memory settings do not change the computation (encoders_prep.md §2): a run may resume on another GPU type with the other settings.
+v2_eb2b_Sbal|MIX_SBAL|/home/cag30/renascor-atlas-data/ner/local_models/EuroBERT-2.1B|2e-5|40|any|--trust-remote-code --force-bos --head-norm --grad-accum 2 --ckpt-every-min 45|--trust-remote-code --force-bos --head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 45
+v2_eb2b_Sfull|MIX_SFULL|/home/cag30/renascor-atlas-data/ner/local_models/EuroBERT-2.1B|2e-5|40|any|--trust-remote-code --force-bos --head-norm --grad-accum 2 --ckpt-every-min 45|--trust-remote-code --force-bos --head-norm --grad-ckpt --grad-accum 1 --ckpt-every-min 45
+v2_mdeberta_Sbal|MIX_SBAL|microsoft/mdeberta-v3-base|3e-5|25|any||
+v2_mdeberta_Sfull|MIX_SFULL|microsoft/mdeberta-v3-base|3e-5|25|any||
+v2_xlmrl_Sbal|MIX_SBAL|FacebookAI/xlm-roberta-large|2e-5|25|any||
+v2_eb610_Sbal|MIX_SBAL|/home/cag30/renascor-atlas-data/ner/local_models/EuroBERT-610m|2.5e-5|25|any|--trust-remote-code --force-bos --head-norm|
+v2_xlmrl_Sfull|MIX_SFULL|FacebookAI/xlm-roberta-large|2e-5|25|any||
+v2_eb610_Sfull|MIX_SFULL|/home/cag30/renascor-atlas-data/ner/local_models/EuroBERT-610m|2.5e-5|25|any|--trust-remote-code --force-bos --head-norm|

@@ -1,0 +1,285 @@
+{
+ "homonym": {
+  "rule": "homonym gate (isolation of the candidate from the edition)",
+  "labels_total": 114,
+  "labels_matched": 114,
+  "verdicts": {
+   "correct": 79,
+   "wrong": 20,
+   "undecidable": 15
+  },
+  "min_context": 5,
+  "grid_km": [
+   10,
+   15,
+   20,
+   25,
+   30,
+   40,
+   50,
+   60,
+   80,
+   100
+  ],
+  "fitted_km": 30,
+  "split": {
+   "train": 65,
+   "test": 34,
+   "train_wrong": 14,
+   "test_wrong": 6
+  },
+  "train": {
+   "old_rule_reject_every_candidate": {
+    "TP": 14,
+    "FP": 51,
+    "FN": 0,
+    "TN": 0,
+    "n": 65,
+    "accuracy": 0.2154,
+    "precision": 0.2154,
+    "recall": 1.0
+   },
+   "new_rule": {
+    "TP": 5,
+    "FP": 1,
+    "FN": 9,
+    "TN": 50,
+    "n": 65,
+    "accuracy": 0.8462,
+    "precision": 0.8333,
+    "recall": 0.3571
+   }
+  },
+  "test_held_out": {
+   "old_rule_reject_every_candidate": {
+    "TP": 6,
+    "FP": 28,
+    "FN": 0,
+    "TN": 0,
+    "n": 34,
+    "accuracy": 0.1765,
+    "precision": 0.1765,
+    "recall": 1.0
+   },
+   "new_rule": {
+    "TP": 2,
+    "FP": 0,
+    "FN": 4,
+    "TN": 28,
+    "n": 34,
+    "accuracy": 0.8824,
+    "precision": 1.0,
+    "recall": 0.3333
+   }
+  },
+  "all_labelled": {
+   "old_rule_reject_every_candidate": {
+    "TP": 20,
+    "FP": 79,
+    "FN": 0,
+    "TN": 0,
+    "n": 99,
+    "accuracy": 0.202,
+    "precision": 0.202,
+    "recall": 1.0
+   },
+   "new_rule": {
+    "TP": 7,
+    "FP": 1,
+    "FN": 13,
+    "TN": 78,
+    "n": 99,
+    "accuracy": 0.8586,
+    "precision": 0.875,
+    "recall": 0.35
+   }
+  },
+  "accuracy_by_threshold_all": {
+   "10": 0.7778,
+   "15": 0.8283,
+   "20": 0.8283,
+   "25": 0.8384,
+   "30": 0.8586,
+   "40": 0.8384,
+   "50": 0.8485,
+   "60": 0.8283,
+   "80": 0.8182,
+   "100": 0.8182
+  },
+  "undecidable": {
+   "n": 15,
+   "old_rejects": 15,
+   "new_rejects": 2,
+   "new_suggested_no_context": 0
+  },
+  "pairs_without_context": 0
+ },
+ "verify": {
+  "rule": "gn_uncorroborated (certainty p of an uncorroborated GeoNames-only match)",
+  "labelled": 373,
+  "by_source": {
+   "casebooks_directory": 230,
+   "audit_v1.1": 143
+  },
+  "wrong": 82,
+  "grid_p": [
+   0.0,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.85,
+   0.9,
+   0.95,
+   0.99,
+   1.01
+  ],
+  "fitted_p": 0.8,
+  "split": {
+   "train": 250,
+   "test": 123
+  },
+  "train": {
+   "old_rule_v1.1_strata": {
+    "TP": 55,
+    "FP": 60,
+    "FN": 4,
+    "TN": 131,
+    "n": 250,
+    "accuracy": 0.744,
+    "precision": 0.4783,
+    "recall": 0.9322
+   },
+   "new_rule_p_below_fitted": {
+    "TP": 21,
+    "FP": 12,
+    "FN": 38,
+    "TN": 179,
+    "n": 250,
+    "accuracy": 0.8,
+    "precision": 0.6364,
+    "recall": 0.3559
+   },
+   "never_take_back": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 59,
+    "TN": 191,
+    "n": 250,
+    "accuracy": 0.764,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "test_held_out": {
+   "old_rule_v1.1_strata": {
+    "TP": 22,
+    "FP": 35,
+    "FN": 1,
+    "TN": 65,
+    "n": 123,
+    "accuracy": 0.7073,
+    "precision": 0.386,
+    "recall": 0.9565
+   },
+   "new_rule_p_below_fitted": {
+    "TP": 5,
+    "FP": 6,
+    "FN": 18,
+    "TN": 94,
+    "n": 123,
+    "accuracy": 0.8049,
+    "precision": 0.4545,
+    "recall": 0.2174
+   },
+   "never_take_back": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 23,
+    "TN": 100,
+    "n": 123,
+    "accuracy": 0.813,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "all_labelled": {
+   "old_rule_v1.1_strata": {
+    "TP": 77,
+    "FP": 95,
+    "FN": 5,
+    "TN": 196,
+    "n": 373,
+    "accuracy": 0.7319,
+    "precision": 0.4477,
+    "recall": 0.939
+   },
+   "new_rule_p_below_fitted": {
+    "TP": 26,
+    "FP": 18,
+    "FN": 56,
+    "TN": 273,
+    "n": 373,
+    "accuracy": 0.8016,
+    "precision": 0.5909,
+    "recall": 0.3171
+   },
+   "never_take_back": {
+    "TP": 0,
+    "FP": 0,
+    "FN": 82,
+    "TN": 291,
+    "n": 373,
+    "accuracy": 0.7802,
+    "precision": null,
+    "recall": 0.0
+   }
+  },
+  "accuracy_by_threshold_all": {
+   "0.0": 0.7802,
+   "0.5": 0.7802,
+   "0.6": 0.7802,
+   "0.7": 0.7882,
+   "0.8": 0.8016,
+   "0.85": 0.7909,
+   "0.9": 0.7775,
+   "0.95": 0.7534,
+   "0.99": 0.7212,
+   "1.01": 0.2198
+  },
+  "old_rules_on_all_labelled_matches": {
+   "audit_manual": {
+    "taken_back": 2,
+    "wrong": 2,
+    "right": 0
+   },
+   "block_collection": {
+    "taken_back": 4,
+    "wrong": 3,
+    "right": 1
+   },
+   "casebooks_far": {
+    "taken_back": 51,
+    "wrong": 39,
+    "right": 12
+   },
+   "channel_islands": {
+    "taken_back": 2,
+    "wrong": 2,
+    "right": 0
+   },
+   "gn_uncorroborated": {
+    "taken_back": 119,
+    "wrong": 35,
+    "right": 84
+   },
+   "london_microtoponym": {
+    "taken_back": 1,
+    "wrong": 1,
+    "right": 0
+   }
+  }
+ },
+ "seed": "renascor-atlas-v2.1",
+ "train_share_percent": 70
+}

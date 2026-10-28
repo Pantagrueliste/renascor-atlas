@@ -1,0 +1,5 @@
+# RenNER Latin v4: v2.1 lc25 recipe as is (mDeBERTa-v3-base, LR 3e-5), Latin silver verse/drama re-annotated with prompt v4. Read by
+# scripts/ner3_seeds_train_task.sh (R6_MIXES=scripts/ner_mixes_lv4.sh, TV_DIR=~/renascor-atlas-data/ner/train_lv4). Last column: seed.
+v21_mdeberta_lc25_lv4|MIX_SFULL_LC25_LV4|microsoft/mdeberta-v3-base|3e-5|170|any|||1
+v21_mdeberta_lc25_lv4_s2|MIX_SFULL_LC25_LV4|microsoft/mdeberta-v3-base|3e-5|170|any|||2
+v21_mdeberta_lc25_lv4_s3|MIX_SFULL_LC25_LV4|microsoft/mdeberta-v3-base|3e-5|170|any|||3

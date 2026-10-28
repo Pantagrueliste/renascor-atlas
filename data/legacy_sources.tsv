@@ -1,0 +1,59 @@
+slug	source_prefix	harvest_date	harvest_basis	changed_since_harvest	source
+bdpn	bdpn	2026-06-11	git clone (reflog)	no	https://github.com/ficino2021/bdpn
+biblioteca_italiana	bibit_tei	2026-05-30/2026-06-13	file mtimes bibit_tei	unknown	http://www.bibliotecaitaliana.it/catalogo?collezioni=bibit
+casebooks	eng_dh	2026-06-08	mtime of eng_dh/casebooks.zip	no	https://github.com/CasebooksProject/casebooks-data
+celt	celt	2026-06-07	file mtimes	unknown	https://celt.ucc.ie/publishd.html
+cidtc	cidtc	2026-06-07	file mtimes	no	https://editions.al.uw.edu.pl/exist/rest/db/apps/dantiscus-data/data/letters/
+corpus17_french	corpus17	2026-06-11	git clone (reflog)	no	https://github.com/e-ditiones/CORPUS17
+corpus_corporum	corpuscorp	2026-06-13	file mtimes	unknown	https://mlat.uzh.ch/browser
+cosuiza	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://grafila.unil.ch/cosuiza/index.php?action=files
+croala	croala	2026-05-26	git clone (reflog)	no	https://github.com/nevenjovanovic/croatiae-auctores-latini-textus
+dasypodius_dictionarium_latinogermanicum	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000008/mets.xml
+devonshire_ms	renascor_2026-10	2026-10-13	report.json mtime	no	https://github.com/etcluvic/devonshire-ms
+dibilit_german	dibilit	2026-06-11	git clone (reflog)	no	https://github.com/deutschestextarchiv/DiBiLit-Korpus
+dipko_schwarzenhorn_1649	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://gams.uni-graz.at/o:dipko.rb/TEI_SOURCE
+disco_sonnets	queue5	2026-06-09	mtime of queue5/disco.zip	no	https://github.com/pruizf/disco
+dracor_ita	originals_2026-10-15/dracor_api_tei	2026-10-16	FETCH_LOG.tsv	no	https://github.com/dracor-org/itadracor
+dta_1600	dtae	2026-06-10	mtime of dtae/dta_1600-1699.zip	unknown	https://www.deutschestextarchiv.de/download
+elan_crenum	elan	2026-06-10	file mtimes	unknown	https://gricad-gitlab.univ-grenoble-alpes.fr/elan/crenum
+elan_fnvr	elan	2026-06-10	file mtimes	no	https://doi.org/10.57745/SSC5XT
+elan_polygrenaille	elan	2026-06-10	file mtimes	unknown	https://gricad-gitlab.univ-grenoble-alpes.fr/elan/polygrenaille
+emmo_folger	eng_dh	2026-06-08	mtime of eng_dh/emmo.zip	unknown	https://emmo.folger.edu/browse/
+ethica_complementoria	queue5	2026-06-09	mtime of queue5/ethica.zip	no	https://github.com/arockenberger/EthicaComplementoria
+ferdinand_i	originals_2026-10-15/oct-binary	2026-10-16	file mtimes (oct-binary)	unknown	https://ferdinand-korrespondenz.acdh.oeaw.ac.at/letters.html
+fruchtbringende_briefe	originals_2026-10-15/oct-binary	2026-10-16	file mtimes (oct-binary)	no	http://diglib.hab.de/edoc/ed000213/mets.xml
+germanc	de_dh	2026-06-08	mtime of de_dh/germanc.zip	unknown	https://llds.ling-phil.ox.ac.uk/llds/xmlui/handle/20.500.14106/2544
+gongora_epistolario	gongoraobra	2026-06-10	git clone (reflog)	no	https://github.com/gongoradigital/gongoraobra
+grand_tour	renascor_2026-10	2026-10-13	report.json mtime	no	https://doi.org/10.5281/zenodo.23055357
+guicciardini_si	originals_2026-10-15/oct-binary	2026-10-16	file mtime (oct-binary)	no	https://guicciardini-storia-italia.huma-num.fr/files/SI_Ms_30_3juillet2019H.xml
+h15corpus	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://historia15.us.es/H15corpus/xmlfiles/
+hainhofer_reisen	renascor_2026-10	2026-10-13	report.json mtime	no	https://doi.org/10.11588/DATA/DVU14P
+hainhofer_stammbuch	originals_2026-10-15/oct-binary	2026-10-16	file mtime (oct-binary)	unknown	https://stammbuch.hab.de/informationen-zur-edition/downloads
+hearth_tax	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://gams.uni-graz.at/context:htx
+karlstadt_kritische_gesamtausgabe	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000216/mets.xml
+koenigsfelden	renascor_2026-10	2026-10-13	report.json mtime	no	https://doi.org/10.5281/zenodo.10950031
+leibniz_reihe_viii	originals_2026-10-15/oct-binary	2026-10-16	file mtimes (oct-binary)	no	https://github.com/telota/LeibnizVIII-LaTeX_TEI
+letradas	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://corpora.uah.es/letradas/
+lettres_calvin	renascor_2026-10	2026-10-13	mtime of lettres-calvin-main.tar.gz	no	https://github.com/pippaJeanne/lettres-calvin
+luene_nonnenbriefe	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000248/mets.xml
+magdeburger_zenturien_methode_hab	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000086/mets.xml
+map_of_early_modern_london	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://mapoflondon.uvic.ca/xml/
+obvil_critique	obvil_critique	2026-06-10	git clone (reflog)	no	https://github.com/OBVIL/critique
+old_bailey	eng_dh	2026-06-08	mtime of eng_dh/oldbailey.zip	unknown	https://www.dhi.ac.uk/data/oldbailey
+paesi_novamente	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000145/tei-transcript-pnr.xml
+polemicagongorina_obvil	polemos	2026-06-10	git clone (reflog)	no	https://github.com/gongoradigital/polemos
+poliziano_sappho	originals_2026-10-15/oct-binary	2026-10-16	file mtime (oct-binary)	no	https://github.com/AndreaLaVeglia/Postille_Poliziano_Sappho_EVT
+postscriptum	postscriptum	2026-05-30/2026-06-08	dir mtimes	unknown	http://teitok.clul.ul.pt/postscriptum/index.php?action=downloads
+reed	eng_dh	2026-06-08	mtime of eng_dh/reed.zip	no	https://github.com/REEDProject/Collections
+regensburger_wappen_portraetbuecher	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://gams.uni-graz.at/o:rpb-06-text/TEI_SOURCE
+rejestr_poznan	renascor_2026-10	2026-10-13	report.json mtime	no	https://doi.org/10.5281/zenodo.13840882
+religionsfrieden_quellenedition	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://tueditions.ulb.tu-darmstadt.de/g/pa000001-0022
+rubens_online	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000083/mets.xml
+sandrart	dtae	2026-06-10	mtime of dtae/dta_1600-1699.zip	unknown	https://ta.sandrart.net/de/info/technik/tei-download/
+selbstzeugnisse_hab_diarium	renascor_2026-10	2026-10-13	report.json mtime	unknown	http://selbstzeugnisse.hab.de/edition/diarium/download
+selbstzeugnisse_hab_sz2	renascor_2026-10	2026-10-13	report.json mtime	unknown	http://selbstzeugnisse.hab.de/edition/diarium/download
+ssrq_swisslaw	de_dh	2026-06-08	mtime of de_dh/ssrq.zip	no	https://github.com/SSRQ-SDS-FDS/editio-data
+st_galler_missiven	renascor_2026-10	2026-10-13	report.json mtime	no	https://missiven.stadtarchiv.ch/api/collection?per-page=1000
+suriano	suriano	2026-06-11	git clone (reflog)	no	https://github.com/HuygensING/suriano
+tagebuecher_christian_ii_anhalt	renascor_2026-10	2026-10-13	report.json mtime	no	http://diglib.hab.de/edoc/ed000228/mets.xml
+urfehdebuecher_basel_x	renascor_2026-10	2026-10-13	report.json mtime	unknown	https://gams.uni-graz.at/o:ufbas.1563/TEI_SOURCE

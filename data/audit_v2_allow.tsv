@@ -1,0 +1,23 @@
+# Reviewed exceptions of the blocking audit checks on v2 (src/ratlas/audit_v2.py). One row per exception, with the reason: a test requires a reason.
+# check = number of the check; key = entity_key (check 4, 5) or the failure's key column.
+check	coll_slug	key	reason
+4	bullinger	surf:brugas	Brugas is Latin for Brugg (Aargau): Bullinger's letter says "Aroviam aut Brugas" (Aarau or Brugg); the point is Brugg, GeoNames has no alias Brugas
+4	bullinger	surf:wjach	Touff zuo Wjach in a letter to Zurich: Weiach (Zurich); the point is Weiach, GeoNames has no alias Wjach
+4	casebooks	casebooks:PLACE509	Streatly is Streatley (Berkshire), the parish of the Casebooks' patients of that county; the point is Streatley
+4	ckcc_epistolarium	surf:clein basel	Clein-Basel is Kleinbasel, the Basel quarter; the point is Kleinbasel
+4	corpus_corporum	surf:albanos	Albanos is the Latin accusative of Albanus, Albano Laziale; the point is Albano Laziale
+4	corpus_corporum	surf:sidonis	Sidonis is the Latin genitive of Sidon; the point is Sidon (Lebanon)
+4	hearth_tax	surf:church lawford parish	Church Lawford (Warwickshire), a parish of the Warwickshire hearth tax; the point is Church Lawford
+4	hearth_tax	surf:way borough	Way borough in the Kent hearth tax (o:htx.Kent); the point is Way in Thanet, Kent; GeoNames has no feature called Way Borough nearby
+4	religionsfrieden_quellenedition	religionsfrieden_quellenedition:e000001_augsburger_religionsfrieden#petershausen_kloster	The imperial abbey of Petershausen is in Konstanz (Augsburg Peace, 1555); the point is Konstanz-Petershausen, the Bavarian Petershausen is another place
+4	sandrart	sandrart:place-1488	Locris in Sandrart is the Greek colony Locri Epizefiri in Calabria (the antique city of an artist's anecdote); the point is Locri
+4	sandrart	sandrart:place-1602	Locris in Sandrart is the Greek colony Locri Epizefiri in Calabria; the point is Locri
+5	corpus_corporum	surf:manilam	Manilam is the Latin accusative of Manila (the city, on the Manila seat); the GeoNames region that matched the name is a homonym 2,558 km away: not a polity
+5	croala	surf:euphrates	The river Euphrates: Wikidata gives its point at Al Qurnah, the confluence; the GeoNames first-order region that matched the name is a coincidence, not a country
+5	epistemon_bvh	surf:eufrates	The river Euphrates (French spelling Eufrates), copied from the river point at Al Qurnah; the GeoNames region that matched the name is a coincidence, not a country
+4	epistemon_bvh	surf:chaunys	Chaunys is Chauny (Aisne): the Lithuanian village the audit finds under the written name is not the place of a French text; read against the sources
+4	epistemon_bvh	epistemon_bvh:loc_chauny	Chaunys is Chauny (Aisne): the Lithuanian village the audit finds under the written name is not the place of a French text; read against the sources
+4	hearth_tax	surf:the borough of milton	The Borough of Milton is Milton Regis in the Kent return (the file's own county; 51.35N 0.73E, the borough of the Milton hundred); the audit finds no feature called 'The Borough of Milton' and does not fold the English 'Borough of' away; read against the file
+4	hearth_tax	surf:church lawford parish @warwickshire	v2.4: the same exception as 'surf:church lawford parish' (the Hearth Tax keys are scoped to the county of the file since v2.4): Church Lawford, a parish of the Warwickshire return; the point is Church Lawford
+4	hearth_tax	surf:way borough @kent	v2.4: the same exception as 'surf:way borough' under the county-scoped key: Way borough in the Kent return, the point is Way in Thanet; GeoNames has no feature called Way Borough nearby
+4	hearth_tax	surf:the borough of milton @kent	v2.4: the same exception as 'surf:the borough of milton' under the county-scoped key: Milton Regis in the Kent return (51.35N 0.73E)

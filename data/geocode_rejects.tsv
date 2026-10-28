@@ -1,0 +1,33 @@
+# Name-based geocoder results rejected by hand (manual review 2026-10-17): the place stays unplaced. Merged with geocode_verify.tsv by build2.
+coll_slug	entity_key	rule	note
+bdpn	bdpn:place:L016	manual_review	MR1327: Placed at the point of Italy (42.83N 12.83E, 5 km) by name propagation; Liguria is 44.3N 8.8E (500 km). A region, not a 
+bdpn	bdpn:place:R013	manual_review	"MR1342: Cosmological term (the elemental region below the Moon), placed at Rome by the exonym key ""roma""; the catalogue types it"
+croala	surf:segnie	audit_v2	AUDIT-4: letters of the Kruzic family, "capitaneus Segnie, comes Clissae": Senj (Croatia); placed at Segni (Lazio) by name
+ssrq_swisslaw	ssrq_swisslaw:loc008668	audit_v2	AUDIT-4: the hamlet Chez les Belin (canton of Fribourg); placed on Berlin by a skeleton match of Belin
+ckcc_epistolarium	surf:oost indie	audit_v2_1	AUDIT-4 v2.1: Oost-Indie (the Dutch East Indies, 62 mentions of Descartes' circle letters) placed on a Frisian village of that name found only in the TGN
+dasypodius_dictionarium_latinogermanicum	dasypodius_dictionarium_latinogermanicum:trebbia	audit_v2_1	AUDIT-4 v2.1: Trebia/Trebbia is the river of Piacenza, not Trevi (Umbria)
+corpus_corporum	surf:latinum	audit_v2_1	AUDIT-4 v2.1: Latinum (Latium, the Latin land) placed on Meaux through a TGN variant
+ssrq_swisslaw	surf:auf der hardt	audit_v2_1	AUDIT-4 v2.1: a Swiss field name (Hardt), not the German Hardt 250 km from the other places of the edition
+ckcc_epistolarium	surf:themistocles	audit_v2_1	AUDIT-4 v2.1: Themistocles (the Athenian) placed on Saint-Caprais through a stemmed key
+ckcc_epistolarium	surf:limmers	audit_v2_1	AUDIT-4 v2.1: Limmers placed on a hamlet of Lower Saxony through a stemmed key, 258 km from any place of the letters; unverifiable
+epistemon_bvh	surf:bordeaus	audit_v2_1	AUDIT-4 v2.1: Bordeaus is Bordeaux, not the hamlet Bordeau
+epistemon_bvh	surf:tuileries	audit_v2_1	AUDIT-4 v2.1: the Tuileries of Paris, not the hamlet Tuilerie
+hearth_tax	surf:middle ward rye	audit_v2_1	AUDIT-4 v2.1: a ward of Rye (hearth tax), placed on Myddle (Shropshire) through a cleaned key
+ssrq_swisslaw	surf:molettes	audit_v2_1	AUDIT-4 v2.1: Molettes placed on Molette in Italy; the Swiss-French name is not Italian
+st_galler_missiven	st_galler_missiven:stadtasg-places-210	audit_v2_1	AUDIT-4 v2.1: Baechis placed on the hamlet Baechi through a stemmed key, 75 km from every other place; unverifiable
+ssrq_swisslaw	surf:biolles	audit_v2_2	AUDIT-4 v2.2: Biolles placed on La Biolle (Savoie, 45.76N 5.93E) through the alternate key biolle, 82 km from the nearest feature that carries the name; unverifiable
+ckcc_epistolarium	surf:ecluse	manual_review	v2.3 (check of v2.2, error 10): 'Ecluse' of the 1630s text is the fort near Arras ('ontrent Atrecht'), not Sluis in Zeeland (150 km north-west); no coordinate of the fort is available locally, so the place stays unplaced
+corpus_corporum	surf:thules	manual_review	v2.3 audit check 4: 'Thules' (genitive of Thule, the far island of the poets) was put on the hamlet Thuele in Westphalia, 918 km from any namesake; Thule has no place
+cidtc	cidtc:pl1170	check_v23	v2.4 (check of v2.3, error: Latin, Orbis alone): Coronia of the text is A Coruña (portum prope Sanctum Iacobum), not Landskrona; the Orbis Latinus reading is not supported
+corpus_corporum	surf:aegea	check_v23	v2.4: AEgea of the text is an island (AEgea ... insula), not Vostitza / Aigio (Orbis Latinus alone)
+camena_poemata	surf:aegaeae	check_v23	v2.4: Aegaeae, same Orbis-alone reading as AEgea (Vostitza); an adjective of the Aegean in verse
+corpus_corporum	surf:becam	check_v23	v2.4: Becam (Bullerborn prope Becam veterem) is Altenbeken, 15 km from the Orbis Latinus reading Brakel; unverifiable
+ckcc_epistolarium	surf:nordovico	check_v23	v2.4: Nordovico of the letter is Noordwijk (the editor says so), not Norwich
+corpus_corporum	surf:palatinus	check_v23	v2.4: Palatinus is an adjective (a court cook of the Palatine), not the Palatine Hill
+bullinger	surf:palatinus	check_v23	v2.4: Palatinus is an adjective (of the Palatinate), not the Palatine Hill
+camena_poemata	surf:palatinus	check_v23	v2.4: Palatinus is an adjective, not the Palatine Hill
+cidtc	cidtc:pl1438	check_v23	v2.4: the register standardises Tagum (the Tagus, Toleti supra Tagum) as Fagum, which the atlas put on Foug in Lorraine
+old_bailey	surf:new street	check_v23	v2.4: New-street of the Old Bailey was put on a Kent hamlet 35 km away; unplaced (no London street of the name is known locally)
+old_bailey	surf:st helens	check_v23	v2.4: St. Helens was put in Lancashire; the London St Helen is Bishopsgate (unplaced)
+old_bailey	surf:bow	check_v23	v2.4: near Bow is the village in the east, not Bow Lane in the City (6 km off); unplaced
+religionsfrieden_quellenedition	religionsfrieden_quellenedition:e000001_augsburger_religionsfrieden#werdenberg_grafschaft	check_v23	v2.4: Werdenberg of the Augsburg peace is the Fürstenberg title (Heyligen berg und Werdenberg, Landtgraffen in Bare), not the Swiss Wahlkreis sold to Glarus in 1517

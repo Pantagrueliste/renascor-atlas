@@ -1,0 +1,6 @@
+# RenNER variant without CELT and CIDTC (T3): the lc25-lv4 recipe as is (mDeBERTa-v3-base, LR 3e-5), every training and dev file filtered
+# (scripts/ner3_noT3_filter.py). Read by scripts/ner3_seeds_train_task.sh (R6_MIXES=scripts/ner_mixes_noT3.sh, R6_DEV=train_noT3/data/dev_noT3.jsonl,
+# TV_DIR=~/renascor-atlas-data/ner/train_noT3). Mix per seed (same modern_silver sample as the lc25-lv4 run of that seed). Last column: seed.
+v21_mdeberta_lc25_lv4_noT3|MIX_SFULL_LC25_LV4_NOT3_S1|microsoft/mdeberta-v3-base|3e-5|170|any|||1
+v21_mdeberta_lc25_lv4_noT3_s2|MIX_SFULL_LC25_LV4_NOT3_S2|microsoft/mdeberta-v3-base|3e-5|170|any|||2
+v21_mdeberta_lc25_lv4_noT3_s3|MIX_SFULL_LC25_LV4_NOT3_S3|microsoft/mdeberta-v3-base|3e-5|170|any|||3

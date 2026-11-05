@@ -1,0 +1,13 @@
+{
+  "source": "/Users/clem/Projects/Papers/RQ/derived/atlas/page_kit/v29/build",
+  "output": "/private/tmp/atlas-release-final3-1793835993",
+  "missing_document_shards": [],
+  "image_directory_present": true,
+  "letters_docs_present": true,
+  "publication_ready": true,
+  "licences_table_excluded": false,
+  "inherited_assets": "/Users/clem/Projects/Papers/RQ/derived/atlas/page_kit/inherited_v24",
+  "publication_notes": [
+    "T3 collections are published as catalogued facts with full source citation per owner decision of 2026-11-04; no context is stored for T3. Open audit points stay internal."
+  ]
+}

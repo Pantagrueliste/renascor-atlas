@@ -87,3 +87,9 @@ html:fullscreen .main>aside, body.fs .main>aside { position:static; max-height:n
 html:fullscreen #top, body.fs #top { flex:none; max-height:30%; overflow-y:auto; }
 html:fullscreen #detail, body.fs #detail { flex:1 1 auto; min-height:0; overflow-y:auto; margin-top:12px; border-top:1px solid var(--line); padding-top:10px; }
 html:fullscreen .scr, body.fs .scr { max-height:none; }
+
+/* Fullscreen: collapsible right panel (#sidebtn) */
+#sidebtn { display:none; background:none; border:0; cursor:pointer; font:inherit; color:var(--fg); }
+html:fullscreen #sidebtn, body.fs #sidebtn { display:inline-block; position:fixed; top:8px; right:110px; z-index:20; }
+html:fullscreen .main.noside, body.fs .main.noside { grid-template-columns:minmax(0,1fr); }
+html:fullscreen .main.noside>aside, body.fs .main.noside>aside { display:none; }

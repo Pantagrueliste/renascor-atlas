@@ -66,3 +66,15 @@ if (fsb) {
   window.addEventListener('resize', fsSet);
 }
 syncContext();
+
+const sb = document.getElementById('sidebtn');
+if (sb) {
+  sb.onclick = () => {
+    const m = document.querySelector('.main');
+    const hide = !m.classList.contains('noside');
+    m.classList.toggle('noside', hide);
+    sb.setAttribute('aria-expanded', String(!hide));
+    sb.textContent = hide ? 'Show panel' : 'Hide panel';
+    window.dispatchEvent(new Event('resize'));  // let the map recompute its size
+  };
+}

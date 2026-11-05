@@ -22,6 +22,7 @@ def redesign(html):
     <h1>Renascor Atlas</h1>
     <p class="lede">Explore the places mentioned in texts from 1450–1700. Search for a place, follow a letter, or select a point to discover its sources.</p></div>
     <a class="header-link" href="#about-atlas">About the atlas ↗</a>
+    <button type="button" class="header-link" id="fsbtn" aria-pressed="false">Fullscreen</button>
     <div class="facts" id="facts" aria-label="Coverage of the selected source layer"></div>
   </header>'''
     html, n = re.subn(r'<header>.*?</header>', lambda _: header, html, count=1, flags=re.S)

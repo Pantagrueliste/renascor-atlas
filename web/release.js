@@ -40,4 +40,14 @@ new MutationObserver(syncContext).observe(document.getElementById('reading'), {a
 new MutationObserver(syncContext).observe(document.getElementById('modes'), {attributes:true, subtree:true, attributeFilter:['aria-pressed']});
 new MutationObserver(syncContext).observe(document.getElementById('kinds'), {childList:true, attributes:true, subtree:true, attributeFilter:['aria-pressed']});
 document.querySelector('.header-link').onclick = () => { document.getElementById('about-atlas').open = true; };
+const fsb = document.getElementById('fsbtn');
+if (fsb) {
+  const fsSet = () => { const fs = !!document.fullscreenElement; document.body.classList.toggle('fs', fs); fsb.setAttribute('aria-pressed', String(fs)); fsb.textContent = fs ? 'Exit fullscreen' : 'Fullscreen'; };
+  fsb.onclick = () => {
+    if (document.fullscreenElement) { document.exitFullscreen(); }
+    else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(() => { document.body.classList.toggle('fs'); fsSet(); }); }
+    else { document.body.classList.toggle('fs'); fsSet(); }
+  };
+  document.addEventListener('fullscreenchange', fsSet);
+}
 syncContext();

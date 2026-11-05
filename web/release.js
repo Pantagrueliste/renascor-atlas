@@ -45,7 +45,7 @@ if (fsb) {
   const fsSet = () => { const fs = !!document.fullscreenElement; document.body.classList.toggle('fs', fs); fsb.setAttribute('aria-pressed', String(fs)); fsb.textContent = fs ? 'Exit fullscreen' : 'Fullscreen'; };
   fsb.onclick = () => {
     if (document.fullscreenElement) { document.exitFullscreen(); }
-    else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(() => { document.body.classList.toggle('fs'); fsSet(); }); }
+    else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().then(fsSet).catch(() => { document.body.classList.toggle('fs'); fsSet(); }); }
     else { document.body.classList.toggle('fs'); fsSet(); }
   };
   document.addEventListener('fullscreenchange', fsSet);

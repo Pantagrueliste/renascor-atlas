@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Renascor Atlas: an open database of persons and places tagged by editors in Renaissance-era digital editions"
+message: "If you use the Renascor Atlas in your research, please cite it as below."
+type: dataset
+authors:
+  - family-names: Godbarge
+    given-names: Clément
+    affiliation: "University of St Andrews"
+    orcid: "https://orcid.org/0000-0001-8699-7582"
+repository-code: "https://github.com/Pantagrueliste/renascor-atlas"
+url: "https://pantagrueliste.github.io/renascor-atlas/"
+abstract: >-
+  The Renascor Atlas maps the persons and places tagged by editors in the TEI
+  digital editions catalogued by Renascor (1450-1700), with authority-file ids,
+  coordinates and mention counts per edition. The underlying texts are
+  catalogued in Renascor (DOI 10.5281/zenodo.23345610).
+keywords:
+  - digital humanities
+  - renaissance
+  - gazetteer
+  - named entities
+  - TEI
+  - early modern
+license: CC0-1.0
+version: 1.0.0
+date-released: 2026-11-05

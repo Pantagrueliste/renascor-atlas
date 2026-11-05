@@ -7,11 +7,13 @@ html:fullscreen header .brandline,html:fullscreen header h1,html:fullscreen head
 html:fullscreen .filters,body.fs .filters,html:fullscreen .about,body.fs .about,html:fullscreen .foot,body.fs .foot,html:fullscreen footer,body.fs footer{display:none}
 html:fullscreen #fsbtn,body.fs #fsbtn{position:fixed;top:8px;right:12px;z-index:20}
 html:fullscreen .main,body.fs .main{flex:1 1 auto;min-height:0;grid-template-columns:minmax(0,1fr) minmax(420px,34vw)}
+html:fullscreen .main,body.fs .main{align-items:stretch}
+html:fullscreen .stage,body.fs .stage{height:100%}
 html:fullscreen .stage,body.fs .stage{display:flex;flex-direction:column;min-height:0;overflow:hidden}
 html:fullscreen .map-intro,body.fs .map-intro{display:none}
 html:fullscreen .legend,body.fs .legend,html:fullscreen .cov,body.fs .cov,html:fullscreen .timeline,body.fs .timeline{flex:none}
 html:fullscreen .mapbox,body.fs .mapbox{flex:1 1 auto;min-height:0;display:flex}
-html:fullscreen #map,body.fs #map{flex:1 1 auto;height:100%;min-height:0}
+html:fullscreen #map,body.fs #map{flex:1 1 auto;height:100%;min-height:240px}
 html:fullscreen .main>aside,body.fs .main>aside{position:static;max-height:none;height:100%;display:flex;flex-direction:column;overflow:hidden}
 html:fullscreen #top,body.fs #top{flex:none;max-height:30%;overflow-y:auto}
 html:fullscreen #detail,body.fs #detail{flex:1 1 auto;min-height:0;overflow-y:auto;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}

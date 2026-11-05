@@ -42,12 +42,27 @@ new MutationObserver(syncContext).observe(document.getElementById('kinds'), {chi
 document.querySelector('.header-link').onclick = () => { document.getElementById('about-atlas').open = true; };
 const fsb = document.getElementById('fsbtn');
 if (fsb) {
-  const fsSet = () => { const fs = !!document.fullscreenElement; document.body.classList.toggle('fs', fs); fsb.setAttribute('aria-pressed', String(fs)); fsb.textContent = fs ? 'Exit fullscreen' : 'Fullscreen'; };
+  // Fullscreen layout follows the real Fullscreen API, the body.fs class, or F11 (detected on resize).
+  const fsSet = () => {
+    const fs = !!document.fullscreenElement || document.body.classList.contains('fs') ||
+               (window.innerWidth >= screen.width - 2 && window.innerHeight >= screen.height - 2);
+    if (fs && !document.body.classList.contains('fs')) document.body.classList.add('fs');
+    if (!fs && !document.fullscreenElement) document.body.classList.remove('fs');
+    fsb.setAttribute('aria-pressed', String(fs));
+    fsb.textContent = fs ? 'Exit fullscreen' : 'Fullscreen';
+  };
   fsb.onclick = () => {
-    if (document.fullscreenElement) { document.exitFullscreen(); }
-    else if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().then(fsSet).catch(() => { document.body.classList.toggle('fs'); fsSet(); }); }
-    else { document.body.classList.toggle('fs'); fsSet(); }
+    const want = !document.fullscreenElement && !document.body.classList.contains('fs');
+    if (want) {
+      if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(() => {}); }
+      document.body.classList.add('fs');
+    } else {
+      if (document.fullscreenElement) { document.exitFullscreen(); }
+      document.body.classList.remove('fs');
+    }
+    fsSet();
   };
   document.addEventListener('fullscreenchange', fsSet);
+  window.addEventListener('resize', fsSet);
 }
 syncContext();

@@ -33,6 +33,8 @@ def test_build_preserves_data_and_reports_missing_dependencies(tmp_path):
     assert PAYLOAD in (output / 'index.html').read_text()
     assert (output / 'strict' / '00.json').read_bytes() == shard
     assert not (output / 'licences.tsv').exists()          # the internal table never ships
+    assert 'cloud.umami.is/script.js' in (output / 'index.html').read_text()   # analytics tag present
+    assert 'cloud.umami.is' not in (source / 'index.html').read_text()         # source never modified
     report = json.loads((output / 'release-report.json').read_text())
     assert len(report['missing_document_shards']) == 64
     assert report['publication_ready'] is False

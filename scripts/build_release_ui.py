@@ -69,6 +69,8 @@ def redesign(html):
     # Theme and UI styles precede initialization so the map reads the same palette.
     html = html.replace('<html>', '<html lang="en">', 1)
     html = html.replace('</head>', '<style id="release-ui">' + (ASSETS / 'release.css').read_text() + '</style></head>', 1)
+    # Privacy-friendly analytics (Umami cloud); release builds only, never the source build.
+    html = html.replace('</head>', '<script defer src="https://cloud.umami.is/script.js" data-website-id="71fc027b-719d-483e-86b5-b835d3502618"></script></head>', 1)
     # Original app styles live inside the body; our override must follow them.
     css = '<style id="release-ui">' + (ASSETS / 'release.css').read_text() + '</style>'
     html = html.replace(css, '', 1).replace('<div class="wrap">', css + '\n<div class="wrap">', 1)

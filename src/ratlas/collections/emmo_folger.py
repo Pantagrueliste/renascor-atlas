@@ -8,8 +8,8 @@ Special handling:
   * surface = diplomatic reading (<orig> kept, <reg> dropped), e.g. 'mr Nicholas Allin';
   * dating: header msDesc/history/origin (@when or text), date_source 'header' (the publicationStmt date is the digital one);
   * the zip holds each file twice (dup=true on 100 records): skipped.
-Licence: LICENSE_TIERS records EMMO_Folger as T3 'LicenseRef-unclear' (reviewed 2026-08-13, no licence stated on the
-site), but the TEI headers say CC BY-SA 4.0. The stricter reviewed status is applied (T3: no context stored).
+Licence: CC BY-SA 4.0, stated in the TEI headers and quoted by the Renascor catalogue; reclassified to T1 by the
+owner decision of 2026-11-04 (data/licences.tsv decision column).
 """
 from __future__ import annotations
 
@@ -19,8 +19,8 @@ from .generic_tei import GenericTEI
 SLUG = 'emmo_folger'
 COLLS = ['eng_dh/emmo.zip']
 RENASCOR_IDS = ['emmo-folger']
-LICENCE = 'LicenseRef-unclear'
-TIER = 'T3'
+LICENCE = 'CC-BY-SA-4.0'
+TIER = 'T1'
 DESCRIPTION = 'Folger EMMO manuscripts 1552-1697: untyped name (persons) and placeName, no register'
 OPTIONS = {}
 

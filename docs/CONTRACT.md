@@ -146,7 +146,9 @@ Use `common.year_from_filename(name, lo, hi)` for a filename year.
 ## 7. Licence handling
 
 * `LICENCE` and `TIER` are on every row. T3 (and ND licences, e.g. CC-BY-NC-ND) are extracted for internal work
-  but remain flagged by their tier; no `context` for T3 (enforced).
+  but remain flagged by their tier; no `context` for T3 (enforced). T3 rows are published per the owner decision
+  of 2026-11-04 (catalogued facts with full source citation, non-profit research; see the `decision` column of
+  `data/licences.tsv`) — the tier still controls context storage, not publication.
 * Context snippets <= 120 chars only for T1/T2 (`ctx.want_context`). Do not store longer text or full sentences.
 * If the licence in the TEI headers is stricter than LICENSE_TIERS, use the stricter and mention it in the report.
 * A collection with mixed licences per file: split by file in `adjust` (set `m.licence`; keep the module `TIER` the
@@ -354,7 +356,10 @@ ND flag, open audit point, the owner's decision where one exists, and the audit'
 constants (the writer stamps every row with them) and `tests/test_licences.py` fails when a module and the table disagree: change a licence
 in the table and in the module together, and re-read the table before any release. Open points are owner decisions (nothing was changed here):
 ND editions (bullinger, gongora_epistolario, obvil_critique, polemicagongorina_obvil, freem_other rows), kaiserin / magdeburger / elan_crenum /
-paesi_novamente / emmo_folger tier questions, bdpn CC0 scope. T3 rows (14 editions) must be dropped or aggregated at release.
+paesi_novamente tier question, bdpn CC0 scope. T3 rows are published per the owner decision of 2026-11-04 (catalogued
+facts with full source citation, non-profit research; no context stored for T3, as before). emmo_folger was reclassified
+to T1 (CC BY-SA 4.0, stated in its TEI headers) on the same date; written permission for regensburger_wappen_portraetbuecher
+was requested from the project by email on 2026-11-04.
 
 
 ## 15. Manual review (2026-10-17: the audit's doubtful cases, read by hand)

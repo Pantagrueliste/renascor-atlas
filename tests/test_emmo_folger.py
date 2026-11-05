@@ -20,7 +20,7 @@ def test_synthetic():
     ms, es = col.extractor.extract_root(C.parse_xml(SYNTH), C.FileRecord(path=RAW, coll='x'), ctx)
     assert es == [] and [(m.kind, m.tag, m.surface) for m in ms] == [('person', 'name@person', 'mr Allin'), ('place', 'placeName', 'london')]
     assert all(m.doc_year == 1604 and m.date_source == 'header' and m.in_period for m in ms)
-    assert all(m.context is None and m.tier == 'T3' for m in ms)           # no snippets for T3
+    assert all(m.tier == 'T1' for m in ms)                                  # CC BY-SA 4.0 since owner decision of 2026-11-04
     assert all(m.local_key is None and m.ref_raw is None for m in ms)
 
 

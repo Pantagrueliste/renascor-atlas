@@ -34,6 +34,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     a.out.mkdir(parents=True, exist_ok=True)
     lic = {}
+    if not LIC.exists():
+        raise SystemExit(f'internal licence table not found: {LIC} (not part of the public checkout)')
     with open(LIC, newline='', encoding='utf-8') as fh:
         for r in csv.DictReader(fh, delimiter='\t'):
             lic[r['slug']] = r

@@ -1305,7 +1305,7 @@ def write_globe(pg: pd.DataFrame, coll: pd.DataFrame, path: Path, rep: dict, pl:
                    'cols': 'top 3 collections', 'k': 'kind of place (v2.2, five-way): c = city, town, village, city quarter; a = country, region, territory; '
                                                    'n = river, lake, sea, island, mountain, valley, pass, cape, forest; b = building, castle, monastery, street, square, gate, bridge, site; '
                                                    'u = other. From the Wikidata classes of the accepted item, the GeoNames feature code, the TGN place type and the register type',
-                   'r': 'for areas: radius in km of the coarse point', 't': 'worst licence tier among all contributing collections (1=T1, 2=T2, 3=T3: internal use only)',
+                   'r': 'for areas: radius in km of the coarse point', 't': 'worst licence tier among all contributing collections (1=T1, 2=T2, 3=T3: no context stored; published per owner decision of 2026-11-04)',
                    's': 'coordinate source: r=register, w=wikidata, g=geonames id, t=Getty TGN id, c=Casebooks directory, p=name propagation, '
                         'n=GeoNames / TGN name match, e=curated table of Latin / old exonyms and historical polities, l=Latin name de-inflected and found in a lexicon (Wikidata Latin labels, '
                         'Orbis Latinus, exonym tables, Latin editions); c, p, n, e and l are high / medium confidence only; p, n, e and l are located by name',

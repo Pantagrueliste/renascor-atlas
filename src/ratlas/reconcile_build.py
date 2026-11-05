@@ -930,7 +930,7 @@ def write_globe(pg: pd.DataFrame, coll: pd.DataFrame, path: Path, rep: dict, max
         'period': [1450, 1700], 'quarters': [1450 + 25 * i for i in range(10)],
         'fields': {'n': 'in-period mentions', 'q': 'mentions per quarter-century by document year (sum can be below n: '
                     'documents dated across a boundary or before 1450)', 'c': 'collections', 'cols': 'top 3 collections',
-                   't': 'worst licence tier among all contributing collections (1=T1, 2=T2, 3=T3: internal use only)',
+                   't': 'worst licence tier among all contributing collections (1=T1, 2=T2, 3=T3: no context stored; published per owner decision of 2026-11-04)',
                    's': 'coordinate source: r=register, w=wikidata, g=geonames id, p=name propagation (the same name is placed '
                         'elsewhere in the atlas), n=GeoNames name match; p and n are high / medium confidence only',
                    'm': 'number of authority / edition places merged into this point (same name within %d km); absent = 1'

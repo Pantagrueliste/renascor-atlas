@@ -699,7 +699,7 @@ def build(a) -> dict:
             'rows follow globe_places.json order (in-period mentions, most mentioned first); row index = position in rows',
             'q = mentions per quarter-century 1450..1675 by document year (sum can be below n_total: documents dated across a boundary)',
             'per_slug_q = [[slug_idx, q10], ...] sorted by total; top_slugs = the 3 editions with most mentions',
-            'worst_tier: 1 = T1, 2 = T2, 3 = T3 (internal use only) among all contributing editions',
+            'worst_tier: 1 = T1, 2 = T2, 3 = T3 (no context stored; published per owner decision of 2026-11-04) among all contributing editions',
             'coordinates are rounded to 3 decimals (about 100 m); high / medium confidence only',
             'documents of row i: docs/<i mod 64>.json, key str(i)',
         ]}

@@ -1,18 +1,21 @@
 <!doctype html><html lang="en"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><script defer src="https://cloud.umami.is/script.js" data-website-id="71fc027b-719d-483e-86b5-b835d3502618"></script><style>
-/* Fullscreen mode (#fsbtn): the map and the sources list fill the screen; the right column keeps the contextual panel. */
+/* Fullscreen mode (#fsbtn): focus on the map, the timeline and the right contextual column; page chrome hidden. */
 button.header-link{background:none;border:0;cursor:pointer;font:inherit;color:var(--fg)}
-body.fs .wrap{max-width:none;height:100dvh;display:flex;flex-direction:column;overflow:hidden;padding-block:10px 14px}
-body.fs header,body.fs .filters{flex:none}
-body.fs .main{flex:1 1 auto;min-height:0;grid-template-columns:minmax(0,1fr) minmax(420px,34vw)}
-body.fs .stage{display:flex;flex-direction:column;min-height:0;overflow:hidden}
-body.fs .map-intro,body.fs .legend,body.fs .cov,body.fs .timeline{flex:none}
-body.fs .mapbox{flex:1 1 auto;min-height:0;display:flex}
-body.fs #map{flex:1 1 auto;height:100%;min-height:0}
-body.fs .main>aside{position:static;max-height:none;height:100%;display:flex;flex-direction:column;overflow:hidden}
-body.fs #top{flex:none}
-body.fs #detail{flex:1 1 auto;min-height:0;overflow-y:auto;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
-body.fs .scr{max-height:none}
-body.fs #readgroup .seg button{min-height:52px;padding:10px 18px;font-size:15px}
+html:fullscreen .wrap,body.fs .wrap{max-width:none;height:100dvh;display:flex;flex-direction:column;overflow:hidden;padding-block:8px 10px}
+html:fullscreen header,body.fs header{flex:none;display:flex;justify-content:flex-end;min-height:0}
+html:fullscreen header .brandline,html:fullscreen header h1,html:fullscreen header .lede,html:fullscreen header .facts,html:fullscreen header .header-link:not(#fsbtn),body.fs header .brandline,body.fs header h1,body.fs header .lede,body.fs header .facts,body.fs header .header-link:not(#fsbtn){display:none}
+html:fullscreen .filters,body.fs .filters,html:fullscreen .about,body.fs .about,html:fullscreen .foot,body.fs .foot,html:fullscreen footer,body.fs footer{display:none}
+html:fullscreen #fsbtn,body.fs #fsbtn{position:fixed;top:8px;right:12px;z-index:20}
+html:fullscreen .main,body.fs .main{flex:1 1 auto;min-height:0;grid-template-columns:minmax(0,1fr) minmax(420px,34vw)}
+html:fullscreen .stage,body.fs .stage{display:flex;flex-direction:column;min-height:0;overflow:hidden}
+html:fullscreen .map-intro,body.fs .map-intro{display:none}
+html:fullscreen .legend,body.fs .legend,html:fullscreen .cov,body.fs .cov,html:fullscreen .timeline,body.fs .timeline{flex:none}
+html:fullscreen .mapbox,body.fs .mapbox{flex:1 1 auto;min-height:0;display:flex}
+html:fullscreen #map,body.fs #map{flex:1 1 auto;height:100%;min-height:0}
+html:fullscreen .main>aside,body.fs .main>aside{position:static;max-height:none;height:100%;display:flex;flex-direction:column;overflow:hidden}
+html:fullscreen #top,body.fs #top{flex:none;max-height:30%;overflow-y:auto}
+html:fullscreen #detail,body.fs #detail{flex:1 1 auto;min-height:0;overflow-y:auto;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+html:fullscreen .scr,body.fs .scr{max-height:none}
 </style>
 </head><body>
 <title>Renascor Atlas</title>
@@ -1174,7 +1177,7 @@ new MutationObserver(syncContext).observe(document.getElementById('modes'), {att
 new MutationObserver(syncContext).observe(document.getElementById('kinds'), {childList:true, attributes:true, subtree:true, attributeFilter:['aria-pressed']});
 document.querySelector('.header-link').onclick = () => { document.getElementById('about-atlas').open = true; };
 const fsb=document.getElementById('fsbtn');
-if(fsb){const fsSet=()=>{const fs=!!document.fullscreenElement;document.body.classList.toggle('fs',fs);fsb.setAttribute('aria-pressed',String(fs));fsb.textContent=fs?'Exit fullscreen':'Fullscreen';};fsb.onclick=()=>{if(document.fullscreenElement){document.exitFullscreen();}else if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().catch(()=>{document.body.classList.toggle('fs');fsSet();});}else{document.body.classList.toggle('fs');fsSet();}};document.addEventListener('fullscreenchange',fsSet);}
+if(fsb){const fsSet=()=>{const fs=!!document.fullscreenElement;document.body.classList.toggle('fs',fs);fsb.setAttribute('aria-pressed',String(fs));fsb.textContent=fs?'Exit fullscreen':'Fullscreen';};fsb.onclick=()=>{if(document.fullscreenElement){document.exitFullscreen();}else if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().then(fsSet).catch(()=>{document.body.classList.toggle('fs');fsSet();});}else{document.body.classList.toggle('fs');fsSet();}};document.addEventListener('fullscreenchange',fsSet);}
 syncContext();
 
 </script>

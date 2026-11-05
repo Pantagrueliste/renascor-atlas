@@ -18,6 +18,10 @@ html:fullscreen .main>aside,body.fs .main>aside{position:static;max-height:none;
 html:fullscreen #top,body.fs #top{flex:none;max-height:30%;overflow-y:auto}
 html:fullscreen #detail,body.fs #detail{flex:1 1 auto;min-height:0;overflow-y:auto;margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
 html:fullscreen .scr,body.fs .scr{max-height:none}
+#sidebtn{display:none;background:none;border:0;cursor:pointer;font:inherit;color:var(--fg)}
+html:fullscreen #sidebtn,body.fs #sidebtn{display:inline-block;position:fixed;top:8px;right:110px;z-index:20}
+html:fullscreen .main.noside,body.fs .main.noside{grid-template-columns:minmax(0,1fr)}
+html:fullscreen .main.noside>aside,body.fs .main.noside>aside{display:none}
 </style>
 </head><body>
 <title>Renascor Atlas</title>
@@ -257,6 +261,7 @@ button,a,input,select,summary { outline-offset:4px; }
     <p class="lede">Explore the places mentioned in texts from 1450–1700. Search for a place, follow a letter, or select a point to discover its sources.</p></div>
     <a class="header-link" href="#about-atlas">About the atlas ↗</a>
     <button type="button" class="header-link" id="fsbtn" aria-pressed="false">Fullscreen</button>
+    <button type="button" id="sidebtn" aria-expanded="true">Hide panel</button>
     <div class="facts" id="facts" aria-label="Coverage of the selected source layer"></div>
   </header>
 
@@ -1179,6 +1184,8 @@ new MutationObserver(syncContext).observe(document.getElementById('modes'), {att
 new MutationObserver(syncContext).observe(document.getElementById('kinds'), {childList:true, attributes:true, subtree:true, attributeFilter:['aria-pressed']});
 document.querySelector('.header-link').onclick = () => { document.getElementById('about-atlas').open = true; };
 const fsb=document.getElementById('fsbtn');if(fsb){const fsSet=()=>{const fs=!!document.fullscreenElement||document.body.classList.contains('fs')||(window.innerWidth>=screen.width-2&&window.innerHeight>=screen.height-2);if(fs&&!document.body.classList.contains('fs'))document.body.classList.add('fs');if(!fs&&!document.fullscreenElement)document.body.classList.remove('fs');fsb.setAttribute('aria-pressed',String(fs));fsb.textContent=fs?'Exit fullscreen':'Fullscreen';};fsb.onclick=()=>{const want=!document.fullscreenElement&&!document.body.classList.contains('fs');if(want){if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen().catch(()=>{});}document.body.classList.add('fs');}else{if(document.fullscreenElement){document.exitFullscreen();}document.body.classList.remove('fs');}fsSet();};document.addEventListener('fullscreenchange',fsSet);window.addEventListener('resize',fsSet);}
+const sb=document.getElementById('sidebtn');
+if(sb){sb.onclick=()=>{const m=document.querySelector('.main');const hide=!m.classList.contains('noside');m.classList.toggle('noside',hide);sb.setAttribute('aria-expanded',String(!hide));sb.textContent=hide?'Show panel':'Hide panel';window.dispatchEvent(new Event('resize'));};}
 syncContext();
 
 </script>

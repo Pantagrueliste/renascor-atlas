@@ -1,0 +1,896 @@
+<title>Relecture gold v3</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Metropolis v12 (Chris M. Simpson, SIL OFL 1.1, via TypeHaus) self-hosted as a web font, full charset incl. Latin Extended-A. */
+@font-face { font-family: "Metropolis"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/metropolis-400.woff2") format("woff2"); }
+@font-face { font-family: "Metropolis"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/metropolis-600.woff2") format("woff2"); }
+</style>
+<style>
+/* Layout: same frame as the gold v2 page. Passage list on the left, the passage and its span decisions on the right; one column on phones. */
+:root {
+  --bg: #fbfbfa; --panel: #ffffff; --fg: #1d1f22; --muted: #62666d; --line: #e3e4e6; --hover: #f1f2f3;
+  --accent: #2f5f8a; --accent-bg: #e6eef6;
+  --loc: #2d7a4f; --loc-bg: #dff1e6; --per: #6b4bb0; --per-bg: #ece6f8;
+  --no: #8a8f96; --no-bg: #eeeff1; --doubt: #a8650c; --doubt-bg: #fbedd5; --sel: #ffe58a; --warn: #a33a2b;
+  --f-title: "EB Garamond", Garamond, "Times New Roman", serif;
+  --f-ui: "Metropolis", "Segoe UI", system-ui, sans-serif;
+  --f-text: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #16181b; --panel: #1d2024; --fg: #e6e7e9; --muted: #9ba0a7; --line: #2e3237; --hover: #262a2f;
+  --accent: #8db8e0; --accent-bg: #1f3347;
+  --loc: #7ccf9d; --loc-bg: #1c3a29; --per: #c3a6ef; --per-bg: #2f2645;
+  --no: #8d939b; --no-bg: #2a2d31; --doubt: #f0b35c; --doubt-bg: #3d2d14; --sel: #6b5a14; --warn: #f08a7a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #16181b; --panel: #1d2024; --fg: #e6e7e9; --muted: #9ba0a7; --line: #2e3237; --hover: #262a2f;
+  --accent: #8db8e0; --accent-bg: #1f3347;
+  --loc: #7ccf9d; --loc-bg: #1c3a29; --per: #c3a6ef; --per-bg: #2f2645;
+  --no: #8d939b; --no-bg: #2a2d31; --doubt: #f0b35c; --doubt-bg: #3d2d14; --sel: #6b5a14; --warn: #f08a7a; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--f-ui);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 40px }
+h1 { font: 500 30px/1.15 var(--f-title); margin: 0; text-wrap: balance }
+.wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 16px }
+header.top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end; justify-content: space-between }
+.sub { color: var(--muted); margin: 4px 0 0; max-width: 72ch }
+.who { display: grid; gap: 4px; min-width: 220px }
+.who label { font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase }
+.progress { display: flex; gap: 18px; flex-wrap: wrap; font-variant-numeric: tabular-nums }
+.progress div { display: grid }
+.progress b { font-size: 22px; font-weight: 600 }
+.progress span { color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase }
+.langs { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px }
+@media (max-width: 820px) { .langs { grid-template-columns: repeat(3, minmax(0, 1fr)) } }
+.lp { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 7px 10px; display: grid; gap: 4px; font-variant-numeric: tabular-nums; cursor: pointer; font: inherit; color: inherit; text-align: left }
+.lp:hover { background: var(--hover) }
+.lp[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent) }
+.lp:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px }
+.lp .ln { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted) }
+.lp .lv { font-size: 15px; font-weight: 600 }
+.lp .lo { font-size: 12px; color: var(--doubt) }
+.bar { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden }
+.bar i { display: block; height: 100%; background: var(--accent); width: 0 }
+.banner { border: 1px solid var(--doubt); background: var(--doubt-bg); padding: 8px 12px; border-radius: 6px }
+.main { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 18px; align-items: start }
+@media (max-width: 820px) { .main { grid-template-columns: minmax(0, 1fr) } }
+aside { display: grid; gap: 8px; position: sticky; top: env(safe-area-inset-top, 0px) }
+@media (max-width: 820px) { aside { position: static } #list { max-height: 260px } }
+select { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); width: 100% }
+select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px }
+#list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); max-height: calc(100vh - 300px); overflow: auto }
+#list li button { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; width: 100%; padding: 7px 10px; cursor: pointer; border-bottom: 1px solid var(--line) }
+#list li button:hover { background: var(--hover) }
+#list li button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px }
+#list li button[aria-current="true"] { background: var(--accent-bg) }
+#list .lg { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted) }
+#list .tt { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14px }
+#list .st { font-size: 12px; font-variant-numeric: tabular-nums }
+.st .c { color: var(--doubt) } .st .ok { color: var(--loc) }
+section.pass { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; display: grid; gap: 14px; min-width: 0 }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 14px; color: var(--muted); font-size: 13px }
+.meta a { color: var(--accent) }
+.tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; padding: 1px 7px; border-radius: 999px; background: var(--accent-bg); color: var(--accent) }
+.ptitle { font-weight: 600; font-size: 17px; margin: 0 }
+.text { font: 18px/1.8 var(--f-text); max-width: 72ch; overflow-wrap: anywhere }
+.tok { border-radius: 3px; cursor: pointer; padding: 1px 0 }
+.tok:hover { outline: 1px dashed var(--muted) }
+.tok.L { background: var(--loc-bg); box-shadow: inset 0 -2px var(--loc) }
+.tok.P { background: var(--per-bg); box-shadow: inset 0 -2px var(--per) }
+.tok.lock { box-shadow: inset 0 -3px var(--loc) }
+.tok.u { background: var(--doubt-bg); box-shadow: inset 0 -2px var(--doubt) }
+.tok.n { box-shadow: inset 0 -1px var(--no); color: var(--muted) }
+.tok.ad { box-shadow: inset 0 -2px var(--fg) }
+.tok.sel { background: var(--sel); box-shadow: none }
+.tok.fo { outline: 2px solid var(--accent); outline-offset: 0 }
+.tok.flash { outline: 2px solid var(--accent) }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted) }
+.legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px }
+.addbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 8px 10px; border-radius: 8px; background: var(--accent-bg) }
+.addbar q { font-family: var(--f-text); font-weight: 600 }
+.hint { color: var(--muted); font-size: 13px; margin: 0 }
+.keys { color: var(--muted); font-size: 12px; margin: 0 }
+kbd { font: 600 11px/1 var(--f-ui); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 2px 5px; background: var(--bg); color: var(--fg) }
+button.b { font: inherit; font-size: 14px; border-radius: 6px; padding: 5px 11px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer }
+button.b:hover { background: var(--hover) }
+button.b:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px }
+button.b.primary { background: var(--accent); border-color: var(--accent); color: var(--panel) }
+button.b[disabled] { opacity: .45; cursor: default }
+table.sp { width: 100%; border-collapse: collapse; font-size: 14px }
+.tablebox { overflow-x: auto }
+table.sp th { text-align: left; font-weight: 600; font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; padding: 6px 8px; border-bottom: 1px solid var(--line) }
+table.sp td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top }
+table.sp tr { cursor: default }
+table.sp tr.focus td { background: var(--accent-bg) }
+table.sp tr.locked td { color: var(--muted) }
+.surf { font-family: var(--f-text); font-weight: 600; font-size: 16px; cursor: pointer }
+.why { color: var(--muted); font-size: 13px; max-width: 46ch }
+.warn { color: var(--warn); font-size: 13px }
+.src { font-size: 12px; color: var(--muted) }
+.pill { display: inline-block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; padding: 1px 7px; border-radius: 999px; white-space: nowrap }
+.pill.a, .pill.p { background: var(--loc-bg); color: var(--loc) }
+.pill.c { background: var(--doubt-bg); color: var(--doubt) }
+.pill.o { background: var(--no-bg); color: var(--fg) }
+.pill.ad { background: var(--accent-bg); color: var(--accent) }
+.ctl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden }
+.seg button { font: inherit; font-size: 13px; padding: 4px 9px; border: 0; background: var(--panel); color: var(--fg); cursor: pointer; border-right: 1px solid var(--line) }
+.seg button:last-child { border-right: 0 }
+.seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px }
+.seg button[disabled] { cursor: default; opacity: .6 }
+.seg button[aria-pressed="true"].y { background: var(--loc); color: var(--panel) }
+.seg button[aria-pressed="true"].n { background: var(--no); color: var(--panel) }
+.seg button[aria-pressed="true"].u { background: var(--doubt); color: var(--panel) }
+.seg button[aria-pressed="true"].LOC { background: var(--loc); color: var(--panel) }
+.seg button[aria-pressed="true"].PER { background: var(--per); color: var(--panel) }
+.dflt { font-size: 11px; color: var(--muted) }
+.foot { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 12px }
+textarea { width: 100%; font: inherit; font-size: 14px; min-height: 54px; padding: 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--fg) }
+textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px }
+.save { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums }
+details.conv { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 14px }
+details.conv summary { cursor: pointer; font-weight: 600 }
+details.conv ol { margin: 8px 0 4px; padding-left: 22px; max-width: 86ch; display: grid; gap: 4px }
+details.conv .open { color: var(--doubt); font-weight: 600 }
+details.conv code { font-family: var(--f-text); background: var(--bg); padding: 0 3px; border-radius: 3px }
+@media (prefers-reduced-motion: no-preference) { .bar i { transition: width .3s } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Relecture gold v3</h1>
+      <p class="sub" id="sub">Jeu de test NER v3 : lieux (LOC) et personnes (PER), six langues, 1450-1700. Confirmez, rejetez ou changez l'étiquette des propositions, ajoutez ce qui manque, puis marquez le passage comme relu.</p>
+    </div>
+    <div class="who">
+      <label for="reviewer">Décisions affichées</label>
+      <select id="reviewer"><option>Chargement…</option></select>
+    </div>
+    <div class="progress" aria-live="polite">
+      <div><b id="nDone">0</b><span>passages relus</span></div>
+      <div><b id="nOpen">0</b><span>à trancher</span></div>
+      <div><b id="nAdd">0</b><span>ajouts</span></div>
+    </div>
+  </header>
+  <div class="backup" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+    <button type="button" id="export-review">Exporter mes décisions</button>
+    <button type="button" id="import-review">Importer une sauvegarde</button>
+    <input type="file" id="import-file" accept="application/json,.json" hidden>
+    <span class="hint" id="backup-status" role="status">Sauvegarde automatique dans ce navigateur. Exportez vos décisions après chaque séance.</span>
+  </div>
+  <div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+  <div class="langs" id="langs" role="group" aria-label="Avancement par langue (cliquer pour filtrer)"></div>
+  <div class="banner" id="banner" hidden></div>
+  <details class="conv" id="conv">
+    <summary>Conventions (décidées par le propriétaire le 25 octobre 2026)</summary>
+    <ol>
+      <li><b>PER couvre le nom complet</b> : prénom, nom, patronyme, origine, épithète, numéral. <code>[Lorenzo il Magnifico]</code>, <code>[Henry the Eighth]</code>, <code>[Gabriel Byel ex Spira]</code>.</li>
+      <li><b>Titres, formules et parenté hors du PER</b> : don, messer, Sir, duca, Herr, D., « la mère de ». <code>don [Fadrique]</code>, <code>Sir [Philip Sidney]</code>, <code>la mère de [Luther]</code>. Même pour les noms de fiction : <code>Don [Quijote]</code>. Les titres de saint restent hors du PER : <code>San [Giovanni]</code>.</li>
+      <li><b>Lieu dans un nom de personne : pas un lieu.</b> Tout le nom est PER. <code>[Lunardo da Dresano|PER]</code>, <code>[Friderich von Zimbern|PER]</code>.</li>
+      <li><b>Lieu dans un titre : lieu, et pas de personne.</b> Le titre reste dehors. <code>Duca di [Milano|LOC]</code>, <code>Roy de [France|LOC]</code>, <code>le Duca di [Calabria|LOC] est arrivé</code>.</li>
+      <li><b>Souverain suivi d'un lieu</b> : le souverain est PER, le lieu est LOC. <code>[Felipe II|PER] de [España|LOC]</code>.</li>
+      <li><b>Peuples, gentilés, adjectifs de lieu, langues : rien.</b> <code>Turca</code>, <code>Polonicis</code>, <code>les Français</code>, <code>French Wines</code>. Exception : adjectif latin en <code>-ensis</code> = LOC.</li>
+      <li><b>Dieu : rien. Christ, saints, diable, figures bibliques, dieux antiques : PER. Personnifications (Amor, Fortuna) : rien.</b> Astres : rien.</li>
+      <li><b>Bâtiments et lieux génériques : rien</b> (<code>l'église</code>, <code>la piazza</code>), sauf s'ils sont nommés (<code>[San Marco|LOC]</code>).</li>
+      <li><b>Point final toujours hors du nom</b>, y compris le point d'abréviation : <code>[Lond].</code>, <code>[Io].</code>, <code>[Panor].</code>, <code>[Clemens V].</code></li>
+      <li><b>Lieux de gold v2</b> : verrouillés. Ce sont les décisions déjà prises ; on ne les modifie pas ici.</li>
+    </ol>
+  </details>
+  <div class="main">
+    <aside>
+      <label class="hint" for="filt">Afficher</label>
+      <select id="filt">
+        <option value="todo">Non relus</option>
+        <option value="open">Avec des propositions à trancher</option>
+        <option value="done">Relus</option>
+        <option value="all">Tous</option>
+      </select>
+      <label class="hint" for="subset" id="subsetLab">Sous-ensemble</label>
+      <select id="subset">
+        <option value="all">Tous les passages</option>
+        <option value="g2">Passages de gold v2 (PER à ajouter)</option>
+        <option value="new">Passages nouveaux</option>
+        <option value="dbl">Double annotation (200)</option>
+      </select>
+      <ul id="list" aria-label="Passages"><li class="hint" style="padding:10px">Chargement des passages…</li></ul>
+    </aside>
+    <section class="pass" id="pass" aria-live="polite"><p class="hint">Chargement des passages…</p></section>
+  </div>
+</div>
+
+<script id="gold" type="application/json">__DATA__</script>
+<script>
+(async () => {
+  const $ = id => document.getElementById(id);
+  const LANG = { la: "latin", es: "espagnol", it: "italien", fr: "français", de: "allemand", en: "anglais" };
+  const LORDER = ["la", "es", "it", "fr", "de", "en"];
+  const STL = { a: "accordé", p: "proposé", c: "à trancher", o: "gold v2, verrouillé" };
+  const LABN = { LOC: "Lieu", PER: "Personne" };
+
+  // ---------- data ----------
+  let D;
+  const inline = $("gold").textContent.trim();
+  try { D = inline ? JSON.parse(inline) : await (await fetch("passages.json")).json(); }
+  catch (e) { $("pass").innerHTML = ""; const p = document.createElement("p"); p.className = "warn"; p.textContent = "Les passages n'ont pas pu être chargés (passages.json). Rechargez la page."; $("pass").append(p); return; }
+  const ALL = D.passages, SYS = D.systems, CFG = D.config || {};
+  const byK = new Map(ALL.map((p, i) => [p.k, i]));
+  // Split review (build --type=LOC|PER): a single label per page, no cross-type relabel.
+  const TYPE = D.type || null;
+  if (TYPE) {
+    document.body.dataset.type = TYPE;
+    document.title = TYPE === "LOC" ? "Relecture gold v3 — lieux (LOC)" : "Relecture gold v3 — personnes (PER)";
+    $("sub").textContent = TYPE === "LOC"
+      ? "Relecture gold v3, lieux (LOC) uniquement : validez, rejetez ou ajoutez des lieux, puis marquez le passage comme relu. Les personnes (PER) se relisent dans la revue séparée."
+      : "Relecture gold v3, personnes (PER) uniquement : validez, rejetez ou ajoutez des personnes, puis marquez le passage comme relu. Les lieux (LOC) se relisent dans la revue séparée.";
+    const g2 = document.querySelector('#subset option[value="g2"]');
+    if (g2 && TYPE === "LOC") g2.textContent = "Passages de gold v2";
+  }
+
+  // ---------- who is reviewing ----------
+  // me: the viewer. view: whose records are shown (owner may look at others, read-only).
+  const me = { mode: "local", uid: "local-A", owner: true, canWrite: true };
+  let view = { uid: "local-A", role: "A" };
+  let db = null, unsub = null, profiles = {};   // profiles: uid -> {role, mode}
+  const blind = () => view.role !== "A" && CFG.second_blind !== false;
+  const editable = () => me.canWrite && view.uid === me.uid;
+  const scopeP = () => view.role === "A" ? ALL : ALL.filter(p => p.dbl);
+
+  let rev = {};                // k -> {done, sp:{key:{d,l}}, add:[[a,b,lab,flag]], note}
+  let dirty = new Set();
+  let cur = -1, lang = "all", sel = null, focus = null, skipClick = 0;   // focus: {t:"s", key} | {t:"a", j}
+
+  const R = k => rev[k] || (rev[k] = { done: false, sp: {}, add: [], note: "" });
+  const skey = s => s[0] + "-" + s[1] + "-" + s[2];
+  const spansOf = p => blind() ? [] : p.spans;
+  const dflt = s => s[3] === "a" || s[3] === "p" ? "y" : s[3] === "o" ? "lock" : "";
+  const ex = (p, s) => rev[p.k] && rev[p.k].sp[skey(s)];
+  const dec = (p, s) => s[3] === "o" ? "lock" : ((ex(p, s) || {}).d || dflt(s));
+  const labOf = (p, s) => (ex(p, s) || {}).l || (s[2] === "L" ? "LOC" : "PER");
+  const openCount = p => spansOf(p).filter(s => !dec(p, s)).length;
+  const words = (p, a, b) => p.text.slice(p.ts[a], p.ts[b - 1] + p.tl[b - 1]);
+  const ovl = (a, b, c, d) => a < d && c < b;
+
+  // Connected overlaps are displayed together; only directly overlapping choices
+  // exclude each other (a broad proposal can overlap two distinct mentions).
+  function proposalGroups(p) {
+    const groups = [];
+    for (const span of [...spansOf(p)].sort((a,b) => a[0]-b[0] || a[1]-b[1])) {
+      const last = groups[groups.length-1];
+      if (last && span[0] < last.end) { last.spans.push(span); last.end = Math.max(last.end, span[1]); }
+      else groups.push({spans:[span], end:span[1]});
+    }
+    return groups;
+  }
+  function groupDecision(group, value) {
+    if (!editable()) return;
+    const p = ALL[cur], r = R(p.k);
+    for (const s of group.spans) if (s[3] !== "o")
+      r.sp[skey(s)] = {...(r.sp[skey(s)] || {}), d:value};
+    changed(p);
+  }
+
+  // items the keyboard walks through (locked rows are skipped)
+  function items(p) {
+    const out = spansOf(p).filter(s => s[3] !== "o").map(s => ({ t: "s", key: skey(s), s }));
+    (rev[p.k] ? rev[p.k].add : []).forEach((x, j) => out.push({ t: "a", j, x }));
+    return out;
+  }
+  const sameItem = (a, b) => a && b && a.t === b.t && (a.t === "s" ? a.key === b.key : a.j === b.j);
+
+  // ---------- progress ----------
+  function stats() {
+    const P = scopeP();
+    let done = 0, open = 0, add = 0;
+    const L = {};
+    for (const l of LORDER) L[l] = { n: 0, done: 0, open: 0 };
+    for (const p of P) {
+      const r = rev[p.k], o = openCount(p), x = L[p.lang];
+      x.n++; x.open += o; open += o;
+      if (r && r.done) { done++; x.done++; }
+      if (r) add += r.add.length;
+    }
+    $("nDone").textContent = done + " / " + P.length; $("nOpen").textContent = open; $("nAdd").textContent = add;
+    $("barFill").style.width = (P.length ? 100 * done / P.length : 0) + "%";
+    const box = $("langs"); box.innerHTML = "";
+    for (const l of LORDER) {
+      const x = L[l]; if (!x.n) continue;
+      const b = document.createElement("button"); b.type = "button"; b.className = "lp";
+      b.setAttribute("aria-pressed", String(lang === l));
+      b.title = lang === l ? "Afficher toutes les langues" : "Afficher seulement : " + LANG[l];
+      const ln = document.createElement("span"); ln.className = "ln"; ln.textContent = LANG[l];
+      const lv = document.createElement("span"); lv.className = "lv"; lv.textContent = x.done + " / " + x.n;
+      const br = document.createElement("span"); br.className = "bar"; const bi = document.createElement("i"); bi.style.width = (100 * x.done / x.n) + "%"; br.append(bi);
+      const lo = document.createElement("span"); lo.className = "lo"; lo.textContent = x.open ? x.open + " à trancher" : " ";
+      b.append(ln, lv, br, lo);
+      b.onclick = () => { lang = lang === l ? "all" : l; stats(); renderList(); const v = visible(); if (v.length && !v.includes(cur)) go(v[0]); };
+      box.append(b);
+    }
+  }
+
+  function visible() {
+    const f = $("filt").value, sub = $("subset").value;
+    return scopeP().map(p => byK.get(p.k)).filter(i => {
+      const p = ALL[i], r = rev[p.k];
+      if (lang !== "all" && p.lang !== lang) return false;
+      if (view.role === "A") {
+        if (sub === "g2" && !p.g2) return false;
+        if (sub === "new" && p.g2) return false;
+        if (sub === "dbl" && !p.dbl) return false;
+      }
+      if (f === "open") return openCount(p) > 0;
+      if (f === "todo") return !(r && r.done);
+      if (f === "done") return !!(r && r.done);
+      return true;
+    });
+  }
+
+  function renderList() {
+    const v = visible(), list = $("list");
+    list.innerHTML = "";
+    if (!v.length) { const li = document.createElement("li"); li.className = "hint"; li.style.padding = "10px"; li.textContent = "Aucun passage pour ce filtre."; list.append(li); return; }
+    for (const i of v) {
+      const p = ALL[i], r = rev[p.k], o = openCount(p);
+      const li = document.createElement("li"), b = document.createElement("button");
+      b.type = "button"; b.setAttribute("aria-current", String(i === cur));
+      const lg = document.createElement("span"); lg.className = "lg"; lg.textContent = p.lang;
+      const tt = document.createElement("span"); tt.className = "tt"; tt.textContent = p.title; tt.title = p.title;
+      const st = document.createElement("span"); st.className = "st";
+      if (r && r.done) { const s = document.createElement("span"); s.className = "ok"; s.textContent = "relu"; st.append(s); }
+      else if (o) { const s = document.createElement("span"); s.className = "c"; s.textContent = o + " à trancher"; st.append(s); }
+      b.append(lg, tt, st);
+      b.onclick = () => go(i);
+      li.append(b); list.append(li);
+    }
+  }
+
+  function go(i) {
+    if (i === undefined || i < 0) return;
+    cur = i; sel = null;
+    const it = items(ALL[i]);
+    focus = it.find(x => x.t === "s" && !dec(ALL[i], x.s)) || it[0] || null;
+    render(); renderList();
+    const el = $("list").querySelector('[aria-current="true"]'); if (el) el.scrollIntoView({ block: "nearest" });
+  }
+
+  // ---------- passage ----------
+  function tokClasses(p) {
+    const cls = p.ts.map(() => "");
+    const rank = { y: 4, lock: 4, u: 3, "": 2, n: 1 };
+    const best = p.ts.map(() => 0);
+    for (const s of spansOf(p)) {
+      const d = dec(p, s);
+      const c = d === "lock" ? "L lock" : d === "y" ? (labOf(p, s) === "LOC" ? "L" : "P") : d === "n" ? "n" : "u";
+      for (let t = s[0]; t < s[1]; t++) if (rank[d] > best[t]) { best[t] = rank[d]; cls[t] = c; }
+    }
+    for (const [a, b, l, f] of (rev[p.k] ? rev[p.k].add : [])) for (let t = a; t < b; t++) cls[t] = (f === "u" ? "u" : l === "LOC" ? "L" : "P") + " ad";
+    if (focus) {
+      const r = focus.t === "s" ? focus.s : focus.x;
+      if (r) for (let t = r[0]; t < r[1]; t++) cls[t] += " fo";
+    }
+    if (sel) for (let t = Math.min(sel[0], sel[1]); t <= Math.max(sel[0], sel[1]); t++) cls[t] = "sel";
+    return cls;
+  }
+
+  // accepted spans (proposals at "y" + locked + additions), to warn about overlaps
+  function accepted(p) {
+    const out = [];
+    for (const s of spansOf(p)) { const d = dec(p, s); if (d === "y" || d === "lock") out.push({ a: s[0], b: s[1], key: skey(s), lock: d === "lock" }); }
+    (rev[p.k] ? rev[p.k].add : []).forEach(([a, b], j) => out.push({ a, b, key: "add" + j }));
+    return out;
+  }
+  function clash(p, a, b, selfKey) {
+    return accepted(p).filter(x => x.key !== selfKey && ovl(a, b, x.a, x.b));
+  }
+
+  function render() {
+    const pass = $("pass");
+    pass.innerHTML = "";
+    if (cur < 0) { const h = document.createElement("p"); h.className = "hint"; h.textContent = "Aucun passage à afficher. Changez le filtre."; pass.append(h); return; }
+    const p = ALL[cur], r = R(p.k), ro = !editable();
+    const h = document.createElement("div");
+    const t = document.createElement("p"); t.className = "ptitle"; t.textContent = p.title;
+    const m = document.createElement("div"); m.className = "meta";
+    for (const x of [LANG[p.lang], p.author, p.date, p.per && "période " + p.per, p.coll]) if (x) { const s = document.createElement("span"); s.textContent = x; m.append(s); }
+    if (p.g2 && !blind()) { const s = document.createElement("span"); s.className = "tag"; s.textContent = "gold v2 : PER à ajouter"; m.append(s); }
+    if (p.dbl && view.role === "A") { const s = document.createElement("span"); s.className = "tag"; s.textContent = "double annotation"; m.append(s); }
+    if (p.url) { const a = document.createElement("a"); a.href = p.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "source"; m.append(a); }
+    h.append(t, m); pass.append(h);
+
+    const tx = document.createElement("div"); tx.className = "text"; tx.lang = p.lang; tx.id = "ptext";
+    const cls = tokClasses(p);
+    let pos = 0;
+    p.ts.forEach((st, i) => {
+      if (st > pos) tx.append(document.createTextNode(p.text.slice(pos, st)));
+      const s = document.createElement("span");
+      s.className = "tok" + (cls[i] ? " " + cls[i] : ""); s.dataset.i = i;
+      s.textContent = p.text.slice(st, st + p.tl[i]);
+      tx.append(s); pos = st + p.tl[i];
+    });
+    if (pos < p.text.length) tx.append(document.createTextNode(p.text.slice(pos)));
+    tx.addEventListener("mouseup", () => {
+      const ws = window.getSelection(); if (!ws || ws.isCollapsed || !ws.rangeCount) return;
+      const rg = ws.getRangeAt(0), hit = [];
+      tx.querySelectorAll(".tok").forEach(el => { if (rg.intersectsNode(el)) hit.push(+el.dataset.i); });
+      if (hit.length && hit.length <= 15) { sel = [hit[0], hit[hit.length - 1]]; skipClick = Date.now(); ws.removeAllRanges(); render(); }
+    });
+    tx.onclick = e => { if (Date.now() - skipClick < 400) return; const el = e.target.closest(".tok"); const ws = window.getSelection(); if (el && (!ws || ws.isCollapsed)) clickTok(+el.dataset.i); };
+    pass.append(tx);
+
+    const lg = document.createElement("div"); lg.className = "legend";
+    lg.innerHTML = '<span><i style="background:var(--loc-bg);box-shadow:inset 0 -2px var(--loc)"></i>lieu</span><span><i style="background:var(--per-bg);box-shadow:inset 0 -2px var(--per)"></i>personne</span><span><i style="background:var(--doubt-bg);box-shadow:inset 0 -2px var(--doubt)"></i>à trancher ou doute</span><span><i style="box-shadow:inset 0 -1px var(--no)"></i>rejeté</span><span><i style="box-shadow:inset 0 -2px var(--fg)"></i>ajouté</span>';
+    pass.append(lg);
+
+    if (blind()) { const b = document.createElement("p"); b.className = "hint"; b.textContent = TYPE ? `Annotation à l'aveugle : aucune proposition n'est affichée. Sélectionnez chaque ${TYPE === "LOC" ? "lieu" : "personne"} dans le texte.` : "Annotation à l'aveugle : aucune proposition n'est affichée. Sélectionnez chaque lieu et chaque personne dans le texte."; pass.append(b); }
+
+    if (sel) {
+      const a = Math.min(sel[0], sel[1]), b = Math.max(sel[0], sel[1]) + 1;
+      const bar = document.createElement("div"); bar.className = "addbar";
+      const sp = document.createElement("span"); sp.textContent = "Ajouter :";
+      const q = document.createElement("q"); q.textContent = words(p, a, b);
+      const okL = button("Lieu (L)", "b primary", () => addSpan(a, b, "LOC"));
+      const okP = button("Personne (P)", "b primary", () => addSpan(a, b, "PER"));
+      const no = button("Annuler (Échap)", "b", () => { sel = null; render(); });
+      okL.disabled = okP.disabled = ro;
+      if (TYPE) (TYPE === "LOC" ? okP : okL).remove();
+      bar.append(sp, q, ...[okL, okP].filter(b => b.isConnected), no); pass.append(bar);
+      const c = clash(p, a, b, null).filter(x => !x.lock);
+      if (c.length) { const w = document.createElement("p"); w.className = "hint"; w.textContent = "Les propositions qui chevauchent cette sélection seront rejetées : votre correction les remplacera. Les annotations verrouillées restent conservées."; pass.append(w); }
+    } else {
+      const hn = document.createElement("p"); hn.className = "hint";
+      hn.textContent = "Pour ajouter une entité manquante : sélectionnez-la à la souris, ou cliquez son premier mot puis son dernier mot.";
+      pass.append(hn);
+    }
+
+    const box = document.createElement("div"); box.className = "tablebox";
+    const tb = document.createElement("table"); tb.className = "sp";
+    tb.innerHTML = "<thead><tr><th>Forme</th><th>Proposition</th><th>Décision</th></tr></thead>";
+    const body = document.createElement("tbody");
+    const S = spansOf(p);
+    if (!S.length && !r.add.length) {
+      const tr = document.createElement("tr"), td = document.createElement("td"); td.colSpan = 3; td.className = "hint";
+      td.textContent = blind() ? "Rien d'ajouté pour l'instant." : "Aucune proposition ici. S'il y a un lieu ou une personne, ajoutez-le depuis le texte.";
+      tr.append(td); body.append(tr);
+    }
+    for (const group of proposalGroups(p)) {
+      const competing = group.spans.length > 1;
+      if (competing) {
+        const tr = document.createElement("tr"), cell = document.createElement("td");
+        tr.className = "variant-group"; cell.colSpan = 3;
+        const title = document.createElement("strong"); title.textContent = "Quelle forme faut-il retenir ?";
+        const help = document.createElement("p"); help.className = "hint";
+        help.textContent = TYPE ? "Ces propositions se chevauchent. Retenir une forme rejette les variantes qui la chevauchent. Pour corriger : sélectionnez les mots exacts dans le passage, puis choisissez l'étiquette de cette revue." : "Ces propositions se chevauchent. Retenir une forme rejette les variantes qui la chevauchent. Pour corriger : sélectionnez les mots exacts dans le passage, puis choisissez Lieu ou Personne.";
+        cell.append(title, help);
+        const controls = document.createElement("div"); controls.className = "ctl";
+        for (const [value, label] of [["n", "Aucune de ces propositions"], ["u", "À discuter"]]) {
+          const b = button(label, "b", () => groupDecision(group, value)); b.disabled = ro;
+          b.dataset.groupDecision = value;
+          b.setAttribute("aria-pressed", String(group.spans.filter(s=>s[3]!=="o").every(s=>dec(p,s)===value)));
+          controls.append(b);
+        }
+        cell.append(controls); tr.append(cell); body.append(tr);
+      }
+    for (const s of group.spans) {
+      const key = skey(s), tr = document.createElement("tr"), lock = s[3] === "o";
+      if (lock) tr.className = "locked";
+      if (focus && focus.t === "s" && focus.key === key) tr.className = "focus";
+      tr.dataset.key = key;
+      const c1 = document.createElement("td");
+      const sf = document.createElement("div"); sf.className = "surf"; sf.textContent = words(p, s[0], s[1]);
+      sf.onclick = () => { if (!lock) { focus = { t: "s", key, s }; render(); } flash(s[0], s[1]); };
+      const src = document.createElement("div"); src.className = "src";
+      if (lock) src.textContent = s[7] === "doubt" ? "Votre décision gold v2 : doute" : "Votre décision gold v2 : lieu";
+      else { const found = SYS.filter((n, i) => s[5] & (1 << i)); src.textContent = "Trouvé par : " + (found.join(", ") || "personne"); }
+      c1.append(sf, src);
+      const c2 = document.createElement("td");
+      const pl = document.createElement("span"); pl.className = "pill " + s[3]; pl.textContent = (s[2] === "L" ? "LOC" : "PER") + " · " + STL[s[3]];
+      const why = document.createElement("div"); why.className = "why"; why.textContent = lock ? "" : s[4];
+      c2.append(pl, why);
+      const c3 = document.createElement("td");
+      if (lock) { const d = document.createElement("span"); d.className = "dflt"; d.textContent = "verrouillé"; c3.append(d); }
+      else {
+        const e = ex(p, s) || {};
+        const ctl = document.createElement("div"); ctl.className = "ctl";
+        ctl.append(seg(competing ? [["y", "Retenir cette forme"]] : [["y", "Valider"], ["n", "Rejeter"], ["u", "À discuter"]], e.d || dflt(s), v => decide(key, v), ro));
+        if (competing) { const status = document.createElement("span"); status.className="hint"; status.textContent = ({y:"Forme retenue", n:"Non retenue", u:"À discuter"})[dec(p,s)] || "À choisir"; ctl.append(status); }
+        if (TYPE) { const lb = document.createElement("span"); lb.className = "pill ad"; lb.textContent = TYPE; ctl.append(lb); }
+        else ctl.append(seg([["LOC", "LOC"], ["PER", "PER"]], labOf(p, s), v => relabel(key, v), ro));
+        c3.append(ctl);
+        if (!e.d && dflt(s)) { const d = document.createElement("div"); d.className = "dflt"; d.textContent = "par défaut, suit la proposition"; c3.append(d); }
+        if (dec(p, s) === "y") {
+          const c = clash(p, s[0], s[1], key);
+          if (c.length) { const w = document.createElement("div"); w.className = "warn"; w.textContent = c.some(x => x.lock) ? "Chevauche un lieu verrouillé de gold v2." : "Chevauche une autre entité acceptée."; c3.append(w); }
+        }
+      }
+      tr.append(c1, c2, c3); body.append(tr);
+    }
+    }
+    r.add.forEach((x, j) => {
+      const [a, b, l, f] = x;
+      const tr = document.createElement("tr"); if (focus && focus.t === "a" && focus.j === j) tr.className = "focus";
+      const c1 = document.createElement("td"); const sf = document.createElement("div"); sf.className = "surf"; sf.textContent = words(p, a, b);
+      sf.onclick = () => { focus = { t: "a", j, x }; render(); flash(a, b); }; c1.append(sf);
+      const c2 = document.createElement("td"); const pl = document.createElement("span"); pl.className = "pill ad"; pl.textContent = "ajouté"; c2.append(pl);
+      const c3 = document.createElement("td"); const ctl = document.createElement("div"); ctl.className = "ctl";
+      if (TYPE) { const lb = document.createElement("span"); lb.className = "pill ad"; lb.textContent = l; ctl.append(lb); }
+      else ctl.append(seg([["LOC", "LOC"], ["PER", "PER"]], l, v => relabelAdd(j, v), ro));
+      ctl.append(seg([["u", "Doute"]], f === "u" ? "u" : "", () => doubtAdd(j), ro));
+      const del = button("Retirer", "b", () => removeAdd(j)); del.disabled = ro; ctl.append(del);
+      c3.append(ctl);
+      const c = clash(p, a, b, "add" + j);
+      if (c.length) { const w = document.createElement("div"); w.className = "warn"; w.textContent = c.some(z => z.lock) ? "Chevauche un lieu verrouillé de gold v2." : "Chevauche une autre entité acceptée."; c3.append(w); }
+      tr.append(c1, c2, c3); body.append(tr);
+    });
+    tb.append(body); box.append(tb); pass.append(box);
+
+    if (!blind() && p.unm && p.unm.length) {
+      const u = document.createElement("p"); u.className = "hint";
+      u.textContent = "Gemma a aussi proposé, sans le retrouver dans le texte : " + p.unm.join(" ; ") + ".";
+      pass.append(u);
+    }
+
+    const k = document.createElement("p"); k.className = "keys";
+    k.innerHTML = "Clavier : <kbd>↑</kbd><kbd>↓</kbd> ou <kbd>j</kbd><kbd>k</kbd> entité · <kbd>y</kbd> oui · <kbd>n</kbd> non · <kbd>u</kbd> doute · <kbd>l</kbd> LOC · <kbd>p</kbd> PER (ajoute la sélection, sinon change l'étiquette) · <kbd>d</kbd> relu · <kbd>←</kbd><kbd>→</kbd> passage · <kbd>Échap</kbd> annule la sélection";
+    pass.append(k);
+
+    const nl = document.createElement("label"); nl.className = "hint"; nl.htmlFor = "note"; nl.textContent = "Note sur ce passage (facultatif)";
+    const ta = document.createElement("textarea"); ta.id = "note"; ta.value = r.note || ""; ta.disabled = ro;
+    ta.oninput = () => { R(p.k).note = ta.value; changed(p, true); };
+    pass.append(nl, ta);
+
+    const ft = document.createElement("div"); ft.className = "foot";
+    const nav = document.createElement("div"); nav.style.display = "flex"; nav.style.gap = "8px";
+    const v = visible(), at = v.indexOf(cur);
+    const prev = button("← Précédent", "b", () => go(v[at - 1])); prev.disabled = at <= 0;
+    const next = button("Suivant →", "b", () => go(v[at + 1])); next.disabled = at < 0 || at >= v.length - 1;
+    nav.append(prev, next);
+    const sv = document.createElement("span"); sv.className = "save"; sv.id = "saveState"; sv.textContent = saveText();
+    const o = openCount(p);
+    const done = button(r.done ? "Relu ✓ (annuler)" : "Marquer comme relu (d)", r.done ? "b" : "b primary", toggleDone);
+    done.id = "doneBtn"; done.disabled = ro;
+    if (!r.done && o) done.title = o + " proposition(s) encore à trancher";
+    ft.append(nav, sv, done); pass.append(ft);
+  }
+
+  function seg(opts, val, f, ro) {
+    const w = document.createElement("div"); w.className = "seg"; w.setAttribute("role", "group");
+    for (const [v, lab] of opts) {
+      const b = document.createElement("button"); b.type = "button"; b.className = v; b.textContent = lab;
+      b.setAttribute("aria-pressed", String(val === v)); b.disabled = ro;
+      b.onclick = () => f(v); w.append(b);
+    }
+    return w;
+  }
+  function button(t, c, f) { const b = document.createElement("button"); b.type = "button"; b.className = c; b.textContent = t; b.onclick = f; return b; }
+
+  // ---------- actions ----------
+  function nextOpen(p, after) {
+    const it = items(p), i = it.findIndex(x => sameItem(x, after));
+    return it.slice(i + 1).find(x => x.t === "s" && !dec(p, x.s)) || it.slice(0, Math.max(i, 0)).find(x => x.t === "s" && !dec(p, x.s)) || it[i] || null;
+  }
+  function decide(key, v) {
+    if (!editable()) return;
+    const p = ALL[cur], sp = R(p.k).sp, s = p.spans.find(z => skey(z) === key); if (!s || s[3] === "o") return;
+    const e = sp[key] || {};
+    if (e.d === v) { delete e.d; } else e.d = v;
+    if (e.d || e.l) sp[key] = e; else delete sp[key];
+    if (e.d === "y") for (const z of spansOf(p)) {      // choosing a variant also replaces a previously selected overlapping variant
+      const k2 = skey(z);
+      if (k2 !== key && z[3] !== "o" && ovl(s[0], s[1], z[0], z[1])) sp[k2] = { ...(sp[k2] || {}), d: "n" };
+    }
+    focus = { t: "s", key, s };
+    if (e.d) focus = nextOpen(p, focus) || focus;
+    changed(p);
+  }
+  function relabel(key, v) {
+    if (!editable()) return;
+    const p = ALL[cur], sp = R(p.k).sp, s = p.spans.find(z => skey(z) === key); if (!s || s[3] === "o") return;
+    const e = sp[key] || {}, base = s[2] === "L" ? "LOC" : "PER";
+    if (v === base) delete e.l; else e.l = v;
+    if (e.d || e.l) sp[key] = e; else delete sp[key];
+    focus = { t: "s", key, s }; changed(p);
+  }
+  function addSpan(a, b, l) {
+    if (!editable()) return;
+    const p = ALL[cur], r = R(p.k);
+    if (r.add.some(x => x[0] === a && x[1] === b)) { sel = null; render(); return; }
+    for (const z of spansOf(p)) {
+      const k2 = skey(z);
+      if (z[3] !== "o" && ovl(a, b, z[0], z[1])) r.sp[k2] = { ...(r.sp[k2] || {}), d: "n" };
+    }
+    r.add.push([a, b, l]); r.add.sort((x, y) => x[0] - y[0] || x[1] - y[1]);
+    const j = r.add.findIndex(x => x[0] === a && x[1] === b);
+    sel = null; focus = { t: "a", j, x: r.add[j] }; changed(p);
+  }
+  function relabelAdd(j, v) { if (!editable()) return; const p = ALL[cur], x = R(p.k).add[j]; if (!x) return; x[2] = v; focus = { t: "a", j, x }; changed(p); }
+  function doubtAdd(j) { if (!editable()) return; const p = ALL[cur], x = R(p.k).add[j]; if (!x) return; if (x[3] === "u") x.length = 3; else x[3] = "u"; focus = { t: "a", j, x }; changed(p); }
+  function removeAdd(j) { if (!editable()) return; const p = ALL[cur]; R(p.k).add.splice(j, 1); focus = items(p)[0] || null; changed(p); }
+  function toggleDone() {
+    if (!editable()) return;
+    const p = ALL[cur], r = R(p.k); r.done = !r.done; changed(p);
+    if (r.done) { const v = visible(); const nx = v.find(i => i > cur) ?? v.find(i => i !== cur); if (nx !== undefined) go(nx); }
+  }
+
+  function clickTok(i) {
+    const p = ALL[cur];
+    const hitS = spansOf(p).find(s => s[3] !== "o" && i >= s[0] && i < s[1]);
+    const hitA = (rev[p.k] ? rev[p.k].add : []).findIndex(x => i >= x[0] && i < x[1]);
+    if (!sel) { sel = [i, i]; if (hitA >= 0) focus = { t: "a", j: hitA, x: rev[p.k].add[hitA] }; else if (hitS) focus = { t: "s", key: skey(hitS), s: hitS }; }
+    else if (sel[0] === sel[1] && i === sel[0]) sel = null;
+    else if (sel[0] === sel[1] && Math.abs(i - sel[0]) <= 14) sel = [Math.min(sel[0], i), Math.max(sel[0], i)];
+    else sel = [i, i];
+    render();
+  }
+  function flash(a, b) {
+    for (let t = a; t < b; t++) { const el = $("pass").querySelector('.tok[data-i="' + t + '"]'); if (el) { el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 900); } }
+  }
+
+  document.addEventListener("keydown", e => {
+    if (e.target.closest && e.target.closest("textarea, select, input")) return;
+    if (e.metaKey || e.ctrlKey || e.altKey || cur < 0) return;
+    const p = ALL[cur], it = items(p), k = e.key;
+    const i = it.findIndex(x => sameItem(x, focus));
+    const kl = k.length === 1 ? k.toLowerCase() : k;
+    if (k === "Escape") { if (sel) { sel = null; render(); } return; }
+    if (k === "ArrowDown" || kl === "j") { if (it.length) { focus = it[Math.min(i + 1, it.length - 1)]; render(); e.preventDefault(); } return; }
+    if (k === "ArrowUp" || kl === "k") { if (it.length) { focus = it[Math.max(i - 1, 0)]; render(); e.preventDefault(); } return; }
+    if (k === "ArrowRight" || k === "ArrowLeft") { const v = visible(), at = v.indexOf(cur); const n = v[at + (k === "ArrowRight" ? 1 : -1)]; if (n !== undefined) { go(n); e.preventDefault(); } return; }
+    if (kl === "d") { toggleDone(); return; }
+    if (kl === "l" || kl === "p") {
+      const lab = kl === "l" ? "LOC" : "PER";
+      if (sel) { addSpan(Math.min(sel[0], sel[1]), Math.max(sel[0], sel[1]) + 1, lab); return; }
+      if (focus && focus.t === "s") relabel(focus.key, lab); else if (focus && focus.t === "a") relabelAdd(focus.j, lab);
+      return;
+    }
+    if (kl === "y" || kl === "n" || kl === "u") {
+      if (!focus) return;
+      if (focus.t === "s") decide(focus.key, kl);
+      else if (kl === "u") doubtAdd(focus.j);
+      else if (kl === "n") removeAdd(focus.j);
+    }
+  });
+
+  // ---------- saving ----------
+  let state = "", writing = new Map(), timers = new Map(), profileWritten = false;
+  function saveText() { return me.mode === "local" ? (state || "enregistré dans ce navigateur") : view.uid !== me.uid ? "lecture seule" : state; }
+  function setState(s) { state = s; const el = $("saveState"); if (el) el.textContent = saveText(); }
+  function bodyOf(k) {
+    const r = rev[k], p = ALL[byK.get(k)];
+    return { pid: p.id, lang: p.lang, done: !!r.done, sp: JSON.parse(JSON.stringify(r.sp)), add: r.add.map(x => x.slice()), note: r.note || "",
+             mode: blind() ? "aveugle" : "propositions", guide: D.guide, data: D.version };
+  }
+  function changed(p, quiet) {
+    dirty.add(p.k);
+    if (!quiet) { render(); renderList(); }
+    stats();
+    if (me.mode === "local") { localSave(); return; }
+    if (me.mode === "disk") { diskSave(); return; }
+    setState("modifications en attente…");
+    clearTimeout(timers.get(p.k));
+    timers.set(p.k, setTimeout(() => flush(p.k), 600));
+  }
+  async function flush(k) {
+    if (writing.get(k)) { timers.set(k, setTimeout(() => flush(k), 400)); return; }
+    writing.set(k, true);
+    const body = { ...bodyOf(k), at: new Date().toISOString() };
+    try {
+      if (!profileWritten) {
+        profileWritten = true;
+        await db.doc("ann/" + me.uid).set({ role: view.role === "A" ? "owner" : "second", mode: body.mode, page: "gold3", at: body.at });
+      }
+      await db.collection("ann/" + me.uid + "/p").doc(k).set(body);
+      if (JSON.stringify({ ...body, at: 0 }) === JSON.stringify({ ...bodyOf(k), at: 0 })) dirty.delete(k);
+      setState("enregistré");
+    } catch (e) {
+      if (e && e.code === "invalid_argument") { me.canWrite = false; showBanner("Cette vue ne peut pas enregistrer de décisions : vous pouvez lire, pas modifier. Demandez au propriétaire un accès Contributeur."); render(); }
+      else if (e && e.code === "unavailable") { setTimeout(() => flush(k), 1500 + Math.random() * 1000); }
+      else if (e && e.code === "quota_exceeded") setState("base pleine : prévenez le propriétaire");
+      else setState("échec de l'enregistrement : " + ((e && e.message) || "erreur"));
+    } finally { writing.set(k, false); }
+  }
+  function showBanner(t) { const b = $("banner"); b.textContent = t; b.hidden = !t; }
+
+  // local mode: one in-memory store per local reviewer, kept in this browser if it allows it
+  const local = {};
+  function localLoad(uid) {
+    if (!local[uid]) { local[uid] = {}; try { const s = localStorage.getItem("gold3-review-" + uid); if (s) local[uid] = JSON.parse(s) || {}; } catch (e) {} }
+    return local[uid];
+  }
+  function localSave() {
+    local[view.uid] = rev;
+    try {
+      localStorage.setItem("gold3-review-" + view.uid, JSON.stringify(rev));
+      dirty.clear(); setState("enregistré dans ce navigateur");
+    } catch (e) {
+      setState("Échec de sauvegarde : exportez vos décisions maintenant.");
+      $("backup-status").textContent = "Le navigateur ne peut pas enregistrer. Exportez avant de fermer cette page.";
+    }
+  }
+
+  // ---------- switching reviewers ----------
+  function setView(uid, role) {
+    if (unsub) { unsub(); unsub = null; }
+    for (const t of timers.values()) clearTimeout(t);
+    timers.clear();
+    view = { uid, role }; rev = {}; dirty = new Set(); sel = null;
+    $("subset").hidden = $("subsetLab").hidden = role !== "A";
+    $("sub").textContent = role === "A"
+      ? "Jeu de test NER v3 : lieux (LOC) et personnes (PER), six langues, 1450-1700. Confirmez, rejetez ou changez l'étiquette des propositions, ajoutez ce qui manque, puis marquez le passage comme relu."
+      : blind()
+        ? "Double annotation, 200 passages. Annotez chaque lieu (LOC) et chaque personne (PER) en le sélectionnant dans le texte, puis marquez le passage comme relu."
+        : "Double annotation, 200 passages. Confirmez, rejetez ou changez l'étiquette des propositions, ajoutez ce qui manque, puis marquez le passage comme relu.";
+    if (me.mode === "local") rev = JSON.parse(JSON.stringify(localLoad(uid)));
+    if (me.mode === "disk") rev = diskRecords;
+    const v = visible(); cur = v.length ? v[0] : (scopeP()[0] ? byK.get(scopeP()[0].k) : -1);
+    if (cur >= 0) { const it = items(ALL[cur]); focus = it.find(x => x.t === "s" && !dec(ALL[cur], x.s)) || it[0] || null; }
+    stats(); renderList(); render();
+    if (me.mode === "db") subscribe(uid);
+  }
+  function subscribe(uid) {
+    setState("chargement…");
+    unsub = db.collection("ann/" + uid + "/p").onSnapshot(snap => {
+      if (view.uid !== uid) return;
+      for (const doc of snap.docs) {
+        if (dirty.has(doc.id) || !byK.has(doc.id)) continue;
+        const b = doc.data() || {};
+        rev[doc.id] = { done: !!b.done, sp: JSON.parse(JSON.stringify(b.sp || {})), add: Array.isArray(b.add) ? b.add.map(x => x.slice()) : [], note: b.note || "" };
+      }
+      if (state === "chargement…") setState("à jour");
+      const ta = $("note");
+      if (!(ta && document.activeElement === ta)) render();
+      renderList(); stats();
+    }, () => showBanner("La connexion aux décisions enregistrées est perdue. Rechargez la page."));
+  }
+  function fillReviewer(opts, selected) {
+    const s = $("reviewer"); s.innerHTML = "";
+    for (const [v, t] of opts) { const o = document.createElement("option"); o.value = v; o.textContent = t; s.append(o); }
+    s.value = selected; s.disabled = opts.length < 2;
+  }
+
+  $("filt").onchange = $("subset").onchange = () => { renderList(); const v = visible(); if (v.length && !v.includes(cur)) go(v[0]); else render(); stats(); };
+
+  // Portable backups preserve the data version and reviewer separation.
+  $("export-review").onclick = () => {
+    const payload = {format:"renner-gold3-review-v1", data:D.version, source:D.source_sha256_12,
+      guide:D.guide, reviewer:view.uid, role:view.role, at:new Date().toISOString(), records:rev};
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+    const url = URL.createObjectURL(blob), link = document.createElement("a");
+    link.href=url; link.download=`renner-gold3-${view.role}-${new Date().toISOString().slice(0,10)}.json`;
+    link.click(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $("backup-status").textContent="Sauvegarde exportée. Conservez ce fichier pour reprendre ou remettre vos décisions.";
+  };
+  $("import-review").onclick = () => $("import-file").click();
+  $("import-file").onchange = async event => {
+    const file=event.target.files[0]; if(!file) return;
+    try {
+      if(!["local", "disk"].includes(me.mode)) throw new Error("Import indisponible.");
+      const payload=JSON.parse(await file.text());
+      if(payload.format!=="renner-gold3-review-v1" || payload.data!==D.version || payload.source!==D.source_sha256_12 || payload.guide!==D.guide)
+        throw new Error("Cette sauvegarde ne correspond pas à ce jeu de passages.");
+      if(payload.role!==view.role) throw new Error("Sélectionnez le même relecteur (A ou B) que dans la sauvegarde.");
+      const incoming=payload.records;
+      if(!incoming || typeof incoming!=="object" || Array.isArray(incoming)) throw new Error("Format de décisions invalide.");
+      for(const [key, record] of Object.entries(incoming)) {
+        if(!byK.has(key) || (view.role==="B" && !ALL[byK.get(key)].dbl)) throw new Error("Passage hors du jeu de ce relecteur.");
+        if(!record || typeof record.done!=="boolean" || typeof record.note!=="string" || !record.sp || typeof record.sp!=="object" || Array.isArray(record.sp) || !Array.isArray(record.add)) throw new Error("Décision invalide.");
+        const p=ALL[byK.get(key)], n=p.ts.length;
+        for(const item of record.add) if(!Array.isArray(item) || !Number.isInteger(item[0]) || !Number.isInteger(item[1]) || item[0]<0 || item[1]<=item[0] || item[1]>n || !["LOC","PER"].includes(item[2]) || (item.length>3 && item[3]!=="u")) throw new Error("Empan ajouté invalide.");
+        for(const [span, decision] of Object.entries(record.sp)) {
+          if(!p.spans.some(s=>s[3]!=="o" && `${s[0]}-${s[1]}-${s[2]}`===span) || !decision || (!decision.d && !decision.l) || (decision.d && !["y","n","u"].includes(decision.d)) || (decision.l && !["LOC","PER"].includes(decision.l))) throw new Error("Décision de proposition invalide.");
+        }
+      }
+      const conflicts=Object.keys(incoming).filter(k=>rev[k] && JSON.stringify(rev[k])!==JSON.stringify(incoming[k]));
+      if(conflicts.length) throw new Error(`${conflicts.length} passages ont déjà des décisions différentes. Exportez la session actuelle ; aucun écrasement n'a été effectué.`);
+      rev={...rev,...incoming}; if(me.mode==="disk") { dirty.add("import"); diskSave(); } else localSave(); renderList(); render(); stats();
+      $("backup-status").textContent=`${Object.keys(incoming).length} passages importés.`;
+    } catch(error) { $("backup-status").textContent=error.message; }
+    event.target.value="";
+  };
+
+  // Disk mode: the server acknowledges only durable transactions. No browser writes.
+  let diskSession, diskRevision = 0, diskRecords = {}, diskBusy = false, diskConflict = false;
+  async function diskRequest(path, payload) {
+    const response = await fetch(path, payload ? {method:"POST", headers:{"Content-Type":"application/json", "X-Review-Token":diskSession.token}, body:JSON.stringify(payload)} : {});
+    const result = await response.json();
+    if (!response.ok) { const error = new Error(result.error || "Serveur indisponible"); error.conflict = response.status === 409; throw error; }
+    return result;
+  }
+  async function diskSave() {
+    if (diskBusy || diskConflict) return;
+    diskBusy = true; $("reviewer").disabled = true;
+    setState("Enregistrement sur disque…");
+    try {
+      do {
+        const snapshot = JSON.stringify(rev);
+        const result = await diskRequest("/api/review/" + view.role, {identity:diskSession.identity, revision:diskRevision, records:JSON.parse(snapshot)});
+        diskRevision = result.revision;
+        if (snapshot === JSON.stringify(rev)) dirty.clear();
+      } while (dirty.size);
+      setState("Enregistré sur disque ✓");
+      $("backup-status").textContent = "Sauvegarde automatique sur votre Mac · historique et copie de secours conservés.";
+    } catch (error) {
+      diskConflict = !!error.conflict;
+      setState("Non enregistré : " + error.message);
+      $("backup-status").textContent = "Modifications en attente. Gardez cette page ouverte. " + error.message;
+      if (!diskConflict) setTimeout(diskSave, 3000);
+      else { me.canWrite = false; render(); }
+    } finally { diskBusy = false; $("reviewer").disabled = dirty.size > 0; }
+  }
+  async function diskLoad(role) {
+    me.canWrite = false; $("reviewer").disabled = true;
+    const stored = await diskRequest("/api/review/" + role);
+    diskRevision = stored.revision; diskRecords = stored.records;
+    // Recover the former local store once. Keep it intact as an extra recovery copy.
+    let old = {};
+    try { old = JSON.parse(localStorage.getItem("gold3-review-local-" + role) || "{}"); } catch {}
+    const meaningful = r => r && (r.done || r.note || Object.keys(r.sp || {}).length || (r.add || []).length);
+    const entries = Object.entries(old).filter(([k,r])=>meaningful(r));
+    const conflicts = entries.filter(([k,r])=>diskRecords[k] && JSON.stringify(diskRecords[k])!==JSON.stringify(r));
+    // A successful migration marker belongs on disk, inferred by existing revisions:
+    // never re-import old browser decisions after disk editing has begun.
+    if (!stored.revision && entries.length) {
+      const result = await diskRequest("/api/review/" + role, {identity:diskSession.identity, revision:0, records:Object.fromEntries(entries)});
+      diskRevision = result.revision; diskRecords = Object.fromEntries(entries);
+    } else if (conflicts.length) {
+      const b = button("Exporter les anciennes décisions du navigateur", "b", () => {
+        const blob = new Blob([JSON.stringify({format:"renner-gold3-review-v1",data:D.version,source:D.source_sha256_12,guide:D.guide,reviewer:"local-"+role,role,records:old},null,2)],{type:"application/json"});
+        const url=URL.createObjectURL(blob), a=document.createElement("a"); a.href=url;a.download="anciennes-decisions-"+role+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+      });
+      $("backup-status").parentElement.append(b);
+    }
+    me.uid = "local-" + role; me.canWrite = true; diskConflict = false;
+    setView(me.uid, role); setState("Enregistré sur disque ✓"); $("reviewer").disabled = false;
+  }
+  window.addEventListener("beforeunload", event => { if (me.mode === "disk" && (dirty.size || diskBusy)) { event.preventDefault(); event.returnValue=""; } });
+  if (D.config && D.config.disk_storage) {
+    me.mode = "disk"; me.canWrite = false;
+    try {
+      diskSession = await diskRequest("/api/session");
+      if (diskSession.identity.version!==D.version || diskSession.identity.source_sha256_12!==D.source_sha256_12 || diskSession.identity.guide!==D.guide) throw new Error("Jeu de passages différent sur le serveur.");
+      fillReviewer([["local-A", "A : votre relecture"], ["local-B", "B : annotation indépendante"]], "local-A");
+      $("reviewer").onchange = async () => { try { await diskLoad($("reviewer").value === "local-B" ? "B" : "A"); } catch(e) { me.canWrite=false;showBanner("Chargement impossible : " + e.message);render(); } };
+      await diskLoad("A");
+      showBanner("Chaque décision est enregistrée automatiquement sur votre Mac, avec un historique. Attendez « Enregistré sur disque ✓ » avant de fermer.");
+      $("backup-status").textContent="Sauvegarde automatique sur disque · aucune exportation régulière nécessaire.";
+    } catch (error) { me.canWrite=false; showBanner("Sauvegarde sur disque indisponible : " + error.message + ". Rechargez lorsque le serveur est disponible."); }
+    return;
+  }
+
+  // ---------- start: local first, then light up the store ----------
+  const LOCAL_OPTS = [["local-A", "A : propriétaire (mode local)"], ["local-B", "B : second annotateur (mode local)"]];
+  function startLocal(msg) {
+    me.mode = "local"; me.uid = "local-A"; me.canWrite = true;
+    fillReviewer(LOCAL_OPTS, "local-A");
+    $("reviewer").onchange = () => { const u = $("reviewer").value; me.uid = u; setView(u, u === "local-B" ? "B" : "A"); };
+    showBanner(msg);
+    setView("local-A", "A");
+  }
+  const C = window.claude;
+  if (!C || !C.use) { startLocal("Vos décisions sont enregistrées dans ce navigateur. Exportez une sauvegarde après chaque séance. Le mode B réserve les 200 passages à une annotation indépendante, sans propositions."); return; }
+  startLocal("Connexion à la base de décisions…");
+  const [d, u] = await Promise.all([C.use("db"), C.use("user")]);
+  const uid = u ? await u.id() : null;
+  if (!d || !uid) { showBanner("Vos décisions ne seront pas enregistrées dans cette vue. Ouvrez la page sur claude.ai, connecté, pour les garder."); return; }
+  db = d; me.mode = "db"; me.uid = uid; me.owner = await u.isOwner();
+  const w = await u.can("data.write");
+  me.canWrite = w !== false;
+  showBanner(me.canWrite ? "" : "Lecture seule : votre accès ne permet pas d'enregistrer. Demandez au propriétaire un accès Contributeur.");
+  const myRole = me.owner ? "A" : "B";
+  fillReviewer([[uid, me.owner ? "Mes décisions (A, propriétaire)" : "Mes décisions (double annotation)"]], uid);
+  $("reviewer").onchange = () => { const v = $("reviewer").value; setView(v, v === uid ? myRole : (profiles[v] && profiles[v].role === "owner" ? "A" : "B")); };
+  setView(uid, myRole);
+  if (me.owner) {
+    // the owner can read the other annotators' records (read-only) to compare them
+    db.collection("ann").onSnapshot(async snap => {
+      profiles = {};
+      for (const doc of snap.docs) profiles[doc.id] = doc.data() || {};
+      const others = Object.keys(profiles).filter(x => x !== uid);
+      let names = {}; try { names = await u.profiles(others); } catch (e) {}
+      const opts = [[uid, "Mes décisions (A, propriétaire)"]];
+      others.forEach((x, n) => opts.push([x, ((names[x] && names[x].name) || "Annotateur " + (n + 2)) + " (lecture seule)"]));
+      fillReviewer(opts, view.uid);
+    }, () => {});
+  }
+})();
+</script>

@@ -1,5 +1,10 @@
 /* Release interface: preserve the atlas's data and map behaviour. */
-:root { --bg:#f5f4ef; --surface:#fffefa; --fg:#203a36; --muted:#61716b; --line:#dce2d9; --chip:#edf1e9; --accent:#a64725; --space:#f0f2ec; --ocean:#cee0df; --land:#f6f3e8; --coast:#a7bab3; }
+/* Metropolis v12 (Chris M. Simpson, SIL OFL 1.1, via TypeHaus) self-hosted as a web font, full charset incl. Latin Extended-A (web/fonts/, copied to the site root by build_release_ui.py). */
+@font-face { font-family:"Metropolis"; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/metropolis-400.woff2') format('woff2'); }
+@font-face { font-family:"Metropolis"; font-style:normal; font-weight:500; font-display:swap; src:url('fonts/metropolis-500.woff2') format('woff2'); }
+@font-face { font-family:"Metropolis"; font-style:normal; font-weight:600; font-display:swap; src:url('fonts/metropolis-600.woff2') format('woff2'); }
+@font-face { font-family:"Metropolis"; font-style:normal; font-weight:700; font-display:swap; src:url('fonts/metropolis-700.woff2') format('woff2'); }
+:root { --bg:#f5f4ef; --surface:#fffefa; --fg:#203a36; --muted:#61716b; --line:#dce2d9; --chip:#edf1e9; --accent:#a64725; --space:#f0f2ec; --ocean:#cee0df; --land:#f6f3e8; --coast:#a7bab3; --body:"Metropolis",system-ui,-apple-system,"Segoe UI",sans-serif; }
 * { box-sizing:border-box; }
 .wrap { max-width:1500px; padding:24px 36px 32px; gap:20px; }
 header { display:grid; grid-template-columns:1fr auto; gap:8px 24px; align-items:center; }

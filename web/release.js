@@ -43,27 +43,35 @@ document.querySelector('.header-link').onclick = () => { document.getElementById
 const fsb = document.getElementById('fsbtn');
 if (fsb) {
   // Fullscreen layout follows the real Fullscreen API, the body.fs class, or F11 (detected on resize).
+  let fsUser = false;  // the button asked for the layout; keeps it when the Fullscreen API is unavailable
+  const f11 = () => !document.fullscreenElement &&
+                   window.innerWidth >= screen.width - 2 && window.innerHeight >= screen.height - 2;
   const fsSet = () => {
-    const fs = !!document.fullscreenElement || document.body.classList.contains('fs') ||
-               (window.innerWidth >= screen.width - 2 && window.innerHeight >= screen.height - 2);
-    if (fs && !document.body.classList.contains('fs')) document.body.classList.add('fs');
-    if (!fs && !document.fullscreenElement) document.body.classList.remove('fs');
+    const fs = !!document.fullscreenElement || fsUser || f11();
+    document.body.classList.toggle('fs', fs);
+    const label = fs ? 'Exit fullscreen' : 'Fullscreen';
     fsb.setAttribute('aria-pressed', String(fs));
-    fsb.textContent = fs ? 'Exit fullscreen' : 'Fullscreen';
+    fsb.textContent = label;
+    fsb.title = label;
+    fsb.setAttribute('aria-label', label);
   };
   fsb.onclick = () => {
-    const want = !document.fullscreenElement && !document.body.classList.contains('fs');
-    if (want) {
-      if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen().catch(() => {}); }
-      document.body.classList.add('fs');
-    } else {
-      if (document.fullscreenElement) { document.exitFullscreen(); }
-      document.body.classList.remove('fs');
+    const inFs = !!document.fullscreenElement || fsUser || f11();
+    fsUser = !inFs;  // one click always toggles: leaving drops the fallback layout immediately, even if the API call is still pending
+    if (inFs) {
+      if (document.fullscreenElement && document.exitFullscreen) { document.exitFullscreen().catch(() => {}); }
+    } else if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(() => {});
     }
     fsSet();
+    window.dispatchEvent(new Event('resize'));  // let the map recompute its size even when no real fullscreen happens
   };
-  document.addEventListener('fullscreenchange', fsSet);
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) fsUser = false;  // Esc leaves fullscreen; drop the layout too
+    fsSet();
+  });
   window.addEventListener('resize', fsSet);
+  fsSet();
 }
 syncContext();
 

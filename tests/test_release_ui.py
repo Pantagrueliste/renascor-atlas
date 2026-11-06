@@ -14,7 +14,7 @@ PAYLOAD = '<script>const D = {"mentions":334021,"name":"A & B"};</script>'
 SOURCE = '''<!doctype html><html><head></head><body><div class="wrap">
 <header>Old header</header>
   <section class="filters">Old filters</section>
-  <div class="main"><section class="stage"><svg id="tl"></svg></section></div>
+  <div class="main"><section class="stage"><div class="mapbox"><div id="map"></div></div><svg id="tl"></svg></section></div>
 <section class="notes">Method</section>
   <p class="foot">Atlas v2.2 · 19 October 2026</p></div>''' + PAYLOAD + '</body></html>'
 
@@ -60,6 +60,17 @@ def test_refuses_overwriting_or_nesting_source(tmp_path):
 def test_refuses_double_redesign():
     with pytest.raises(ValueError, match='already has'):
         ui.redesign(ui.redesign(SOURCE))
+
+
+def test_fullscreen_toggle_is_an_unobtrusive_map_button():
+    html = ui.redesign(SOURCE)
+    header = html[html.index('<header>'):html.index('</header>')]
+    assert 'fsbtn' not in header and 'sidebtn' not in header
+    assert html.index('id="fsbtn"') > html.index('<div class="mapbox">')
+    assert '<button type="button" id="fsbtn" class="fs-btn" aria-pressed="false"' in html
+    tools_start = html.index('class="map-tools"')
+    tools_html = html[tools_start:html.index('</div>', tools_start)]
+    assert 'sidebtn' in tools_html and 'fsbtn' not in tools_html  # the fullscreen button is pinned to a viewport corner, not on the map
 
 
 def test_inherited_assets_fill_gaps_without_overwriting_current_shards(tmp_path):

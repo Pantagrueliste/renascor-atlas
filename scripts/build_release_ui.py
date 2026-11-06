@@ -22,8 +22,6 @@ def redesign(html):
     <h1>Renascor Atlas</h1>
     <p class="lede">Explore the places mentioned in texts from 1450–1700. Search for a place, follow a letter, or select a point to discover its sources.</p></div>
     <a class="header-link" href="#about-atlas">About the atlas ↗</a>
-    <button type="button" class="header-link" id="fsbtn" aria-pressed="false">Fullscreen</button>
-    <button type="button" id="sidebtn" aria-expanded="true">Hide panel</button>
     <div class="facts" id="facts" aria-label="Coverage of the selected source layer"></div>
   </header>'''
     html, n = re.subn(r'<header>.*?</header>', lambda _: header, html, count=1, flags=re.S)
@@ -53,6 +51,15 @@ def redesign(html):
 
 ''' + html[end:]
     html = html.replace('<section class="stage">', '<section class="stage" aria-label="Map and timeline"><div class="map-intro"><strong>Explore the atlas</strong><span>Select a point for its mentions and sources · Scroll to zoom</span></div>', 1)
+    # Map-corner control: the panel toggle (#sidebtn) appears on the map in fullscreen mode.
+    tools = ('<div class="map-tools">'
+             '<button type="button" id="sidebtn" class="map-btn" aria-expanded="true">Hide panel</button>'
+             '</div>')
+    if '<div class="mapbox">' not in html:
+        raise ValueError('Expected v29 mapbox')
+    html = html.replace('<div class="mapbox">', '<div class="mapbox">' + tools, 1)
+    # Fullscreen toggle (#fsbtn): a real button pinned to a corner of the viewport, in normal and fullscreen mode alike.
+    fsbtn = '<button type="button" id="fsbtn" class="fs-btn" aria-pressed="false" title="Fullscreen" aria-label="Fullscreen">Fullscreen</button>'
     html = html.replace('<svg id="tl"', '<div class="period-controls"><label for="start-year">From</label><select id="start-year"></select><label for="end-year">to</label><select id="end-year"></select><span>or drag across the timeline</span></div>\n        <svg id="tl"', 1)
     html = re.sub(r'<section class="notes">.*?</section>',
                   lambda _: (ASSETS / 'about.html').read_text().strip(), html, count=1, flags=re.S)
@@ -76,7 +83,7 @@ def redesign(html):
     # Original app styles live inside the body; our override must follow them.
     css = '<style id="release-ui">' + (ASSETS / 'release.css').read_text() + '</style>'
     html = html.replace(css, '', 1).replace('<div class="wrap">', css + '\n<div class="wrap">', 1)
-    html = html.replace('</body>', '<script>\n' + (ASSETS / 'release.js').read_text() + '\n</script>\n</body>', 1)
+    html = html.replace('</body>', fsbtn + '\n<script>\n' + (ASSETS / 'release.js').read_text() + '\n</script>\n</body>', 1)
     return html
 
 
